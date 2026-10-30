@@ -1,1 +1,584 @@
-[]
+[
+ {
+  "key": "kev:CVE-2026-76418",
+  "tier": "act",
+  "score": 86,
+  "headline": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+  "tldr": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October. The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration.",
+  "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+  "category": "",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-76418",
+   "CVE-2026-97229",
+   "CVE-2026-98432"
+  ],
+  "cvss": null,
+  "epss": 0.18427,
+  "watch": "gitlab",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+  "tier": "act",
+  "score": 86,
+  "headline": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+  "tldr": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use, Cisco Talos said on October 28.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-20127"
+  ],
+  "cvss": null,
+  "epss": 0.89294,
+  "watch": "cisco",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-41709",
+  "tier": "act",
+  "score": 76,
+  "headline": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+  "tldr": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S.",
+  "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+  "category": "",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-41709"
+  ],
+  "cvss": null,
+  "epss": 0.00764,
+  "watch": "vmware",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-46300",
+  "tier": "act",
+  "score": 76,
+  "headline": "CVE-2026-46300: Linux Kernel Missing Initialization of a Variable Vulnerability",
+  "tldr": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and",
+  "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+  "category": "",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-46300"
+  ],
+  "cvss": null,
+  "epss": 0.15719,
+  "watch": "linux kernel",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+  "tier": "act",
+  "score": 71,
+  "headline": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+  "tldr": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-118539"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+  "tier": "watch",
+  "score": 66,
+  "headline": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+  "tldr": "Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and OpenAI ChatGPT as part of a campaign dubbed Yoba. The activity involves creating fake GitHub projects that claim to be desktop applications like GPT-5.6 Sol, GPT-6 Astra, and Claude Opus, only to deliver a malware family called",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-103409",
+  "tier": "watch",
+  "score": 61,
+  "headline": "CVE-2026-103409: A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router a",
+  "tldr": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as root. Note that this vulnerability can only be exploited prior to the device being onboarded to Mist/Conductor.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-103409"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00347,
+  "watch": "juniper",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103409"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+  "tier": "watch",
+  "score": 58,
+  "headline": "Hitachi Energy CoreTec Product",
+  "tldr": "View CSAF Summary Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-106087",
+   "CVE-2026-10756",
+   "CVE-2026-13162",
+   "CVE-2026-43284"
+  ],
+  "cvss": null,
+  "epss": 0.94194,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-103406",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-103406: An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProv",
+  "tldr": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-103406"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00516,
+  "watch": "juniper",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+  "tldr": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure,\" Lumen Technologies Black Lotus Labs said in a report shared",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-m665-v7pm-7grj",
+  "tier": "watch",
+  "score": 51,
+  "headline": "rust:zip: zip: Critical Parser Differential & Security Control Bypass via Dual-Header Inconsistencies (Zip Cloaking) Lea",
+  "tldr": "Affected packages: rust:zip. ## Summary A critical architectural parser differential exists in the `zip` crate (`<= 9.0.4`) between random-access archive readers (`ZipArchive`) and streaming readers (`ZipStreamReader`).",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115905"
+  ],
+  "cvss": 10.0,
+  "epss": 0.0032,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-m665-v7pm-7grj"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
+  "tldr": "A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times. Separately, a fake Solana starter kit on GitHub is positioned to trick AI coding agents into installing a NetSupport RAT.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Japan Airlines suffers third-party data breach exposing passenger info",
+  "tldr": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+  "tldr": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/php2shell-successful-exploitation-reports-emerge",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Limited reports of PHP bug exploitation emerge",
+  "tldr": "One cyber firm listed a half-dozen exploitations of the PHP2Shell bugs, and another identified a well targeted, suspected Chinese campaign that breached U.S. \"government affiliated\" servers.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/php2shell-successful-exploitation-reports-emerge"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Fresh WordPress Vulnerability in Attackers’ Crosshairs",
+  "tldr": "Threat actors are attempting to exploit a high-severity unauthenticated race condition leading to remote code execution. The post Fresh WordPress Vulnerability in Attackers’ Crosshairs appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack",
+  "tier": "watch",
+  "score": 48,
+  "headline": "$2 Million+ Drained From Polymarket Traders in New Supply Chain Attack",
+  "tldr": "Malicious code linked to a website monitoring tool was designed to hijack logged-in Polymarket sessions and siphon user funds. The post $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Official Claude Code VS Code Extension Compromised to Install Persistent SSH Backdoor",
+  "tldr": "Cybersecurity researchers have disclosed that the official Anthropic Claude Code extension was compromised on the Open VSX registry to install a persistent SSH backdoor on infected hosts. The issue has since been traced to the compromise of the Cursor Marketplace, prompting the AI coding platform Cursor to briefly take down the service to remove the malware.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+  "tldr": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+  "tldr": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-101767"
+  ],
+  "cvss": null,
+  "epss": 0.00614,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Siemens Mendix SAML Module",
+  "tldr": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-89209"
+  ],
+  "cvss": null,
+  "epss": 0.00259,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01"
+   }
+  ],
+  "first_seen": "2026-10-30T12:15:34+00:00",
+  "updated": "2026-10-30T12:15:34+00:00"
+ }
+]
