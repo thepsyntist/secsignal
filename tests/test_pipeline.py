@@ -199,16 +199,18 @@ class UnitTest(unittest.TestCase):
 
         def flaky(url, headers, body):
             seen.append((body["model"], "response_format" in body))
+            if body["model"] == "slow-model":
+                raise requests.ReadTimeout()
             fail = {("gone-model", True): 404, ("next-model", True): 400}.get((body["model"], "response_format" in body))
             if fail:
                 raise requests.HTTPError(response=SimpleNamespace(status_code=fail, text="nope"))
             return fake(url, headers, body)
 
         cfg = app.load_config(ROOT / "config.toml")
-        cfg["llm"]["model"] = ["gone-model", "next-model"]
+        cfg["llm"]["model"] = ["slow-model", "gone-model", "next-model"]
         c = pipeline.Cluster(items=[sources.Item(id="a", kind="news", source="X", title="OpenSSH bug", url="u", text="OpenSSH", published=NOW)])
         judged = llm.triage([c], [], cfg, post=flaky)
-        self.assertEqual(seen, [("gone-model", True), ("next-model", True), ("next-model", False)])
+        self.assertEqual(seen, [("slow-model", True), ("gone-model", True), ("next-model", True), ("next-model", False)])
         self.assertEqual(judged[0].verdict, "signal")
 
     def test_roundups_do_not_bridge_clusters(self):

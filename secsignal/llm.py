@@ -54,12 +54,12 @@ Respond with only a JSON object, one entry per candidate id:
 {"items": [{"id": "c1", "verdict": "noise", "duplicate_of": "", "importance": 2, "exploited": false, "category": "other", "headline": "...", "tldr": "", "action": ""}]}"""
 
 
-def http_post(url: str, headers: dict, body: dict) -> dict:
+def http_post(url: str, headers: dict, body: dict, timeout: float = 90) -> dict:
     # requests turns POST into GET on 301/302 and drops auth across hosts, so
     # follow redirects by hand and re-POST.
     hops = []
     for _ in range(4):
-        r = requests.post(url, headers=headers, json=body, timeout=120, allow_redirects=False)
+        r = requests.post(url, headers=headers, json=body, timeout=timeout, allow_redirects=False)
         if r.status_code not in (301, 302, 303, 307, 308) or "location" not in r.headers:
             break
         url = urljoin(url, r.headers["location"])
@@ -130,35 +130,41 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
     for n, c in enumerate(clusters, 1):
         c.cid = f"c{n}"
 
-    # Free-tier model names churn, so `model` may be a list: on a 404 (or a 400
-    # that isn't about JSON mode) move to the next one. A 400 in JSON mode first
-    # retries without response_format, since compat layers differ there.
+    # Free-tier model names churn, so `model` may be a list: on a 404, a timeout
+    # or a 400 that persists in plain mode, move to the next one. A 400 first
+    # retries in plain mode (no response_format / `extra` fields), since
+    # OpenAI-compat layers differ in what they accept.
     models = list(llm["model"]) if isinstance(llm["model"], list) else [llm["model"]]
-    json_mode = True
+    extra = dict(llm.get("extra", {}))
+    plain = False
 
     def call(prompt: str) -> dict:
-        nonlocal json_mode
+        nonlocal plain
         while True:
             body = {
                 "model": models[0],
                 "temperature": 0,
                 "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
             }
-            if json_mode:
-                body["response_format"] = {"type": "json_object"}
+            if not plain:
+                body |= {"response_format": {"type": "json_object"}, **extra}
             try:
                 return post(url, headers, body)
+            except requests.Timeout:
+                if len(models) == 1:
+                    raise
+                log.warning("LLM model %s timed out; trying %s", models[0], models[1])
             except requests.HTTPError as e:
                 status = e.response.status_code if e.response is not None else None
-                if status == 400 and json_mode:
-                    log.warning("LLM rejected JSON mode; retrying without it")
-                    json_mode = False
-                elif status in (400, 404) and len(models) > 1:
-                    log.warning("LLM model %s unavailable (HTTP %s); trying %s", models[0], status, models[1])
-                    models.pop(0)
-                    json_mode = True
-                else:
+                if status == 400 and not plain:
+                    log.warning("LLM rejected request options (%s); retrying in plain mode", e.response.text[:200])
+                    plain = True
+                    continue
+                if status not in (400, 404) or len(models) == 1:
                     raise
+                log.warning("LLM model %s unavailable (HTTP %s); trying %s", models[0], status, models[1])
+            models.pop(0)
+            plain = False
 
     covered = list(covered)[:40]  # newest first; keeps the prompt inside small free-tier windows
     judged: list[Cluster] = []

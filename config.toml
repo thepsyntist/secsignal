@@ -23,6 +23,9 @@ batch_size = 25       # candidates per request
 snippet_chars = 600   # per-item text sent to the model
 min_interval_s = 7    # spacing between requests (free tier allows ~10 requests/min)
 
+[llm.extra]
+reasoning_effort = "low"  # Gemini thinks by default; triage doesn't need it and it's slow
+
 [sources]
 kev = true    # CISA Known Exploited Vulnerabilities: confirmed in-the-wild exploitation
 nvd = true    # NVD CVEs rated CRITICAL (v3 or v4)
