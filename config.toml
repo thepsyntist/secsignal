@@ -8,6 +8,7 @@ act_score = 70        # 🔴 act now: pushed
 watch_score = 45      # 🟠 worth knowing: feed + digest only. Below this: dropped.
 push_tier = "act"     # "act" | "watch" | "none"
 keep_days = 30
+llm_retry_hours = 12  # items the LLM failed on get keyword triage after this long
 
 [llm]
 # Any OpenAI-compatible chat endpoint. Default: GitHub Models, free from Actions

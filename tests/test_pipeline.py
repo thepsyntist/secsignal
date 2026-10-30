@@ -174,6 +174,12 @@ class PipelineTest(unittest.TestCase):
         self.assertTrue(ssh["headline"].startswith("Now exploited:"))
         self.assertEqual(ssh["tier"], "act")
 
+    def test_dead_llm_endpoint_falls_back_to_heuristics(self):
+        def dead(url, headers, body):
+            raise ValueError("non-JSON response (HTTP 200, text/plain): 'OK'")
+        alerts = app.run(self.cfg, self.tmp, use_llm=True, do_push=False, dry_run=False, now=NOW, post=dead)
+        self.assertTrue(any(a["kev"] and a["tier"] == "act" for a in alerts))
+
     def test_heuristic_mode(self):
         alerts = app.run(self.cfg, self.tmp, use_llm=False, do_push=False, dry_run=True, now=NOW)
         self.assertTrue(any(a["kev"] for a in alerts))

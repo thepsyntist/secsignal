@@ -95,6 +95,15 @@ def run(cfg: dict, root: Path, use_llm: bool, do_push: bool, dry_run: bool, now:
     if use_llm:
         covered = [f"[p{n}] {e['headline']}" for n, e in enumerate(recent, 1)]
         judged = llm.triage(pending, covered, cfg, **({"post": post} if post else {}))
+        # Never let a dead endpoint silence alerts: if the LLM judged nothing, or an
+        # item has waited too long for a retry, fall back to the keyword rules.
+        done = {id(c) for c in judged}
+        stale = now - timedelta(hours=cfg["run"]["llm_retry_hours"])
+        fallback = [c for c in pending if id(c) not in done and (not judged or min(i.published for i in c.items) < stale)]
+        if fallback:
+            log.warning("LLM unavailable for %d clusters; using heuristic triage for them", len(fallback))
+            pipeline.heuristic_triage(fallback)
+            judged += fallback
     else:
         for n, c in enumerate(pending, 1):
             c.cid = f"c{n}"
