@@ -4,6 +4,24 @@
 
 ## 2026-10-30
 
+### 🔴 Ivanti Connect Secure Predictable Numbers Flaw Added to KEV
+`CVE-2026-118527 · CISA KEV`
+
+CISA added CVE-2026-118527, a predictable numbers vulnerability in Ivanti Connect Secure that allows remote file uploads, to its KEV catalog.
+
+**Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527)
+
+### 🔴 Ivanti Connect Secure Missing Auth Privilege Escalation Flaw Added to KEV
+`CVE-2026-111357 · EPSS 0.00 · CISA KEV`
+
+CISA added CVE-2026-111357, a missing authentication vulnerability in Ivanti Connect Secure allowing privilege escalation, to its KEV catalog.
+
+**Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-111357)
+
 ### 🔴 Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open
 `CVE-2026-76418, CVE-2026-97229, CVE-2026-98432 · EPSS 0.18 · CISA KEV`
 
@@ -11,7 +29,7 @@ An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux
 
 **Do:** Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
 
-[The Hacker News](https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html) · [The Hacker News](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html) · [The Hacker News](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html) · [SecurityWeek](https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-97229) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-76418)
+[The Hacker News](https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html) · [The Hacker News](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html) · [The Hacker News](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html) · [SecurityWeek](https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-97229) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-76418) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/)
 
 ### 🔴 Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys
 `CVE-2026-20127 · EPSS 0.89 · CISA KEV`
@@ -19,6 +37,15 @@ An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux
 Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use, Cisco Talos said on October 28.
 
 [The Hacker News](https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/)
+
+### 🔴 Binance Suffers Record $6.3 Billion Crypto Heist
+`exploited`
+
+Binance experienced a record-breaking crypto heist resulting in the theft of $6.3 billion, linked to North Korean threat actors.
+
+**Do:** Review platform exposures and asset protections if interacting with affected services.
+
+[Ars Technica](https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/)
 
 ### 🔴 China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility
 `CVE-2026-41709 · EPSS 0.01 · CISA KEV`
@@ -45,11 +72,97 @@ Drupal has warned that threat actors are exploiting a "highly critical" security
 
 [The Hacker News](https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/) · [SecurityWeek](https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/)
 
+### 🟠 Trezor Warns of Hardware Implant in Reseller Wallet
+
+Trezor warned customers about a suspected hardware implant in a Trezor Safe 5 wallet sold by reseller CryptoBilis that leaks recovery phrases over a mobile network.
+
+**Do:** Move funds to a new wallet with a new recovery phrase if purchased from CryptoBilis.
+
+[The Hacker News](https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/)
+
+### 🟠 Florida Department of Education Data Breach Exposes SSNs
+`exploited`
+
+The Florida Department of Education reported that 4.9 million people had Social Security numbers leaked in a data breach involving the Florida Student Financial Aid website.
+
+**Do:** Monitor credit reports if affected.
+
+[The Record](https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach)
+
+### 🟠 IBM Langflow OSS Deserialization RCE Vulnerability
+`CVE-2026-104317 · CVSS 9.8 · EPSS 0.01`
+
+IBM Langflow OSS 1.0.0 through 1.12.3 contains an insecure deserialization vulnerability allowing remote code execution via message broker access.
+
+**Do:** Upgrade IBM Langflow OSS to version 1.12.5 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-104317)
+
+### 🟠 IBM Langflow OSS Stored Python Component Execution Flaw
+`CVE-2026-18894 · CVSS 9.8 · EPSS 0.00`
+
+IBM Langflow OSS 1.0.0 through 1.12.4 allows remote attackers to trigger pre-existing stored Python component code in public workflows.
+
+**Do:** Upgrade IBM Langflow OSS to version 1.12.5 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-18894)
+
+### 🟠 OpenDeepWiki Hard-Coded JWT Signing Key Vulnerability
+`CVE-2026-119597 · CVSS 9.8`
+
+OpenDeepWiki through 2.0.6 contains a hard-coded JWT signing key vulnerability allowing unauthenticated attackers to forge administrator tokens.
+
+**Do:** Upgrade OpenDeepWiki beyond version 2.0.6.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119597)
+
+### 🟠 MuseBot Authentication Bypass Vulnerability
+`CVE-2026-119660 · CVSS 9.8`
+
+MuseBot before 2.0.0 contains an authentication bypass vulnerability allowing unauthenticated attackers to forge admin sessions using a hard-coded session key.
+
+**Do:** Upgrade MuseBot to version 2.0.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119660)
+
+### 🟠 InternLM LMDeploy Unauthenticated RCE Vulnerability
+`CVE-2026-119706 · CVSS 9.8`
+
+InternLM LMDeploy 0.9.0 through 0.18.0 contains an unauthenticated RCE vulnerability allowing attackers to execute OS commands via pickled data sent to the /update_weights endpoint.
+
+**Do:** Upgrade InternLM LMDeploy beyond version 0.18.0.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119706)
+
 ### 🟠 Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners
 
 Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and OpenAI ChatGPT as part of a campaign dubbed Yoba. The activity involves creating fake GitHub projects that claim to be desktop applications like GPT-5.6 Sol, GPT-6 Astra, and Claude Opus, only to deliver a malware family called
 
 [The Hacker News](https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/) · [The Record](https://therecord.media/binance-hit-by-record-6-billion-crypto-hack) · [The Hacker News](https://thehackernews.com/2026/10/binance-suffers-security-breach.html) · [SecurityWeek](https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/)
+
+### 🟠 TeamViewer Host-to-Viewer Attack Vulnerability
+
+TeamViewer patched a vulnerability that allows a compromised or malicious host machine to attack the remote user connecting to control it during a session.
+
+**Do:** Update TeamViewer to the latest patched version.
+
+[The Hacker News](https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html)
+
+### 🟠 NetamLoader Malware Targets Government Windows Systems in Asia
+`exploited`
+
+Attackers are targeting government Windows systems in Asia with NetamLoader, a new malware utilizing legitimate Microsoft software components.
+
+**Do:** Review endpoint telemetry for suspicious use of native Microsoft binaries downloading payloads.
+
+[The Record](https://therecord.media/hackers-target-government-windows-systems-asia-new-malware)
+
+### 🟠 FBI Seizes Domain of Bulletproof Host Virtualine
+`exploited`
+
+The FBI seized the domain of bulletproof hosting provider Virtualine, which supported ransomware, infostealers, and hack-for-hire services.
+
+[SecurityWeek](https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/)
 
 ### 🟠 CVE-2026-103409: A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router a
 `CVE-2026-103409 · CVSS 9.8 · EPSS 0.00 · exploited`
@@ -114,7 +227,7 @@ One cyber firm listed a half-dozen exploitations of the PHP2Shell bugs, and anot
 
 Threat actors are attempting to exploit a high-severity unauthenticated race condition leading to remote code execution. The post Fresh WordPress Vulnerability in Attackers’ Crosshairs appeared first on SecurityWeek .
 
-[SecurityWeek](https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/)
+[SecurityWeek](https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/) · [The Hacker News](https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html)
 
 ### 🟠 $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack
 
@@ -126,13 +239,13 @@ Malicious code linked to a website monitoring tool was designed to hijack logged
 
 Cybersecurity researchers have disclosed that the official Anthropic Claude Code extension was compromised on the Open VSX registry to install a persistent SSH backdoor on infected hosts. The issue has since been traced to the compromise of the Cursor Marketplace, prompting the AI coding platform Cursor to briefly take down the service to remove the malware.
 
-[The Hacker News](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html)
+[The Hacker News](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/)
 
 ### 🟠 PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network
 
 Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root
 
-[The Hacker News](https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html)
+[The Hacker News](https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html) · [SecurityWeek](https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/)
 
 ### 🟠 Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch
 `CVE-2026-101767 · EPSS 0.01`

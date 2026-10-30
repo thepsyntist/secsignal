@@ -1,5 +1,322 @@
 [
  {
+  "key": "kev:CVE-2026-118527",
+  "tier": "act",
+  "score": 92,
+  "headline": "Ivanti Connect Secure Predictable Numbers Flaw Added to KEV",
+  "tldr": "CISA added CVE-2026-118527, a predictable numbers vulnerability in Ivanti Connect Secure that allows remote file uploads, to its KEV catalog.",
+  "action": "Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-118527"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "ivanti",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-111357",
+  "tier": "act",
+  "score": 92,
+  "headline": "Ivanti Connect Secure Missing Auth Privilege Escalation Flaw Added to KEV",
+  "tldr": "CISA added CVE-2026-111357, a missing authentication vulnerability in Ivanti Connect Secure allowing privilege escalation, to its KEV catalog.",
+  "action": "Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-111357"
+  ],
+  "cvss": null,
+  "epss": 0.00316,
+  "watch": "ivanti",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "rss:https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist",
+  "tier": "act",
+  "score": 85,
+  "headline": "Binance Suffers Record $6.3 Billion Crypto Heist",
+  "tldr": "Binance experienced a record-breaking crypto heist resulting in the theft of $6.3 billion, linked to North Korean threat actors.",
+  "action": "Review platform exposures and asset protections if interacting with affected services.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Trezor Warns of Hardware Implant in Reseller Wallet",
+  "tldr": "Trezor warned customers about a suspected hardware implant in a Trezor Safe 5 wallet sold by reseller CryptoBilis that leaks recovery phrases over a mobile network.",
+  "action": "Move funds to a new wallet with a new recovery phrase if purchased from CryptoBilis.",
+  "category": "supply_chain",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Florida Department of Education Data Breach Exposes SSNs",
+  "tldr": "The Florida Department of Education reported that 4.9 million people had Social Security numbers leaked in a data breach involving the Florida Student Financial Aid website.",
+  "action": "Monitor credit reports if affected.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-104317",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM Langflow OSS Deserialization RCE Vulnerability",
+  "tldr": "IBM Langflow OSS 1.0.0 through 1.12.3 contains an insecure deserialization vulnerability allowing remote code execution via message broker access.",
+  "action": "Upgrade IBM Langflow OSS to version 1.12.5 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-104317"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00573,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104317"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-18894",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM Langflow OSS Stored Python Component Execution Flaw",
+  "tldr": "IBM Langflow OSS 1.0.0 through 1.12.4 allows remote attackers to trigger pre-existing stored Python component code in public workflows.",
+  "action": "Upgrade IBM Langflow OSS to version 1.12.5 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-18894"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00427,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18894"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-119597",
+  "tier": "watch",
+  "score": 67,
+  "headline": "OpenDeepWiki Hard-Coded JWT Signing Key Vulnerability",
+  "tldr": "OpenDeepWiki through 2.0.6 contains a hard-coded JWT signing key vulnerability allowing unauthenticated attackers to forge administrator tokens.",
+  "action": "Upgrade OpenDeepWiki beyond version 2.0.6.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-119597"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119597"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-119660",
+  "tier": "watch",
+  "score": 67,
+  "headline": "MuseBot Authentication Bypass Vulnerability",
+  "tldr": "MuseBot before 2.0.0 contains an authentication bypass vulnerability allowing unauthenticated attackers to forge admin sessions using a hard-coded session key.",
+  "action": "Upgrade MuseBot to version 2.0.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-119660"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119660"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-119706",
+  "tier": "watch",
+  "score": 67,
+  "headline": "InternLM LMDeploy Unauthenticated RCE Vulnerability",
+  "tldr": "InternLM LMDeploy 0.9.0 through 0.18.0 contains an unauthenticated RCE vulnerability allowing attackers to execute OS commands via pickled data sent to the /update_weights endpoint.",
+  "action": "Upgrade InternLM LMDeploy beyond version 0.18.0.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-119706"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119706"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "TeamViewer Host-to-Viewer Attack Vulnerability",
+  "tldr": "TeamViewer patched a vulnerability that allows a compromised or malicious host machine to attack the remote user connecting to control it during a session.",
+  "action": "Update TeamViewer to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/hackers-target-government-windows-systems-asia-new-malware",
+  "tier": "watch",
+  "score": 61,
+  "headline": "NetamLoader Malware Targets Government Windows Systems in Asia",
+  "tldr": "Attackers are targeting government Windows systems in Asia with NetamLoader, a new malware utilizing legitimate Microsoft software components.",
+  "action": "Review endpoint telemetry for suspicious use of native Microsoft binaries downloading payloads.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/hackers-target-government-windows-systems-asia-new-malware"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure",
+  "tier": "watch",
+  "score": 61,
+  "headline": "FBI Seizes Domain of Bulletproof Host Virtualine",
+  "tldr": "The FBI seized the domain of bulletproof hosting provider Virtualine, which supported ransomware, infostealers, and hack-for-hire services.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/"
+   }
+  ],
+  "first_seen": "2026-10-30T18:04:39+00:00",
+  "updated": "2026-10-30T18:04:39+00:00"
+ },
+ {
   "key": "kev:CVE-2026-76418",
   "tier": "act",
   "score": 86,
@@ -49,10 +366,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/"
    }
   ],
   "first_seen": "2026-10-30T12:15:34+00:00",
-  "updated": "2026-10-30T12:15:34+00:00"
+  "updated": "2026-10-30T18:04:39+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
@@ -457,10 +778,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html"
    }
   ],
   "first_seen": "2026-10-30T12:15:34+00:00",
-  "updated": "2026-10-30T12:15:34+00:00"
+  "updated": "2026-10-30T18:04:39+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack",
@@ -503,10 +828,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
    }
   ],
   "first_seen": "2026-10-30T12:15:34+00:00",
-  "updated": "2026-10-30T12:15:34+00:00"
+  "updated": "2026-10-30T18:04:39+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
@@ -526,10 +855,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/"
    }
   ],
   "first_seen": "2026-10-30T12:15:34+00:00",
-  "updated": "2026-10-30T12:15:34+00:00"
+  "updated": "2026-10-30T18:04:39+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
