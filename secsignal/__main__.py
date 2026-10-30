@@ -149,10 +149,15 @@ def main() -> None:
     ap.add_argument("--no-llm", action="store_true", help="heuristic triage only (free)")
     ap.add_argument("--no-push", action="store_true", help="don't send notifications")
     ap.add_argument("--dry-run", action="store_true", help="print alerts; don't write state, outputs or push")
+    ap.add_argument("--selftest", action="store_true", help="send made-up stories to the live LLM and print its verdicts")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     cfg = load_config(args.config)
+    if args.selftest:
+        from . import selftest
+
+        raise SystemExit(selftest.run(cfg))
     use_llm = not args.no_llm and cfg["llm"]["enabled"]
     key_env = cfg["llm"].get("api_key_env", "")
     if use_llm and key_env and not os.environ.get(key_env):
