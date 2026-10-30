@@ -13,6 +13,7 @@ import logging
 import os
 import re
 import time
+from urllib.parse import urljoin, urlsplit
 
 import requests
 
@@ -56,12 +57,23 @@ Respond with only a JSON object, one entry per candidate id:
 
 
 def http_post(url: str, headers: dict, body: dict) -> dict:
-    r = requests.post(url, headers=headers, json=body, timeout=120)
+    # requests turns POST into GET on 301/302 and drops auth across hosts, so
+    # follow redirects by hand and re-POST.
+    hops = []
+    for _ in range(4):
+        r = requests.post(url, headers=headers, json=body, timeout=120, allow_redirects=False)
+        if r.status_code not in (301, 302, 303, 307, 308) or "location" not in r.headers:
+            break
+        url = urljoin(url, r.headers["location"])
+        hops.append(f"{r.status_code}->{url}")
     r.raise_for_status()
     try:
         return r.json()
     except ValueError:
-        raise ValueError(f"non-JSON response (HTTP {r.status_code}, {r.headers.get('content-type')}): {r.text[:300]!r}") from None
+        via = f" via {', '.join(hops)}" if hops else ""
+        raise ValueError(
+            f"non-JSON response (HTTP {r.status_code}, {r.headers.get('content-type')}{via}): {r.text[:300]!r}"
+        ) from None
 
 
 def _truncate(s: str, n: int) -> str:
@@ -113,6 +125,8 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
     llm = cfg["llm"]
     url = llm["base_url"].rstrip("/") + "/chat/completions"
     headers = {"Content-Type": "application/json"}
+    if urlsplit(url).hostname.endswith("github.ai"):
+        headers |= {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
     if os.environ.get(llm.get("api_key_env", "")):
         headers["Authorization"] = f"Bearer {os.environ[llm['api_key_env']]}"
     for n, c in enumerate(clusters, 1):
