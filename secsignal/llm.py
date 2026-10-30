@@ -130,8 +130,9 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
     for n, c in enumerate(clusters, 1):
         c.cid = f"c{n}"
 
-    # Free-tier model names churn, so `model` may be a list: on a 404, a timeout
-    # or a 400 that persists in plain mode, move to the next one. A 400 first
+    # Free-tier model names churn and capacity varies, so `model` may be a list:
+    # on a 404, 429, timeout, persistent 5xx, or a 400 that persists in plain
+    # mode, move to the next one. A 400 first
     # retries in plain mode (no response_format / `extra` fields), since
     # OpenAI-compat layers differ in what they accept.
     models = list(llm["model"]) if isinstance(llm["model"], list) else [llm["model"]]
@@ -140,6 +141,7 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
 
     def call(prompt: str) -> dict:
         nonlocal plain
+        busy_retries = 0
         while True:
             body = {
                 "model": models[0],
@@ -160,11 +162,21 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
                     log.warning("LLM rejected request options (%s); retrying in plain mode", e.response.text[:200])
                     plain = True
                     continue
-                if status not in (400, 404) or len(models) == 1:
+                # Overloaded: free tiers return 503 under load. Back off and retry
+                # the same model a couple of times before moving on.
+                if status in (500, 502, 503, 504) and busy_retries < 2:
+                    busy_retries += 1
+                    log.warning("LLM model %s busy (HTTP %s); retry %d in %ds", models[0], status, busy_retries, 10 * busy_retries)
+                    time.sleep(10 * busy_retries)
+                    continue
+                # Unknown model, persistent overload, or this model's quota is spent
+                # (Gemini's free quotas are per model): try the next one.
+                if status not in (400, 404, 429, 500, 502, 503, 504) or len(models) == 1:
                     raise
                 log.warning("LLM model %s unavailable (HTTP %s); trying %s", models[0], status, models[1])
             models.pop(0)
             plain = False
+            busy_retries = 0
 
     covered = list(covered)[:40]  # newest first; keeps the prompt inside small free-tier windows
     judged: list[Cluster] = []
