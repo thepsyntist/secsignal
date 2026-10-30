@@ -1,54 +1,100 @@
 # secsignal
 
-A security news feed that only lets serious items through: actively exploited vulns, critical bugs in software people actually run, supply-chain compromises and major breaches. Each item gets a two-sentence TLDR and a "do this" line. Runs every 2 hours on GitHub Actions and writes an RSS feed, Markdown digests and (optionally) phone/chat alerts.
+A security news feed with the noise taken out. It surfaces exploited vulnerabilities, critical bugs in software people actually run, supply-chain compromises and major breaches, and drops everything else. Each story gets a short TLDR and a concrete "do this" line.
+
+It runs every 2 hours on GitHub Actions, costs nothing, and delivers to your phone (ntfy), an RSS feed and daily Markdown digests.
 
 ```
-🔴 FortiWeb auth bypass exploited (CVE-2026-1111)
-CVE-2026-1111 · EPSS 0.91 · CISA KEV
+🔴 Fortinet FortiWeb Auth Bypass CVE-2099-0001 Exploited
+CVE-2099-0001 · CVSS 9.8 · CISA KEV
 
-Unauthenticated attackers can create admin accounts on FortiWeb 7.x; CISA confirms exploitation.
-→ Upgrade FortiWeb to 7.4.8+ and audit for unknown admin accounts.
+An authentication bypass in Fortinet FortiWeb allows unauthenticated attackers to create
+rogue admin accounts via crafted HTTP requests. The flaw is actively exploited.
+→ Upgrade FortiWeb to 7.6.5+ and audit for unauthorized admin accounts.
 ```
+<sub>Real model output from the selftest, on a made-up CVE.</sub>
 
-## How it filters
+## Reading it
 
-1. **Sources with high base signal.** CISA KEV (confirmed exploitation), NVD CRITICAL CVEs, GitHub-reviewed critical advisories, and a short list of original-reporting news feeds (`config.toml`).
-2. **Dedupe and cluster.** Items are never judged twice (`state/seen.json`). Items sharing a CVE merge into one story, and so do headlines about the same thing from different outlets. Follow-ups to a story that was already published fold into it. If a published CVE later lands in KEV, you get a "Now exploited:" alert.
-3. **Free junk filter.** Regexes drop webinars, deals, funding, sentencing and the long tail of student-project and tiny-plugin CVEs before the LLM sees them. Watchlist and KEV items are exempt.
-4. **One batched LLM call** per 15 candidates does triage, dedupe, headline, TLDR and action together. The prompt sets a strict bar: "when in doubt, it is noise".
-5. **Score → tier.** LLM importance plus KEV, EPSS, multi-outlet corroboration and watchlist bonuses. 🔴 `act` is pushed; 🟠 `watch` only goes to the feed and digest.
+| Where | What |
+|---|---|
+| ntfy app | 🔴 "act now" alerts, pushed as they're found |
+| [`out/latest.md`](out/latest.md) | Everything from the last 7 days, 🔴 and 🟠 |
+| [`digests/`](digests) | One page per day |
+| RSS | `https://raw.githubusercontent.com/thepsyntist/secsignal/main/out/feed.xml` |
 
-## Cost: free
+🔴 **act**: exploited, or critical in something widely deployed. Patch or check this week.
+🟠 **watch**: worth knowing, not urgent. Feed and digests only, never pushed.
 
-The LLM step uses Gemini's free tier through its OpenAI-compatible endpoint: get a key at [aistudio.google.com](https://aistudio.google.com) and store it as the `GEMINI_API_KEY` repo secret. A run needs a couple of requests (25 candidates each), well inside the free limits. On the free tier Google may use inputs to improve its models; here that's public news headlines only.
+## How it decides
 
-`model` is a list tried in order, because free model names change; the first one that answers is used. `[llm]` accepts any OpenAI-compatible endpoint (Groq and a local Ollama are in the comments). If the LLM is unavailable, rate-limited or has no key, the keyword rules take over so alerts keep flowing. They're looser, though, and the TLDR is just the article's first two sentences.
+1. **Sources with high base signal.** These are:
+   - [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (confirmed in-the-wild exploitation)
+   - NVD CVEs rated CRITICAL
+   - GitHub-reviewed critical advisories
+   - 9 news feeds that do original reporting
+
+   All of them are listed in `config.toml`.
+2. **Dedupe and cluster.**
+   - Nothing is judged twice (`state/seen.json`).
+   - Items that share a CVE merge into one story, and so do headlines about the same event from different outlets.
+   - A follow-up to a published story folds into it. If a CVE that was already published later lands in KEV, you get a fresh **"Now exploited:"** alert.
+3. **Free junk filter.** Regexes drop webinars, deals, funding news, sentencing stories and the flood of student-project and tiny-plugin CVEs before any model sees them. KEV and watchlist hits are never dropped here.
+4. **LLM triage.** Gemini judges 25 stories per request: signal or noise, same story as something else, importance 0–10, headline, TLDR and action. The bar is strict: *when in doubt, it is noise.*
+5. **Score → tier.** The model's importance is combined with bonuses for KEV, EPSS (exploitation likelihood), several outlets covering the same story, and watchlist hits.
+
+**If the LLM is down** (busy, rate-limited or missing a key), it retries, falls back to the next model in the list, and as a last resort uses keyword rules, so 🔴 alerts keep flowing. Keyword mode is looser, and its TLDR is just the article's first two sentences.
 
 ## Setup
 
-Add the `GEMINI_API_KEY` secret, then trigger **Actions → secsignal → Run workflow** once. After that it runs every 2 hours.
-
-Optional secrets (**Settings → Secrets and variables → Actions**):
+All secrets go in **Settings → Secrets and variables → Actions**.
 
 | Secret | |
 |---|---|
-| `NTFY_TOPIC` | ntfy topic for phone push: install the ntfy app and subscribe to the same topic |
-| `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` | Telegram push |
-| `DISCORD_WEBHOOK_URL` / `SLACK_WEBHOOK_URL` | chat push |
-| `NVD_API_KEY` | higher NVD rate limit ([free](https://nvd.nist.gov/developers/request-an-api-key)) |
+| `GEMINI_API_KEY` | Free key from [aistudio.google.com](https://aistudio.google.com). Without it, keyword mode only. |
+| `NTFY_TOPIC` | Your ntfy topic. Install the ntfy app and subscribe to the same name. |
+| `NVD_API_KEY` | Optional. Raises NVD's rate limit ([free](https://nvd.nist.gov/developers/request-an-api-key)). |
+| `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID`, `DISCORD_WEBHOOK_URL`, `SLACK_WEBHOOK_URL` | Optional extra push channels. |
 
-Reading it: `out/latest.md` (last 7 days), `digests/YYYY-MM-DD.md`, or subscribe in any RSS reader: `https://raw.githubusercontent.com/thepsyntist/secsignal/main/out/feed.xml`.
+Topics on ntfy.sh are public: anyone who knows the name can read or post to it. So use a long random topic and keep it only in the secret.
+
+Then run **Actions → secsignal → Run workflow** once. After that it runs on its own every 2 hours.
+
+## Checking it works
+
+**Actions → selftest → Run workflow** sends 8 made-up stories through the real pipeline and model, a mix of real signal and obvious noise. It prints each verdict with its TLDR and writes nothing. Run it after changing the model, the prompt or the scoring.
+
+The log of each scheduled run shows item counts per source, how many stories the model judged, and how many were published and pushed.
+
+## Tuning
+
+Everything lives in [`config.toml`](config.toml):
+
+- **`watchlist`**: put the products you actually run here. Matches get a bonus and skip the junk filter.
+- **`act_score` / `watch_score`**: raise them for fewer alerts, lower them for more.
+- **`push_tier`**: `"act"` (default), `"watch"` to also push 🟠, or `"none"`.
+- **`[[feeds]]`**: add or remove news sources.
+- **`[llm]`**: any OpenAI-compatible endpoint works. `model` is a list tried in order, because free model names change; Groq and Ollama examples are in the comments.
 
 ## Local
 
 ```bash
 git clone https://github.com/thepsyntist/secsignal && cd secsignal
 pip install -r requirements.txt
-GEMINI_API_KEY=... python -m secsignal --dry-run   # print what would publish; writes nothing
-python -m secsignal --no-llm --dry-run # free mode
-python -m unittest -v                  # offline tests with fixtures
+GEMINI_API_KEY=... python -m secsignal --dry-run    # print what would publish; writes nothing
+GEMINI_API_KEY=... python -m secsignal --selftest   # made-up stories through the live model
+python -m secsignal --no-llm --dry-run              # keyword mode
+python -m unittest -v                               # offline tests
 ```
 
-## Tuning
+## Layout
 
-Everything lives in `config.toml`. The most useful knobs are `watchlist` (put your actual stack here), `act_score`/`watch_score`, `push_tier` and the feed list.
+```
+secsignal/sources.py    fetchers: KEV, NVD, GitHub advisories, RSS, EPSS
+secsignal/pipeline.py   clustering, junk filter, keyword triage, scoring
+secsignal/llm.py        prompt, batching, model fallbacks
+secsignal/output.py     RSS, Markdown, push (ntfy/Telegram/Discord/Slack)
+secsignal/state.py      seen items + published entries
+secsignal/selftest.py   live model check on made-up stories
+state/  out/  digests/  written by the workflow and committed each run
+```
