@@ -1,5 +1,74 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers",
+  "tier": "act",
+  "score": 77,
+  "headline": "Linux Kernel MPTCP Remote Root RCE Vulnerability",
+  "tldr": "Researchers developed an exploit for a critical Linux kernel vulnerability enabling unauthenticated remote root execution on servers with MPTCP listeners.",
+  "action": "Monitor for Linux kernel updates addressing MPTCP vulnerabilities and apply patches promptly.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "linux kernel",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/"
+   }
+  ],
+  "first_seen": "2026-10-30T22:27:36+00:00",
+  "updated": "2026-10-30T22:27:36+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "China-Linked Vapor Panda Uses AI-Powered ARTEX Against Over 200 Orgs",
+  "tldr": "Chinese state-sponsored threat group Vapor Panda used an AI-powered penetration testing framework called ARTEX to target over 200 organizations.",
+  "action": "Review environment for indicators associated with Vapor Panda and unauthorized penetration testing frameworks.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html"
+   }
+  ],
+  "first_seen": "2026-10-30T22:27:36+00:00",
+  "updated": "2026-10-30T22:27:36+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-5xjx-3w67-w9x9",
+  "tier": "watch",
+  "score": 59,
+  "headline": "actions/pypa/gh-action-pypi-publish: CA trust store issue in PyPI publishing",
+  "tldr": "pypi-publish action versions before 1.14.2 bundled a revoked root CA in the certifi trust store used for Sigstore Trusted Publishing and Digital Attestations.",
+  "action": "Upgrade actions/pypa/gh-action-pypi-publish to version 1.14.2 or later.",
+  "category": "supply_chain",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-5xjx-3w67-w9x9"
+   }
+  ],
+  "first_seen": "2026-10-30T22:27:36+00:00",
+  "updated": "2026-10-30T22:27:36+00:00"
+ },
+ {
   "key": "kev:CVE-2026-118527",
   "tier": "act",
   "score": 92,
@@ -10,6 +79,7 @@
   "exploited": true,
   "kev": true,
   "cves": [
+   "CVE-2026-111357",
    "CVE-2026-118527"
   ],
   "cvss": null,
@@ -19,10 +89,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-10-30T18:04:39+00:00"
+  "updated": "2026-10-30T22:27:36+00:00"
  },
  {
   "key": "kev:CVE-2026-111357",
@@ -832,10 +906,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
+   },
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
    }
   ],
   "first_seen": "2026-10-30T12:15:34+00:00",
-  "updated": "2026-10-30T18:04:39+00:00"
+  "updated": "2026-10-30T22:27:36+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",

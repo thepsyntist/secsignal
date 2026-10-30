@@ -5,13 +5,13 @@
 ## 2026-10-30
 
 ### 🔴 Ivanti Connect Secure Predictable Numbers Flaw Added to KEV
-`CVE-2026-118527 · CISA KEV`
+`CVE-2026-111357, CVE-2026-118527 · CISA KEV`
 
 CISA added CVE-2026-118527, a predictable numbers vulnerability in Ivanti Connect Secure that allows remote file uploads, to its KEV catalog.
 
 **Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog)
 
 ### 🔴 Ivanti Connect Secure Missing Auth Privilege Escalation Flaw Added to KEV
 `CVE-2026-111357 · EPSS 0.00 · CISA KEV`
@@ -46,6 +46,14 @@ Binance experienced a record-breaking crypto heist resulting in the theft of $6.
 **Do:** Review platform exposures and asset protections if interacting with affected services.
 
 [Ars Technica](https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/)
+
+### 🔴 Linux Kernel MPTCP Remote Root RCE Vulnerability
+
+Researchers developed an exploit for a critical Linux kernel vulnerability enabling unauthenticated remote root execution on servers with MPTCP listeners.
+
+**Do:** Monitor for Linux kernel updates addressing MPTCP vulnerabilities and apply patches promptly.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/)
 
 ### 🔴 China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility
 `CVE-2026-41709 · EPSS 0.01 · CISA KEV`
@@ -148,6 +156,15 @@ TeamViewer patched a vulnerability that allows a compromised or malicious host m
 
 [The Hacker News](https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html)
 
+### 🟠 China-Linked Vapor Panda Uses AI-Powered ARTEX Against Over 200 Orgs
+`exploited`
+
+Chinese state-sponsored threat group Vapor Panda used an AI-powered penetration testing framework called ARTEX to target over 200 organizations.
+
+**Do:** Review environment for indicators associated with Vapor Panda and unauthorized penetration testing frameworks.
+
+[The Hacker News](https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html)
+
 ### 🟠 NetamLoader Malware Targets Government Windows Systems in Asia
 `exploited`
 
@@ -170,6 +187,15 @@ The FBI seized the domain of bulletproof hosting provider Virtualine, which supp
 A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as root. Note that this vulnerability can only be exploited prior to the device being onboarded to Mist/Conductor.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-103409)
+
+### 🟠 actions/pypa/gh-action-pypi-publish: CA trust store issue in PyPI publishing
+`CVSS 9.3`
+
+pypi-publish action versions before 1.14.2 bundled a revoked root CA in the certifi trust store used for Sigstore Trusted Publishing and Digital Attestations.
+
+**Do:** Upgrade actions/pypa/gh-action-pypi-publish to version 1.14.2 or later.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-5xjx-3w67-w9x9)
 
 ### 🟠 Hitachi Energy CoreTec Product
 `CVE-2026-106087, CVE-2026-10756, CVE-2026-13162, CVE-2026-43284 · EPSS 0.94 · exploited`
@@ -239,7 +265,7 @@ Malicious code linked to a website monitoring tool was designed to hijack logged
 
 Cybersecurity researchers have disclosed that the official Anthropic Claude Code extension was compromised on the Open VSX registry to install a persistent SSH backdoor on infected hosts. The issue has since been traced to the compromise of the Cursor Marketplace, prompting the AI coding platform Cursor to briefly take down the service to remove the malware.
 
-[The Hacker News](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/)
+[The Hacker News](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/) · [Ars Technica](https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/)
 
 ### 🟠 PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network
 
