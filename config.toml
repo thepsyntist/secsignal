@@ -1,0 +1,104 @@
+# secsignal config. Everything here is meant to be tuned.
+
+[run]
+lookback_hours = 48   # only consider items published within this window
+dedupe_hours = 96     # follow-up stories within this window fold into the original entry
+max_candidates = 120  # hard cap on clusters sent for judgement per run (highest prior first)
+act_score = 70        # 🔴 act now: pushed
+watch_score = 45      # 🟠 worth knowing: feed + digest only. Below this: dropped.
+push_tier = "act"     # "act" | "watch" | "none"
+keep_days = 30
+
+[llm]
+# Any OpenAI-compatible chat endpoint. Default: GitHub Models, free from Actions
+# with the workflow's own GITHUB_TOKEN (no signup, no key). Free alternatives:
+#   Gemini:  base_url = "https://generativelanguage.googleapis.com/v1beta/openai", api_key_env = "GEMINI_API_KEY", model = "gemini-2.5-flash"
+#   Groq:    base_url = "https://api.groq.com/openai/v1", api_key_env = "GROQ_API_KEY", model = "llama-3.3-70b-versatile"
+#   Ollama:  base_url = "http://localhost:11434/v1", api_key_env = "", model = "qwen2.5:7b"
+enabled = true
+base_url = "https://models.github.ai/inference"
+api_key_env = "GITHUB_TOKEN"
+model = "openai/gpt-4.1-mini"
+batch_size = 15       # GitHub Models free tier caps a request at ~8k tokens in / 4k out
+snippet_chars = 400   # per-item text sent to the model
+min_interval_s = 5    # spacing between requests (free tier: ~15 requests/min)
+
+[sources]
+kev = true    # CISA Known Exploited Vulnerabilities: confirmed in-the-wild exploitation
+nvd = true    # NVD CVEs rated CRITICAL (v3 or v4)
+ghsa = true   # GitHub-reviewed critical advisories (open-source packages)
+
+[output]
+title = "secsignal"
+site_url = "https://github.com/thepsyntist/secsignal"
+feed_size = 150
+
+# News feeds. Chosen for original reporting and low fluff; corroboration across
+# several of them is itself a signal.
+[[feeds]]
+name = "BleepingComputer"
+url = "https://www.bleepingcomputer.com/feed/"
+
+[[feeds]]
+name = "The Record"
+url = "https://therecord.media/feed"
+
+[[feeds]]
+name = "Krebs on Security"
+url = "https://krebsonsecurity.com/feed/"
+
+[[feeds]]
+name = "Ars Technica"
+url = "https://feeds.arstechnica.com/arstechnica/security"
+
+[[feeds]]
+name = "SecurityWeek"
+url = "https://www.securityweek.com/feed/"
+
+[[feeds]]
+name = "The Hacker News"
+url = "https://feeds.feedburner.com/TheHackersNews"
+
+[[feeds]]
+name = "CISA Advisories"
+url = "https://www.cisa.gov/cybersecurity-advisories/all.xml"
+
+[[feeds]]
+name = "Project Zero"
+url = "https://googleprojectzero.blogspot.com/feeds/posts/default"
+
+[[feeds]]
+name = "watchTowr Labs"
+url = "https://labs.watchtowr.com/rss/"
+
+[filters]
+# Your stack / historically on-fire products. A hit adds a small score bonus and
+# protects the item from the junk filters below. Whole-word, case-insensitive.
+watchlist = [
+  "fortinet", "fortigate", "fortiweb", "fortios", "ivanti", "citrix", "netscaler",
+  "palo alto", "pan-os", "globalprotect", "cisco", "juniper", "sonicwall", "f5", "big-ip",
+  "vmware", "esxi", "vcenter", "exchange server", "sharepoint", "active directory", "entra",
+  "okta", "openssh", "openssl", "linux kernel", "glibc", "sudo", "chrome", "chromium",
+  "firefox", "webkit", "kubernetes", "docker", "jenkins", "gitlab", "github", "confluence",
+  "jira", "veeam", "moveit", "solarwinds", "crushftp", "zimbra", "roundcube", "weblogic",
+  "log4j", "tomcat", "struts", "nginx", "apache http server", "xz",
+]
+
+# News titles matching any of these are dropped before the LLM sees them
+# (unless corroborated by a KEV/advisory item or a watchlist hit).
+noise_title = [
+  '\bwebinar\b', '\bsponsored\b', '\bpodcast\b', '\bdeals?\b', '% off', '\bdiscount\b',
+  '\bgiveaway\b', '^how to\b', '\bbest .* (for|of) 20\d\d\b', '\btop \d+\b', '\breview:',
+  '\braises \$', '\bfunding\b', '\bseries [a-d]\b', '\bacquires?\b', '\bacquisition\b',
+  '\bappoints?\b', '\bnamed (ceo|ciso|cto)\b', '\bhires?\b', '\bpartnership\b', '\bunveils?\b',
+  '\bweek in review\b', '\bweekly recap\b', '\bnewsletter\b', '\bsentenced\b', '\bpleads? guilty\b',
+  '\bin other news\b', '\bsurvey\b', '\breport finds\b', '\bwhitepaper\b', '\bebook\b',
+]
+
+# Vendor-advisory/NVD text matching these is dropped: the long tail of
+# student-project and tiny-plugin CVEs that dominate raw CRITICAL counts.
+noise_text = [
+  'sourcecodester', 'phpgurukul', 'code-projects', 'itsourcecode', 'campcodes', 'kashipara',
+  'projectworlds', '\bmanagement system\b', 'plugin for wordpress', 'wordpress plugin',
+  '\bjoomla\b component', 'tenda ', 'totolink', '\bd-link dir-\d+', 'linksys e\d+',
+]
