@@ -20,13 +20,13 @@ Unauthenticated attackers can create admin accounts on FortiWeb 7.x; CISA confir
 
 ## Cost: free
 
-By default the LLM step uses [GitHub Models](https://github.blog/ai-and-ml/llms/solving-the-inference-problem-for-open-source-ai-projects-with-github-models/) (`openai/gpt-4.1-mini`). It's called with the workflow's own `GITHUB_TOKEN`, so there's no signup, no key and no bill. The free tier is rate-limited, roughly 150 requests a day at ~8k tokens each. The default batch size of 15 needs only about 10 requests a day. If a run hits the limit, the leftover items are judged on the next run.
+The LLM step uses Gemini's free tier through its OpenAI-compatible endpoint: get a key at [aistudio.google.com](https://aistudio.google.com) and store it as the `GEMINI_API_KEY` repo secret. A run needs a couple of requests (25 candidates each), well inside the free limits. On the free tier Google may use inputs to improve its models; here that's public news headlines only.
 
-`[llm]` in `config.toml` accepts any OpenAI-compatible endpoint. The comments there show settings for Gemini's free tier, Groq or a local Ollama. If the LLM step is disabled or has no token, a free keyword heuristic takes over. It still drops junk and merges stories, but its TLDR is just the article's first two sentences.
+`model` is a list tried in order, because free model names change; the first one that answers is used. `[llm]` accepts any OpenAI-compatible endpoint (Groq and a local Ollama are in the comments). If the LLM is unavailable, rate-limited or has no key, the keyword rules take over so alerts keep flowing. They're looser, though, and the TLDR is just the article's first two sentences.
 
 ## Setup
 
-Merge to the default branch, since scheduled workflows only run from there. Then trigger **Actions → secsignal → Run workflow** once. Nothing else is required.
+Add the `GEMINI_API_KEY` secret, then trigger **Actions → secsignal → Run workflow** once. After that it runs every 2 hours.
 
 Optional secrets (**Settings → Secrets and variables → Actions**):
 
@@ -44,7 +44,7 @@ Reading it: `out/latest.md` (last 7 days), `digests/YYYY-MM-DD.md`, or subscribe
 ```bash
 git clone https://github.com/thepsyntist/secsignal && cd secsignal
 pip install -r requirements.txt
-GITHUB_TOKEN=<PAT with models:read> python -m secsignal --dry-run   # print what would publish; writes nothing
+GEMINI_API_KEY=... python -m secsignal --dry-run   # print what would publish; writes nothing
 python -m secsignal --no-llm --dry-run # free mode
 python -m unittest -v                  # offline tests with fixtures
 ```

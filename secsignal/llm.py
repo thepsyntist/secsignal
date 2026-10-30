@@ -1,9 +1,7 @@
 """Batched triage + dedupe + TLDR over any OpenAI-compatible chat endpoint.
 
-Default is GitHub Models, which is free from Actions using the workflow's own
-GITHUB_TOKEN. Its free tier caps each request at ~8k input / 4k output tokens,
-hence small batches and short snippets. Items are judged exactly once
-(seen-state) and obvious junk never reaches the model.
+Default is Gemini's free tier. Items are judged exactly once (seen-state) and
+obvious junk never reaches the model, which keeps a run to a few requests.
 """
 
 from __future__ import annotations
@@ -132,6 +130,36 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
     for n, c in enumerate(clusters, 1):
         c.cid = f"c{n}"
 
+    # Free-tier model names churn, so `model` may be a list: on a 404 (or a 400
+    # that isn't about JSON mode) move to the next one. A 400 in JSON mode first
+    # retries without response_format, since compat layers differ there.
+    models = list(llm["model"]) if isinstance(llm["model"], list) else [llm["model"]]
+    json_mode = True
+
+    def call(prompt: str) -> dict:
+        nonlocal json_mode
+        while True:
+            body = {
+                "model": models[0],
+                "temperature": 0,
+                "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
+            }
+            if json_mode:
+                body["response_format"] = {"type": "json_object"}
+            try:
+                return post(url, headers, body)
+            except requests.HTTPError as e:
+                status = e.response.status_code if e.response is not None else None
+                if status == 400 and json_mode:
+                    log.warning("LLM rejected JSON mode; retrying without it")
+                    json_mode = False
+                elif status in (400, 404) and len(models) > 1:
+                    log.warning("LLM model %s unavailable (HTTP %s); trying %s", models[0], status, models[1])
+                    models.pop(0)
+                    json_mode = True
+                else:
+                    raise
+
     covered = list(covered)[:40]  # newest first; keeps the prompt inside small free-tier windows
     judged: list[Cluster] = []
     tokens_in = tokens_out = 0
@@ -145,14 +173,8 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
             + "\n\nCandidates:\n\n" + "\n\n".join(render_candidate(c, llm["snippet_chars"]) for c in chunk)
             + "\n\nReturn the JSON object."
         )
-        body = {
-            "model": llm["model"],
-            "temperature": 0,
-            "response_format": {"type": "json_object"},
-            "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
-        }
         try:
-            resp = post(url, headers, body)
+            resp = call(prompt)
             choice = resp["choices"][0]
             content = choice["message"].get("content") or ""
             try:
@@ -164,7 +186,7 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
             status = e.response.status_code if e.response is not None else "?"
             detail = e.response.text[:300] if e.response is not None else ""
             log.error("LLM HTTP %s for %d candidates, will retry next run: %s", status, len(chunk), detail)
-            if status in (401, 403, 404, 429):  # auth, unknown model or rate limit: later chunks will fail too
+            if status in (400, 401, 403, 404, 429):  # bad request, auth, model or rate limit: later chunks fail too
                 break
             continue
         except (requests.RequestException, KeyError, IndexError, ValueError) as e:
@@ -183,5 +205,5 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
                 if c.verdict == "signal" and not c.duplicate_of:
                     covered.append(f"[{c.cid}] {c.headline}")
 
-    log.info("LLM %s: %d/%d judged, %d in / %d out tokens", llm["model"], len(judged), len(clusters), tokens_in, tokens_out)
+    log.info("LLM %s: %d/%d judged, %d in / %d out tokens", models[0], len(judged), len(clusters), tokens_in, tokens_out)
     return judged

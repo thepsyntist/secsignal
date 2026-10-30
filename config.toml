@@ -11,18 +11,17 @@ keep_days = 30
 llm_retry_hours = 12  # items the LLM failed on get keyword triage after this long
 
 [llm]
-# Any OpenAI-compatible chat endpoint. Default: GitHub Models, free from Actions
-# with the workflow's own GITHUB_TOKEN (no signup, no key). Free alternatives:
-#   Gemini:  base_url = "https://generativelanguage.googleapis.com/v1beta/openai", api_key_env = "GEMINI_API_KEY", model = "gemini-2.5-flash"
+# Any OpenAI-compatible chat endpoint. Default: Gemini's free tier (key from
+# aistudio.google.com, stored as the GEMINI_API_KEY repo secret). Alternatives:
 #   Groq:    base_url = "https://api.groq.com/openai/v1", api_key_env = "GROQ_API_KEY", model = "llama-3.3-70b-versatile"
 #   Ollama:  base_url = "http://localhost:11434/v1", api_key_env = "", model = "qwen2.5:7b"
 enabled = true
-base_url = "https://models.github.ai/inference"
-api_key_env = "GITHUB_TOKEN"
-model = "openai/gpt-4.1-mini"
-batch_size = 15       # GitHub Models free tier caps a request at ~8k tokens in / 4k out
-snippet_chars = 400   # per-item text sent to the model
-min_interval_s = 5    # spacing between requests (free tier: ~15 requests/min)
+base_url = "https://generativelanguage.googleapis.com/v1beta/openai"
+api_key_env = "GEMINI_API_KEY"
+model = ["gemini-flash-latest", "gemini-2.5-flash"]  # tried in order if one is unavailable
+batch_size = 25       # candidates per request
+snippet_chars = 600   # per-item text sent to the model
+min_interval_s = 7    # spacing between requests (free tier allows ~10 requests/min)
 
 [sources]
 kev = true    # CISA Known Exploited Vulnerabilities: confirmed in-the-wild exploitation

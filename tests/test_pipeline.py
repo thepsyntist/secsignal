@@ -191,6 +191,26 @@ class PipelineTest(unittest.TestCase):
 
 
 class UnitTest(unittest.TestCase):
+    def test_model_and_json_mode_fallbacks(self):
+        import requests
+        from secsignal import llm
+        seen = []
+        fake = FakeLLM()
+
+        def flaky(url, headers, body):
+            seen.append((body["model"], "response_format" in body))
+            fail = {("gone-model", True): 404, ("next-model", True): 400}.get((body["model"], "response_format" in body))
+            if fail:
+                raise requests.HTTPError(response=SimpleNamespace(status_code=fail, text="nope"))
+            return fake(url, headers, body)
+
+        cfg = app.load_config(ROOT / "config.toml")
+        cfg["llm"]["model"] = ["gone-model", "next-model"]
+        c = pipeline.Cluster(items=[sources.Item(id="a", kind="news", source="X", title="OpenSSH bug", url="u", text="OpenSSH", published=NOW)])
+        judged = llm.triage([c], [], cfg, post=flaky)
+        self.assertEqual(seen, [("gone-model", True), ("next-model", True), ("next-model", False)])
+        self.assertEqual(judged[0].verdict, "signal")
+
     def test_roundups_do_not_bridge_clusters(self):
         mk = lambda i, cves: sources.Item(id=i, kind="news", source=i, title=i, url=i, text="", published=NOW, cves=set(cves))
         clusters = pipeline.cluster([mk("a", ["CVE-1"]), mk("b", ["CVE-2"]), mk("roundup", ["CVE-1", "CVE-2", "CVE-3", "CVE-4"])])
