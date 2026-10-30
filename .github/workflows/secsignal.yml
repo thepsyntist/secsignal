@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "secsignal"
           git config user.email "secsignal@users.noreply.github.com"
-          git add state out digests
+          git add -A  # only state/, out/ and digests/ change during a run
           git diff --cached --quiet && exit 0
           git commit -m "secsignal: update $(date -u +%FT%H:%MZ)"
           git pull --rebase --quiet && git push
