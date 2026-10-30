@@ -58,7 +58,10 @@ Respond with only a JSON object, one entry per candidate id:
 def http_post(url: str, headers: dict, body: dict) -> dict:
     r = requests.post(url, headers=headers, json=body, timeout=120)
     r.raise_for_status()
-    return r.json()
+    try:
+        return r.json()
+    except ValueError:
+        raise ValueError(f"non-JSON response (HTTP {r.status_code}, {r.headers.get('content-type')}): {r.text[:300]!r}") from None
 
 
 def _truncate(s: str, n: int) -> str:
@@ -137,7 +140,12 @@ def triage(clusters: list[Cluster], covered: list[str], cfg: dict, post=http_pos
         try:
             resp = post(url, headers, body)
             choice = resp["choices"][0]
-            verdicts = {str(v.get("id")): v for v in _parse(choice["message"]["content"]) if isinstance(v, dict)}
+            content = choice["message"].get("content") or ""
+            try:
+                parsed = _parse(content)
+            except ValueError:
+                raise ValueError(f"model reply is not JSON (finish_reason={choice.get('finish_reason')}): {content[:300]!r}") from None
+            verdicts = {str(v.get("id")): v for v in parsed if isinstance(v, dict)}
         except requests.HTTPError as e:
             status = e.response.status_code if e.response is not None else "?"
             detail = e.response.text[:300] if e.response is not None else ""
