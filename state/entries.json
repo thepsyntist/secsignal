@@ -1,5 +1,51 @@
 [
  {
+  "key": "ghsa:GHSA-hff9-5pqw-6w9f",
+  "tier": "act",
+  "score": 72,
+  "headline": "imgproxy ICO Loader Integer Overflow RCE Vulnerability",
+  "tldr": "An integer overflow in the ICO loader of imgproxy, imgproxy/v2, and imgproxy/v3 allows remote code execution or denial of service via a crafted network request.",
+  "action": "Upgrade imgproxy to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-hff9-5pqw-6w9f"
+   }
+  ],
+  "first_seen": "2026-10-31T05:54:37+00:00",
+  "updated": "2026-10-31T05:54:37+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-4xm8-rg9h-jhq2",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Signal K Server Path Traversal JWT Secret Disclosure and RCE",
+  "tldr": "A path traversal flaw in signalk-server and @signalk/resources-provider allows unauthenticated users to read arbitrary files, including the JWT signing secret, leading to RCE.",
+  "action": "Upgrade signalk-server and @signalk/resources-provider to patched versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-4xm8-rg9h-jhq2"
+   }
+  ],
+  "first_seen": "2026-10-31T05:54:37+00:00",
+  "updated": "2026-10-31T05:54:37+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers",
   "tier": "act",
   "score": 77,
