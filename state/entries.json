@@ -1,5 +1,51 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "OpenAI ChatGPT Share Link Arbitrary Code Execution Flaw",
+  "tldr": "A vulnerability in ChatGPT allowed malicious shared links to execute arbitrary code within the logged-in session of users who opened them, exposing private conversations. OpenAI patched the issue.",
+  "action": "",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html"
+   }
+  ],
+  "first_seen": "2026-10-31T12:44:35+00:00",
+  "updated": "2026-10-31T12:44:35+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Chainalysis Data Breach Exposes Customer Identity Data",
+  "tldr": "Chainalysis confirmed an external actor accessed internal tools and non-sensitive customer identity data, though investigation content and credentials remained uncompromised.",
+  "action": "Audit access logs and monitor for fraudulent activity related to exposed customer identity data.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
+   }
+  ],
+  "first_seen": "2026-10-31T12:44:35+00:00",
+  "updated": "2026-10-31T12:44:35+00:00"
+ },
+ {
   "key": "ghsa:GHSA-hff9-5pqw-6w9f",
   "tier": "act",
   "score": 72,
@@ -139,10 +185,14 @@
    {
     "source": "CISA Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-10-30T22:27:36+00:00"
+  "updated": "2026-10-31T12:44:35+00:00"
  },
  {
   "key": "kev:CVE-2026-111357",

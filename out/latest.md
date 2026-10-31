@@ -22,6 +22,21 @@ A path traversal flaw in signalk-server and @signalk/resources-provider allows u
 
 [GitHub Advisory](https://github.com/advisories/GHSA-4xm8-rg9h-jhq2)
 
+### 🟠 OpenAI ChatGPT Share Link Arbitrary Code Execution Flaw
+
+A vulnerability in ChatGPT allowed malicious shared links to execute arbitrary code within the logged-in session of users who opened them, exposing private conversations. OpenAI patched the issue.
+
+[The Hacker News](https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html)
+
+### 🟠 Chainalysis Data Breach Exposes Customer Identity Data
+`exploited`
+
+Chainalysis confirmed an external actor accessed internal tools and non-sensitive customer identity data, though investigation content and credentials remained uncompromised.
+
+**Do:** Audit access logs and monitor for fraudulent activity related to exposed customer identity data.
+
+[The Hacker News](https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html)
+
 ## 2026-10-30
 
 ### 🔴 Ivanti Connect Secure Predictable Numbers Flaw Added to KEV
@@ -31,7 +46,7 @@ CISA added CVE-2026-118527, a predictable numbers vulnerability in Ivanti Connec
 
 **Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html)
 
 ### 🔴 Ivanti Connect Secure Missing Auth Privilege Escalation Flaw Added to KEV
 `CVE-2026-111357 · EPSS 0.00 · CISA KEV`
