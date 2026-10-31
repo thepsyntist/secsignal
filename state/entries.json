@@ -1,5 +1,103 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Northflank Security Breach Exposes API Keys",
+  "tldr": "Cloud application hosting platform Northflank suffered a security breach resulting in the unauthorized use of customers' AI API keys stored on the platform.",
+  "action": "Rotate all credentials, API keys, and secrets stored on Northflank.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/"
+   }
+  ],
+  "first_seen": "2026-10-31T18:38:10+00:00",
+  "updated": "2026-10-31T18:38:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120201",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Jpom Authentication Bypass and RCE Vulnerability",
+  "tldr": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass flaw via injected query conditions in the JPOM-USER-TOKEN header, allowing unauthenticated attackers to execute commands.",
+  "action": "Upgrade Jpom to patched versions and restrict network access.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120201"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120201"
+   }
+  ],
+  "first_seen": "2026-10-31T18:38:10+00:00",
+  "updated": "2026-10-31T18:38:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120209",
+  "tier": "watch",
+  "score": 67,
+  "headline": "AJ-Report Hard-Coded JWT Secret RCE Vulnerability",
+  "tldr": "AJ-Report through 1.7.1 uses a hard-coded JWT secret to sign share tokens, allowing attackers to forge tokens and achieve unauthenticated remote code execution via GroovyClassLoader.",
+  "action": "Upgrade AJ-Report beyond 1.7.1 and rotate signing keys.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120209"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120209"
+   }
+  ],
+  "first_seen": "2026-10-31T18:38:10+00:00",
+  "updated": "2026-10-31T18:38:10+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Android SMS of Death CVE-2026-58882 PoC Released",
+  "tldr": "A proof-of-concept exploit has been released for CVE-2026-58882, an Android vulnerability enabling remote crashes or cellular service disruption via a crafted text message.",
+  "action": "Apply the latest Android security patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-58882"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/"
+   }
+  ],
+  "first_seen": "2026-10-31T18:38:10+00:00",
+  "updated": "2026-10-31T18:38:10+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
   "tier": "watch",
   "score": 64,
@@ -40,10 +138,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/"
    }
   ],
   "first_seen": "2026-10-31T12:44:35+00:00",
-  "updated": "2026-10-31T12:44:35+00:00"
+  "updated": "2026-10-31T18:38:10+00:00"
  },
  {
   "key": "ghsa:GHSA-hff9-5pqw-6w9f",
