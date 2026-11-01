@@ -673,10 +673,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/"
    }
   ],
   "first_seen": "2026-10-30T12:15:34+00:00",
-  "updated": "2026-10-30T18:04:39+00:00"
+  "updated": "2026-11-01T18:58:56+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
