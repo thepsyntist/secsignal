@@ -2,6 +2,16 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-01
+
+### 🟠 Canonical LXD and MicroCloud Client Impersonation Flaw
+
+A critical flaw in Canonical LXD and MicroCloud allows attackers with a trusted client's public certificate to impersonate that client over the HTTPS API without a private key.
+
+**Do:** Apply patches for LXD and MicroCloud provided by Canonical.
+
+[The Hacker News](https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html)
+
 ## 2026-10-31
 
 ### 🔴 imgproxy ICO Loader Integer Overflow RCE Vulnerability
@@ -116,7 +126,7 @@ Binance experienced a record-breaking crypto heist resulting in the theft of $6.
 
 **Do:** Review platform exposures and asset protections if interacting with affected services.
 
-[Ars Technica](https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/)
+[Ars Technica](https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/) · [The Hacker News](https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html)
 
 ### 🔴 Linux Kernel MPTCP Remote Root RCE Vulnerability
 
@@ -243,7 +253,7 @@ Attackers are targeting government Windows systems in Asia with NetamLoader, a n
 
 **Do:** Review endpoint telemetry for suspicious use of native Microsoft binaries downloading payloads.
 
-[The Record](https://therecord.media/hackers-target-government-windows-systems-asia-new-malware)
+[The Record](https://therecord.media/hackers-target-government-windows-systems-asia-new-malware) · [The Hacker News](https://thehackernews.com/2026/11/netamloader-malware-targets-government.html)
 
 ### 🟠 FBI Seizes Domain of Bulletproof Host Virtualine
 `exploited`
@@ -312,7 +322,7 @@ Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Ser
 
 Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html)
 
 ### 🟠 Limited reports of PHP bug exploitation emerge
 

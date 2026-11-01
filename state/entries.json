@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Canonical LXD and MicroCloud Client Impersonation Flaw",
+  "tldr": "A critical flaw in Canonical LXD and MicroCloud allows attackers with a trusted client's public certificate to impersonate that client over the HTTPS API without a private key.",
+  "action": "Apply patches for LXD and MicroCloud provided by Canonical.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html"
+   }
+  ],
+  "first_seen": "2026-11-01T13:37:31+00:00",
+  "updated": "2026-11-01T13:37:31+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys",
   "tier": "watch",
   "score": 69,
@@ -339,10 +362,14 @@
    {
     "source": "Ars Technica",
     "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-10-30T18:04:39+00:00"
+  "updated": "2026-11-01T13:37:31+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
@@ -560,10 +587,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/hackers-target-government-windows-systems-asia-new-malware"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-10-30T18:04:39+00:00"
+  "updated": "2026-11-01T13:37:31+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure",
@@ -1004,10 +1035,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html"
    }
   ],
   "first_seen": "2026-10-30T12:15:34+00:00",
-  "updated": "2026-10-30T12:15:34+00:00"
+  "updated": "2026-11-01T13:37:31+00:00"
  },
  {
   "key": "rss:https://therecord.media/php2shell-successful-exploitation-reports-emerge",
