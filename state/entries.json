@@ -1,5 +1,30 @@
 [
  {
+  "key": "nvd:CVE-2026-120240",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN553X1-B WireGuard CLI Command Injection",
+  "tldr": "WAVLINK WN553X1-B V260403_2.0.0 contains a remote OS command injection vulnerability in the WireGuard CLI Group Handler. A public exploit has been disclosed.",
+  "action": "Restrict access to WAVLINK devices and apply vendor patches when available.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120240"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120240"
+   }
+  ],
+  "first_seen": "2026-11-01T23:40:53+00:00",
+  "updated": "2026-11-01T23:40:53+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
   "tier": "watch",
   "score": 64,
@@ -366,10 +391,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-11-01T13:37:31+00:00"
+  "updated": "2026-11-01T23:40:53+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",

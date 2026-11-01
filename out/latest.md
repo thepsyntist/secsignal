@@ -12,6 +12,15 @@ A critical flaw in Canonical LXD and MicroCloud allows attackers with a trusted 
 
 [The Hacker News](https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html)
 
+### 🟠 WAVLINK WN553X1-B WireGuard CLI Command Injection
+`CVE-2026-120240 · CVSS 9.9`
+
+WAVLINK WN553X1-B V260403_2.0.0 contains a remote OS command injection vulnerability in the WireGuard CLI Group Handler. A public exploit has been disclosed.
+
+**Do:** Restrict access to WAVLINK devices and apply vendor patches when available.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120240)
+
 ## 2026-10-31
 
 ### 🔴 imgproxy ICO Loader Integer Overflow RCE Vulnerability
@@ -126,7 +135,7 @@ Binance experienced a record-breaking crypto heist resulting in the theft of $6.
 
 **Do:** Review platform exposures and asset protections if interacting with affected services.
 
-[Ars Technica](https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/) · [The Hacker News](https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html)
+[Ars Technica](https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/) · [The Hacker News](https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/)
 
 ### 🔴 Linux Kernel MPTCP Remote Root RCE Vulnerability
 
