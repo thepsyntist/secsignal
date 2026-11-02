@@ -1,5 +1,389 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks",
+  "tier": "act",
+  "score": 74,
+  "headline": "GitLab Active RCE Attacks Targeting Unpatched Servers",
+  "tldr": "Over 1,000 internet-exposed GitLab servers remain unpatched and vulnerable to ongoing remote code execution attacks.",
+  "action": "Upgrade GitLab installations immediately to the latest patched version.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "gitlab",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/fbi-blames-tradertraitor-for-binance-hack",
+  "tier": "watch",
+  "score": 66,
+  "headline": "FBI Blames North Korea for $6.3B Binance Theft",
+  "tldr": "The FBI and U.S. Secret Service attributed the $6.3 billion cryptocurrency theft from Binance to North Korean hackers and flagged over 600 addresses.",
+  "action": "Block transactions associated with the flagged cryptocurrency addresses.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/fbi-blames-tradertraitor-for-binance-hack"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/cyberattack-grocery-freezers-europe",
+  "tier": "watch",
+  "score": 66,
+  "headline": "Cyberattack Dispatches European Supermarket Refrigeration",
+  "tldr": "A cyberattack disrupted refrigeration systems across European supermarket chains after hackers remotely altered temperature settings on cooling units.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/cyberattack-grocery-freezers-europe"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances",
+  "tier": "watch",
+  "score": 61,
+  "headline": "BTCPay Server Hot Wallet Crypto Thefts",
+  "tldr": "Maintainers of BTCPay Server warned users that hackers have been draining hot wallets on instances running outdated versions.",
+  "action": "Update BTCPay Server to the latest version immediately.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Synology Warns of C3RB3R Ransomware NAS Attacks",
+  "tldr": "Synology warned customers to update NAS devices immediately due to a surge in active C3RB3r ransomware attacks.",
+  "action": "Update Synology NAS devices immediately.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Malicious Claude Code Extension in Cursor Supply Chain",
+  "tldr": "A malicious Claude Code extension served in a Cursor supply chain attack performed host reconnaissance and attempted a reverse SSH tunnel.",
+  "action": "Audit Cursor extensions for unauthorized or malicious components.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Teams Impersonation and AD CS Certificate Abuse",
+  "tldr": "Attackers posing as IT support on Microsoft Teams tricked employees into granting remote access, then abused AD CS settings to steal privileged certificates.",
+  "action": "Audit Active Directory Certificate Services (AD CS) configurations and enforce phishing-resistant MFA.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-77876",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Control Web Panel OS Command Injection Flaw",
+  "tldr": "Control Web Panel (CWP) before version 1.16 contains an OS command injection vulnerability in the protected_directory module allowing arbitrary command execution.",
+  "action": "Upgrade Control Web Panel to version 1.16 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-77876"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77876"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/ukraine-hackers-russia-alert-system",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Ukrainian and Russian Air Raid Apps Hacked",
+  "tldr": "Emergency air raid alert systems in Ukraine and Russia were hacked to spread fake nuclear attack warnings.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/ukraine-hackers-russia-alert-system"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Revolve Data Breach Impacts 180,000 Customers",
+  "tldr": "Hackers accessed Revolve's online shopping platform and stole personal and payment card information affecting at least 180,000 individuals.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Polymarket Funds Returned Following DNS Hijack",
+  "tldr": "Polymarket returned funds to traders after DebugBear suffered a DNS hijack via its domain registrar affecting a customer.",
+  "action": "Audit DNS registrar security and enable registry locks.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "DarkBlinders Targets Israel and Iraqi Kurdistan Cloud",
+  "tldr": "An Iran-aligned threat actor conducted espionage campaigns compromising targets in Israel and the Kurdistan Region of Iraq between August and October 2026.",
+  "action": "",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Government Linux Servers Targeted by SysGoRAT",
+  "tldr": "Palo Alto Networks discovered a cyber espionage campaign targeting government Linux infrastructure using SysGoRAT and scripts.",
+  "action": "Monitor Linux environments for unauthorized remote access tools and anomalous scripts.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120442",
+  "tier": "watch",
+  "score": 51,
+  "headline": "ape-volo-admin Auth Bypass via Hardcoded JWT Key",
+  "tldr": "ape-volo-admin before 3.6.1 contains an authentication bypass vulnerability allowing unauthenticated attackers to forge administrator tokens using a hardcoded JWT signing key.",
+  "action": "Upgrade ape-volo-admin to version 3.6.1 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120442"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120442"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120446",
+  "tier": "watch",
+  "score": 51,
+  "headline": "madong-admin-saas Missing Authentication Flaw",
+  "tldr": "madong-admin-saas through 5.1.4 contains a missing authentication vulnerability in the platform tenant management API, allowing unauthenticated attackers to manage tenants.",
+  "action": "Upgrade madong-admin-saas beyond version 5.1.4.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120446"
+  ],
+  "cvss": 9.4,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120446"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-73696",
+  "tier": "watch",
+  "score": 51,
+  "headline": "Control Web Panel Auth Bypass Vulnerability",
+  "tldr": "Control Web Panel (CWP) before version 1.12 contains an execution after redirect vulnerability allowing unauthenticated attackers to bypass authentication.",
+  "action": "Upgrade Control Web Panel to version 1.12 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-73696"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73696"
+   }
+  ],
+  "first_seen": "2026-11-02T16:19:35+00:00",
+  "updated": "2026-11-02T16:19:35+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-120276",
   "tier": "watch",
   "score": 59,
@@ -438,10 +822,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/"
    }
   ],
   "first_seen": "2026-10-31T12:44:35+00:00",
-  "updated": "2026-10-31T18:38:10+00:00"
+  "updated": "2026-11-02T16:19:35+00:00"
  },
  {
   "key": "ghsa:GHSA-hff9-5pqw-6w9f",
@@ -587,10 +975,18 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-10-31T12:44:35+00:00"
+  "updated": "2026-11-02T16:19:35+00:00"
  },
  {
   "key": "kev:CVE-2026-111357",
@@ -693,10 +1089,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-10-30T18:04:39+00:00"
+  "updated": "2026-11-02T16:19:35+00:00"
  },
  {
   "key": "nvd:CVE-2026-104317",
@@ -718,10 +1118,14 @@
    {
     "source": "NVD",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104317"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html"
    }
   ],
   "first_seen": "2026-10-30T18:04:39+00:00",
-  "updated": "2026-10-30T18:04:39+00:00"
+  "updated": "2026-11-02T16:19:35+00:00"
  },
  {
   "key": "nvd:CVE-2026-18894",

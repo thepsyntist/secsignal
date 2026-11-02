@@ -4,6 +4,76 @@
 
 ## 2026-11-02
 
+### 🔴 GitLab Active RCE Attacks Targeting Unpatched Servers
+`exploited`
+
+Over 1,000 internet-exposed GitLab servers remain unpatched and vulnerable to ongoing remote code execution attacks.
+
+**Do:** Upgrade GitLab installations immediately to the latest patched version.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/)
+
+### 🟠 FBI Blames North Korea for $6.3B Binance Theft
+`exploited`
+
+The FBI and U.S. Secret Service attributed the $6.3 billion cryptocurrency theft from Binance to North Korean hackers and flagged over 600 addresses.
+
+**Do:** Block transactions associated with the flagged cryptocurrency addresses.
+
+[The Record](https://therecord.media/fbi-blames-tradertraitor-for-binance-hack) · [SecurityWeek](https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/)
+
+### 🟠 Cyberattack Dispatches European Supermarket Refrigeration
+`exploited`
+
+A cyberattack disrupted refrigeration systems across European supermarket chains after hackers remotely altered temperature settings on cooling units.
+
+[The Record](https://therecord.media/cyberattack-grocery-freezers-europe) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/)
+
+### 🟠 BTCPay Server Hot Wallet Crypto Thefts
+`exploited`
+
+Maintainers of BTCPay Server warned users that hackers have been draining hot wallets on instances running outdated versions.
+
+**Do:** Update BTCPay Server to the latest version immediately.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/)
+
+### 🟠 Synology Warns of C3RB3R Ransomware NAS Attacks
+`exploited`
+
+Synology warned customers to update NAS devices immediately due to a surge in active C3RB3r ransomware attacks.
+
+**Do:** Update Synology NAS devices immediately.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/)
+
+### 🟠 Malicious Claude Code Extension in Cursor Supply Chain
+`exploited`
+
+A malicious Claude Code extension served in a Cursor supply chain attack performed host reconnaissance and attempted a reverse SSH tunnel.
+
+**Do:** Audit Cursor extensions for unauthorized or malicious components.
+
+[SecurityWeek](https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/)
+
+### 🟠 Teams Impersonation and AD CS Certificate Abuse
+`exploited`
+
+Attackers posing as IT support on Microsoft Teams tricked employees into granting remote access, then abused AD CS settings to steal privileged certificates.
+
+**Do:** Audit Active Directory Certificate Services (AD CS) configurations and enforce phishing-resistant MFA.
+
+[The Hacker News](https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html)
+
+### 🟠 Control Web Panel OS Command Injection Flaw
+`CVE-2026-77876 · CVSS 9.8`
+
+Control Web Panel (CWP) before version 1.16 contains an OS command injection vulnerability in the protected_directory module allowing arbitrary command execution.
+
+**Do:** Upgrade Control Web Panel to version 1.16 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-77876)
+
 ### 🟠 WAVLINK WN536AX6-A Web Management Interface Command Injection
 `CVE-2026-120276 · CVSS 10.0`
 
@@ -84,6 +154,72 @@ An OS command injection vulnerability exists in the DNS Resolution Handler of WA
 **Do:** Upgrade to patched firmware.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120345)
+
+### 🟠 Ukrainian and Russian Air Raid Apps Hacked
+`exploited`
+
+Emergency air raid alert systems in Ukraine and Russia were hacked to spread fake nuclear attack warnings.
+
+[The Record](https://therecord.media/ukraine-hackers-russia-alert-system)
+
+### 🟠 Revolve Data Breach Impacts 180,000 Customers
+`exploited`
+
+Hackers accessed Revolve's online shopping platform and stole personal and payment card information affecting at least 180,000 individuals.
+
+[SecurityWeek](https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/)
+
+### 🟠 Polymarket Funds Returned Following DNS Hijack
+`exploited`
+
+Polymarket returned funds to traders after DebugBear suffered a DNS hijack via its domain registrar affecting a customer.
+
+**Do:** Audit DNS registrar security and enable registry locks.
+
+[SecurityWeek](https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/)
+
+### 🟠 DarkBlinders Targets Israel and Iraqi Kurdistan Cloud
+`exploited`
+
+An Iran-aligned threat actor conducted espionage campaigns compromising targets in Israel and the Kurdistan Region of Iraq between August and October 2026.
+
+[The Hacker News](https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html)
+
+### 🟠 Government Linux Servers Targeted by SysGoRAT
+`exploited`
+
+Palo Alto Networks discovered a cyber espionage campaign targeting government Linux infrastructure using SysGoRAT and scripts.
+
+**Do:** Monitor Linux environments for unauthorized remote access tools and anomalous scripts.
+
+[The Hacker News](https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html)
+
+### 🟠 ape-volo-admin Auth Bypass via Hardcoded JWT Key
+`CVE-2026-120442 · CVSS 9.8`
+
+ape-volo-admin before 3.6.1 contains an authentication bypass vulnerability allowing unauthenticated attackers to forge administrator tokens using a hardcoded JWT signing key.
+
+**Do:** Upgrade ape-volo-admin to version 3.6.1 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120442)
+
+### 🟠 madong-admin-saas Missing Authentication Flaw
+`CVE-2026-120446 · CVSS 9.4`
+
+madong-admin-saas through 5.1.4 contains a missing authentication vulnerability in the platform tenant management API, allowing unauthenticated attackers to manage tenants.
+
+**Do:** Upgrade madong-admin-saas beyond version 5.1.4.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120446)
+
+### 🟠 Control Web Panel Auth Bypass Vulnerability
+`CVE-2026-73696 · CVSS 9.3`
+
+Control Web Panel (CWP) before version 1.12 contains an execution after redirect vulnerability allowing unauthenticated attackers to bypass authentication.
+
+**Do:** Upgrade Control Web Panel to version 1.12 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-73696)
 
 ### 🟠 VOLTA Infostealer Uses LLMs to Rank Stolen Financial Data
 
@@ -172,7 +308,7 @@ Chainalysis confirmed an external actor accessed internal tools and non-sensitiv
 
 **Do:** Audit access logs and monitor for fraudulent activity related to exposed customer identity data.
 
-[The Hacker News](https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/)
+[The Hacker News](https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/) · [SecurityWeek](https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/)
 
 ### 🟠 Android SMS of Death CVE-2026-58882 PoC Released
 `CVE-2026-58882`
@@ -192,7 +328,7 @@ CISA added CVE-2026-118527, a predictable numbers vulnerability in Ivanti Connec
 
 **Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html) · [SecurityWeek](https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)
 
 ### 🔴 Ivanti Connect Secure Missing Auth Privilege Escalation Flaw Added to KEV
 `CVE-2026-111357 · EPSS 0.00 · CISA KEV`
@@ -276,7 +412,7 @@ The Florida Department of Education reported that 4.9 million people had Social 
 
 **Do:** Monitor credit reports if affected.
 
-[The Record](https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach)
+[The Record](https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach) · [SecurityWeek](https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/)
 
 ### 🟠 IBM Langflow OSS Deserialization RCE Vulnerability
 `CVE-2026-104317 · CVSS 9.8 · EPSS 0.01`
@@ -285,7 +421,7 @@ IBM Langflow OSS 1.0.0 through 1.12.3 contains an insecure deserialization vulne
 
 **Do:** Upgrade IBM Langflow OSS to version 1.12.5 or later.
 
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-104317)
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-104317) · [The Hacker News](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
 
 ### 🟠 IBM Langflow OSS Stored Python Component Execution Flaw
 `CVE-2026-18894 · CVSS 9.8 · EPSS 0.00`
