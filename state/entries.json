@@ -1,5 +1,128 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+  "tier": "watch",
+  "score": 66,
+  "headline": "Google Disrupts 1.3M Device Android TV Box Botnet",
+  "tldr": "Google disrupted the 1.3 million-device XCPE Android botnet, consisting largely of set-top boxes manufactured by Videostrong with intentional manufacturer-installed backdoors.",
+  "action": "Audit network for unverified Android set-top boxes and streaming devices acting as proxies.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/"
+   }
+  ],
+  "first_seen": "2026-11-02T23:37:22+00:00",
+  "updated": "2026-11-02T23:37:22+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Mercado Bitcoin Confirms Cyberattack and Fund Outflows",
+  "tldr": "Brazil's largest crypto exchange, Mercado Bitcoin, confirmed a cyberattack after blockchain security firms noted over $46 million leaving the platform.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist"
+   }
+  ],
+  "first_seen": "2026-11-02T23:37:22+00:00",
+  "updated": "2026-11-02T23:37:22+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Fintech Platform Sageworks Taken Offline After Attack",
+  "tldr": "Financial technology company Abrigo took its Sageworks risk management platform offline following irregular activity and an outage.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/"
+   }
+  ],
+  "first_seen": "2026-11-02T23:37:22+00:00",
+  "updated": "2026-11-02T23:37:22+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Michigan State Cyber Incident Claimed by Ransomware Gang",
+  "tldr": "The BYOD ransomware gang claimed responsibility for a security incident at Michigan State University that prompted campus-wide response actions.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident"
+   }
+  ],
+  "first_seen": "2026-11-02T23:37:22+00:00",
+  "updated": "2026-11-02T23:37:22+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/hackers-ukraine-belarus-russia",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Russia Statistics Agency Confirms Cyberattack",
+  "tldr": "Russia's federal statistics agency, Rosstat, confirmed a cyberattack claimed by Belarusian and pro-Ukrainian hackers who stole government data.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/hackers-ukraine-belarus-russia"
+   }
+  ],
+  "first_seen": "2026-11-02T23:37:22+00:00",
+  "updated": "2026-11-02T23:37:22+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks",
   "tier": "act",
   "score": 74,
@@ -257,10 +380,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise"
    }
   ],
   "first_seen": "2026-11-02T16:19:35+00:00",
-  "updated": "2026-11-02T16:19:35+00:00"
+  "updated": "2026-11-02T23:37:22+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
@@ -918,10 +1045,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/"
    }
   ],
   "first_seen": "2026-10-30T22:27:36+00:00",
-  "updated": "2026-10-30T22:27:36+00:00"
+  "updated": "2026-11-02T23:37:22+00:00"
  },
  {
   "key": "ghsa:GHSA-5xjx-3w67-w9x9",
