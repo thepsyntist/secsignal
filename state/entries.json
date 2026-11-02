@@ -1,5 +1,253 @@
 [
  {
+  "key": "nvd:CVE-2026-120276",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN536AX6-A Web Management Interface Command Injection",
+  "tldr": "An OS command injection vulnerability exists in the web management interface of WAVLINK WN536AX6-A V260507_2.0.0 via the group_name argument. A public exploit is available.",
+  "action": "Apply available vendor patches or restrict access to the web management interface.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120276"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120276"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120277",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN536AX6-A WireGuard CLI Command Injection",
+  "tldr": "An OS command injection vulnerability affects the WireGuard CLI component in WAVLINK WN536AX6-A V260507_2.0.0 via the group_name argument. A public exploit exists.",
+  "action": "Apply patches provided by WAVLINK and restrict management access.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120277"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120277"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120279",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN536AX6-A OpenVPN Handler Command Injection",
+  "tldr": "An OS command injection vulnerability exists in the openvpn_cli handler of WAVLINK WN536AX6-A V260507 via the file_id argument. A public exploit is available.",
+  "action": "Update to patched firmware or disable vulnerable protocol handlers.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120279"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120279"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120280",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN536AX6-A WireGuard Component Command Injection",
+  "tldr": "An OS command injection vulnerability impacts the WireGuard component in WAVLINK WN536AX6-A V260507 via group_id or group_name arguments. A public exploit has been disclosed.",
+  "action": "Apply available vendor updates.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120280"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120280"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120281",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN536AX6-A OpenVPN Handler Buffer Overflow",
+  "tldr": "A stack-based buffer overflow vulnerability exists in the OpenVPN handler of WAVLINK WN536AX6-A V260507 via the openvpn_ip argument. A public exploit is available.",
+  "action": "Upgrade to patched firmware versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120281"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120281"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120282",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN536AX6-A Host Blacklist Command Injection",
+  "tldr": "An OS command injection vulnerability affects the host_black function in WAVLINK WN536AX6-A V260507 via the mac argument. A public exploit has been released.",
+  "action": "Apply vendor patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120282"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120282"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120322",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Termix-SSH File Manager Path Traversal Vulnerability",
+  "tldr": "A path traversal vulnerability exists in Termix-SSH Termix up to 2.9.2 via the destPath argument in the file transfer plugin. A public exploit is available.",
+  "action": "Update Termix to core v26.10.0 or standalone File Manager plugin v1.0.0+.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120322"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120322"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120344",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN551X3-A WireGuard CLI Command Injection",
+  "tldr": "An OS command injection vulnerability affects the WireGuard CLI handler in WAVLINK WN551X3-A M51X3_V251020-WO-182e965 via the group_name argument. A public exploit is available.",
+  "action": "Apply vendor firmware updates.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120344"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120344"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120345",
+  "tier": "watch",
+  "score": 59,
+  "headline": "WAVLINK WN551X3-A DNS Resolution Handler Command Injection",
+  "tldr": "An OS command injection vulnerability exists in the DNS Resolution Handler of WAVLINK WN551X3-A M51X3_V251020-WO-182e965 via the data argument. A public exploit is available.",
+  "action": "Upgrade to patched firmware.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120345"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120345"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "VOLTA Infostealer Uses LLMs to Rank Stolen Financial Data",
+  "tldr": "A new Windows infostealer called VOLTA harvests browser credentials, Outlook profiles, and Slack workspaces, utilizing large language models to prioritize stolen data by monetization value.",
+  "action": "Monitor endpoints for unauthorized use of API calls to LLM services by unknown processes and typical credential-stealer behaviors.",
+  "category": "malware",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html"
+   }
+  ],
+  "first_seen": "2026-11-02T06:22:11+00:00",
+  "updated": "2026-11-02T06:22:11+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-120240",
   "tier": "watch",
   "score": 59,
