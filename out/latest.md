@@ -2,6 +2,26 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-03
+
+### 🔴 Siemens SIMATIC IoT2050 Advanced Missing Auth Flaw Exploited
+`CVE-2026-58115 · EPSS 0.01 · exploited`
+
+A critical missing authentication vulnerability (CVE-2026-58115, CVSS 10.0) in Siemens SIMATIC IoT2050 Advanced devices is under active exploitation to plant remote command backdoors.
+
+**Do:** Apply available security updates from Siemens immediately.
+
+[The Hacker News](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
+
+### 🟠 CryptoPayment Gateway WordPress Plugin Flaw Under Attack
+`CVE-2026-81648 · EPSS 0.00 · exploited`
+
+An unpatched maximum-severity vulnerability (CVE-2026-81648, CVSS 10.0) in the CryptoPayment Gateway WordPress plugin is being targeted by attackers to delete arbitrary files and extract wallet credentials.
+
+**Do:** Disable or remove the CryptoPayment Gateway WordPress plugin until a patch is available.
+
+[The Hacker News](https://thehackernews.com/2026/11/attackers-target-unpatched.html)
+
 ## 2026-11-02
 
 ### 🔴 GitLab Active RCE Attacks Targeting Unpatched Servers
@@ -20,7 +40,7 @@ Google disrupted the 1.3 million-device XCPE Android botnet, consisting largely 
 
 **Do:** Audit network for unverified Android set-top boxes and streaming devices acting as proxies.
 
-[The Hacker News](https://thehackernews.com/2026/11/google-disrupts-13-million-device.html) · [The Hacker News](https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/)
+[The Hacker News](https://thehackernews.com/2026/11/google-disrupts-13-million-device.html) · [The Hacker News](https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/) · [Krebs on Security](https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/)
 
 ### 🟠 FBI Blames North Korea for $6.3B Binance Theft
 `exploited`
