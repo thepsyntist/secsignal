@@ -2,6 +2,17 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-04
+
+### 🟠 Etrel INCH AC Charging Station Hard-Coded Credentials
+`CVE-2026-112354 · CVSS 9.8`
+
+Etrel INCH AC charging station management web interface prior to firmware 7.1.2 and 8.0.1 contains a hard-coded default credential vulnerability allowing remote attackers to gain full administrator access.
+
+**Do:** Upgrade Etrel INCH AC firmware to versions 7.1.2 or 8.0.1 and change default credentials.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-112354)
+
 ## 2026-11-03
 
 ### 🔴 WordPress Core TOCTOU Race Condition Vulnerability Added to KEV
@@ -54,7 +65,7 @@ Attackers breached the cPGuard update system to push a malicious script to Linux
 
 **Do:** Upgrade cPGuard to version 5.88.25 or later and audit Linux servers for unauthorized backdoors and credential compromise.
 
-[The Hacker News](https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html)
+[The Hacker News](https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/)
 
 ### 🟠 CryptoPayment Gateway WordPress Plugin Flaw Under Attack
 `CVE-2026-81648 · EPSS 0.00 · exploited`
