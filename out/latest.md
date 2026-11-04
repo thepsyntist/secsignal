@@ -4,6 +4,49 @@
 
 ## 2026-11-04
 
+### 🔴 Google Patches Critical Remote Code Execution Flaw in Android
+`CVE-2026-58868 · EPSS 0.00`
+
+A critical zero-click RCE flaw, CVE-2026-58868, affects Android 14 through 17. Fixed in the 2026-11-01 security patch level.
+
+**Do:** Apply Android security patch level 2026-11-01 or later.
+
+[The Hacker News](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
+
+### 🟠 Hackers Use N-Day Exploits in Zero-Click Attacks on iOS and Android
+`exploited`
+
+A watering hole campaign associated with Russian hackers targets iOS and Android users with n-day exploits.
+
+**Do:** Ensure mobile devices are fully updated and monitor web traffic for suspicious redirects.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/)
+
+### 🟠 Ruby on Rails Active Storage Flaw Allows Arbitrary File Write
+
+A critical flaw in Ruby on Rails Active Storage lets unauthenticated attackers write server files via ImageMagick uploads. Fixed in versions 8.1.4.1 and 8.0.5.2.
+
+**Do:** Upgrade Ruby on Rails to versions 8.1.4.1 or 8.0.5.2.
+
+[The Hacker News](https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html)
+
+### 🟠 Xen Hypervisor Flaws Allow Inter-VM Memory Access
+
+Two flaws in Xen hypervisor versions 4.6 onward allow a malicious guest VM to read and write memory of other VMs, including dom0. Patches are available.
+
+**Do:** Apply Xen hypervisor patches.
+
+[The Hacker News](https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html)
+
+### 🟠 Sogou Input Method DNS Requests Hijacked to Deploy DarkVigil Backdoor
+`exploited`
+
+China-aligned threat actors hijacked DNS requests via insecure HTTP in Windows versions of Sogou Input Method to deploy DarkVigil.
+
+**Do:** Audit software using insecure HTTP communication channels and monitor for unauthorized DNS modifications.
+
+[The Hacker News](https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html)
+
 ### 🟠 Etrel INCH AC Charging Station Hard-Coded Credentials
 `CVE-2026-112354 · CVSS 9.8`
 
@@ -22,7 +65,7 @@ CISA added a time-of-check time-of-use (TOCTOU) race condition vulnerability in 
 
 **Do:** Apply WordPress security updates and mitigations in accordance with vendor and CISA guidance.
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-119977)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-119977) · [The Hacker News](https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/)
 
 ### 🔴 Siemens SIMATIC IoT2050 Advanced Missing Auth Flaw Exploited
 `CVE-2026-58115 · EPSS 0.01 · exploited`
@@ -65,7 +108,7 @@ Attackers breached the cPGuard update system to push a malicious script to Linux
 
 **Do:** Upgrade cPGuard to version 5.88.25 or later and audit Linux servers for unauthorized backdoors and credential compromise.
 
-[The Hacker News](https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/)
+[The Hacker News](https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/) · [SecurityWeek](https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/)
 
 ### 🟠 CryptoPayment Gateway WordPress Plugin Flaw Under Attack
 `CVE-2026-81648 · EPSS 0.00 · exploited`
@@ -218,7 +261,7 @@ The FBI and U.S. Secret Service attributed the $6.3 billion cryptocurrency theft
 
 **Do:** Block transactions associated with the flagged cryptocurrency addresses.
 
-[The Record](https://therecord.media/fbi-blames-tradertraitor-for-binance-hack) · [SecurityWeek](https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/) · [The Record](https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea) · [The Hacker News](https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/)
+[The Record](https://therecord.media/fbi-blames-tradertraitor-for-binance-hack) · [SecurityWeek](https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/) · [The Record](https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea) · [The Hacker News](https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/) · [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/)
 
 ### 🟠 Cyberattack Dispatches European Supermarket Refrigeration
 `exploited`

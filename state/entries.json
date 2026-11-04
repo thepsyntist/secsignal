@@ -1,5 +1,122 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+  "tier": "act",
+  "score": 72,
+  "headline": "Google Patches Critical Remote Code Execution Flaw in Android",
+  "tldr": "A critical zero-click RCE flaw, CVE-2026-58868, affects Android 14 through 17. Fixed in the 2026-11-01 security patch level.",
+  "action": "Apply Android security patch level 2026-11-01 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-58868"
+  ],
+  "cvss": null,
+  "epss": 0.00211,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html"
+   }
+  ],
+  "first_seen": "2026-11-04T12:15:56+00:00",
+  "updated": "2026-11-04T12:15:56+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Hackers Use N-Day Exploits in Zero-Click Attacks on iOS and Android",
+  "tldr": "A watering hole campaign associated with Russian hackers targets iOS and Android users with n-day exploits.",
+  "action": "Ensure mobile devices are fully updated and monitor web traffic for suspicious redirects.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/"
+   }
+  ],
+  "first_seen": "2026-11-04T12:15:56+00:00",
+  "updated": "2026-11-04T12:15:56+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Ruby on Rails Active Storage Flaw Allows Arbitrary File Write",
+  "tldr": "A critical flaw in Ruby on Rails Active Storage lets unauthenticated attackers write server files via ImageMagick uploads. Fixed in versions 8.1.4.1 and 8.0.5.2.",
+  "action": "Upgrade Ruby on Rails to versions 8.1.4.1 or 8.0.5.2.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html"
+   }
+  ],
+  "first_seen": "2026-11-04T12:15:56+00:00",
+  "updated": "2026-11-04T12:15:56+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Xen Hypervisor Flaws Allow Inter-VM Memory Access",
+  "tldr": "Two flaws in Xen hypervisor versions 4.6 onward allow a malicious guest VM to read and write memory of other VMs, including dom0. Patches are available.",
+  "action": "Apply Xen hypervisor patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html"
+   }
+  ],
+  "first_seen": "2026-11-04T12:15:56+00:00",
+  "updated": "2026-11-04T12:15:56+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Sogou Input Method DNS Requests Hijacked to Deploy DarkVigil Backdoor",
+  "tldr": "China-aligned threat actors hijacked DNS requests via insecure HTTP in Windows versions of Sogou Input Method to deploy DarkVigil.",
+  "action": "Audit software using insecure HTTP communication channels and monitor for unauthorized DNS modifications.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html"
+   }
+  ],
+  "first_seen": "2026-11-04T12:15:56+00:00",
+  "updated": "2026-11-04T12:15:56+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-112354",
   "tier": "watch",
   "score": 59,
@@ -48,10 +165,18 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-03T21:50:42+00:00",
-  "updated": "2026-11-03T21:50:42+00:00"
+  "updated": "2026-11-04T12:15:56+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
@@ -312,10 +437,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/"
    }
   ],
   "first_seen": "2026-11-03T16:19:32+00:00",
-  "updated": "2026-11-04T02:25:09+00:00"
+  "updated": "2026-11-04T12:15:56+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices",
@@ -730,10 +859,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
    }
   ],
   "first_seen": "2026-11-02T16:19:35+00:00",
-  "updated": "2026-11-03T21:50:42+00:00"
+  "updated": "2026-11-04T12:15:56+00:00"
  },
  {
   "key": "rss:https://therecord.media/cyberattack-grocery-freezers-europe",
