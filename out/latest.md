@@ -4,6 +4,14 @@
 
 ## 2026-11-04
 
+### 🔴 Debian and Ubuntu APT Flaw Allows Package Swap and Root RCE
+
+A flaw in the APT package manager for Debian and Ubuntu allows a MitM attacker during retry attempts to swap verified packages with malicious ones, executing code as root. Affects Debian 12 and newer.
+
+**Do:** Apply official APT updates from Debian and Ubuntu immediately.
+
+[The Hacker News](https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html)
+
 ### 🔴 Google Patches Critical Remote Code Execution Flaw in Android
 `CVE-2026-58868 · EPSS 0.00`
 
@@ -13,6 +21,24 @@ A critical zero-click RCE flaw, CVE-2026-58868, affects Android 14 through 17. F
 
 [The Hacker News](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
 
+### 🟠 NIKKE PC Game Launcher Compromised to Deliver Malware
+`exploited`
+
+Developers of Goddess of Victory: NIKKE confirmed a supply-chain attack where PC launcher scripts were tampered with to distribute data-stealing malware targeting credentials and crypto wallets.
+
+**Do:** Check systems running the NIKKE PC launcher for compromise and scan for malware.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/)
+
+### 🟠 Crédit Mutuel Arkéa Suffers Cyber Heist via Supplier Compromise
+`exploited`
+
+French bank Crédit Mutuel Arkéa reported a cyber heist where attackers compromised an unnamed supplier to execute unauthorized transfers totaling an estimated $133 million.
+
+**Do:** Audit third-party vendor access and monitor high-value fund transfers.
+
+[The Record](https://therecord.media/french-bank-confirms-cyber-heist)
+
 ### 🟠 Hackers Use N-Day Exploits in Zero-Click Attacks on iOS and Android
 `exploited`
 
@@ -20,7 +46,7 @@ A watering hole campaign associated with Russian hackers targets iOS and Android
 
 **Do:** Ensure mobile devices are fully updated and monitor web traffic for suspicious redirects.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/) · [The Hacker News](https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html)
 
 ### 🟠 Ruby on Rails Active Storage Flaw Allows Arbitrary File Write
 
@@ -37,6 +63,31 @@ Two flaws in Xen hypervisor versions 4.6 onward allow a malicious guest VM to re
 **Do:** Apply Xen hypervisor patches.
 
 [The Hacker News](https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html)
+
+### 🟠 DreamHost Confirms Data Breach Exposing FTP and Webmail Credentials
+`exploited`
+
+DreamHost disclosed a data breach where attackers accessed its File Manager platform for two months, stealing customer FTP and SFTP usernames and passwords.
+
+**Do:** Reset FTP and SFTP credentials and review account activity.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/)
+
+### 🟠 Google Calendar Phishing Campaign Bypasses MFA
+`exploited`
+
+A phishing campaign used Google Calendar invites and fake login pages to hijack corporate Google sessions and bypass MFA protections, prompting nearly 900 malicious domains to be taken down.
+
+**Do:** Audit Google Workspace integrations and train users on calendar invite phishing.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/)
+
+### 🟠 Russian Hosting Provider Beget Suffers Cloud Data Wiping Attack
+`exploited`
+
+Russian web hosting provider Beget suffered a cyberattack that destroyed data across its cloud infrastructure and disrupted hundreds of websites.
+
+[The Record](https://therecord.media/russia-cyberattack-beget-cloud)
 
 ### 🟠 Sogou Input Method DNS Requests Hijacked to Deploy DarkVigil Backdoor
 `exploited`
@@ -55,6 +106,15 @@ Etrel INCH AC charging station management web interface prior to firmware 7.1.2 
 **Do:** Upgrade Etrel INCH AC firmware to versions 7.1.2 or 8.0.1 and change default credentials.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-112354)
+
+### 🟠 OpenAI Codex Jailbreak Toolkit Found Containing Prompt Adware
+`exploited`
+
+Researchers discovered an OpenAI Codex jailbreak bundle named Haiou that modifies AI agent instructions to insert unauthorized advertisements for a third-party AI gateway.
+
+**Do:** Audit AI agent configuration files and remove untrusted jailbreak toolkits.
+
+[The Hacker News](https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html)
 
 ## 2026-11-03
 
@@ -126,7 +186,7 @@ Barracuda Networks warned customers to patch two vulnerabilities that allow atta
 
 **Do:** Apply the latest security patches provided by Barracuda immediately.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/) · [The Hacker News](https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/) · [The Hacker News](https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html) · [SecurityWeek](https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/)
 
 ### 🟠 Apple Warns German Lawmakers and Staff of Spyware Targeting
 `exploited`
@@ -200,7 +260,7 @@ Developer platform WorkOS suffered a data breach after a threat actor used ARTEX
 
 **Do:** Review access controls for internal sales and communication applications.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/) · [SecurityWeek](https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/)
 
 ### 🟠 Google Reports LLMjacking Attacks Generating High Cloud Charges
 `exploited`
@@ -218,7 +278,7 @@ Password manager mSecure urged users to reset passwords, 2FA, and passkeys follo
 
 **Do:** Reset master passwords and multi-factor authentication for mSecure accounts.
 
-[The Hacker News](https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html)
+[The Hacker News](https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/)
 
 ### 🟠 Russia-Linked Spies Target Ukrainian Investigations and Military Routes
 `exploited`
@@ -261,14 +321,14 @@ The FBI and U.S. Secret Service attributed the $6.3 billion cryptocurrency theft
 
 **Do:** Block transactions associated with the flagged cryptocurrency addresses.
 
-[The Record](https://therecord.media/fbi-blames-tradertraitor-for-binance-hack) · [SecurityWeek](https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/) · [The Record](https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea) · [The Hacker News](https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/) · [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/)
+[The Record](https://therecord.media/fbi-blames-tradertraitor-for-binance-hack) · [SecurityWeek](https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/) · [The Record](https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea) · [The Hacker News](https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/) · [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/) · [Ars Technica](https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/)
 
 ### 🟠 Cyberattack Dispatches European Supermarket Refrigeration
 `exploited`
 
 A cyberattack disrupted refrigeration systems across European supermarket chains after hackers remotely altered temperature settings on cooling units.
 
-[The Record](https://therecord.media/cyberattack-grocery-freezers-europe) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/) · [SecurityWeek](https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/) · [The Hacker News](https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html) · [The Record](https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks)
+[The Record](https://therecord.media/cyberattack-grocery-freezers-europe) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/) · [SecurityWeek](https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/) · [The Hacker News](https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html) · [The Record](https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks) · [The Record](https://therecord.media/france-cyberattack-blood-refrigeration) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/)
 
 ### 🟠 Mercado Bitcoin Confirms Cyberattack and Fund Outflows
 `exploited`

@@ -1,5 +1,166 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+  "tier": "act",
+  "score": 72,
+  "headline": "Debian and Ubuntu APT Flaw Allows Package Swap and Root RCE",
+  "tldr": "A flaw in the APT package manager for Debian and Ubuntu allows a MitM attacker during retry attempts to swap verified packages with malicious ones, executing code as root. Affects Debian 12 and newer.",
+  "action": "Apply official APT updates from Debian and Ubuntu immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html"
+   }
+  ],
+  "first_seen": "2026-11-04T19:52:01+00:00",
+  "updated": "2026-11-04T19:52:01+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware",
+  "tier": "watch",
+  "score": 69,
+  "headline": "NIKKE PC Game Launcher Compromised to Deliver Malware",
+  "tldr": "Developers of Goddess of Victory: NIKKE confirmed a supply-chain attack where PC launcher scripts were tampered with to distribute data-stealing malware targeting credentials and crypto wallets.",
+  "action": "Check systems running the NIKKE PC launcher for compromise and scan for malware.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/"
+   }
+  ],
+  "first_seen": "2026-11-04T19:52:01+00:00",
+  "updated": "2026-11-04T19:52:01+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/french-bank-confirms-cyber-heist",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Crédit Mutuel Arkéa Suffers Cyber Heist via Supplier Compromise",
+  "tldr": "French bank Crédit Mutuel Arkéa reported a cyber heist where attackers compromised an unnamed supplier to execute unauthorized transfers totaling an estimated $133 million.",
+  "action": "Audit third-party vendor access and monitor high-value fund transfers.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/french-bank-confirms-cyber-heist"
+   }
+  ],
+  "first_seen": "2026-11-04T19:52:01+00:00",
+  "updated": "2026-11-04T19:52:01+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions",
+  "tier": "watch",
+  "score": 61,
+  "headline": "DreamHost Confirms Data Breach Exposing FTP and Webmail Credentials",
+  "tldr": "DreamHost disclosed a data breach where attackers accessed its File Manager platform for two months, stealing customer FTP and SFTP usernames and passwords.",
+  "action": "Reset FTP and SFTP credentials and review account activity.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/"
+   }
+  ],
+  "first_seen": "2026-11-04T19:52:01+00:00",
+  "updated": "2026-11-04T19:52:01+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Google Calendar Phishing Campaign Bypasses MFA",
+  "tldr": "A phishing campaign used Google Calendar invites and fake login pages to hijack corporate Google sessions and bypass MFA protections, prompting nearly 900 malicious domains to be taken down.",
+  "action": "Audit Google Workspace integrations and train users on calendar invite phishing.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/"
+   }
+  ],
+  "first_seen": "2026-11-04T19:52:01+00:00",
+  "updated": "2026-11-04T19:52:01+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/russia-cyberattack-beget-cloud",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Russian Hosting Provider Beget Suffers Cloud Data Wiping Attack",
+  "tldr": "Russian web hosting provider Beget suffered a cyberattack that destroyed data across its cloud infrastructure and disrupted hundreds of websites.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/russia-cyberattack-beget-cloud"
+   }
+  ],
+  "first_seen": "2026-11-04T19:52:01+00:00",
+  "updated": "2026-11-04T19:52:01+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "OpenAI Codex Jailbreak Toolkit Found Containing Prompt Adware",
+  "tldr": "Researchers discovered an OpenAI Codex jailbreak bundle named Haiou that modifies AI agent instructions to insert unauthorized advertisements for a third-party AI gateway.",
+  "action": "Audit AI agent configuration files and remove untrusted jailbreak toolkits.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html"
+   }
+  ],
+  "first_seen": "2026-11-04T19:52:01+00:00",
+  "updated": "2026-11-04T19:52:01+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
   "tier": "act",
   "score": 72,
@@ -42,10 +203,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html"
    }
   ],
   "first_seen": "2026-11-04T12:15:56+00:00",
-  "updated": "2026-11-04T12:15:56+00:00"
+  "updated": "2026-11-04T19:52:01+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
@@ -318,10 +483,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/"
    }
   ],
   "first_seen": "2026-11-03T21:50:42+00:00",
-  "updated": "2026-11-03T21:50:42+00:00"
+  "updated": "2026-11-04T19:52:01+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges",
@@ -364,10 +533,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/"
    }
   ],
   "first_seen": "2026-11-03T21:50:42+00:00",
-  "updated": "2026-11-03T21:50:42+00:00"
+  "updated": "2026-11-04T19:52:01+00:00"
  },
  {
   "key": "rss:https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame",
@@ -470,10 +643,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/"
    }
   ],
   "first_seen": "2026-11-03T16:19:32+00:00",
-  "updated": "2026-11-03T21:50:42+00:00"
+  "updated": "2026-11-04T19:52:01+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack",
@@ -863,10 +1040,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+   },
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/"
    }
   ],
   "first_seen": "2026-11-02T16:19:35+00:00",
-  "updated": "2026-11-04T12:15:56+00:00"
+  "updated": "2026-11-04T19:52:01+00:00"
  },
  {
   "key": "rss:https://therecord.media/cyberattack-grocery-freezers-europe",
@@ -902,10 +1083,18 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/france-cyberattack-blood-refrigeration"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/"
    }
   ],
   "first_seen": "2026-11-02T16:19:35+00:00",
-  "updated": "2026-11-03T21:50:42+00:00"
+  "updated": "2026-11-04T19:52:01+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances",
