@@ -1,5 +1,176 @@
 [
  {
+  "key": "kev:CVE-2024-27834",
+  "tier": "act",
+  "score": 87,
+  "headline": "Apple Multiple Products Authentication Flaw Added to KEV",
+  "tldr": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS contain an improper authentication vulnerability (CVE-2024-27834) allowing pointer authentication bypass. The flaw is actively tracked in CISA's KEV.",
+  "action": "Apply mitigations or updates in accordance with vendor instructions.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2024-27834"
+  ],
+  "cvss": null,
+  "epss": 0.00598,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834"
+   }
+  ],
+  "first_seen": "2026-11-05T00:55:54+00:00",
+  "updated": "2026-11-05T00:55:54+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches",
+  "tier": "act",
+  "score": 77,
+  "headline": "Zyxel Fixes Zero-Day Exploit on Network Switches",
+  "tldr": "Zyxel patched a zero-day vulnerability in its GS1900 series network switches exploited in the wild to compromise nearly 1,000 devices and steal configuration files and credentials.",
+  "action": "Apply the latest security patches for Zyxel GS1900 series switches immediately.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/"
+   }
+  ],
+  "first_seen": "2026-11-05T00:55:54+00:00",
+  "updated": "2026-11-05T00:55:54+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Multiple Asian Airlines Announce Breaches via Amadeus IT",
+  "tldr": "Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines and Malaysia Airlines reported data breaches traced back to supplier Amadeus IT Group.",
+  "action": "Monitor vendor supply-chain communications and review reservation system access controls.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident"
+   }
+  ],
+  "first_seen": "2026-11-05T00:55:54+00:00",
+  "updated": "2026-11-05T00:55:54+00:00"
+ },
+ {
+  "key": "nvd:CVE-2025-71457",
+  "tier": "watch",
+  "score": 67,
+  "headline": "vtenext Authentication Bypass Flaw Allows Password Change",
+  "tldr": "vtenext versions 25.02 before 25.02.1 contain an authentication bypass vulnerability allowing unauthenticated attackers to change account passwords via hub/rpwd.php and log in as administrators.",
+  "action": "Upgrade vtenext to 25.02.1 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2025-71457"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71457"
+   }
+  ],
+  "first_seen": "2026-11-05T00:55:54+00:00",
+  "updated": "2026-11-05T00:55:54+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82418",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM Watson Speech Services Cartridge Use-After-Free Flaw",
+  "tldr": "IBM Watson Speech Services Cartridge 4.0.0 through 5.4.0 contains a use-after-free vulnerability that allows a remote attacker to execute arbitrary code.",
+  "action": "Apply available patches from IBM.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82418"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82418"
+   }
+  ],
+  "first_seen": "2026-11-05T00:55:54+00:00",
+  "updated": "2026-11-05T00:55:54+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-54384",
+  "tier": "watch",
+  "score": 67,
+  "headline": "VitaFit Cloud API Authentication Bypass Flaw",
+  "tldr": "VitaFit cloud API before 2026-10-30 contained an authentication bypass vulnerability allowing attackers to forge logins via social identifiers and access victim accounts.",
+  "action": "Update VitaFit cloud API to the latest version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-54384"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54384"
+   }
+  ],
+  "first_seen": "2026-11-05T00:55:54+00:00",
+  "updated": "2026-11-05T00:55:54+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-54378",
+  "tier": "watch",
+  "score": 59,
+  "headline": "VitaFit Cloud API Broken Access Control Flaw",
+  "tldr": "VitaFit cloud API before 2026-10-30 contained a broken access control vulnerability allowing authenticated users to obtain temporary AWS credentials and access shared storage buckets.",
+  "action": "Update VitaFit cloud API to the patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-54378"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54378"
+   }
+  ],
+  "first_seen": "2026-11-05T00:55:54+00:00",
+  "updated": "2026-11-05T00:55:54+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
   "tier": "act",
   "score": 72,
@@ -207,10 +378,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html"
+   },
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/"
    }
   ],
   "first_seen": "2026-11-04T12:15:56+00:00",
-  "updated": "2026-11-04T19:52:01+00:00"
+  "updated": "2026-11-05T00:55:54+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
