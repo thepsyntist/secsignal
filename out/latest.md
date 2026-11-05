@@ -11,7 +11,7 @@ Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS contain an improper authentic
 
 **Do:** Apply mitigations or updates in accordance with vendor instructions.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-27834)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-27834) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html)
 
 ### 🔴 Zyxel Fixes Zero-Day Exploit on Network Switches
 `exploited`
@@ -66,6 +66,26 @@ VitaFit cloud API before 2026-10-30 contained a broken access control vulnerabil
 **Do:** Update VitaFit cloud API to the patched version.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-54378)
+
+### 🟠 CVE-2026-122310: Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but ex
+`CVE-2026-122310 · CVSS 9.9`
+
+Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind # or ?
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-122310)
+
+### 🟠 Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution
+`exploited`
+
+Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in.
+
+[The Hacker News](https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html)
+
+### 🟠 CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access
+
+The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools
+
+[The Hacker News](https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html)
 
 ## 2026-11-04
 

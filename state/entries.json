@@ -1,5 +1,76 @@
 [
  {
+  "key": "nvd:CVE-2026-122310",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-122310: Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but ex",
+  "tldr": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind # or ?",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-122310"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "kubernetes",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310"
+   }
+  ],
+  "first_seen": "2026-11-05T09:36:47+00:00",
+  "updated": "2026-11-05T09:36:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+  "tldr": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html"
+   }
+  ],
+  "first_seen": "2026-11-05T09:36:47+00:00",
+  "updated": "2026-11-05T09:36:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+  "tldr": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html"
+   }
+  ],
+  "first_seen": "2026-11-05T09:36:47+00:00",
+  "updated": "2026-11-05T09:36:47+00:00"
+ },
+ {
   "key": "kev:CVE-2024-27834",
   "tier": "act",
   "score": 87,
@@ -19,10 +90,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html"
    }
   ],
   "first_seen": "2026-11-05T00:55:54+00:00",
-  "updated": "2026-11-05T00:55:54+00:00"
+  "updated": "2026-11-05T09:36:47+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches",
