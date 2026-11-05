@@ -11,7 +11,15 @@ Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS contain an improper authentic
 
 **Do:** Apply mitigations or updates in accordance with vendor instructions.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-27834) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-27834) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog)
+
+### 🔴 OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux
+
+OpenSSH version 10.6p2 fixes a critical flaw affecting certain Alpine Linux configurations where long passwords can bypass authentication on accounts with no password.
+
+**Do:** Upgrade OpenSSH to version 10.6p2 or later on affected Alpine Linux servers.
+
+[The Hacker News](https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html) · [Ars Technica](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/)
 
 ### 🔴 Zyxel Fixes Zero-Day Exploit on Network Switches
 `exploited`
@@ -22,6 +30,15 @@ Zyxel patched a zero-day vulnerability in its GS1900 series network switches exp
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/)
 
+### 🔴 US Agencies Warn of Global Cyber Activity Targeting Industrial Refrigeration
+`exploited`
+
+CISA, FBI, HHS, USDA, and DoT issued an advisory regarding malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems globally.
+
+**Do:** Harden industrial refrigeration and cold chain monitoring systems against unauthorized access.
+
+[CISA Advisories](https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems) · [The Record](https://therecord.media/cyberattacks-refrigeration-cisa-fbi)
+
 ### 🟠 Multiple Asian Airlines Announce Breaches via Amadeus IT
 `exploited`
 
@@ -30,6 +47,15 @@ Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines 
 **Do:** Monitor vendor supply-chain communications and review reservation system access controls.
 
 [The Record](https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident)
+
+### 🟠 BTCPay Server Information Disclosure Exposes LND Macaroon Credentials
+`CVE-2026-119757 · CVSS 9.8`
+
+BTCPay Server before 2.4.2 contains an information disclosure vulnerability allowing unauthenticated remote attackers to retrieve LND node .macaroon files and gain full control of funds.
+
+**Do:** Upgrade BTCPay Server to version 2.4.2 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119757)
 
 ### 🟠 vtenext Authentication Bypass Flaw Allows Password Change
 `CVE-2025-71457 · CVSS 9.8`
@@ -57,6 +83,13 @@ VitaFit cloud API before 2026-10-30 contained an authentication bypass vulnerabi
 **Do:** Update VitaFit cloud API to the latest version.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-54384)
+
+### 🟠 Queens Public Library Suffers Ransomware Attack Disrupting Services
+`exploited`
+
+A ransomware attack disrupted Wi-Fi and on-site computers across the Queens Public Library system's 66 branches.
+
+[The Record](https://therecord.media/queens-library-ransomware-causes-disruptions)
 
 ### 🟠 Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws
 
@@ -100,6 +133,14 @@ Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers t
 Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in.
 
 [The Hacker News](https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html)
+
+### 🟠 OpenAI ChatGPT Lockdown Mode Bypass Vulnerability
+
+A patched vulnerability in OpenAI ChatGPT allowed attackers to bypass Lockdown Mode protections and exfiltrate chat data without user interaction.
+
+**Do:** Ensure ChatGPT instances are updated to the latest patched version.
+
+[The Hacker News](https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html)
 
 ### 🟠 Hackers backdoor Linux servers using trojanized CWP web server
 
@@ -321,13 +362,13 @@ An unpatched maximum-severity vulnerability (CVE-2026-81648, CVSS 10.0) in the C
 [The Hacker News](https://thehackernews.com/2026/11/attackers-target-unpatched.html)
 
 ### 🟠 Barracuda Warns of Critical Root Command Injection Vulnerabilities
-`CVE-2026-116606`
+`CVE-2026-111560, CVE-2026-116606`
 
 Barracuda Networks warned customers to patch two vulnerabilities that allow attackers to run commands with root privileges on affected devices.
 
 **Do:** Apply the latest security patches provided by Barracuda immediately.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/) · [The Hacker News](https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html) · [SecurityWeek](https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/) · [The Hacker News](https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html) · [SecurityWeek](https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/) · [watchTowr Labs](https://labs.watchtowr.com/barracuda-networks-is-your-new-best-friend-barracuda-email-security-gateway-pre-auth-remote-root-rce-cve-2026-116606-cve-2026-111560/)
 
 ### 🟠 Apple Warns German Lawmakers and Staff of Spyware Targeting
 `exploited`

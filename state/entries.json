@@ -1,5 +1,130 @@
 [
  {
+  "key": "rss:https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password",
+  "tier": "act",
+  "score": 82,
+  "headline": "OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux",
+  "tldr": "OpenSSH version 10.6p2 fixes a critical flaw affecting certain Alpine Linux configurations where long passwords can bypass authentication on accounts with no password.",
+  "action": "Upgrade OpenSSH to version 10.6p2 or later on affected Alpine Linux servers.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "openssh",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html"
+   },
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/"
+   }
+  ],
+  "first_seen": "2026-11-05T23:42:31+00:00",
+  "updated": "2026-11-05T23:42:31+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
+  "tier": "act",
+  "score": 74,
+  "headline": "US Agencies Warn of Global Cyber Activity Targeting Industrial Refrigeration",
+  "tldr": "CISA, FBI, HHS, USDA, and DoT issued an advisory regarding malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems globally.",
+  "action": "Harden industrial refrigeration and cold chain monitoring systems against unauthorized access.",
+  "category": "advisory",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/cyberattacks-refrigeration-cisa-fbi"
+   }
+  ],
+  "first_seen": "2026-11-05T23:42:31+00:00",
+  "updated": "2026-11-05T23:42:31+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-119757",
+  "tier": "watch",
+  "score": 67,
+  "headline": "BTCPay Server Information Disclosure Exposes LND Macaroon Credentials",
+  "tldr": "BTCPay Server before 2.4.2 contains an information disclosure vulnerability allowing unauthenticated remote attackers to retrieve LND node .macaroon files and gain full control of funds.",
+  "action": "Upgrade BTCPay Server to version 2.4.2 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-119757"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119757"
+   }
+  ],
+  "first_seen": "2026-11-05T23:42:31+00:00",
+  "updated": "2026-11-05T23:42:31+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/queens-library-ransomware-causes-disruptions",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Queens Public Library Suffers Ransomware Attack Disrupting Services",
+  "tldr": "A ransomware attack disrupted Wi-Fi and on-site computers across the Queens Public Library system's 66 branches.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/queens-library-ransomware-causes-disruptions"
+   }
+  ],
+  "first_seen": "2026-11-05T23:42:31+00:00",
+  "updated": "2026-11-05T23:42:31+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "OpenAI ChatGPT Lockdown Mode Bypass Vulnerability",
+  "tldr": "A patched vulnerability in OpenAI ChatGPT allowed attackers to bypass Lockdown Mode protections and exfiltrate chat data without user interaction.",
+  "action": "Ensure ChatGPT instances are updated to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html"
+   }
+  ],
+  "first_seen": "2026-11-05T23:42:31+00:00",
+  "updated": "2026-11-05T23:42:31+00:00"
+ },
+ {
   "key": "rss:https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws",
   "tier": "watch",
   "score": 61,
@@ -305,10 +430,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog"
    }
   ],
   "first_seen": "2026-11-05T00:55:54+00:00",
-  "updated": "2026-11-05T09:36:47+00:00"
+  "updated": "2026-11-05T23:42:31+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches",
@@ -1091,6 +1220,7 @@
   "exploited": false,
   "kev": false,
   "cves": [
+   "CVE-2026-111560",
    "CVE-2026-116606"
   ],
   "cvss": null,
@@ -1108,10 +1238,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/"
+   },
+   {
+    "source": "watchTowr Labs",
+    "url": "https://labs.watchtowr.com/barracuda-networks-is-your-new-best-friend-barracuda-email-security-gateway-pre-auth-remote-root-rce-cve-2026-116606-cve-2026-111560/"
    }
   ],
   "first_seen": "2026-11-03T16:19:32+00:00",
-  "updated": "2026-11-04T19:52:01+00:00"
+  "updated": "2026-11-05T23:42:31+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack",
