@@ -58,6 +58,12 @@ VitaFit cloud API before 2026-10-30 contained an authentication bypass vulnerabi
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-54384)
 
+### 🟠 Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws
+
+Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws. The post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/)
+
 ### 🟠 VitaFit Cloud API Broken Access Control Flaw
 `CVE-2026-54378 · CVSS 9.6`
 
@@ -67,6 +73,13 @@ VitaFit cloud API before 2026-10-30 contained a broken access control vulnerabil
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-54378)
 
+### 🟠 go:github.com/chainguard-dev/kaniko: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry
+`CVE-2026-105769 · CVSS 9.3 · EPSS 0.00`
+
+Affected packages: go:github.com/chainguard-dev/kaniko. ### Summary kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-5q7h-w9jf-cx97)
+
 ### 🟠 CVE-2026-122310: Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but ex
 `CVE-2026-122310 · CVSS 9.9`
 
@@ -74,12 +87,55 @@ Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath a
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-122310)
 
+### 🟠 Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day
+`CVE-2026-107441 · EPSS 0.00 · exploited`
+
+Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/)
+
 ### 🟠 Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution
 `exploited`
 
 Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in.
 
 [The Hacker News](https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html)
+
+### 🟠 Hackers backdoor Linux servers using trojanized CWP web server
+
+A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface. [...]
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/)
+
+### 🟠 DigiCert data breach exposes customer information, identity documents
+
+DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/)
+
+### 🟠 Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques
+
+Chainalysis, the blockchain analytics company, said Wednesday night that some information belonging to all its users — which its website says include those in the law enforcement and national security sectors — had been exposed in a cyberattack.
+
+[The Record](https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack)
+
+### 🟠 Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised
+
+The incident comes after supermarkets in a number of European countries reported this week that their fridges and freezers warmed up after they were remotely hacked. The post Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/)
+
+### 🟠 ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories
+
+How much damage can someone do without breaking much? Quite a lot, it seems.
+
+[The Hacker News](https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html)
+
+### 🟠 5 Active Cyber Threats That Put US Enterprises at Risk in October 2026
+
+October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption.
+
+[The Hacker News](https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html)
 
 ### 🟠 CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access
 

@@ -1,5 +1,216 @@
 [
  {
+  "key": "rss:https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws",
+  "tldr": "Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws. The post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "cisco",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-5q7h-w9jf-cx97",
+  "tier": "watch",
+  "score": 56,
+  "headline": "go:github.com/chainguard-dev/kaniko: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry",
+  "tldr": "Affected packages: go:github.com/chainguard-dev/kaniko. ### Summary kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-105769"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00196,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-5q7h-w9jf-cx97"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
+  "tldr": "Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-107441"
+  ],
+  "cvss": null,
+  "epss": 0.00293,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Hackers backdoor Linux servers using trojanized CWP web server",
+  "tldr": "A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface. [...]",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents",
+  "tier": "watch",
+  "score": 48,
+  "headline": "DigiCert data breach exposes customer information, identity documents",
+  "tldr": "DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques",
+  "tldr": "Chainalysis, the blockchain analytics company, said Wednesday night that some information belonging to all its users — which its website says include those in the law enforcement and national security sectors — had been exposed in a cyberattack.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised",
+  "tldr": "The incident comes after supermarkets in a number of European countries reported this week that their fridges and freezers warmed up after they were remotely hacked. The post Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+  "tldr": "How much damage can someone do without breaking much? Quite a lot, it seems.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+  "tldr": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html"
+   }
+  ],
+  "first_seen": "2026-11-05T18:05:40+00:00",
+  "updated": "2026-11-05T18:05:40+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-122310",
   "tier": "watch",
   "score": 56,
