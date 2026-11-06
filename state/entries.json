@@ -1,5 +1,78 @@
 [
  {
+  "key": "nvd:CVE-2026-123488",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Craft CMS Unauthenticated SQL Injection Vulnerability",
+  "tldr": "Craft CMS versions 4.0.0 through 4.18.8 and 5.0.0 through 5.11.1 contain an unauthenticated SQL injection vulnerability in the element search endpoint, allowing remote attackers to read and write the database and gain administrator access.",
+  "action": "Upgrade Craft CMS to version 4.18.9 or 5.11.2 and above.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123488"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123488"
+   }
+  ],
+  "first_seen": "2026-11-06T15:59:26+00:00",
+  "updated": "2026-11-06T15:59:26+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches",
+  "tier": "watch",
+  "score": 61,
+  "headline": "D-Link Warns of Zero-Day Vulnerabilities in DGS-3130 Series Switches",
+  "tldr": "D-Link shared mitigation measures for unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.",
+  "action": "Apply vendor mitigations for D-Link DGS-3130 series switches.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/"
+   }
+  ],
+  "first_seen": "2026-11-06T15:59:26+00:00",
+  "updated": "2026-11-06T15:59:26+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Microsoft Paint Remote Code Execution Flaw Fixed in Microsoft Store",
+  "tldr": "An out-of-bounds read RCE vulnerability in Microsoft Paint (CVE-2026-83844) can be fixed by updating to build 11.2609.401.0 via the Microsoft Store.",
+  "action": "Update Microsoft Paint via the Microsoft Store to build 11.2609.401.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-83844"
+  ],
+  "cvss": null,
+  "epss": 0.00734,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html"
+   }
+  ],
+  "first_seen": "2026-11-06T15:59:26+00:00",
+  "updated": "2026-11-06T15:59:26+00:00"
+ },
+ {
   "key": "rss:https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password",
   "tier": "act",
   "score": 82,
@@ -21,10 +94,14 @@
    {
     "source": "Ars Technica",
     "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/"
    }
   ],
   "first_seen": "2026-11-05T23:42:31+00:00",
-  "updated": "2026-11-05T23:42:31+00:00"
+  "updated": "2026-11-06T15:59:26+00:00"
  },
  {
   "key": "rss:https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
@@ -52,10 +129,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/"
    }
   ],
   "first_seen": "2026-11-05T23:42:31+00:00",
-  "updated": "2026-11-06T06:57:53+00:00"
+  "updated": "2026-11-06T15:59:26+00:00"
  },
  {
   "key": "nvd:CVE-2026-119757",
@@ -219,10 +300,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html"
    }
   ],
   "first_seen": "2026-11-05T18:05:40+00:00",
-  "updated": "2026-11-05T18:05:40+00:00"
+  "updated": "2026-11-06T15:59:26+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents",
@@ -242,10 +327,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/"
    }
   ],
   "first_seen": "2026-11-05T18:05:40+00:00",
-  "updated": "2026-11-05T18:05:40+00:00"
+  "updated": "2026-11-06T15:59:26+00:00"
  },
  {
   "key": "rss:https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
@@ -265,10 +354,18 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
    }
   ],
   "first_seen": "2026-11-05T18:05:40+00:00",
-  "updated": "2026-11-05T18:05:40+00:00"
+  "updated": "2026-11-06T15:59:26+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised",
@@ -1246,10 +1343,14 @@
    {
     "source": "watchTowr Labs",
     "url": "https://labs.watchtowr.com/barracuda-networks-is-your-new-best-friend-barracuda-email-security-gateway-pre-auth-remote-root-rce-cve-2026-116606-cve-2026-111560/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html"
    }
   ],
   "first_seen": "2026-11-03T16:19:32+00:00",
-  "updated": "2026-11-05T23:42:31+00:00"
+  "updated": "2026-11-06T15:59:26+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack",
