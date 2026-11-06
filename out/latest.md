@@ -37,7 +37,7 @@ CISA, FBI, HHS, USDA, and DoT issued an advisory regarding malicious cyber activ
 
 **Do:** Harden industrial refrigeration and cold chain monitoring systems against unauthorized access.
 
-[CISA Advisories](https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems) · [The Record](https://therecord.media/cyberattacks-refrigeration-cisa-fbi)
+[CISA Advisories](https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems) · [The Record](https://therecord.media/cyberattacks-refrigeration-cisa-fbi) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/)
 
 ### 🟠 Multiple Asian Airlines Announce Breaches via Amadeus IT
 `exploited`

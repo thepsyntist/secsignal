@@ -48,10 +48,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/cyberattacks-refrigeration-cisa-fbi"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/"
    }
   ],
   "first_seen": "2026-11-05T23:42:31+00:00",
-  "updated": "2026-11-05T23:42:31+00:00"
+  "updated": "2026-11-06T06:57:53+00:00"
  },
  {
   "key": "nvd:CVE-2026-119757",
