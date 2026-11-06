@@ -1,5 +1,241 @@
 [
  {
+  "key": "kev:CVE-2026-19868",
+  "tier": "act",
+  "score": 84,
+  "headline": "SonicWall SonicOS SSLVPN Authentication Bypass Added to KEV",
+  "tldr": "CISA added CVE-2026-19868, a single-factor authentication vulnerability in SonicWall SonicOS SSLVPN that allows bypassing SAML and MFA controls, to its KEV catalog following active exploitation.",
+  "action": "Apply vendor-supplied patches immediately and review access logs for unauthorized SSLVPN sessions.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-19868"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "sonicwall",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-47w9-6r3f-938g",
+  "tier": "act",
+  "score": 72,
+  "headline": "Canonical LXD Restricted Project Bypass RCE Flaw",
+  "tldr": "Canonical LXD contains a vulnerability where instance snapshots ignore lowlevel restriction settings, leading to arbitrary command execution via raw hooks.",
+  "action": "Upgrade LXD to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-47w9-6r3f-938g"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-pjff-c2wc-f6jm",
+  "tier": "act",
+  "score": 72,
+  "headline": "Canonical LXD Arbitrary File Write via Image Hash",
+  "tldr": "An arbitrary file write exists in the LXD client when a malicious image server returns a crafted image hash header, leading to potential root RCE.",
+  "action": "Upgrade LXD to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-pjff-c2wc-f6jm"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-fmc8-p6q7-75cc",
+  "tier": "act",
+  "score": 72,
+  "headline": "Canonical LXD Backup Compression Argument Injection Flaw",
+  "tldr": "Improper validation of user-provided backup compression algorithms in LXD leads to argument injection, arbitrary file write, and potential RCE.",
+  "action": "Upgrade LXD to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-fmc8-p6q7-75cc"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-vghh-5rfx-xhq8",
+  "tier": "act",
+  "score": 72,
+  "headline": "Canonical LXD Host File Read/Write via Rootfs Symlink",
+  "tldr": "A specially crafted image can exploit symlink handling in LXD to read or write arbitrary files on the host system.",
+  "action": "Upgrade LXD to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-vghh-5rfx-xhq8"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-jpf8-86f3-wp38",
+  "tier": "act",
+  "score": 72,
+  "headline": "Canonical LXD Host File Read/Write via Templates Symlink",
+  "tldr": "Container image extraction in LXD fails to reject top-level templates symlinks, allowing arbitrary file read and write on the host.",
+  "action": "Upgrade LXD to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-jpf8-86f3-wp38"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-9j25-mm2h-2f76",
+  "tier": "act",
+  "score": 72,
+  "headline": "Canonical LXD Arbitrary File Write via Exec-Output Symlink",
+  "tldr": "Improper handling of the exec-output parameter in LXD endpoints allows writing stdout/stderr files to arbitrary locations, leading to RCE.",
+  "action": "Upgrade LXD to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-9j25-mm2h-2f76"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks",
+  "tier": "watch",
+  "score": 69,
+  "headline": "QNAP NAS Devices Targeted in Plex2Shell Attacks",
+  "tldr": "Hackers are actively exploiting vulnerabilities via Plex Media Server on QNAP NAS devices in Plex2Shell attack chains.",
+  "action": "Update Plex Media Server to the latest version via the QNAP App Center.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers",
+  "tier": "watch",
+  "score": 66,
+  "headline": "Fake Security Tools on GitHub Deliver Backdoors and Infostealers",
+  "tldr": "Cybersecurity professionals are being targeted by malicious GitHub repositories posing as security tools that deploy backdoors and infostealers.",
+  "action": "Audit third-party security repositories and check endpoints for unauthorized infostealers.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "WordPress Flaw Update Vulnerability During Installation",
+  "tldr": "Some WordPress sites remain vulnerable to code execution while installing updates for an actively exploited flaw because files are unpacked using unpatched code.",
+  "action": "Temporarily block web access to vulnerable installation files during update procedures.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html"
+   }
+  ],
+  "first_seen": "2026-11-06T21:35:27+00:00",
+  "updated": "2026-11-06T21:35:27+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-123488",
   "tier": "watch",
   "score": 67,
@@ -82,7 +318,9 @@
   "category": "vulnerability",
   "exploited": false,
   "kev": false,
-  "cves": [],
+  "cves": [
+   "CVE-2026-123158"
+  ],
   "cvss": null,
   "epss": null,
   "watch": "openssh",
@@ -98,10 +336,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
    }
   ],
   "first_seen": "2026-11-05T23:42:31+00:00",
-  "updated": "2026-11-06T15:59:26+00:00"
+  "updated": "2026-11-06T21:35:27+00:00"
  },
  {
   "key": "rss:https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
@@ -331,10 +573,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/digicert-certificate-authority-reports-data-breach"
    }
   ],
   "first_seen": "2026-11-05T18:05:40+00:00",
-  "updated": "2026-11-06T15:59:26+00:00"
+  "updated": "2026-11-06T21:35:27+00:00"
  },
  {
   "key": "rss:https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
@@ -362,10 +608,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
+   },
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
    }
   ],
   "first_seen": "2026-11-05T18:05:40+00:00",
-  "updated": "2026-11-06T15:59:26+00:00"
+  "updated": "2026-11-06T21:35:27+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised",

@@ -4,6 +4,78 @@
 
 ## 2026-11-06
 
+### 🔴 SonicWall SonicOS SSLVPN Authentication Bypass Added to KEV
+`CVE-2026-19868 · CISA KEV`
+
+CISA added CVE-2026-19868, a single-factor authentication vulnerability in SonicWall SonicOS SSLVPN that allows bypassing SAML and MFA controls, to its KEV catalog following active exploitation.
+
+**Do:** Apply vendor-supplied patches immediately and review access logs for unauthorized SSLVPN sessions.
+
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868)
+
+### 🔴 Canonical LXD Restricted Project Bypass RCE Flaw
+`CVSS 9.9`
+
+Canonical LXD contains a vulnerability where instance snapshots ignore lowlevel restriction settings, leading to arbitrary command execution via raw hooks.
+
+**Do:** Upgrade LXD to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-47w9-6r3f-938g)
+
+### 🔴 Canonical LXD Arbitrary File Write via Image Hash
+`CVSS 9.9`
+
+An arbitrary file write exists in the LXD client when a malicious image server returns a crafted image hash header, leading to potential root RCE.
+
+**Do:** Upgrade LXD to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-pjff-c2wc-f6jm)
+
+### 🔴 Canonical LXD Backup Compression Argument Injection Flaw
+`CVSS 9.9`
+
+Improper validation of user-provided backup compression algorithms in LXD leads to argument injection, arbitrary file write, and potential RCE.
+
+**Do:** Upgrade LXD to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-fmc8-p6q7-75cc)
+
+### 🔴 Canonical LXD Host File Read/Write via Rootfs Symlink
+`CVSS 9.9`
+
+A specially crafted image can exploit symlink handling in LXD to read or write arbitrary files on the host system.
+
+**Do:** Upgrade LXD to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-vghh-5rfx-xhq8)
+
+### 🔴 Canonical LXD Host File Read/Write via Templates Symlink
+`CVSS 9.9`
+
+Container image extraction in LXD fails to reject top-level templates symlinks, allowing arbitrary file read and write on the host.
+
+**Do:** Upgrade LXD to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-jpf8-86f3-wp38)
+
+### 🔴 Canonical LXD Arbitrary File Write via Exec-Output Symlink
+`CVSS 9.9`
+
+Improper handling of the exec-output parameter in LXD endpoints allows writing stdout/stderr files to arbitrary locations, leading to RCE.
+
+**Do:** Upgrade LXD to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-9j25-mm2h-2f76)
+
+### 🟠 QNAP NAS Devices Targeted in Plex2Shell Attacks
+`exploited`
+
+Hackers are actively exploiting vulnerabilities via Plex Media Server on QNAP NAS devices in Plex2Shell attack chains.
+
+**Do:** Update Plex Media Server to the latest version via the QNAP App Center.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/)
+
 ### 🟠 Craft CMS Unauthenticated SQL Injection Vulnerability
 `CVE-2026-123488 · CVSS 9.8`
 
@@ -12,6 +84,15 @@ Craft CMS versions 4.0.0 through 4.18.8 and 5.0.0 through 5.11.1 contain an unau
 **Do:** Upgrade Craft CMS to version 4.18.9 or 5.11.2 and above.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123488)
+
+### 🟠 Fake Security Tools on GitHub Deliver Backdoors and Infostealers
+`exploited`
+
+Cybersecurity professionals are being targeted by malicious GitHub repositories posing as security tools that deploy backdoors and infostealers.
+
+**Do:** Audit third-party security repositories and check endpoints for unauthorized infostealers.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/)
 
 ### 🟠 D-Link Warns of Zero-Day Vulnerabilities in DGS-3130 Series Switches
 `exploited`
@@ -31,6 +112,15 @@ An out-of-bounds read RCE vulnerability in Microsoft Paint (CVE-2026-83844) can 
 
 [The Hacker News](https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html)
 
+### 🟠 WordPress Flaw Update Vulnerability During Installation
+`exploited`
+
+Some WordPress sites remain vulnerable to code execution while installing updates for an actively exploited flaw because files are unpacked using unpatched code.
+
+**Do:** Temporarily block web access to vulnerable installation files during update procedures.
+
+[The Hacker News](https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html)
+
 ## 2026-11-05
 
 ### 🔴 Apple Multiple Products Authentication Flaw Added to KEV
@@ -43,12 +133,13 @@ Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS contain an improper authentic
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-27834) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog)
 
 ### 🔴 OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux
+`CVE-2026-123158`
 
 OpenSSH version 10.6p2 fixes a critical flaw affecting certain Alpine Linux configurations where long passwords can bypass authentication on accounts with no password.
 
 **Do:** Upgrade OpenSSH to version 10.6p2 or later on affected Alpine Linux servers.
 
-[The Hacker News](https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html) · [Ars Technica](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/) · [SecurityWeek](https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/)
+[The Hacker News](https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html) · [Ars Technica](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/) · [SecurityWeek](https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html)
 
 ### 🔴 Zyxel Fixes Zero-Day Exploit on Network Switches
 `exploited`
@@ -181,13 +272,13 @@ A new Linux malware called CWPdoor is being distributed through a trojanized ver
 
 DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/) · [SecurityWeek](https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/) · [SecurityWeek](https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/) · [The Record](https://therecord.media/digicert-certificate-authority-reports-data-breach)
 
 ### 🟠 Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques
 
 Chainalysis, the blockchain analytics company, said Wednesday night that some information belonging to all its users — which its website says include those in the law enforcement and national security sectors — had been exposed in a cyberattack.
 
-[The Record](https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack) · [The Hacker News](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/)
+[The Record](https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack) · [The Hacker News](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/) · [Ars Technica](https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/)
 
 ### 🟠 Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised
 
@@ -861,33 +952,6 @@ A proof-of-concept exploit has been released for CVE-2026-58882, an Android vuln
 
 ## 2026-10-30
 
-### 🔴 Ivanti Connect Secure Predictable Numbers Flaw Added to KEV
-`CVE-2026-111357, CVE-2026-118527 · CISA KEV`
-
-CISA added CVE-2026-118527, a predictable numbers vulnerability in Ivanti Connect Secure that allows remote file uploads, to its KEV catalog.
-
-**Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.
-
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-118527) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html) · [SecurityWeek](https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)
-
-### 🔴 Ivanti Connect Secure Missing Auth Privilege Escalation Flaw Added to KEV
-`CVE-2026-111357 · EPSS 0.00 · CISA KEV`
-
-CISA added CVE-2026-111357, a missing authentication vulnerability in Ivanti Connect Secure allowing privilege escalation, to its KEV catalog.
-
-**Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance immediately.
-
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-111357)
-
-### 🔴 Binance Suffers Record $6.3 Billion Crypto Heist
-`exploited`
-
-Binance experienced a record-breaking crypto heist resulting in the theft of $6.3 billion, linked to North Korean threat actors.
-
-**Do:** Review platform exposures and asset protections if interacting with affected services.
-
-[Ars Technica](https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/) · [The Hacker News](https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/)
-
 ### 🔴 Linux Kernel MPTCP Remote Root RCE Vulnerability
 
 Researchers developed an exploit for a critical Linux kernel vulnerability enabling unauthenticated remote root execution on servers with MPTCP listeners.
@@ -895,76 +959,6 @@ Researchers developed an exploit for a critical Linux kernel vulnerability enabl
 **Do:** Monitor for Linux kernel updates addressing MPTCP vulnerabilities and apply patches promptly.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/)
-
-### 🟠 Trezor Warns of Hardware Implant in Reseller Wallet
-
-Trezor warned customers about a suspected hardware implant in a Trezor Safe 5 wallet sold by reseller CryptoBilis that leaks recovery phrases over a mobile network.
-
-**Do:** Move funds to a new wallet with a new recovery phrase if purchased from CryptoBilis.
-
-[The Hacker News](https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/)
-
-### 🟠 Florida Department of Education Data Breach Exposes SSNs
-`exploited`
-
-The Florida Department of Education reported that 4.9 million people had Social Security numbers leaked in a data breach involving the Florida Student Financial Aid website.
-
-**Do:** Monitor credit reports if affected.
-
-[The Record](https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach) · [SecurityWeek](https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/)
-
-### 🟠 IBM Langflow OSS Deserialization RCE Vulnerability
-`CVE-2026-104317 · CVSS 9.8 · EPSS 0.01`
-
-IBM Langflow OSS 1.0.0 through 1.12.3 contains an insecure deserialization vulnerability allowing remote code execution via message broker access.
-
-**Do:** Upgrade IBM Langflow OSS to version 1.12.5 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-104317) · [The Hacker News](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
-
-### 🟠 IBM Langflow OSS Stored Python Component Execution Flaw
-`CVE-2026-18894 · CVSS 9.8 · EPSS 0.00`
-
-IBM Langflow OSS 1.0.0 through 1.12.4 allows remote attackers to trigger pre-existing stored Python component code in public workflows.
-
-**Do:** Upgrade IBM Langflow OSS to version 1.12.5 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-18894)
-
-### 🟠 OpenDeepWiki Hard-Coded JWT Signing Key Vulnerability
-`CVE-2026-119597 · CVSS 9.8`
-
-OpenDeepWiki through 2.0.6 contains a hard-coded JWT signing key vulnerability allowing unauthenticated attackers to forge administrator tokens.
-
-**Do:** Upgrade OpenDeepWiki beyond version 2.0.6.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119597)
-
-### 🟠 MuseBot Authentication Bypass Vulnerability
-`CVE-2026-119660 · CVSS 9.8`
-
-MuseBot before 2.0.0 contains an authentication bypass vulnerability allowing unauthenticated attackers to forge admin sessions using a hard-coded session key.
-
-**Do:** Upgrade MuseBot to version 2.0.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119660)
-
-### 🟠 InternLM LMDeploy Unauthenticated RCE Vulnerability
-`CVE-2026-119706 · CVSS 9.8`
-
-InternLM LMDeploy 0.9.0 through 0.18.0 contains an unauthenticated RCE vulnerability allowing attackers to execute OS commands via pickled data sent to the /update_weights endpoint.
-
-**Do:** Upgrade InternLM LMDeploy beyond version 0.18.0.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119706)
-
-### 🟠 TeamViewer Host-to-Viewer Attack Vulnerability
-
-TeamViewer patched a vulnerability that allows a compromised or malicious host machine to attack the remote user connecting to control it during a session.
-
-**Do:** Update TeamViewer to the latest patched version.
-
-[The Hacker News](https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html)
 
 ### 🟠 China-Linked Vapor Panda Uses AI-Powered ARTEX Against Over 200 Orgs
 `exploited`
@@ -974,22 +968,6 @@ Chinese state-sponsored threat group Vapor Panda used an AI-powered penetration 
 **Do:** Review environment for indicators associated with Vapor Panda and unauthorized penetration testing frameworks.
 
 [The Hacker News](https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/)
-
-### 🟠 NetamLoader Malware Targets Government Windows Systems in Asia
-`exploited`
-
-Attackers are targeting government Windows systems in Asia with NetamLoader, a new malware utilizing legitimate Microsoft software components.
-
-**Do:** Review endpoint telemetry for suspicious use of native Microsoft binaries downloading payloads.
-
-[The Record](https://therecord.media/hackers-target-government-windows-systems-asia-new-malware) · [The Hacker News](https://thehackernews.com/2026/11/netamloader-malware-targets-government.html)
-
-### 🟠 FBI Seizes Domain of Bulletproof Host Virtualine
-`exploited`
-
-The FBI seized the domain of bulletproof hosting provider Virtualine, which supported ransomware, infostealers, and hack-for-hire services.
-
-[SecurityWeek](https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/)
 
 ### 🟠 actions/pypa/gh-action-pypi-publish: CA trust store issue in PyPI publishing
 `CVSS 9.3`
