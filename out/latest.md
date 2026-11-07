@@ -13,6 +13,419 @@ An authorization bypass vulnerability in Entra Device Registration (CVE-2026-109
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109469)
 
+### 🔴 IBM API Connect Hard-Coded Credentials Flaw (CVE-2026-17360)
+`CVE-2026-17360 · CVSS 9.8`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 use hard-coded credentials, allowing remote attackers to gain full administrative control.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1 immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17360)
+
+### 🔴 IBM API Connect OS Command Injection Flaw (CVE-2026-17402)
+`CVE-2026-17402 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote command execution via unneutralized OS command input.
+
+**Do:** Apply available vendor patches for IBM API Connect immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17402)
+
+### 🔴 IBM API Connect Hard-Coded Credentials Flaw (CVE-2026-17403)
+`CVE-2026-17403 · CVSS 9.0`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain hard-coded credentials allowing full administrative control.
+
+**Do:** Apply available vendor patches for IBM API Connect immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17403)
+
+### 🔴 IBM API Connect OS Command Injection Flaw (CVE-2026-17408)
+`CVE-2026-17408 · CVSS 9.8`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote attackers to execute arbitrary code via OS command injection.
+
+**Do:** Apply available vendor patches for IBM API Connect immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17408)
+
+### 🟠 IBM Aspera Faspex Authorization Bypass Flaw (CVE-2026-123218)
+`CVE-2026-123218 · CVSS 9.8`
+
+IBM Aspera Faspex versions 5.0.0 through 5.0.19 contain an authorization bypass vulnerability allowing an authorized user to craft specific messages and gain full administrative privileges.
+
+**Do:** Upgrade IBM Aspera Faspex to the latest patched version.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123218)
+
+### 🟠 IBM API Connect Authentication Bypass Flaw (CVE-2026-16720)
+`CVE-2026-16720 · CVSS 9.8`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote attackers to obtain valid access tokens and assume other users' identities due to improper directory service authentication enforcement.
+
+**Do:** Apply available security patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-16720)
+
+### 🟠 IBM API Connect Arbitrary Code Execution Flaw (CVE-2026-17117)
+`CVE-2026-17117 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 permit remote authenticated attackers to execute arbitrary code via improperly controlled object attribute modifications.
+
+**Do:** Upgrade IBM API Connect to the latest release.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17117)
+
+### 🟠 IBM API Connect SQL Injection Flaw (CVE-2026-17132)
+`CVE-2026-17132, CVE-2026-17134 · CVSS 9.9`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 contains an SQL injection vulnerability allowing remote authenticated attackers to execute arbitrary SQL commands.
+
+**Do:** Update IBM API Connect immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17132) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17134)
+
+### 🟠 IBM API Connect Path Traversal RCE Flaw (CVE-2026-17147)
+`CVE-2026-17147, CVE-2026-17239 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain a path traversal vulnerability allowing remote code execution and administrative actions.
+
+**Do:** Upgrade IBM API Connect to a patched version.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17147) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17239)
+
+### 🟠 IBM API Connect Custom Module Code Execution Flaw (CVE-2026-17150)
+`CVE-2026-17150 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 lack sufficient validation for uploaded custom modules, allowing cross-tenant code execution.
+
+**Do:** Apply security updates for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17150)
+
+### 🟠 IBM API Connect Privilege Escalation Flaw (CVE-2026-17158)
+`CVE-2026-17158 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an improper authentication issue allowing privilege escalation for authenticated attackers.
+
+**Do:** Update IBM API Connect to the latest release.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17158)
+
+### 🟠 IBM API Connect Improper Authentication Flaw (CVE-2026-17278)
+`CVE-2026-17278 · CVSS 9.8`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 contains an improper authentication flaw allowing unauthorized access to API catalog and runtime configurations.
+
+**Do:** Apply vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17278)
+
+### 🟠 IBM API Connect BOLA Flaw (CVE-2026-17292)
+`CVE-2026-17292 · CVSS 9.1`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain incomplete access checks allowing remote authenticated attackers to take over organization ownership.
+
+**Do:** Update IBM API Connect to a secured version.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17292)
+
+### 🟠 IBM API Connect Open Redirect Account Takeover (CVE-2026-17297)
+`CVE-2026-17297 · CVSS 9.6`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an open redirect vulnerability during sign-in that can lead to account takeover.
+
+**Do:** Upgrade IBM API Connect to the patched release.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17297)
+
+### 🟠 IBM API Connect Arbitrary File Read and SSRF (CVE-2026-17299)
+`CVE-2026-17299 · CVSS 9.6`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 permit arbitrary file reads and SSRF due to unrestricted resolution of external references in definitions.
+
+**Do:** Apply IBM API Connect security updates.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17299)
+
+### 🟠 IBM API Connect Cryptographic Signature Bypass (CVE-2026-17301)
+`CVE-2026-17301 · CVSS 9.8`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an authentication bypass vulnerability due to improper cryptographic signature verification.
+
+**Do:** Upgrade IBM API Connect to a patched version.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17301)
+
+### 🟠 IBM API Connect Gateway Config Takeover (CVE-2026-17313)
+`CVE-2026-17313 · CVSS 9.8`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 allows remote attackers to take control of gateway configuration and obtain sensitive information via an alternate path authentication bypass.
+
+**Do:** Apply patches provided by IBM for API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17313)
+
+### 🟠 IBM API Connect SQL Injection Flaw (CVE-2026-17336)
+`CVE-2026-17336 · CVSS 9.9`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 allow authenticated remote attackers to execute arbitrary SQL commands.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17336)
+
+### 🟠 IBM API Connect Path Traversal Flaw (CVE-2026-17339)
+`CVE-2026-17339 · CVSS 9.1`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain a path traversal vulnerability allowing cross-tenant resource access or deletion.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17339)
+
+### 🟠 IBM API Connect Path Traversal RCE Flaw (CVE-2026-17340)
+`CVE-2026-17340 · CVSS 9.8`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 are vulnerable to path traversal allowing remote code execution.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17340)
+
+### 🟠 IBM API Connect Code Generation RCE Flaw (CVE-2026-17342)
+`CVE-2026-17342 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote authenticated code execution due to improper code generation control.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17342)
+
+### 🟠 IBM API Connect Arbitrary File Write Flaw (CVE-2026-17354)
+`CVE-2026-17354 · CVSS 9.9`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 allow remote authenticated arbitrary file writes via path traversal.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17354)
+
+### 🟠 IBM API Connect Code Generation RCE Flaw (CVE-2026-17359)
+`CVE-2026-17359 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow code execution due to user-supplied input influencing generated code.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17359)
+
+### 🟠 IBM API Connect LDAP Injection Flaw (CVE-2026-17392)
+`CVE-2026-17392 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow LDAP injection leading to unauthorized cross-tenant admin access.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17392)
+
+### 🟠 IBM API Connect SQL Injection Flaw (CVE-2026-17396)
+`CVE-2026-17396 · CVSS 9.6`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SQL injection vulnerability allowing sensitive information disclosure.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17396)
+
+### 🟠 IBM API Connect Unvalidated Upload RCE Flaw (CVE-2026-17399)
+`CVE-2026-17399 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote code execution due to insufficient validation of uploaded content.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17399)
+
+### 🟠 IBM API Connect Case Sensitivity Access Flaw (CVE-2026-17409)
+`CVE-2026-17409 · CVSS 9.4`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow unauthorized admin operations due to inconsistent case sensitivity checks.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17409)
+
+### 🟠 IBM API Connect Portal Data Access Flaw (CVE-2026-17410)
+`CVE-2026-17410 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow cross-tenant portal data access and modification.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17410)
+
+### 🟠 IBM API Connect Authentication Bypass Flaw (CVE-2026-18838)
+`CVE-2026-18838 · CVSS 9.4`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 allow callers to impersonate other users due to improper authentication verification.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-18838)
+
+### 🟠 Claude Code 'Don't Ask Again' File Exposes Secrets on GitHub
+
+Anthropic's Claude Code coding assistant can save sensitive commands containing passwords and API keys into project settings files when users select 'Don't Ask Again', leading to exposed secrets in public GitHub repositories.
+
+**Do:** Audit public repositories for exposed Claude Code settings files and revoke any leaked API keys or credentials.
+
+[The Hacker News](https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html)
+
+### 🟠 IBM API Connect XXE Vulnerability (CVE-2026-16884)
+`CVE-2026-16884 · CVSS 9.9`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 contains an XML external entity (XXE) injection vulnerability allowing remote attackers to obtain sensitive information.
+
+**Do:** Apply the latest updates for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-16884)
+
+### 🟠 IBM API Connect SSRF Vulnerability (CVE-2026-16918)
+`CVE-2026-16918 · CVSS 9.3`
+
+IBM API Connect versions 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 contain a server-side request forgery flaw allowing access to internal network resources.
+
+**Do:** Apply patches provided by IBM for API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-16918)
+
+### 🟠 IBM API Connect Security Restriction Bypass (CVE-2026-16920)
+`CVE-2026-16920 · CVSS 9.9`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 contains a confused deputy vulnerability enabling remote authenticated attackers to bypass security restrictions.
+
+**Do:** Update IBM API Connect to the latest patched version.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-16920)
+
+### 🟠 IBM API Connect Authorization Bypass Flaw (CVE-2026-17049)
+`CVE-2026-17049 · CVSS 9.9`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 allows remote authenticated attackers to view and modify arbitrary documents via user-controlled keys.
+
+**Do:** Update IBM API Connect to a fixed version.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17049)
+
+### 🟠 IBM API Connect Missing Authorization Flaw (CVE-2026-17066)
+`CVE-2026-17066 · CVSS 9.1`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 contains a missing authorization vulnerability allowing cross-tenant data access and modification.
+
+**Do:** Apply vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17066)
+
+### 🟠 IBM API Connect SSRF Vulnerability (CVE-2026-17131)
+`CVE-2026-17131 · CVSS 9.3`
+
+IBM API Connect 12.1.0.0 through 12.1.1.2 contains an SSRF flaw permitting attackers to bypass outbound request restrictions.
+
+**Do:** Apply IBM API Connect patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17131)
+
+### 🟠 IBM API Connect Input Validation Flaw (CVE-2026-17146)
+`CVE-2026-17146 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an input validation issue allowing remote authenticated users to execute arbitrary JavaScript.
+
+**Do:** Apply IBM API Connect patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17146)
+
+### 🟠 IBM API Connect SSRF Vulnerability (CVE-2026-17296)
+`CVE-2026-17296 · CVSS 9.6`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SSRF flaw allowing remote authenticated attackers to obtain sensitive info.
+
+**Do:** Apply IBM API Connect updates.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17296)
+
+### 🟠 IBM API Connect SSRF Vulnerability (CVE-2026-17298)
+`CVE-2026-17298 · CVSS 9.9`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SSRF vulnerability exposing sensitive information.
+
+**Do:** Apply vendor patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17298)
+
+### 🟠 IBM API Connect Information Disclosure Flaw (CVE-2026-17329)
+`CVE-2026-17329 · CVSS 9.3`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain an information disclosure vulnerability due to improper endpoint URL validation.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17329)
+
+### 🟠 IBM API Connect BOLA Flaw (CVE-2026-17338)
+`CVE-2026-17338 · CVSS 9.1`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 suffer from broken object-level authorization, allowing sensitive data access.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17338)
+
+### 🟠 IBM API Connect SSRF Vulnerability (CVE-2026-17344)
+`CVE-2026-17344 · CVSS 9.3`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain an SSRF flaw allowing unauthenticated requests to unintended destinations.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17344)
+
+### 🟠 IBM API Connect SSRF and Bypass Flaw (CVE-2026-17353)
+`CVE-2026-17353 · CVSS 9.6`
+
+IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain an SSRF flaw allowing security restriction bypass and information disclosure.
+
+**Do:** Apply available vendor patches for IBM API Connect 12.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17353)
+
+### 🟠 IBM API Connect Attribute Modification Flaw (CVE-2026-17394)
+`CVE-2026-17394 · CVSS 9.6`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow modification of object attributes leading to sensitive data exposure.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17394)
+
+### 🟠 IBM API Connect ReDoS and Wildcard Flaw (CVE-2026-18535)
+`CVE-2026-18535 · CVSS 9.6`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 are vulnerable to ReDoS and improper wildcard query neutralization.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-18535)
+
+### 🟠 IBM API Connect SSRF Vulnerability (CVE-2026-18836)
+`CVE-2026-18836 · CVSS 9.3`
+
+IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SSRF flaw allowing sensitive information disclosure.
+
+**Do:** Apply available vendor patches for IBM API Connect.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-18836)
+
 ## 2026-11-06
 
 ### 🔴 SonicWall SonicOS SSLVPN Authentication Bypass Added to KEV
@@ -892,15 +1305,6 @@ WAVLINK WN553X1-B V260403_2.0.0 contains a remote OS command injection vulnerabi
 
 ## 2026-10-31
 
-### 🔴 imgproxy ICO Loader Integer Overflow RCE Vulnerability
-`CVSS 9.8`
-
-An integer overflow in the ICO loader of imgproxy, imgproxy/v2, and imgproxy/v3 allows remote code execution or denial of service via a crafted network request.
-
-**Do:** Upgrade imgproxy to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-hff9-5pqw-6w9f)
-
 ### 🟠 Northflank Security Breach Exposes API Keys
 `exploited`
 
@@ -927,15 +1331,6 @@ AJ-Report through 1.7.1 uses a hard-coded JWT secret to sign share tokens, allow
 **Do:** Upgrade AJ-Report beyond 1.7.1 and rotate signing keys.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120209)
-
-### 🟠 Signal K Server Path Traversal JWT Secret Disclosure and RCE
-`CVSS 9.8`
-
-A path traversal flaw in signalk-server and @signalk/resources-provider allows unauthenticated users to read arbitrary files, including the JWT signing secret, leading to RCE.
-
-**Do:** Upgrade signalk-server and @signalk/resources-provider to patched versions.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-4xm8-rg9h-jhq2)
 
 ### 🟠 OpenAI ChatGPT Share Link Arbitrary Code Execution Flaw
 

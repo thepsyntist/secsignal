@@ -1,5 +1,1163 @@
 [
  {
+  "key": "nvd:CVE-2026-17360",
+  "tier": "act",
+  "score": 75,
+  "headline": "IBM API Connect Hard-Coded Credentials Flaw (CVE-2026-17360)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 use hard-coded credentials, allowing remote attackers to gain full administrative control.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1 immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17360"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17360"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17402",
+  "tier": "act",
+  "score": 75,
+  "headline": "IBM API Connect OS Command Injection Flaw (CVE-2026-17402)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote command execution via unneutralized OS command input.",
+  "action": "Apply available vendor patches for IBM API Connect immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17402"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17402"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17403",
+  "tier": "act",
+  "score": 75,
+  "headline": "IBM API Connect Hard-Coded Credentials Flaw (CVE-2026-17403)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain hard-coded credentials allowing full administrative control.",
+  "action": "Apply available vendor patches for IBM API Connect immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17403"
+  ],
+  "cvss": 9.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17403"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17408",
+  "tier": "act",
+  "score": 75,
+  "headline": "IBM API Connect OS Command Injection Flaw (CVE-2026-17408)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote attackers to execute arbitrary code via OS command injection.",
+  "action": "Apply available vendor patches for IBM API Connect immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17408"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17408"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-123218",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM Aspera Faspex Authorization Bypass Flaw (CVE-2026-123218)",
+  "tldr": "IBM Aspera Faspex versions 5.0.0 through 5.0.19 contain an authorization bypass vulnerability allowing an authorized user to craft specific messages and gain full administrative privileges.",
+  "action": "Upgrade IBM Aspera Faspex to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123218"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-16720",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Authentication Bypass Flaw (CVE-2026-16720)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote attackers to obtain valid access tokens and assume other users' identities due to improper directory service authentication enforcement.",
+  "action": "Apply available security patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-16720"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16720"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17117",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Arbitrary Code Execution Flaw (CVE-2026-17117)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 permit remote authenticated attackers to execute arbitrary code via improperly controlled object attribute modifications.",
+  "action": "Upgrade IBM API Connect to the latest release.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17117"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17117"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17132",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect SQL Injection Flaw (CVE-2026-17132)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 contains an SQL injection vulnerability allowing remote authenticated attackers to execute arbitrary SQL commands.",
+  "action": "Update IBM API Connect immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17132",
+   "CVE-2026-17134"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17132"
+   },
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17134"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17147",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Path Traversal RCE Flaw (CVE-2026-17147)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain a path traversal vulnerability allowing remote code execution and administrative actions.",
+  "action": "Upgrade IBM API Connect to a patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17147",
+   "CVE-2026-17239"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17147"
+   },
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17239"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17150",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Custom Module Code Execution Flaw (CVE-2026-17150)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 lack sufficient validation for uploaded custom modules, allowing cross-tenant code execution.",
+  "action": "Apply security updates for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17150"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17150"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17158",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Privilege Escalation Flaw (CVE-2026-17158)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an improper authentication issue allowing privilege escalation for authenticated attackers.",
+  "action": "Update IBM API Connect to the latest release.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17158"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17158"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17278",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Improper Authentication Flaw (CVE-2026-17278)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 contains an improper authentication flaw allowing unauthorized access to API catalog and runtime configurations.",
+  "action": "Apply vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17278"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17278"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17292",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect BOLA Flaw (CVE-2026-17292)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain incomplete access checks allowing remote authenticated attackers to take over organization ownership.",
+  "action": "Update IBM API Connect to a secured version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17292"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17292"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17297",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Open Redirect Account Takeover (CVE-2026-17297)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an open redirect vulnerability during sign-in that can lead to account takeover.",
+  "action": "Upgrade IBM API Connect to the patched release.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17297"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17297"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17299",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Arbitrary File Read and SSRF (CVE-2026-17299)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 permit arbitrary file reads and SSRF due to unrestricted resolution of external references in definitions.",
+  "action": "Apply IBM API Connect security updates.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17299"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17299"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17301",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Cryptographic Signature Bypass (CVE-2026-17301)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an authentication bypass vulnerability due to improper cryptographic signature verification.",
+  "action": "Upgrade IBM API Connect to a patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17301"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17301"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17313",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Gateway Config Takeover (CVE-2026-17313)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 allows remote attackers to take control of gateway configuration and obtain sensitive information via an alternate path authentication bypass.",
+  "action": "Apply patches provided by IBM for API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17313"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17313"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17336",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect SQL Injection Flaw (CVE-2026-17336)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 allow authenticated remote attackers to execute arbitrary SQL commands.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17336"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17336"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17339",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Path Traversal Flaw (CVE-2026-17339)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain a path traversal vulnerability allowing cross-tenant resource access or deletion.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17339"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17339"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17340",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Path Traversal RCE Flaw (CVE-2026-17340)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 are vulnerable to path traversal allowing remote code execution.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17340"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17340"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17342",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Code Generation RCE Flaw (CVE-2026-17342)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote authenticated code execution due to improper code generation control.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17342"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17342"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17354",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Arbitrary File Write Flaw (CVE-2026-17354)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 allow remote authenticated arbitrary file writes via path traversal.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17354"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17354"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17359",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Code Generation RCE Flaw (CVE-2026-17359)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow code execution due to user-supplied input influencing generated code.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17359"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17359"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17392",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect LDAP Injection Flaw (CVE-2026-17392)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow LDAP injection leading to unauthorized cross-tenant admin access.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17392"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17392"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17396",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect SQL Injection Flaw (CVE-2026-17396)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SQL injection vulnerability allowing sensitive information disclosure.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17396"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17396"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17399",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Unvalidated Upload RCE Flaw (CVE-2026-17399)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote code execution due to insufficient validation of uploaded content.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17399"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17399"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17409",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Case Sensitivity Access Flaw (CVE-2026-17409)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow unauthorized admin operations due to inconsistent case sensitivity checks.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17409"
+  ],
+  "cvss": 9.4,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17409"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17410",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Portal Data Access Flaw (CVE-2026-17410)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow cross-tenant portal data access and modification.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17410"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17410"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-18838",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM API Connect Authentication Bypass Flaw (CVE-2026-18838)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 allow callers to impersonate other users due to improper authentication verification.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-18838"
+  ],
+  "cvss": 9.4,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18838"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Claude Code 'Don't Ask Again' File Exposes Secrets on GitHub",
+  "tldr": "Anthropic's Claude Code coding assistant can save sensitive commands containing passwords and API keys into project settings files when users select 'Don't Ask Again', leading to exposed secrets in public GitHub repositories.",
+  "action": "Audit public repositories for exposed Claude Code settings files and revoke any leaked API keys or credentials.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-16884",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect XXE Vulnerability (CVE-2026-16884)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 contains an XML external entity (XXE) injection vulnerability allowing remote attackers to obtain sensitive information.",
+  "action": "Apply the latest updates for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-16884"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16884"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-16918",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect SSRF Vulnerability (CVE-2026-16918)",
+  "tldr": "IBM API Connect versions 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 contain a server-side request forgery flaw allowing access to internal network resources.",
+  "action": "Apply patches provided by IBM for API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-16918"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16918"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-16920",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect Security Restriction Bypass (CVE-2026-16920)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 contains a confused deputy vulnerability enabling remote authenticated attackers to bypass security restrictions.",
+  "action": "Update IBM API Connect to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-16920"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16920"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17049",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect Authorization Bypass Flaw (CVE-2026-17049)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 allows remote authenticated attackers to view and modify arbitrary documents via user-controlled keys.",
+  "action": "Update IBM API Connect to a fixed version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17049"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17049"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17066",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect Missing Authorization Flaw (CVE-2026-17066)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 contains a missing authorization vulnerability allowing cross-tenant data access and modification.",
+  "action": "Apply vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17066"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17066"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17131",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect SSRF Vulnerability (CVE-2026-17131)",
+  "tldr": "IBM API Connect 12.1.0.0 through 12.1.1.2 contains an SSRF flaw permitting attackers to bypass outbound request restrictions.",
+  "action": "Apply IBM API Connect patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17131"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17131"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17146",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect Input Validation Flaw (CVE-2026-17146)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an input validation issue allowing remote authenticated users to execute arbitrary JavaScript.",
+  "action": "Apply IBM API Connect patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17146"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17146"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17296",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect SSRF Vulnerability (CVE-2026-17296)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SSRF flaw allowing remote authenticated attackers to obtain sensitive info.",
+  "action": "Apply IBM API Connect updates.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17296"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17296"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17298",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect SSRF Vulnerability (CVE-2026-17298)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SSRF vulnerability exposing sensitive information.",
+  "action": "Apply vendor patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17298"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17298"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17329",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect Information Disclosure Flaw (CVE-2026-17329)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain an information disclosure vulnerability due to improper endpoint URL validation.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17329"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17329"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17338",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect BOLA Flaw (CVE-2026-17338)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 suffer from broken object-level authorization, allowing sensitive data access.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17338"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17338"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17344",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect SSRF Vulnerability (CVE-2026-17344)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain an SSRF flaw allowing unauthenticated requests to unintended destinations.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17344"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17344"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17353",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect SSRF and Bypass Flaw (CVE-2026-17353)",
+  "tldr": "IBM API Connect versions 12.1.0.0 through 12.1.1.2 contain an SSRF flaw allowing security restriction bypass and information disclosure.",
+  "action": "Apply available vendor patches for IBM API Connect 12.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17353"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17353"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17394",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect Attribute Modification Flaw (CVE-2026-17394)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow modification of object attributes leading to sensitive data exposure.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17394"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17394"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-18535",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect ReDoS and Wildcard Flaw (CVE-2026-18535)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 are vulnerable to ReDoS and improper wildcard query neutralization.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-18535"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18535"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-18836",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM API Connect SSRF Vulnerability (CVE-2026-18836)",
+  "tldr": "IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SSRF flaw allowing sensitive information disclosure.",
+  "action": "Apply available vendor patches for IBM API Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-18836"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18836"
+   }
+  ],
+  "first_seen": "2026-11-07T08:54:06+00:00",
+  "updated": "2026-11-07T08:54:06+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-109469",
   "tier": "act",
   "score": 80,
