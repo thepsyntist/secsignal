@@ -2,6 +2,17 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-07
+
+### 🔴 Microsoft Entra Device Registration Auth Bypass Flaw (CVE-2026-109469)
+`CVE-2026-109469 · CVSS 10.0`
+
+An authorization bypass vulnerability in Entra Device Registration (CVE-2026-109469, CVSS 10.0) allows unauthorized attackers to elevate privileges over a network.
+
+**Do:** Apply the latest security updates from Microsoft for Entra Device Registration.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109469)
+
 ## 2026-11-06
 
 ### 🔴 SonicWall SonicOS SSLVPN Authentication Bypass Added to KEV
@@ -11,7 +22,7 @@ CISA added CVE-2026-19868, a single-factor authentication vulnerability in Sonic
 
 **Do:** Apply vendor-supplied patches immediately and review access logs for unauthorized SSLVPN sessions.
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/)
 
 ### 🔴 Canonical LXD Restricted Project Bypass RCE Flaw
 `CVSS 9.9`
@@ -949,32 +960,4 @@ A proof-of-concept exploit has been released for CVE-2026-58882, an Android vuln
 **Do:** Apply the latest Android security patches.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/)
-
-## 2026-10-30
-
-### 🔴 Linux Kernel MPTCP Remote Root RCE Vulnerability
-
-Researchers developed an exploit for a critical Linux kernel vulnerability enabling unauthenticated remote root execution on servers with MPTCP listeners.
-
-**Do:** Monitor for Linux kernel updates addressing MPTCP vulnerabilities and apply patches promptly.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/)
-
-### 🟠 China-Linked Vapor Panda Uses AI-Powered ARTEX Against Over 200 Orgs
-`exploited`
-
-Chinese state-sponsored threat group Vapor Panda used an AI-powered penetration testing framework called ARTEX to target over 200 organizations.
-
-**Do:** Review environment for indicators associated with Vapor Panda and unauthorized penetration testing frameworks.
-
-[The Hacker News](https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/)
-
-### 🟠 actions/pypa/gh-action-pypi-publish: CA trust store issue in PyPI publishing
-`CVSS 9.3`
-
-pypi-publish action versions before 1.14.2 bundled a revoked root CA in the certifi trust store used for Sigstore Trusted Publishing and Digital Attestations.
-
-**Do:** Upgrade actions/pypa/gh-action-pypi-publish to version 1.14.2 or later.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-5xjx-3w67-w9x9)
 
