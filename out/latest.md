@@ -49,6 +49,22 @@ IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote attackers 
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17408)
 
+### 🟠 Crédit Mutuel Arkéa Hit by $133 Million Cyberattack via Service Provider
+`exploited`
+
+French cooperative bank Crédit Mutuel Arkéa suffered a cyberattack via a service provider resulting in $133 million in fraudulent transactions, prompting system suspensions.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/)
+
+### 🟠 Keycloak Client Management RCE Vulnerability (CVE-2026-120984)
+`CVE-2026-120984 · CVSS 9.1`
+
+A vulnerability in Keycloak's client management component allows authenticated attackers with client management permissions to upload and execute malicious JavaScript policies, leading to remote code execution.
+
+**Do:** Apply the latest vendor patches for Keycloak to address CVE-2026-120984.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120984)
+
 ### 🟠 IBM Aspera Faspex Authorization Bypass Flaw (CVE-2026-123218)
 `CVE-2026-123218 · CVSS 9.8`
 
@@ -435,7 +451,7 @@ CISA added CVE-2026-19868, a single-factor authentication vulnerability in Sonic
 
 **Do:** Apply vendor-supplied patches immediately and review access logs for unauthorized SSLVPN sessions.
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/) · [SecurityWeek](https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/)
 
 ### 🔴 Canonical LXD Restricted Project Bypass RCE Flaw
 `CVSS 9.9`
@@ -1331,21 +1347,6 @@ AJ-Report through 1.7.1 uses a hard-coded JWT secret to sign share tokens, allow
 **Do:** Upgrade AJ-Report beyond 1.7.1 and rotate signing keys.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120209)
-
-### 🟠 OpenAI ChatGPT Share Link Arbitrary Code Execution Flaw
-
-A vulnerability in ChatGPT allowed malicious shared links to execute arbitrary code within the logged-in session of users who opened them, exposing private conversations. OpenAI patched the issue.
-
-[The Hacker News](https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html)
-
-### 🟠 Chainalysis Data Breach Exposes Customer Identity Data
-`exploited`
-
-Chainalysis confirmed an external actor accessed internal tools and non-sensitive customer identity data, though investigation content and credentials remained uncompromised.
-
-**Do:** Audit access logs and monitor for fraudulent activity related to exposed customer identity data.
-
-[The Hacker News](https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/) · [SecurityWeek](https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/)
 
 ### 🟠 Android SMS of Death CVE-2026-58882 PoC Released
 `CVE-2026-58882`
