@@ -1,5 +1,110 @@
 [
  {
+  "key": "nvd:CVE-2026-15266",
+  "tier": "watch",
+  "score": 67,
+  "headline": "IBM Concert Unsafe Command Execution Vulnerability (CVE-2026-15266)",
+  "tldr": "IBM Concert 1.0 through 3.0.1.1 contains components allowing unsafe command execution, enabling remote attackers to run arbitrary system commands on the host.",
+  "action": "Apply the latest security updates for IBM Concert versions 1.0 through 3.0.1.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-15266",
+   "CVE-2026-6715"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15266"
+   },
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6715"
+   }
+  ],
+  "first_seen": "2026-11-08T22:14:41+00:00",
+  "updated": "2026-11-08T22:14:41+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-107331",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM DataStage on Cloud Pak for Data Path Traversal (CVE-2026-107331)",
+  "tldr": "IBM DataStage on Cloud Pak for Data 5.4.0.0 contains an absolute-path traversal vulnerability allowing remote authenticated attackers to obtain sensitive information.",
+  "action": "Apply available patches from IBM for DataStage on Cloud Pak for Data 5.4.0.0.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-107331"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107331"
+   }
+  ],
+  "first_seen": "2026-11-08T22:14:41+00:00",
+  "updated": "2026-11-08T22:14:41+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114464",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM Process Mining Access Control Vulnerability (CVE-2026-114464)",
+  "tldr": "IBM Process Mining 2.0.0 through 2.2.1 contains an improper access control flaw allowing remote attackers to obtain sensitive information.",
+  "action": "Upgrade IBM Process Mining to version 2.2.2 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114464"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114464"
+   }
+  ],
+  "first_seen": "2026-11-08T22:14:41+00:00",
+  "updated": "2026-11-08T22:14:41+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-17466",
+  "tier": "watch",
+  "score": 59,
+  "headline": "IBM Optim Path Traversal Vulnerability (CVE-2026-17466)",
+  "tldr": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 allow remote authenticated attackers to obtain sensitive information via path traversal.",
+  "action": "Apply fixes provided by IBM for Optim versions 1.0.0, 1.1.0, and 1.2.0.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-17466"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17466"
+   }
+  ],
+  "first_seen": "2026-11-08T22:14:41+00:00",
+  "updated": "2026-11-08T22:14:41+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-124440",
   "tier": "watch",
   "score": 67,

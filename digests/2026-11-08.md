@@ -31,6 +31,15 @@ OpenAM versions 14.0.0 through 16.1.3 allow unauthenticated attackers to read li
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123551)
 
+### 🟠 IBM Concert Unsafe Command Execution Vulnerability (CVE-2026-15266)
+`CVE-2026-15266, CVE-2026-6715 · CVSS 9.8`
+
+IBM Concert 1.0 through 3.0.1.1 contains components allowing unsafe command execution, enabling remote attackers to run arbitrary system commands on the host.
+
+**Do:** Apply the latest security updates for IBM Concert versions 1.0 through 3.0.1.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-15266) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-6715)
+
 ### 🟠 Kyverno Namespace Clamp Authorization Bypass (CVE-2026-124440)
 `CVE-2026-124440 · CVSS 9.9`
 
@@ -65,6 +74,33 @@ Japanese manufacturer Iris Ohyama disclosed that unauthorized access to a third-
 **Do:** Audit third-party cloud service integrations and monitor affected customer data.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/)
+
+### 🟠 IBM DataStage on Cloud Pak for Data Path Traversal (CVE-2026-107331)
+`CVE-2026-107331 · CVSS 9.9`
+
+IBM DataStage on Cloud Pak for Data 5.4.0.0 contains an absolute-path traversal vulnerability allowing remote authenticated attackers to obtain sensitive information.
+
+**Do:** Apply available patches from IBM for DataStage on Cloud Pak for Data 5.4.0.0.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-107331)
+
+### 🟠 IBM Process Mining Access Control Vulnerability (CVE-2026-114464)
+`CVE-2026-114464 · CVSS 9.3`
+
+IBM Process Mining 2.0.0 through 2.2.1 contains an improper access control flaw allowing remote attackers to obtain sensitive information.
+
+**Do:** Upgrade IBM Process Mining to version 2.2.2 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114464)
+
+### 🟠 IBM Optim Path Traversal Vulnerability (CVE-2026-17466)
+`CVE-2026-17466 · CVSS 9.1`
+
+IBM Optim 1.0.0, 1.1.0, and 1.2.0 allow remote authenticated attackers to obtain sensitive information via path traversal.
+
+**Do:** Apply fixes provided by IBM for Optim versions 1.0.0, 1.1.0, and 1.2.0.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17466)
 
 ### 🟠 Craft CMS GraphQL Auth Bypass Vulnerability (CVE-2026-124427)
 `CVE-2026-124427 · CVSS 9.8`
