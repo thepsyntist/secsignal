@@ -1,5 +1,183 @@
 [
  {
+  "key": "nvd:CVE-2026-124440",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Kyverno Namespace Clamp Authorization Bypass (CVE-2026-124440)",
+  "tldr": "Kyverno 1.19.1 contains an authorization bypass allowing namespace tenants to issue cluster-scoped API requests and escalate to cluster admin.",
+  "action": "Upgrade Kyverno to 1.19.2 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124440"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124440"
+   }
+  ],
+  "first_seen": "2026-11-08T16:43:37+00:00",
+  "updated": "2026-11-08T16:43:37+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124450",
+  "tier": "watch",
+  "score": 67,
+  "headline": "OpenEMR Path Traversal and RCE Vulnerability (CVE-2026-124450)",
+  "tldr": "OpenEMR before 8.3.0 contains a path traversal vulnerability in the fax/sms module, allowing low-privilege users to read configuration files and achieve RCE.",
+  "action": "Upgrade OpenEMR to 8.3.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124450",
+   "CVE-2026-124490"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124450"
+   },
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124490"
+   }
+  ],
+  "first_seen": "2026-11-08T16:43:37+00:00",
+  "updated": "2026-11-08T16:43:37+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Iris Ohyama Cloud Service Breach Exposes 7.7 Million Records",
+  "tldr": "Japanese manufacturer Iris Ohyama disclosed that unauthorized access to a third-party cloud service exposed personal information of about 7.7 million people.",
+  "action": "Audit third-party cloud service integrations and monitor affected customer data.",
+  "category": "breach",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/"
+   }
+  ],
+  "first_seen": "2026-11-08T16:43:37+00:00",
+  "updated": "2026-11-08T16:43:37+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124427",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Craft CMS GraphQL Auth Bypass Vulnerability (CVE-2026-124427)",
+  "tldr": "Craft CMS 5.0.0 through 5.11.1 contains an authorization bypass allowing anonymous GraphQL clients to read out-of-scope section entries.",
+  "action": "Upgrade Craft CMS to 5.11.2 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124427"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124427"
+   }
+  ],
+  "first_seen": "2026-11-08T16:43:37+00:00",
+  "updated": "2026-11-08T16:43:37+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124445",
+  "tier": "watch",
+  "score": 59,
+  "headline": "OpenEMR OneTimeAuth Token Replay Flaw (CVE-2026-124445)",
+  "tldr": "OpenEMR 7.0.1 through 8.3.x ignores one-time use flags and lacks rate limiting on PINs, allowing token replay to expose patient data.",
+  "action": "Upgrade OpenEMR to 8.4.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124445"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124445"
+   }
+  ],
+  "first_seen": "2026-11-08T16:43:37+00:00",
+  "updated": "2026-11-08T16:43:37+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124469",
+  "tier": "watch",
+  "score": 59,
+  "headline": "OpenEMR SQL Injection Vulnerability (CVE-2026-124469)",
+  "tldr": "OpenEMR before 8.3.0 contains an SQL injection flaw in the Fee Sheet drug-inventory lookup, enabling data extraction.",
+  "action": "Upgrade OpenEMR to 8.3.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124469"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124469"
+   }
+  ],
+  "first_seen": "2026-11-08T16:43:37+00:00",
+  "updated": "2026-11-08T16:43:37+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-101117",
+  "tier": "watch",
+  "score": 51,
+  "headline": "IBM WebSphere Extreme Scale CSP Bypass (CVE-2026-101117)",
+  "tldr": "IBM WebSphere Extreme Scale 8.6.1.0 to 8.6.2.2 contains a security restriction bypass due to improper Content Security Policy configuration.",
+  "action": "Apply fixes provided by IBM for WebSphere Extreme Scale.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-101117"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117"
+   }
+  ],
+  "first_seen": "2026-11-08T16:43:37+00:00",
+  "updated": "2026-11-08T16:43:37+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-123549",
   "tier": "act",
   "score": 75,
