@@ -1,5 +1,105 @@
 [
  {
+  "key": "nvd:CVE-2026-123549",
+  "tier": "act",
+  "score": 75,
+  "headline": "OpenAM Self-Registration Privilege Escalation Vulnerability (CVE-2026-123549)",
+  "tldr": "OpenAM before 16.1.4 fails to enforce the Valid Creation Attributes list during self-registration, allowing anonymous attackers to assign themselves to administrative groups and gain full administrative control.",
+  "action": "Upgrade OpenAM to version 16.1.4 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123549"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123549"
+   }
+  ],
+  "first_seen": "2026-11-08T09:07:42+00:00",
+  "updated": "2026-11-08T09:07:42+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-123550",
+  "tier": "act",
+  "score": 75,
+  "headline": "OpenAM SAML Authentication Bypass Vulnerability (CVE-2026-123550)",
+  "tldr": "OpenAM before 16.1.4 contains an authentication bypass in its SAML v2.0 service provider that accepts unsigned assertions, allowing unauthenticated attackers to forge sessions for arbitrary users.",
+  "action": "Upgrade OpenAM to version 16.1.4 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123550"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123550"
+   }
+  ],
+  "first_seen": "2026-11-08T09:07:42+00:00",
+  "updated": "2026-11-08T09:07:42+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-123551",
+  "tier": "act",
+  "score": 75,
+  "headline": "OpenAM WebSocket Session Disclosure Vulnerability (CVE-2026-123551)",
+  "tldr": "OpenAM versions 14.0.0 through 16.1.3 allow unauthenticated attackers to read live session tokens from the notification WebSocket, enabling session hijacking.",
+  "action": "Upgrade OpenAM to version 16.1.4 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123551"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123551"
+   }
+  ],
+  "first_seen": "2026-11-08T09:07:42+00:00",
+  "updated": "2026-11-08T09:07:42+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-123614",
+  "tier": "watch",
+  "score": 67,
+  "headline": "imgproxy ICO Loader Integer Overflow Vulnerability (CVE-2026-123614)",
+  "tldr": "imgproxy 4.0.0 through 4.0.15 contains an integer overflow in the ICO loader, allowing remote attackers to trigger a heap buffer overflow via crafted images.",
+  "action": "Upgrade imgproxy to version 4.0.16 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123614"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123614"
+   }
+  ],
+  "first_seen": "2026-11-08T09:07:42+00:00",
+  "updated": "2026-11-08T09:07:42+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider",
   "tier": "watch",
   "score": 69,
