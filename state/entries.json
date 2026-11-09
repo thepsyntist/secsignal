@@ -1,5 +1,456 @@
 [
  {
+  "key": "kev:CVE-2026-102895",
+  "tier": "act",
+  "score": 87,
+  "headline": "GPUStack Improper Authentication Vulnerability (CVE-2026-102895)",
+  "tldr": "GPUStack contains an improper authentication vulnerability allowing unauthenticated administrative access, API-key creation, secret disclosure, and code execution. The vulnerability is actively exploited and listed in CISA KEV.",
+  "action": "Apply vendor mitigations immediately per CISA KEV and BOD 26-04 guidelines.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-102895"
+  ],
+  "cvss": null,
+  "epss": 0.00331,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-116779",
+  "tier": "act",
+  "score": 87,
+  "headline": "SignalWire FreeSwitch Code Injection Vulnerability (CVE-2026-116779)",
+  "tldr": "SignalWire FreeSwitch contains a code injection vulnerability enabling configuration/credential disclosure, call control, and command execution. The flaw is actively exploited and listed in CISA KEV.",
+  "action": "Apply vendor mitigations immediately or discontinue use of the product per CISA KEV guidelines.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-116779"
+  ],
+  "cvss": null,
+  "epss": 0.01299,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+  "tier": "act",
+  "score": 77,
+  "headline": "Qubole AWS Access Compromised to Breach Customer Accounts",
+  "tldr": "Attackers used Qubole trusted AWS access credentials between October 14 and October 26 to breach multiple customer accounts and steal stored secrets and data.",
+  "action": "Audit AWS accounts connected to Qubole for unauthorized access and rotate exposed credentials.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Russian Cloud Provider Beget Rebuilds After Wiper Attack",
+  "tldr": "Russian cloud services provider Beget was forced to rebuild its cloud infrastructure from scratch following a data-wiping malware attack.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Plex2Shell Exploit Chain Targeted Against QNAP NAS Users",
+  "tldr": "Threat actors are actively exploiting a four-flaw exploit chain targeting the Plex Media Server application on QNAP NAS devices.",
+  "action": "Audit QNAP NAS devices and update Plex Media Server applications.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Ethersphere bee-js and Swarm Desktop Compromised for Malware",
+  "tldr": "Attackers compromised release automation to publish malicious versions bee-js 13.3.0 and Swarm Desktop 0.56.2, which steal wallet keys and install backdoors.",
+  "action": "Downgrade or remove affected versions of bee-js and Swarm Desktop and check for compromised crypto wallets.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Web3Auth Flaw Exploited to Steal Keplr Crypto Wallets",
+  "tldr": "Attackers exploited a security flaw in Web3Auth used by Keplr for Google and Apple sign-in to steal funds from crypto wallets.",
+  "action": "Review Web3Auth integrations and monitor crypto wallet security.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "LNbits Urges Server Shutdown Amid Active Exploitation Attacks",
+  "tldr": "The LNbits Bitcoin Lightning wallet project urged operators to shut down servers immediately due to a wave of attacks exploiting new accounts to drain funds.",
+  "action": "Shut down LNbits servers immediately until security fixes are released and applied.",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124079",
+  "tier": "watch",
+  "score": 67,
+  "headline": "rConfig Core and Pro Deserialization RCE Vulnerability (CVE-2026-124079)",
+  "tldr": "rConfig Core 8.0.0 before 8.2.19 and rConfig Pro before 8.4.1 contain a deserialization vulnerability allowing unauthenticated network attackers to execute arbitrary code via Redis-backed Laravel Horizon queues.",
+  "action": "Upgrade rConfig Core to 8.2.19+ and rConfig Pro to 8.4.1+.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124079"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124079"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Automaker Apps Vulnerable via Default ForgeRock Credentials",
+  "tldr": "Researchers found default admin credentials on ForgeRock identity servers used by two car brands, allowing complete account takeover, remote door unlocking, and engine starting.",
+  "action": "Change default credentials on identity provider servers and enforce strict authentication policies.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/cyberattack-germany-ai-mittwald",
+  "tier": "watch",
+  "score": 61,
+  "headline": "German Web Host Breached via AI Assistant Integration Interface",
+  "tldr": "A German web hosting company was breached after attackers exploited an interface designed to connect customer accounts with AI assistants.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/cyberattack-germany-ai-mittwald"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Frontline Education Data Breach Affects Over 3 Million",
+  "tldr": "Frontline Education reported that an August data breach impacted over 3 million school district staff and students.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-119756",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Tasmota Heap Out-of-Bounds Write Vulnerability (CVE-2026-119756)",
+  "tldr": "Tasmota through 16.0.0 contains a heap out-of-bounds write vulnerability in SendReceiveDeviceGroupMessage() allowing local network attackers to corrupt memory via UDP port 4447.",
+  "action": "Apply patch from commit e97e1e4 or update Tasmota.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-119756"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119756"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-p2mm-64f6-gmpp",
+  "tier": "watch",
+  "score": 59,
+  "headline": "fastapi-code-generator Import-Time RCE via Route Path (CVE-2026-63471)",
+  "tldr": "fastapi-code-generator 0.8.0 emits unescaped route paths into decorators, allowing import-time remote code execution when generated code is loaded by an ASGI server.",
+  "action": "Update fastapi-code-generator and audit generated application code.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63471"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00312,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-p2mm-64f6-gmpp"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-6xmv-cjr5-w3q8",
+  "tier": "watch",
+  "score": 59,
+  "headline": "fastapi-code-generator Import-Time RCE via Status Code (CVE-2026-63469)",
+  "tldr": "fastapi-code-generator 0.8.0 emits unescaped response status-code keys into decorator response dictionaries, allowing import-time code execution when generated code is loaded.",
+  "action": "Update fastapi-code-generator and audit generated application code.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63469"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00312,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-6xmv-cjr5-w3q8"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-h667-4jj2-cgv4",
+  "tier": "watch",
+  "score": 59,
+  "headline": "fastapi-code-generator Call-Time RCE via Summary (CVE-2026-63470)",
+  "tldr": "fastapi-code-generator 0.8.0 emits unescaped operation summaries into docstrings, allowing code execution when the generated route handler endpoint is called.",
+  "action": "Update fastapi-code-generator and audit generated application code.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63470"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00468,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-h667-4jj2-cgv4"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/vanderbilt-cyberattack-ransomware-alert",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Vanderbilt University Announces Cyberattack Impacting Systems",
+  "tldr": "Vanderbilt University warned students and employees of a cyberattack impacting campus devices and systems.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Revolve Data Breach Impacts 1.5 Million Individuals",
+  "tldr": "Online fashion retailer Revolve disclosed that a September cyberattack affected more than 1.5 million individuals.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Amplifon Americas Data Breach Impacts 1.3 Million",
+  "tldr": "Amplifon Americas suffered a data breach where hackers stole personal, health, and insurance information, including Social Security numbers.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/"
+   }
+  ],
+  "first_seen": "2026-11-09T20:50:26+00:00",
+  "updated": "2026-11-09T20:50:26+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
   "tier": "watch",
   "score": 61,
@@ -17,10 +468,18 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks"
    }
   ],
   "first_seen": "2026-11-09T09:54:45+00:00",
-  "updated": "2026-11-09T09:54:45+00:00"
+  "updated": "2026-11-09T20:50:26+00:00"
  },
  {
   "key": "nvd:CVE-2026-15266",
@@ -200,10 +659,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/"
    }
   ],
   "first_seen": "2026-11-08T16:43:37+00:00",
-  "updated": "2026-11-08T16:43:37+00:00"
+  "updated": "2026-11-09T20:50:26+00:00"
  },
  {
   "key": "nvd:CVE-2026-124427",
@@ -555,14 +1018,14 @@
  },
  {
   "key": "nvd:CVE-2026-123218",
-  "tier": "watch",
+  "tier": "act",
   "score": 67,
-  "headline": "IBM Aspera Faspex Authorization Bypass Flaw (CVE-2026-123218)",
+  "headline": "Now exploited: IBM Aspera Faspex Authorization Bypass Flaw (CVE-2026-123218)",
   "tldr": "IBM Aspera Faspex versions 5.0.0 through 5.0.19 contain an authorization bypass vulnerability allowing an authorized user to craft specific messages and gain full administrative privileges.",
   "action": "Upgrade IBM Aspera Faspex to the latest patched version.",
   "category": "vulnerability",
-  "exploited": false,
-  "kev": false,
+  "exploited": true,
+  "kev": true,
   "cves": [
    "CVE-2026-123218"
   ],
@@ -576,7 +1039,7 @@
    }
   ],
   "first_seen": "2026-11-07T08:54:06+00:00",
-  "updated": "2026-11-07T08:54:06+00:00"
+  "updated": "2026-11-09T20:50:26+00:00"
  },
  {
   "key": "nvd:CVE-2026-16720",
@@ -1961,12 +2424,12 @@
   "key": "rss:https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password",
   "tier": "act",
   "score": 82,
-  "headline": "OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux",
+  "headline": "Now exploited: OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux",
   "tldr": "OpenSSH version 10.6p2 fixes a critical flaw affecting certain Alpine Linux configurations where long passwords can bypass authentication on accounts with no password.",
   "action": "Upgrade OpenSSH to version 10.6p2 or later on affected Alpine Linux servers.",
   "category": "vulnerability",
-  "exploited": false,
-  "kev": false,
+  "exploited": true,
+  "kev": true,
   "cves": [
    "CVE-2026-123158"
   ],
@@ -1989,10 +2452,22 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
    }
   ],
   "first_seen": "2026-11-05T23:42:31+00:00",
-  "updated": "2026-11-06T21:35:27+00:00"
+  "updated": "2026-11-09T20:50:26+00:00"
  },
  {
   "key": "rss:https://therecord.media/cyberattacks-refrigeration-cisa-fbi",

@@ -4,6 +4,107 @@
 
 ## 2026-11-09
 
+### 🔴 GPUStack Improper Authentication Vulnerability (CVE-2026-102895)
+`CVE-2026-102895 · EPSS 0.00 · CISA KEV`
+
+GPUStack contains an improper authentication vulnerability allowing unauthenticated administrative access, API-key creation, secret disclosure, and code execution. The vulnerability is actively exploited and listed in CISA KEV.
+
+**Do:** Apply vendor mitigations immediately per CISA KEV and BOD 26-04 guidelines.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895)
+
+### 🔴 SignalWire FreeSwitch Code Injection Vulnerability (CVE-2026-116779)
+`CVE-2026-116779 · EPSS 0.01 · CISA KEV`
+
+SignalWire FreeSwitch contains a code injection vulnerability enabling configuration/credential disclosure, call control, and command execution. The flaw is actively exploited and listed in CISA KEV.
+
+**Do:** Apply vendor mitigations immediately or discontinue use of the product per CISA KEV guidelines.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-116779)
+
+### 🔴 Qubole AWS Access Compromised to Breach Customer Accounts
+`exploited`
+
+Attackers used Qubole trusted AWS access credentials between October 14 and October 26 to breach multiple customer accounts and steal stored secrets and data.
+
+**Do:** Audit AWS accounts connected to Qubole for unauthorized access and rotate exposed credentials.
+
+[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html)
+
+### 🟠 Russian Cloud Provider Beget Rebuilds After Wiper Attack
+`exploited`
+
+Russian cloud services provider Beget was forced to rebuild its cloud infrastructure from scratch following a data-wiping malware attack.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/)
+
+### 🟠 Plex2Shell Exploit Chain Targeted Against QNAP NAS Users
+`exploited`
+
+Threat actors are actively exploiting a four-flaw exploit chain targeting the Plex Media Server application on QNAP NAS devices.
+
+**Do:** Audit QNAP NAS devices and update Plex Media Server applications.
+
+[SecurityWeek](https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/)
+
+### 🟠 Ethersphere bee-js and Swarm Desktop Compromised for Malware
+`exploited`
+
+Attackers compromised release automation to publish malicious versions bee-js 13.3.0 and Swarm Desktop 0.56.2, which steal wallet keys and install backdoors.
+
+**Do:** Downgrade or remove affected versions of bee-js and Swarm Desktop and check for compromised crypto wallets.
+
+[The Hacker News](https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html)
+
+### 🟠 Web3Auth Flaw Exploited to Steal Keplr Crypto Wallets
+`exploited`
+
+Attackers exploited a security flaw in Web3Auth used by Keplr for Google and Apple sign-in to steal funds from crypto wallets.
+
+**Do:** Review Web3Auth integrations and monitor crypto wallet security.
+
+[The Hacker News](https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html)
+
+### 🟠 LNbits Urges Server Shutdown Amid Active Exploitation Attacks
+`exploited`
+
+The LNbits Bitcoin Lightning wallet project urged operators to shut down servers immediately due to a wave of attacks exploiting new accounts to drain funds.
+
+**Do:** Shut down LNbits servers immediately until security fixes are released and applied.
+
+[The Hacker News](https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html)
+
+### 🟠 rConfig Core and Pro Deserialization RCE Vulnerability (CVE-2026-124079)
+`CVE-2026-124079 · CVSS 9.8`
+
+rConfig Core 8.0.0 before 8.2.19 and rConfig Pro before 8.4.1 contain a deserialization vulnerability allowing unauthenticated network attackers to execute arbitrary code via Redis-backed Laravel Horizon queues.
+
+**Do:** Upgrade rConfig Core to 8.2.19+ and rConfig Pro to 8.4.1+.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124079)
+
+### 🟠 Automaker Apps Vulnerable via Default ForgeRock Credentials
+
+Researchers found default admin credentials on ForgeRock identity servers used by two car brands, allowing complete account takeover, remote door unlocking, and engine starting.
+
+**Do:** Change default credentials on identity provider servers and enforce strict authentication policies.
+
+[The Hacker News](https://thehackernews.com/2026/11/default-adminadmin-server-password.html)
+
+### 🟠 German Web Host Breached via AI Assistant Integration Interface
+`exploited`
+
+A German web hosting company was breached after attackers exploited an interface designed to connect customer accounts with AI assistants.
+
+[The Record](https://therecord.media/cyberattack-germany-ai-mittwald)
+
+### 🟠 Frontline Education Data Breach Affects Over 3 Million
+`exploited`
+
+Frontline Education reported that an August data breach impacted over 3 million school district staff and students.
+
+[SecurityWeek](https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/)
+
 ### 🟠 U.S. Agencies Warn of Attacks on Industrial Refrigeration Controllers
 `exploited`
 
@@ -11,7 +112,64 @@ Threat actors are actively targeting unpatched or internet-accessible industrial
 
 **Do:** Audit industrial refrigeration controllers, disconnect them from the public internet, and apply available patches.
 
-[The Hacker News](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html)
+[The Hacker News](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/) · [The Record](https://therecord.media/france-blames-iran-for-fridge-cyberattacks)
+
+### 🟠 Tasmota Heap Out-of-Bounds Write Vulnerability (CVE-2026-119756)
+`CVE-2026-119756 · CVSS 9.8`
+
+Tasmota through 16.0.0 contains a heap out-of-bounds write vulnerability in SendReceiveDeviceGroupMessage() allowing local network attackers to corrupt memory via UDP port 4447.
+
+**Do:** Apply patch from commit e97e1e4 or update Tasmota.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119756)
+
+### 🟠 fastapi-code-generator Import-Time RCE via Route Path (CVE-2026-63471)
+`CVE-2026-63471 · CVSS 9.3 · EPSS 0.00`
+
+fastapi-code-generator 0.8.0 emits unescaped route paths into decorators, allowing import-time remote code execution when generated code is loaded by an ASGI server.
+
+**Do:** Update fastapi-code-generator and audit generated application code.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-p2mm-64f6-gmpp)
+
+### 🟠 fastapi-code-generator Import-Time RCE via Status Code (CVE-2026-63469)
+`CVE-2026-63469 · CVSS 9.3 · EPSS 0.00`
+
+fastapi-code-generator 0.8.0 emits unescaped response status-code keys into decorator response dictionaries, allowing import-time code execution when generated code is loaded.
+
+**Do:** Update fastapi-code-generator and audit generated application code.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-6xmv-cjr5-w3q8)
+
+### 🟠 fastapi-code-generator Call-Time RCE via Summary (CVE-2026-63470)
+`CVE-2026-63470 · CVSS 9.3 · EPSS 0.00`
+
+fastapi-code-generator 0.8.0 emits unescaped operation summaries into docstrings, allowing code execution when the generated route handler endpoint is called.
+
+**Do:** Update fastapi-code-generator and audit generated application code.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-h667-4jj2-cgv4)
+
+### 🟠 Vanderbilt University Announces Cyberattack Impacting Systems
+`exploited`
+
+Vanderbilt University warned students and employees of a cyberattack impacting campus devices and systems.
+
+[The Record](https://therecord.media/vanderbilt-cyberattack-ransomware-alert)
+
+### 🟠 Revolve Data Breach Impacts 1.5 Million Individuals
+`exploited`
+
+Online fashion retailer Revolve disclosed that a September cyberattack affected more than 1.5 million individuals.
+
+[SecurityWeek](https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/)
+
+### 🟠 Amplifon Americas Data Breach Impacts 1.3 Million
+`exploited`
+
+Amplifon Americas suffered a data breach where hackers stole personal, health, and insurance information, including Social Security numbers.
+
+[SecurityWeek](https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/)
 
 ## 2026-11-08
 
@@ -84,7 +242,7 @@ Japanese manufacturer Iris Ohyama disclosed that unauthorized access to a third-
 
 **Do:** Audit third-party cloud service integrations and monitor affected customer data.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/) · [SecurityWeek](https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/)
 
 ### 🟠 IBM DataStage on Cloud Pak for Data Path Traversal (CVE-2026-107331)
 `CVE-2026-107331 · CVSS 9.9`
@@ -196,6 +354,15 @@ IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 allow remote attackers 
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17408)
 
+### 🔴 Now exploited: IBM Aspera Faspex Authorization Bypass Flaw (CVE-2026-123218)
+`CVE-2026-123218 · CVSS 9.8 · CISA KEV`
+
+IBM Aspera Faspex versions 5.0.0 through 5.0.19 contain an authorization bypass vulnerability allowing an authorized user to craft specific messages and gain full administrative privileges.
+
+**Do:** Upgrade IBM Aspera Faspex to the latest patched version.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123218)
+
 ### 🟠 Crédit Mutuel Arkéa Hit by $133 Million Cyberattack via Service Provider
 `exploited`
 
@@ -211,15 +378,6 @@ A vulnerability in Keycloak's client management component allows authenticated a
 **Do:** Apply the latest vendor patches for Keycloak to address CVE-2026-120984.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120984)
-
-### 🟠 IBM Aspera Faspex Authorization Bypass Flaw (CVE-2026-123218)
-`CVE-2026-123218 · CVSS 9.8`
-
-IBM Aspera Faspex versions 5.0.0 through 5.0.19 contain an authorization bypass vulnerability allowing an authorized user to craft specific messages and gain full administrative privileges.
-
-**Do:** Upgrade IBM Aspera Faspex to the latest patched version.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123218)
 
 ### 🟠 IBM API Connect Authentication Bypass Flaw (CVE-2026-16720)
 `CVE-2026-16720 · CVSS 9.8`
@@ -719,14 +877,14 @@ Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS contain an improper authentic
 
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-27834) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog)
 
-### 🔴 OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux
-`CVE-2026-123158`
+### 🔴 Now exploited: OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux
+`CVE-2026-123158 · CISA KEV`
 
 OpenSSH version 10.6p2 fixes a critical flaw affecting certain Alpine Linux configurations where long passwords can bypass authentication on accounts with no password.
 
 **Do:** Upgrade OpenSSH to version 10.6p2 or later on affected Alpine Linux servers.
 
-[The Hacker News](https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html) · [Ars Technica](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/) · [SecurityWeek](https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html)
+[The Hacker News](https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html) · [Ars Technica](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/) · [SecurityWeek](https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html) · [SecurityWeek](https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123158)
 
 ### 🔴 Zyxel Fixes Zero-Day Exploit on Network Switches
 `exploited`
@@ -1185,15 +1343,6 @@ Gorbag threat actors have been observed exploiting WinRAR vulnerabilities to dep
 
 ## 2026-11-02
 
-### 🔴 GitLab Active RCE Attacks Targeting Unpatched Servers
-`exploited`
-
-Over 1,000 internet-exposed GitLab servers remain unpatched and vulnerable to ongoing remote code execution attacks.
-
-**Do:** Upgrade GitLab installations immediately to the latest patched version.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/)
-
 ### 🟠 Google Disrupts 1.3M Device Android TV Box Botnet
 `exploited`
 
@@ -1203,73 +1352,12 @@ Google disrupted the 1.3 million-device XCPE Android botnet, consisting largely 
 
 [The Hacker News](https://thehackernews.com/2026/11/google-disrupts-13-million-device.html) · [The Hacker News](https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/) · [Krebs on Security](https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/) · [SecurityWeek](https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/) · [Ars Technica](https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/) · [The Record](https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes)
 
-### 🟠 FBI Blames North Korea for $6.3B Binance Theft
-`exploited`
-
-The FBI and U.S. Secret Service attributed the $6.3 billion cryptocurrency theft from Binance to North Korean hackers and flagged over 600 addresses.
-
-**Do:** Block transactions associated with the flagged cryptocurrency addresses.
-
-[The Record](https://therecord.media/fbi-blames-tradertraitor-for-binance-hack) · [SecurityWeek](https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/) · [The Record](https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea) · [The Hacker News](https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/) · [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/) · [Ars Technica](https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/)
-
-### 🟠 Cyberattack Dispatches European Supermarket Refrigeration
-`exploited`
-
-A cyberattack disrupted refrigeration systems across European supermarket chains after hackers remotely altered temperature settings on cooling units.
-
-[The Record](https://therecord.media/cyberattack-grocery-freezers-europe) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/) · [SecurityWeek](https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/) · [The Hacker News](https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html) · [The Record](https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks) · [The Record](https://therecord.media/france-cyberattack-blood-refrigeration) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/)
-
 ### 🟠 Mercado Bitcoin Confirms Cyberattack and Fund Outflows
 `exploited`
 
 Brazil's largest crypto exchange, Mercado Bitcoin, confirmed a cyberattack after blockchain security firms noted over $46 million leaving the platform.
 
 [The Record](https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist)
-
-### 🟠 BTCPay Server Hot Wallet Crypto Thefts
-`exploited`
-
-Maintainers of BTCPay Server warned users that hackers have been draining hot wallets on instances running outdated versions.
-
-**Do:** Update BTCPay Server to the latest version immediately.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html)
-
-### 🟠 Synology Warns of C3RB3R Ransomware NAS Attacks
-`exploited`
-
-Synology warned customers to update NAS devices immediately due to a surge in active C3RB3r ransomware attacks.
-
-**Do:** Update Synology NAS devices immediately.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)
-
-### 🟠 Malicious Claude Code Extension in Cursor Supply Chain
-`exploited`
-
-A malicious Claude Code extension served in a Cursor supply chain attack performed host reconnaissance and attempted a reverse SSH tunnel.
-
-**Do:** Audit Cursor extensions for unauthorized or malicious components.
-
-[SecurityWeek](https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/)
-
-### 🟠 Teams Impersonation and AD CS Certificate Abuse
-`exploited`
-
-Attackers posing as IT support on Microsoft Teams tricked employees into granting remote access, then abused AD CS settings to steal privileged certificates.
-
-**Do:** Audit Active Directory Certificate Services (AD CS) configurations and enforce phishing-resistant MFA.
-
-[The Hacker News](https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html)
-
-### 🟠 Control Web Panel OS Command Injection Flaw
-`CVE-2026-77876 · CVSS 9.8`
-
-Control Web Panel (CWP) before version 1.16 contains an OS command injection vulnerability in the protected_directory module allowing arbitrary command execution.
-
-**Do:** Upgrade Control Web Panel to version 1.16 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-77876)
 
 ### 🟠 Fintech Platform Sageworks Taken Offline After Attack
 `exploited`
@@ -1291,70 +1379,4 @@ The BYOD ransomware gang claimed responsibility for a security incident at Michi
 Russia's federal statistics agency, Rosstat, confirmed a cyberattack claimed by Belarusian and pro-Ukrainian hackers who stole government data.
 
 [The Record](https://therecord.media/hackers-ukraine-belarus-russia)
-
-### 🟠 Ukrainian and Russian Air Raid Apps Hacked
-`exploited`
-
-Emergency air raid alert systems in Ukraine and Russia were hacked to spread fake nuclear attack warnings.
-
-[The Record](https://therecord.media/ukraine-hackers-russia-alert-system)
-
-### 🟠 Revolve Data Breach Impacts 180,000 Customers
-`exploited`
-
-Hackers accessed Revolve's online shopping platform and stole personal and payment card information affecting at least 180,000 individuals.
-
-[SecurityWeek](https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/)
-
-### 🟠 Polymarket Funds Returned Following DNS Hijack
-`exploited`
-
-Polymarket returned funds to traders after DebugBear suffered a DNS hijack via its domain registrar affecting a customer.
-
-**Do:** Audit DNS registrar security and enable registry locks.
-
-[SecurityWeek](https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/) · [The Record](https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise)
-
-### 🟠 DarkBlinders Targets Israel and Iraqi Kurdistan Cloud
-`exploited`
-
-An Iran-aligned threat actor conducted espionage campaigns compromising targets in Israel and the Kurdistan Region of Iraq between August and October 2026.
-
-[The Hacker News](https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html)
-
-### 🟠 Government Linux Servers Targeted by SysGoRAT
-`exploited`
-
-Palo Alto Networks discovered a cyber espionage campaign targeting government Linux infrastructure using SysGoRAT and scripts.
-
-**Do:** Monitor Linux environments for unauthorized remote access tools and anomalous scripts.
-
-[The Hacker News](https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html)
-
-### 🟠 ape-volo-admin Auth Bypass via Hardcoded JWT Key
-`CVE-2026-120442 · CVSS 9.8`
-
-ape-volo-admin before 3.6.1 contains an authentication bypass vulnerability allowing unauthenticated attackers to forge administrator tokens using a hardcoded JWT signing key.
-
-**Do:** Upgrade ape-volo-admin to version 3.6.1 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120442)
-
-### 🟠 madong-admin-saas Missing Authentication Flaw
-`CVE-2026-120446 · CVSS 9.4`
-
-madong-admin-saas through 5.1.4 contains a missing authentication vulnerability in the platform tenant management API, allowing unauthenticated attackers to manage tenants.
-
-**Do:** Upgrade madong-admin-saas beyond version 5.1.4.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120446)
-
-### 🟠 Control Web Panel Auth Bypass Vulnerability
-`CVE-2026-73696 · CVSS 9.3`
-
-Control Web Panel (CWP) before version 1.12 contains an execution after redirect vulnerability allowing unauthenticated attackers to bypass authentication.
-
-**Do:** Upgrade Control Web Panel to version 1.12 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-73696)
 
