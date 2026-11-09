@@ -1436,14 +1436,3 @@ A new Windows infostealer called VOLTA harvests browser credentials, Outlook pro
 
 [The Hacker News](https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html)
 
-## 2026-11-01
-
-### 🟠 WAVLINK WN553X1-B WireGuard CLI Command Injection
-`CVE-2026-120240 · CVSS 9.9`
-
-WAVLINK WN553X1-B V260403_2.0.0 contains a remote OS command injection vulnerability in the WireGuard CLI Group Handler. A public exploit has been disclosed.
-
-**Do:** Restrict access to WAVLINK devices and apply vendor patches when available.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120240)
-
