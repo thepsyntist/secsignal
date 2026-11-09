@@ -2,6 +2,17 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-09
+
+### 🟠 U.S. Agencies Warn of Attacks on Industrial Refrigeration Controllers
+`exploited`
+
+Threat actors are actively targeting unpatched or internet-accessible industrial refrigeration and cold-chain monitoring systems globally, potentially causing service disruptions, fire hazards, and inventory loss. U.S. government agencies issued an alert regarding these attacks.
+
+**Do:** Audit industrial refrigeration controllers, disconnect them from the public internet, and apply available patches.
+
+[The Hacker News](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html)
+
 ## 2026-11-08
 
 ### 🔴 OpenAM Self-Registration Privilege Escalation Vulnerability (CVE-2026-123549)
@@ -587,7 +598,7 @@ CISA added CVE-2026-19868, a single-factor authentication vulnerability in Sonic
 
 **Do:** Apply vendor-supplied patches immediately and review access logs for unauthorized SSLVPN sessions.
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/) · [SecurityWeek](https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/) · [SecurityWeek](https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/) · [The Hacker News](https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html)
 
 ### 🔴 Canonical LXD Restricted Project Bypass RCE Flaw
 `CVSS 9.9`
@@ -1260,87 +1271,6 @@ Control Web Panel (CWP) before version 1.16 contains an OS command injection vul
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-77876)
 
-### 🟠 WAVLINK WN536AX6-A Web Management Interface Command Injection
-`CVE-2026-120276 · CVSS 10.0`
-
-An OS command injection vulnerability exists in the web management interface of WAVLINK WN536AX6-A V260507_2.0.0 via the group_name argument. A public exploit is available.
-
-**Do:** Apply available vendor patches or restrict access to the web management interface.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120276)
-
-### 🟠 WAVLINK WN536AX6-A WireGuard CLI Command Injection
-`CVE-2026-120277 · CVSS 10.0`
-
-An OS command injection vulnerability affects the WireGuard CLI component in WAVLINK WN536AX6-A V260507_2.0.0 via the group_name argument. A public exploit exists.
-
-**Do:** Apply patches provided by WAVLINK and restrict management access.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120277)
-
-### 🟠 WAVLINK WN536AX6-A OpenVPN Handler Command Injection
-`CVE-2026-120279 · CVSS 10.0`
-
-An OS command injection vulnerability exists in the openvpn_cli handler of WAVLINK WN536AX6-A V260507 via the file_id argument. A public exploit is available.
-
-**Do:** Update to patched firmware or disable vulnerable protocol handlers.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120279)
-
-### 🟠 WAVLINK WN536AX6-A WireGuard Component Command Injection
-`CVE-2026-120280 · CVSS 10.0`
-
-An OS command injection vulnerability impacts the WireGuard component in WAVLINK WN536AX6-A V260507 via group_id or group_name arguments. A public exploit has been disclosed.
-
-**Do:** Apply available vendor updates.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120280)
-
-### 🟠 WAVLINK WN536AX6-A OpenVPN Handler Buffer Overflow
-`CVE-2026-120281 · CVSS 10.0`
-
-A stack-based buffer overflow vulnerability exists in the OpenVPN handler of WAVLINK WN536AX6-A V260507 via the openvpn_ip argument. A public exploit is available.
-
-**Do:** Upgrade to patched firmware versions.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120281)
-
-### 🟠 WAVLINK WN536AX6-A Host Blacklist Command Injection
-`CVE-2026-120282 · CVSS 9.9`
-
-An OS command injection vulnerability affects the host_black function in WAVLINK WN536AX6-A V260507 via the mac argument. A public exploit has been released.
-
-**Do:** Apply vendor patches.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120282)
-
-### 🟠 Termix-SSH File Manager Path Traversal Vulnerability
-`CVE-2026-120322 · CVSS 9.9`
-
-A path traversal vulnerability exists in Termix-SSH Termix up to 2.9.2 via the destPath argument in the file transfer plugin. A public exploit is available.
-
-**Do:** Update Termix to core v26.10.0 or standalone File Manager plugin v1.0.0+.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120322)
-
-### 🟠 WAVLINK WN551X3-A WireGuard CLI Command Injection
-`CVE-2026-120344 · CVSS 10.0`
-
-An OS command injection vulnerability affects the WireGuard CLI handler in WAVLINK WN551X3-A M51X3_V251020-WO-182e965 via the group_name argument. A public exploit is available.
-
-**Do:** Apply vendor firmware updates.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120344)
-
-### 🟠 WAVLINK WN551X3-A DNS Resolution Handler Command Injection
-`CVE-2026-120345 · CVSS 10.0`
-
-An OS command injection vulnerability exists in the DNS Resolution Handler of WAVLINK WN551X3-A M51X3_V251020-WO-182e965 via the data argument. A public exploit is available.
-
-**Do:** Upgrade to patched firmware.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120345)
-
 ### 🟠 Fintech Platform Sageworks Taken Offline After Attack
 `exploited`
 
@@ -1427,12 +1357,4 @@ Control Web Panel (CWP) before version 1.12 contains an execution after redirect
 **Do:** Upgrade Control Web Panel to version 1.12 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-73696)
-
-### 🟠 VOLTA Infostealer Uses LLMs to Rank Stolen Financial Data
-
-A new Windows infostealer called VOLTA harvests browser credentials, Outlook profiles, and Slack workspaces, utilizing large language models to prioritize stolen data by monetization value.
-
-**Do:** Monitor endpoints for unauthorized use of API calls to LLM services by unknown processes and typical credential-stealer behaviors.
-
-[The Hacker News](https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html)
 
