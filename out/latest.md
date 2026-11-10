@@ -2,16 +2,171 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-10
+
+### 🔴 N-able Takes Cloud Platform Offline Following Zero-Day Disclosures
+`exploited`
+
+N-able took hosted N-central environments offline and advised on-premises customers to shut down servers after a researcher published over 30 alleged zero-days.
+
+**Do:** Take N-central servers offline per vendor advisory until patches are available.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/)
+
+### 🔴 SAP NetWeaver Remote Code Execution Vulnerability
+`CVE-2026-109795 · CVSS 9.9`
+
+SAP NetWeaver lacks sufficient input validation and authorization checks in remote-enabled functionality, allowing low-privileged attackers to execute arbitrary code.
+
+**Do:** Apply relevant SAP security patches for NetWeaver.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109795)
+
+### 🔴 SAP NetWeaver AS ABAP Authentication Bypass Vulnerability
+`CVE-2026-120017 · CVSS 10.0`
+
+SAP NetWeaver AS ABAP and ABAP Platform inadequately verify incoming authentication assertions under specific configurations, enabling user impersonation.
+
+**Do:** Apply SAP security updates for AS ABAP.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120017)
+
+### 🔴 SAP NetWeaver Application Server ABAP Memory Corruption Flaw
+`CVE-2026-76964 · CVSS 10.0`
+
+SAP NetWeaver Application Server ABAP insufficiently validates network input, allowing unauthenticated attackers to trigger memory corruption and execute code.
+
+**Do:** Apply SAP security patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76964)
+
+### 🔴 SAP Gateway Default Access Control List Misconfiguration
+`CVE-2026-89103 · CVSS 10.0`
+
+SAP Gateway activates a default Access Control List with high privileges, allowing external attackers to be treated as internal application servers.
+
+**Do:** Review and harden SAP Gateway ACL configurations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89103)
+
+### 🔴 SAP Web Dispatcher Memory Corruption Vulnerability
+`CVE-2026-89126 · CVSS 10.0`
+
+SAP Web Dispatcher improperly validates network input, allowing unauthenticated remote attackers to trigger memory corruption and achieve full system compromise.
+
+**Do:** Apply SAP security patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89126)
+
+### 🟠 Kubero Authentication Bypass via Hardcoded JWT Secret
+`CVE-2026-125370 · CVSS 9.8`
+
+Kubero versions 3.0.0 through 3.1.1 use a hardcoded fallback signing secret when JWT_SECRET is unset, allowing unauthenticated attackers to forge administrative JWTs.
+
+**Do:** Set a secure, unique JWT_SECRET environment variable and upgrade Kubero.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125370)
+
+### 🟠 INDOTALENT WHMS Authentication Bypass via Hard-coded JWT Key
+`CVE-2026-125383 · CVSS 9.8`
+
+INDOTALENT WHMS before 10.20261109 contains a hard-coded JWT signing key and issuer in appsettings.json, allowing attackers to forge administrator tokens.
+
+**Do:** Upgrade INDOTALENT WHMS to version 10.20261109 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125383)
+
+### 🟠 SAP NetWeaver Knowledge Management XSL Transformation Flaw
+`CVE-2026-109803 · CVSS 9.9`
+
+SAP NetWeaver Knowledge Management (XML Forms) permits unauthorized XSL transformations leading to potential code execution.
+
+**Do:** Apply relevant SAP security patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109803)
+
+### 🟠 D-Link M60 MQTT Broker Hard-coded Credentials Flaw
+`CVE-2026-125086 · CVSS 10.0`
+
+D-Link M60 version 1.12.B01 contains hard-coded credentials within the emDaemon MQTT Broker configuration.
+
+**Do:** Apply firmware updates from D-Link or restrict remote access to the device.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125086)
+
+### 🟠 SAP NetWeaver ABAP Platform Missing Authorization Check
+`CVE-2026-76965 · CVSS 9.9`
+
+SAP NetWeaver AS ABAP lacks authorization checks for internal functionality, enabling low-privileged users to execute OS commands.
+
+**Do:** Apply SAP security patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76965)
+
+### 🟠 SAP Web Dispatcher and ICM Request Validation Flaw
+`CVE-2026-89119 · CVSS 9.6`
+
+SAP Web Dispatcher and ICM lack sufficient request validation, exposing administrative functionality to cross-site request attacks.
+
+**Do:** Apply SAP security notes.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89119)
+
+### 🟠 Kubeflow Pipelines API Server Authorization Bypass Vulnerability
+`CVE-2026-77596 · CVSS 9.6 · EPSS 0.00`
+
+In multi-user mode, Kubeflow Pipelines API server upload endpoints fail to perform authorization when the target namespace is empty, allowing shared pipeline uploads.
+
+**Do:** Review Kubeflow Pipelines configurations and restrict access to multi-user upload endpoints.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-rjr3-43j3-4q8g)
+
+### 🟠 York University Cyberattack Exposes Personal Data
+`exploited`
+
+York University suffered a cybersecurity incident involving the theft of personal information submitted through online forms dating back to 2007.
+
+**Do:** Monitor accounts and review data retention practices for online form submissions.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/)
+
+### 🟠 INDOTALENT WHMS Default Credentials Vulnerability
+`CVE-2026-125384 · CVSS 9.8`
+
+INDOTALENT WHMS before 10.20261109 creates a default admin account with hardcoded credentials (admin@root.com / 123456).
+
+**Do:** Change or remove default administrative credentials immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125384)
+
+### 🟠 SAP BusinessObjects Web Intelligence External Entity Vulnerability
+`CVE-2026-109798 · CVSS 9.1`
+
+SAP BusinessObjects BI Platform (Web Intelligence) fails to properly restrict external entity resolution during OLAP connection requests, allowing file reading.
+
+**Do:** Apply SAP security notes for BusinessObjects.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109798)
+
+### 🟠 Pocket ID Email Verification Token Reuse Vulnerability
+`CVE-2026-115770 · CVSS 9.6 · EPSS 0.00`
+
+Pocket ID allows email verification tokens to remain valid after an account email address change, enabling verified-email spoofing.
+
+**Do:** Upgrade Pocket ID backend to a patched version when available.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-rm8c-2cv8-jwf6)
+
 ## 2026-11-09
 
 ### 🔴 GPUStack Improper Authentication Vulnerability (CVE-2026-102895)
-`CVE-2026-102895 · EPSS 0.00 · CISA KEV`
+`CVE-2026-102895, CVE-2026-116779, CVE-2026-123158, CVE-2026-123218 · EPSS 0.00 · CISA KEV`
 
 GPUStack contains an improper authentication vulnerability allowing unauthenticated administrative access, API-key creation, secret disclosure, and code execution. The vulnerability is actively exploited and listed in CISA KEV.
 
 **Do:** Apply vendor mitigations immediately per CISA KEV and BOD 26-04 guidelines.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895) · [GitHub Advisory](https://github.com/advisories/GHSA-gj9m-f8ph-pmhr) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog)
 
 ### 🔴 SignalWire FreeSwitch Code Injection Vulnerability (CVE-2026-116779)
 `CVE-2026-116779 · EPSS 0.01 · CISA KEV`
@@ -155,7 +310,7 @@ fastapi-code-generator 0.8.0 emits unescaped operation summaries into docstrings
 
 Vanderbilt University warned students and employees of a cyberattack impacting campus devices and systems.
 
-[The Record](https://therecord.media/vanderbilt-cyberattack-ransomware-alert)
+[The Record](https://therecord.media/vanderbilt-cyberattack-ransomware-alert) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/)
 
 ### 🟠 Revolve Data Breach Impacts 1.5 Million Individuals
 `exploited`
@@ -169,7 +324,7 @@ Online fashion retailer Revolve disclosed that a September cyberattack affected 
 
 Amplifon Americas suffered a data breach where hackers stole personal, health, and insurance information, including Social Security numbers.
 
-[SecurityWeek](https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/)
+[SecurityWeek](https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/) · [The Record](https://therecord.media/amplifon-hearing-aid-company-data-breach)
 
 ## 2026-11-08
 
@@ -1340,43 +1495,4 @@ Russia-linked threat actors are using simple malware to steal sensitive document
 Gorbag threat actors have been observed exploiting WinRAR vulnerabilities to deploy info-stealer malware against Ukrainian defense and law enforcement targets.
 
 [The Hacker News](https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html)
-
-## 2026-11-02
-
-### 🟠 Google Disrupts 1.3M Device Android TV Box Botnet
-`exploited`
-
-Google disrupted the 1.3 million-device XCPE Android botnet, consisting largely of set-top boxes manufactured by Videostrong with intentional manufacturer-installed backdoors.
-
-**Do:** Audit network for unverified Android set-top boxes and streaming devices acting as proxies.
-
-[The Hacker News](https://thehackernews.com/2026/11/google-disrupts-13-million-device.html) · [The Hacker News](https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/) · [Krebs on Security](https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/) · [SecurityWeek](https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/) · [Ars Technica](https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/) · [The Record](https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes)
-
-### 🟠 Mercado Bitcoin Confirms Cyberattack and Fund Outflows
-`exploited`
-
-Brazil's largest crypto exchange, Mercado Bitcoin, confirmed a cyberattack after blockchain security firms noted over $46 million leaving the platform.
-
-[The Record](https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist)
-
-### 🟠 Fintech Platform Sageworks Taken Offline After Attack
-`exploited`
-
-Financial technology company Abrigo took its Sageworks risk management platform offline following irregular activity and an outage.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/)
-
-### 🟠 Michigan State Cyber Incident Claimed by Ransomware Gang
-`exploited`
-
-The BYOD ransomware gang claimed responsibility for a security incident at Michigan State University that prompted campus-wide response actions.
-
-[The Record](https://therecord.media/michigan-state-university-byod-gang-cyber-incident)
-
-### 🟠 Russia Statistics Agency Confirms Cyberattack
-`exploited`
-
-Russia's federal statistics agency, Rosstat, confirmed a cyberattack claimed by Belarusian and pro-Ukrainian hackers who stole government data.
-
-[The Record](https://therecord.media/hackers-ukraine-belarus-russia)
 

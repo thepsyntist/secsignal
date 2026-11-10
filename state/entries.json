@@ -1,5 +1,426 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published",
+  "tier": "act",
+  "score": 77,
+  "headline": "N-able Takes Cloud Platform Offline Following Zero-Day Disclosures",
+  "tldr": "N-able took hosted N-central environments offline and advised on-premises customers to shut down servers after a researcher published over 30 alleged zero-days.",
+  "action": "Take N-central servers offline per vendor advisory until patches are available.",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-109795",
+  "tier": "act",
+  "score": 75,
+  "headline": "SAP NetWeaver Remote Code Execution Vulnerability",
+  "tldr": "SAP NetWeaver lacks sufficient input validation and authorization checks in remote-enabled functionality, allowing low-privileged attackers to execute arbitrary code.",
+  "action": "Apply relevant SAP security patches for NetWeaver.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109795"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109795"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120017",
+  "tier": "act",
+  "score": 75,
+  "headline": "SAP NetWeaver AS ABAP Authentication Bypass Vulnerability",
+  "tldr": "SAP NetWeaver AS ABAP and ABAP Platform inadequately verify incoming authentication assertions under specific configurations, enabling user impersonation.",
+  "action": "Apply SAP security updates for AS ABAP.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120017"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120017"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-76964",
+  "tier": "act",
+  "score": 75,
+  "headline": "SAP NetWeaver Application Server ABAP Memory Corruption Flaw",
+  "tldr": "SAP NetWeaver Application Server ABAP insufficiently validates network input, allowing unauthenticated attackers to trigger memory corruption and execute code.",
+  "action": "Apply SAP security patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-76964"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-89103",
+  "tier": "act",
+  "score": 75,
+  "headline": "SAP Gateway Default Access Control List Misconfiguration",
+  "tldr": "SAP Gateway activates a default Access Control List with high privileges, allowing external attackers to be treated as internal application servers.",
+  "action": "Review and harden SAP Gateway ACL configurations.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-89103"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-89126",
+  "tier": "act",
+  "score": 75,
+  "headline": "SAP Web Dispatcher Memory Corruption Vulnerability",
+  "tldr": "SAP Web Dispatcher improperly validates network input, allowing unauthenticated remote attackers to trigger memory corruption and achieve full system compromise.",
+  "action": "Apply SAP security patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-89126"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89126"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-125370",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Kubero Authentication Bypass via Hardcoded JWT Secret",
+  "tldr": "Kubero versions 3.0.0 through 3.1.1 use a hardcoded fallback signing secret when JWT_SECRET is unset, allowing unauthenticated attackers to forge administrative JWTs.",
+  "action": "Set a secure, unique JWT_SECRET environment variable and upgrade Kubero.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-125370"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125370"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-125383",
+  "tier": "watch",
+  "score": 67,
+  "headline": "INDOTALENT WHMS Authentication Bypass via Hard-coded JWT Key",
+  "tldr": "INDOTALENT WHMS before 10.20261109 contains a hard-coded JWT signing key and issuer in appsettings.json, allowing attackers to forge administrator tokens.",
+  "action": "Upgrade INDOTALENT WHMS to version 10.20261109 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-125383"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125383"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-109803",
+  "tier": "watch",
+  "score": 67,
+  "headline": "SAP NetWeaver Knowledge Management XSL Transformation Flaw",
+  "tldr": "SAP NetWeaver Knowledge Management (XML Forms) permits unauthorized XSL transformations leading to potential code execution.",
+  "action": "Apply relevant SAP security patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109803"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109803"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-125086",
+  "tier": "watch",
+  "score": 67,
+  "headline": "D-Link M60 MQTT Broker Hard-coded Credentials Flaw",
+  "tldr": "D-Link M60 version 1.12.B01 contains hard-coded credentials within the emDaemon MQTT Broker configuration.",
+  "action": "Apply firmware updates from D-Link or restrict remote access to the device.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-125086"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125086"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-76965",
+  "tier": "watch",
+  "score": 67,
+  "headline": "SAP NetWeaver ABAP Platform Missing Authorization Check",
+  "tldr": "SAP NetWeaver AS ABAP lacks authorization checks for internal functionality, enabling low-privileged users to execute OS commands.",
+  "action": "Apply SAP security patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-76965"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76965"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-89119",
+  "tier": "watch",
+  "score": 67,
+  "headline": "SAP Web Dispatcher and ICM Request Validation Flaw",
+  "tldr": "SAP Web Dispatcher and ICM lack sufficient request validation, exposing administrative functionality to cross-site request attacks.",
+  "action": "Apply SAP security notes.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-89119"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89119"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-rjr3-43j3-4q8g",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Kubeflow Pipelines API Server Authorization Bypass Vulnerability",
+  "tldr": "In multi-user mode, Kubeflow Pipelines API server upload endpoints fail to perform authorization when the target namespace is empty, allowing shared pipeline uploads.",
+  "action": "Review Kubeflow Pipelines configurations and restrict access to multi-user upload endpoints.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-77596"
+  ],
+  "cvss": 9.6,
+  "epss": 0.0025,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-rjr3-43j3-4q8g"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007",
+  "tier": "watch",
+  "score": 61,
+  "headline": "York University Cyberattack Exposes Personal Data",
+  "tldr": "York University suffered a cybersecurity incident involving the theft of personal information submitted through online forms dating back to 2007.",
+  "action": "Monitor accounts and review data retention practices for online form submissions.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-125384",
+  "tier": "watch",
+  "score": 59,
+  "headline": "INDOTALENT WHMS Default Credentials Vulnerability",
+  "tldr": "INDOTALENT WHMS before 10.20261109 creates a default admin account with hardcoded credentials (admin@root.com / 123456).",
+  "action": "Change or remove default administrative credentials immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-125384"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125384"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-109798",
+  "tier": "watch",
+  "score": 59,
+  "headline": "SAP BusinessObjects Web Intelligence External Entity Vulnerability",
+  "tldr": "SAP BusinessObjects BI Platform (Web Intelligence) fails to properly restrict external entity resolution during OLAP connection requests, allowing file reading.",
+  "action": "Apply SAP security notes for BusinessObjects.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109798"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109798"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-rm8c-2cv8-jwf6",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Pocket ID Email Verification Token Reuse Vulnerability",
+  "tldr": "Pocket ID allows email verification tokens to remain valid after an account email address change, enabling verified-email spoofing.",
+  "action": "Upgrade Pocket ID backend to a patched version when available.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115770"
+  ],
+  "cvss": 9.6,
+  "epss": 0.00166,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-rm8c-2cv8-jwf6"
+   }
+  ],
+  "first_seen": "2026-11-10T04:10:32+00:00",
+  "updated": "2026-11-10T04:10:32+00:00"
+ },
+ {
   "key": "kev:CVE-2026-102895",
   "tier": "act",
   "score": 87,
@@ -10,7 +431,10 @@
   "exploited": true,
   "kev": true,
   "cves": [
-   "CVE-2026-102895"
+   "CVE-2026-102895",
+   "CVE-2026-116779",
+   "CVE-2026-123158",
+   "CVE-2026-123218"
   ],
   "cvss": null,
   "epss": 0.00331,
@@ -19,10 +443,18 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
+   },
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-gj9m-f8ph-pmhr"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog"
    }
   ],
   "first_seen": "2026-11-09T20:50:26+00:00",
-  "updated": "2026-11-09T20:50:26+00:00"
+  "updated": "2026-11-10T04:10:32+00:00"
  },
  {
   "key": "kev:CVE-2026-116779",
@@ -399,10 +831,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/"
    }
   ],
   "first_seen": "2026-11-09T20:50:26+00:00",
-  "updated": "2026-11-09T20:50:26+00:00"
+  "updated": "2026-11-10T04:10:32+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million",
@@ -445,10 +881,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/amplifon-hearing-aid-company-data-breach"
    }
   ],
   "first_seen": "2026-11-09T20:50:26+00:00",
-  "updated": "2026-11-09T20:50:26+00:00"
+  "updated": "2026-11-10T04:10:32+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
