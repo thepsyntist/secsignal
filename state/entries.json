@@ -1,14 +1,369 @@
 [
  {
+  "key": "kev:CVE-2026-124194",
+  "tier": "act",
+  "score": 92,
+  "headline": "Microsoft Office Outlook Zero-Day (CVE-2026-124194) Actively Exploited",
+  "tldr": "Microsoft's November 2026 Patch Tuesday fixes an actively exploited Outlook zero-day vulnerability (CVE-2026-124194) involving a missing user interaction for potentially unsafe action.",
+  "action": "Apply the November 2026 Microsoft security updates immediately.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-124194"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+  "tier": "act",
+  "score": 84,
+  "headline": "AhsayCBS Flaws (CVE-2026-105133, CVE-2026-105134) Exploited to Deploy Backdoor",
+  "tldr": "Attackers exploited vulnerabilities CVE-2026-105133 and CVE-2026-105134 in AhsayCBS to bypass authentication and execute arbitrary commands, deploying a sandbox-evading Python backdoor.",
+  "action": "Apply available patches for AhsayCBS and audit systems for unauthorized Python backdoors.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-105133",
+   "CVE-2026-105134"
+  ],
+  "cvss": null,
+  "epss": 0.84478,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+  "tier": "act",
+  "score": 82,
+  "headline": "Xen Orchestra Auth Bypass (VSA-2026-062) Actively Exploited",
+  "tldr": "A critical authentication bypass vulnerability in Xen Orchestra (VSA-2026-062) is actively exploited in the wild, allowing attackers to gain administrator privileges and take over XCP-ng virtualization hosts.",
+  "action": "Apply updates provided by Vates VMS immediately and check logs for signs of compromise.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-20320",
+  "tier": "act",
+  "score": 76,
+  "headline": "Cisco BroadWorks XXE Vulnerability (CVE-2026-20320) Added to KEV",
+  "tldr": "Cisco BroadWorks contains an XML external entity reference vulnerability (CVE-2026-20320) allowing remote unauthenticated attackers to read sensitive configuration information.",
+  "action": "Apply vendor mitigations in accordance with CISA BOD 26-04 guidance.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-20320"
+  ],
+  "cvss": null,
+  "epss": 0.00385,
+  "watch": "cisco",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "iOS Sandbox Escape Flaw Threatens Crypto Wallets on iOS 26 and 27",
+  "tldr": "An active iOS sandbox escape published on GitHub affects iOS 26.7.1, 27.0.1, and 27.2, allowing third-party apps to read private files and expose cryptocurrency seed phrases and keys.",
+  "action": "Exercise caution when installing third-party iOS applications; monitor for an official Apple patch.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-111793",
+  "tier": "act",
+  "score": 71,
+  "headline": "Openwave Messaging Webtop Media Transcoder Flaw in KEV",
+  "tldr": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability (CVE-2026-111793) added to CISA KEV.",
+  "action": "Apply vendor mitigations in accordance with CISA BOD 26-04.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-111793"
+  ],
+  "cvss": null,
+  "epss": 0.00274,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/russia-hackers-espionage-romania-kazakhstan",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Russian Hackers Compromise Government Email Servers in Romania and Kazakhstan",
+  "tldr": "State-linked hackers compromised government email servers in Romania and Kazakhstan to intercept correspondence with NATO and EU officials.",
+  "action": "Audit government and diplomatic mail infrastructure for unauthorized access and review external mail relay logs.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/russia-hackers-espionage-romania-kazakhstan"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "SGLang RCE Exploit Breaches NEAR AI Inference Servers",
+  "tldr": "An attacker exploited an RCE flaw in the SGLang inference engine to run code on a NEAR AI inference server and access processing requests.",
+  "action": "Upgrade SGLang and review inference server access logs for unauthorized execution.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-pcrw-h46h-c93h",
+  "tier": "watch",
+  "score": 59,
+  "headline": "npm:mongoose sanitizeFilter Bypassed in countDocuments (CVE-2026-125120)",
+  "tldr": "Mongoose versions prior to patches fail to apply sanitizeFilter on countDocuments queries, risking query selector injection attacks.",
+  "action": "Upgrade Mongoose to version 9.9.2+, 8.24.3+, 7.8.12+, or 6.13.11+.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-125120"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00566,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-pcrw-h46h-c93h"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-8vv3-6qpc-gpw6",
+  "tier": "watch",
+  "score": 59,
+  "headline": "npm:bitcoinjs-lib Merkle Node Duplication Vulnerability (CVE-2026-107846)",
+  "tldr": "bitcoinjs-lib contains an undetected merkle node duplication flaw in block root computation that can validate forged transaction lists with valid proof of work.",
+  "action": "Review advisory details and update bitcoinjs-lib packages.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-107846"
+  ],
+  "cvss": 9.3,
+  "epss": 0.0018,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-8vv3-6qpc-gpw6"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-xggf-m53x-jc3f",
+  "tier": "watch",
+  "score": 59,
+  "headline": "npm:node-opcua Namespace-Level RBAC Fail-Open Flaw (CVE-2026-95860)",
+  "tldr": "An unauthenticated client can write protected variables and call privileged methods on OPC UA nodes lacking explicit per-node permissions due to a fail-open default in node-opcua.",
+  "action": "Upgrade node-opcua packages and verify explicit permissions on namespace nodes.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-95860"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00596,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-xggf-m53x-jc3f"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Adobe Patches 110 Vulnerabilities Across 9 Products",
+  "tldr": "Adobe fixed 110 vulnerabilities across products including AEM, Premiere, Photoshop, After Effects, and Connect.",
+  "action": "Apply the latest updates for Adobe products across the enterprise.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Git RCE Vulnerability in Recursive Clones (CVE-2026-111760)",
+  "tldr": "An integer truncation flaw in Git allows malicious repositories to execute code during recursive clones and submodule handling. Fixed in Git versions 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, 2.55.1, and 2.56.1.",
+  "action": "Upgrade Git to versions 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, 2.55.1, 2.56.1 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-111760"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "China-Nexus Sparrow Malware Ecosystem Targets Telecom and Government",
+  "tldr": "Three threat clusters (including SilentDelivery) linked through shared infrastructure and the Sparrow malware have targeted telecom, government, and critical infrastructure across Latin America, Asia, and Europe.",
+  "action": "Monitor networks for indicators associated with the Sparrow malware ecosystem and Chinese espionage campaigns.",
+  "category": "malware",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html"
+   }
+  ],
+  "first_seen": "2026-11-10T20:53:39+00:00",
+  "updated": "2026-11-10T20:53:39+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
   "tier": "act",
   "score": 92,
-  "headline": "Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)",
+  "headline": "Now exploited: Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)",
   "tldr": "Google has issued an emergency security update to patch a high-severity use-after-free vulnerability in Chrome's XML component (CVE-2026-125350), which is actively exploited in the wild as a zero-day.",
   "action": "Update Google Chrome to the latest version immediately.",
   "category": "vulnerability",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
    "CVE-2026-125350"
   ],
@@ -27,22 +382,29 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350"
    }
   ],
   "first_seen": "2026-11-10T12:44:47+00:00",
-  "updated": "2026-11-10T12:44:47+00:00"
+  "updated": "2026-11-10T20:53:39+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access",
   "tier": "act",
   "score": 77,
-  "headline": "Barracuda ESG Flaws Exploited to Gain Root Access",
+  "headline": "Now exploited: Barracuda ESG Flaws Exploited to Gain Root Access",
   "tldr": "Barracuda Networks warned that attackers are actively exploiting recently patched Email Security Gateway (ESG) vulnerabilities to achieve root command execution.",
   "action": "Ensure all Barracuda Email Security Gateway appliances are fully patched and inspect for signs of compromise.",
   "category": "exploitation",
   "exploited": true,
-  "kev": false,
-  "cves": [],
+  "kev": true,
+  "cves": [
+   "CVE-2026-111560",
+   "CVE-2026-116606"
+  ],
   "cvss": null,
   "epss": null,
   "watch": "",
@@ -50,10 +412,18 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
    }
   ],
   "first_seen": "2026-11-10T12:44:47+00:00",
-  "updated": "2026-11-10T12:44:47+00:00"
+  "updated": "2026-11-10T20:53:39+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
@@ -127,10 +497,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/"
    }
   ],
   "first_seen": "2026-11-10T12:44:47+00:00",
-  "updated": "2026-11-10T12:44:47+00:00"
+  "updated": "2026-11-10T20:53:39+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
@@ -173,10 +547,18 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
    }
   ],
   "first_seen": "2026-11-10T12:44:47+00:00",
-  "updated": "2026-11-10T12:44:47+00:00"
+  "updated": "2026-11-10T20:53:39+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published",
@@ -622,6 +1004,7 @@
   "exploited": true,
   "kev": true,
   "cves": [
+   "CVE-2026-102894",
    "CVE-2026-102895",
    "CVE-2026-116779",
    "CVE-2026-123158",
@@ -650,10 +1033,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/"
+   },
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-62m9-f875-rqw6"
    }
   ],
   "first_seen": "2026-11-09T20:50:26+00:00",
-  "updated": "2026-11-10T12:44:47+00:00"
+  "updated": "2026-11-10T20:53:39+00:00"
  },
  {
   "key": "kev:CVE-2026-116779",
@@ -698,10 +1085,18 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/"
    }
   ],
   "first_seen": "2026-11-09T20:50:26+00:00",
-  "updated": "2026-11-09T20:50:26+00:00"
+  "updated": "2026-11-10T20:53:39+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack",

@@ -4,23 +4,50 @@
 
 ## 2026-11-10
 
-### 🔴 Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)
-`CVE-2026-125350 · exploited`
+### 🔴 Microsoft Office Outlook Zero-Day (CVE-2026-124194) Actively Exploited
+`CVE-2026-124194 · CISA KEV`
+
+Microsoft's November 2026 Patch Tuesday fixes an actively exploited Outlook zero-day vulnerability (CVE-2026-124194) involving a missing user interaction for potentially unsafe action.
+
+**Do:** Apply the November 2026 Microsoft security updates immediately.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/) · [SecurityWeek](https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-124194)
+
+### 🔴 Now exploited: Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)
+`CVE-2026-125350 · CISA KEV`
 
 Google has issued an emergency security update to patch a high-severity use-after-free vulnerability in Chrome's XML component (CVE-2026-125350), which is actively exploited in the wild as a zero-day.
 
 **Do:** Update Google Chrome to the latest version immediately.
 
-[SecurityWeek](https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/) · [The Hacker News](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/)
+[SecurityWeek](https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/) · [The Hacker News](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-125350)
 
-### 🔴 Barracuda ESG Flaws Exploited to Gain Root Access
+### 🔴 AhsayCBS Flaws (CVE-2026-105133, CVE-2026-105134) Exploited to Deploy Backdoor
+`CVE-2026-105133, CVE-2026-105134 · EPSS 0.84 · CISA KEV`
+
+Attackers exploited vulnerabilities CVE-2026-105133 and CVE-2026-105134 in AhsayCBS to bypass authentication and execute arbitrary commands, deploying a sandbox-evading Python backdoor.
+
+**Do:** Apply available patches for AhsayCBS and audit systems for unauthorized Python backdoors.
+
+[The Hacker News](https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html)
+
+### 🔴 Xen Orchestra Auth Bypass (VSA-2026-062) Actively Exploited
 `exploited`
+
+A critical authentication bypass vulnerability in Xen Orchestra (VSA-2026-062) is actively exploited in the wild, allowing attackers to gain administrator privileges and take over XCP-ng virtualization hosts.
+
+**Do:** Apply updates provided by Vates VMS immediately and check logs for signs of compromise.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html)
+
+### 🔴 Now exploited: Barracuda ESG Flaws Exploited to Gain Root Access
+`CVE-2026-111560, CVE-2026-116606 · CISA KEV`
 
 Barracuda Networks warned that attackers are actively exploiting recently patched Email Security Gateway (ESG) vulnerabilities to achieve root command execution.
 
 **Do:** Ensure all Barracuda Email Security Gateway appliances are fully patched and inspect for signs of compromise.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-111560) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-116606)
 
 ### 🔴 N-able Takes Cloud Platform Offline Following Zero-Day Disclosures
 `exploited`
@@ -30,6 +57,15 @@ N-able took hosted N-central environments offline and advised on-premises custom
 **Do:** Take N-central servers offline per vendor advisory until patches are available.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html) · [SecurityWeek](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/)
+
+### 🔴 Cisco BroadWorks XXE Vulnerability (CVE-2026-20320) Added to KEV
+`CVE-2026-20320 · EPSS 0.00 · CISA KEV`
+
+Cisco BroadWorks contains an XML external entity reference vulnerability (CVE-2026-20320) allowing remote unauthenticated attackers to read sensitive configuration information.
+
+**Do:** Apply vendor mitigations in accordance with CISA BOD 26-04 guidance.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-20320)
 
 ### 🔴 SAP NetWeaver Remote Code Execution Vulnerability
 `CVE-2026-109795 · CVSS 9.9`
@@ -76,6 +112,15 @@ SAP Web Dispatcher improperly validates network input, allowing unauthenticated 
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89126)
 
+### 🔴 iOS Sandbox Escape Flaw Threatens Crypto Wallets on iOS 26 and 27
+`exploited`
+
+An active iOS sandbox escape published on GitHub affects iOS 26.7.1, 27.0.1, and 27.2, allowing third-party apps to read private files and expose cryptocurrency seed phrases and keys.
+
+**Do:** Exercise caution when installing third-party iOS applications; monitor for an official Apple patch.
+
+[The Hacker News](https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/)
+
 ### 🔴 Turla Threat Group Deploys Cereal Malware Against Exchange Servers
 `exploited`
 
@@ -93,6 +138,33 @@ The French government stated that an October cyberattack affecting refrigeration
 **Do:** Isolate and secure industrial refrigeration and HVAC controllers from direct internet access.
 
 [SecurityWeek](https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/) · [The Hacker News](https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html)
+
+### 🔴 Openwave Messaging Webtop Media Transcoder Flaw in KEV
+`CVE-2026-111793 · EPSS 0.00 · CISA KEV`
+
+Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability (CVE-2026-111793) added to CISA KEV.
+
+**Do:** Apply vendor mitigations in accordance with CISA BOD 26-04.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-111793)
+
+### 🟠 Russian Hackers Compromise Government Email Servers in Romania and Kazakhstan
+`exploited`
+
+State-linked hackers compromised government email servers in Romania and Kazakhstan to intercept correspondence with NATO and EU officials.
+
+**Do:** Audit government and diplomatic mail infrastructure for unauthorized access and review external mail relay logs.
+
+[The Record](https://therecord.media/russia-hackers-espionage-romania-kazakhstan)
+
+### 🟠 SGLang RCE Exploit Breaches NEAR AI Inference Servers
+`exploited`
+
+An attacker exploited an RCE flaw in the SGLang inference engine to run code on a NEAR AI inference server and access processing requests.
+
+**Do:** Upgrade SGLang and review inference server access logs for unauthorized execution.
+
+[The Hacker News](https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html)
 
 ### 🟠 Kubero Authentication Bypass via Hardcoded JWT Secret
 `CVE-2026-125370 · CVSS 9.8`
@@ -154,7 +226,7 @@ SAP released its November 2026 security updates patching 35 vulnerabilities, inc
 
 **Do:** Apply SAP November 2026 security updates across all affected NetWeaver and Web Dispatcher instances.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/) · [SecurityWeek](https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/)
 
 ### 🟠 Kubeflow Pipelines API Server Authorization Bypass Vulnerability
 `CVE-2026-77596 · CVSS 9.6 · EPSS 0.00`
@@ -174,6 +246,33 @@ York University suffered a cybersecurity incident involving the theft of persona
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/)
 
+### 🟠 npm:mongoose sanitizeFilter Bypassed in countDocuments (CVE-2026-125120)
+`CVE-2026-125120 · CVSS 9.8 · EPSS 0.01`
+
+Mongoose versions prior to patches fail to apply sanitizeFilter on countDocuments queries, risking query selector injection attacks.
+
+**Do:** Upgrade Mongoose to version 9.9.2+, 8.24.3+, 7.8.12+, or 6.13.11+.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-pcrw-h46h-c93h)
+
+### 🟠 npm:bitcoinjs-lib Merkle Node Duplication Vulnerability (CVE-2026-107846)
+`CVE-2026-107846 · CVSS 9.3 · EPSS 0.00`
+
+bitcoinjs-lib contains an undetected merkle node duplication flaw in block root computation that can validate forged transaction lists with valid proof of work.
+
+**Do:** Review advisory details and update bitcoinjs-lib packages.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-8vv3-6qpc-gpw6)
+
+### 🟠 npm:node-opcua Namespace-Level RBAC Fail-Open Flaw (CVE-2026-95860)
+`CVE-2026-95860 · CVSS 9.1 · EPSS 0.01`
+
+An unauthenticated client can write protected variables and call privileged methods on OPC UA nodes lacking explicit per-node permissions due to a fail-open default in node-opcua.
+
+**Do:** Upgrade node-opcua packages and verify explicit permissions on namespace nodes.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-xggf-m53x-jc3f)
+
 ### 🟠 INDOTALENT WHMS Default Credentials Vulnerability
 `CVE-2026-125384 · CVSS 9.8`
 
@@ -191,6 +290,31 @@ SAP BusinessObjects BI Platform (Web Intelligence) fails to properly restrict ex
 **Do:** Apply SAP security notes for BusinessObjects.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109798)
+
+### 🟠 Adobe Patches 110 Vulnerabilities Across 9 Products
+
+Adobe fixed 110 vulnerabilities across products including AEM, Premiere, Photoshop, After Effects, and Connect.
+
+**Do:** Apply the latest updates for Adobe products across the enterprise.
+
+[SecurityWeek](https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/)
+
+### 🟠 Git RCE Vulnerability in Recursive Clones (CVE-2026-111760)
+`CVE-2026-111760`
+
+An integer truncation flaw in Git allows malicious repositories to execute code during recursive clones and submodule handling. Fixed in Git versions 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, 2.55.1, and 2.56.1.
+
+**Do:** Upgrade Git to versions 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, 2.55.1, 2.56.1 or later.
+
+[The Hacker News](https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html)
+
+### 🟠 China-Nexus Sparrow Malware Ecosystem Targets Telecom and Government
+
+Three threat clusters (including SilentDelivery) linked through shared infrastructure and the Sparrow malware have targeted telecom, government, and critical infrastructure across Latin America, Asia, and Europe.
+
+**Do:** Monitor networks for indicators associated with the Sparrow malware ecosystem and Chinese espionage campaigns.
+
+[The Hacker News](https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html)
 
 ### 🟠 Apple Patches iMessage Privacy Flaws and Bluetooth Issues
 
@@ -216,18 +340,18 @@ AI startup Fireworks AI disclosed a security breach where attackers accessed dev
 
 **Do:** Review third-party cloud access controls and audit development machine logs.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/) · [The Record](https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks) · [The Hacker News](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html)
 
 ## 2026-11-09
 
 ### 🔴 GPUStack Improper Authentication Vulnerability (CVE-2026-102895)
-`CVE-2026-102895, CVE-2026-116779, CVE-2026-123158, CVE-2026-123218 · EPSS 0.00 · CISA KEV`
+`CVE-2026-102894, CVE-2026-102895, CVE-2026-116779, CVE-2026-123158 … · EPSS 0.00 · CISA KEV`
 
 GPUStack contains an improper authentication vulnerability allowing unauthenticated administrative access, API-key creation, secret disclosure, and code execution. The vulnerability is actively exploited and listed in CISA KEV.
 
 **Do:** Apply vendor mitigations immediately per CISA KEV and BOD 26-04 guidelines.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895) · [GitHub Advisory](https://github.com/advisories/GHSA-gj9m-f8ph-pmhr) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html) · [SecurityWeek](https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895) · [GitHub Advisory](https://github.com/advisories/GHSA-gj9m-f8ph-pmhr) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html) · [SecurityWeek](https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/) · [GitHub Advisory](https://github.com/advisories/GHSA-62m9-f875-rqw6)
 
 ### 🔴 SignalWire FreeSwitch Code Injection Vulnerability (CVE-2026-116779)
 `CVE-2026-116779 · EPSS 0.01 · CISA KEV`
@@ -245,7 +369,7 @@ Attackers used Qubole trusted AWS access credentials between October 14 and Octo
 
 **Do:** Audit AWS accounts connected to Qubole for unauthorized access and rotate exposed credentials.
 
-[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html)
+[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/) · [SecurityWeek](https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/)
 
 ### 🟠 Russian Cloud Provider Beget Rebuilds After Wiper Attack
 `exploited`
@@ -1399,40 +1523,6 @@ Blockchain infrastructure provider Chainstack disclosed a production systems bre
 
 [The Hacker News](https://thehackernews.com/2026/11/chainstack-reports-production-systems.html)
 
-### 🟠 BlackX UEFI Bootkit Infects Fully Patched Windows Machines
-`exploited`
-
-The BlackX UEFI bootkit exploits Microsoft's lack of clarity around Secure Boot protections to infect fully patched Windows systems.
-
-[Ars Technica](https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/)
-
-### 🟠 Critical Node-RED Flaw Exploited to Deploy Botnets and Webshells
-`exploited`
-
-Active exploitation of a critical Node-RED vulnerability has been observed from a single IP address attempting to deploy Linux botnets and webshells.
-
-**Do:** Audit and patch Node-RED instances immediately.
-
-[SecurityWeek](https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/)
-
-### 🟠 cPGuard Security Tool Update Channel Hijacked to Backdoor Linux Servers
-`exploited`
-
-Attackers breached the cPGuard update system to push a malicious script to Linux servers, installing a backdoor and harvesting password hashes. Affects versions prior to cPGuard 5.88.25.
-
-**Do:** Upgrade cPGuard to version 5.88.25 or later and audit Linux servers for unauthorized backdoors and credential compromise.
-
-[The Hacker News](https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/) · [SecurityWeek](https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/)
-
-### 🟠 Barracuda Warns of Critical Root Command Injection Vulnerabilities
-`CVE-2026-111560, CVE-2026-116606`
-
-Barracuda Networks warned customers to patch two vulnerabilities that allow attackers to run commands with root privileges on affected devices.
-
-**Do:** Apply the latest security patches provided by Barracuda immediately.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/) · [The Hacker News](https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html) · [SecurityWeek](https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/) · [watchTowr Labs](https://labs.watchtowr.com/barracuda-networks-is-your-new-best-friend-barracuda-email-security-gateway-pre-auth-remote-root-rce-cve-2026-116606-cve-2026-111560/) · [The Hacker News](https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html)
-
 ### 🟠 Apple Warns German Lawmakers and Staff of Spyware Targeting
 `exploited`
 
@@ -1441,27 +1531,6 @@ Several German politicians and foreign policy staff received threat notification
 **Do:** Enable Lockdown Mode on Apple devices if considered a high-risk target.
 
 [The Record](https://therecord.media/german-officials-among-apple-spyware-warning-recipients)
-
-### 🟠 3AM Ransomware Affiliate Targets UK School Estate
-`exploited`
-
-A 3AM ransomware affiliate targeted a UK school estate from an unmanaged host, successfully encrypting around 37 machines.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/)
-
-### 🟠 Harvard University Data Breach Exposes Over 850,000 Accounts
-`exploited`
-
-Hackers breached Harvard University's Alumni Affairs and Development systems, stealing data linked to more than 850,000 unique email addresses.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/)
-
-### 🟠 Frontline Education Data Breach Impacts Over 1.3 Million
-`exploited`
-
-Hackers exploited a vulnerability in third-party software to steal personal information of school district staff and students affecting over 1.3 million individuals.
-
-[SecurityWeek](https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/)
 
 ### 🟠 npm:@enspirit/elo Sandbox Escape and Code Execution Vulnerability
 `CVE-2026-44267 · CVSS 9.8`
@@ -1490,14 +1559,6 @@ Subnet Solutions PowerSYSTEM Center versions 2020, 2024, and 2026 contain vulner
 
 [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01)
 
-### 🟠 Android November 2026 Updates Patch Over 200 Vulnerabilities
-
-Android's November 2026 updates fix over 200 vulnerabilities, including a critical Framework remote code execution flaw requiring no user interaction.
-
-**Do:** Apply Android November 2026 security updates to mobile devices.
-
-[SecurityWeek](https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/)
-
 ### 🟠 WorkOS Discloses Internal Sales App Breach via AI Tool
 `exploited`
 
@@ -1524,18 +1585,4 @@ Password manager mSecure urged users to reset passwords, 2FA, and passkeys follo
 **Do:** Reset master passwords and multi-factor authentication for mSecure accounts.
 
 [The Hacker News](https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/)
-
-### 🟠 Russia-Linked Spies Target Ukrainian Investigations and Military Routes
-`exploited`
-
-Russia-linked threat actors are using simple malware to steal sensitive documents and credentials from Ukrainian organizations near the front line.
-
-[The Record](https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support)
-
-### 🟠 Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw Against Ukraine
-`exploited`
-
-Gorbag threat actors have been observed exploiting WinRAR vulnerabilities to deploy info-stealer malware against Ukrainian defense and law enforcement targets.
-
-[The Hacker News](https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html)
 
