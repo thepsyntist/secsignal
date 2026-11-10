@@ -1,5 +1,184 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+  "tier": "act",
+  "score": 92,
+  "headline": "Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)",
+  "tldr": "Google has issued an emergency security update to patch a high-severity use-after-free vulnerability in Chrome's XML component (CVE-2026-125350), which is actively exploited in the wild as a zero-day.",
+  "action": "Update Google Chrome to the latest version immediately.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-125350"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "chrome",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/"
+   }
+  ],
+  "first_seen": "2026-11-10T12:44:47+00:00",
+  "updated": "2026-11-10T12:44:47+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access",
+  "tier": "act",
+  "score": 77,
+  "headline": "Barracuda ESG Flaws Exploited to Gain Root Access",
+  "tldr": "Barracuda Networks warned that attackers are actively exploiting recently patched Email Security Gateway (ESG) vulnerabilities to achieve root command execution.",
+  "action": "Ensure all Barracuda Email Security Gateway appliances are fully patched and inspect for signs of compromise.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/"
+   }
+  ],
+  "first_seen": "2026-11-10T12:44:47+00:00",
+  "updated": "2026-11-10T12:44:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "Turla Threat Group Deploys Cereal Malware Against Exchange Servers",
+  "tldr": "The Russian state-sponsored threat group Turla is using a newly discovered modular malware toolset called 'Cereal' to target Microsoft Exchange servers at government organizations and intercept emails.",
+  "action": "Audit Microsoft Exchange servers for unauthorized access and monitor for indicators of compromise related to Cereal malware.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html"
+   }
+  ],
+  "first_seen": "2026-11-10T12:44:47+00:00",
+  "updated": "2026-11-10T12:44:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "France Blames Iran for Sabotage Attack on Supermarket Refrigerators",
+  "tldr": "The French government stated that an October cyberattack affecting refrigeration controllers at roughly 700 retail sites, causing food losses and fires, was conducted by Iran's IRGC.",
+  "action": "Isolate and secure industrial refrigeration and HVAC controllers from direct internet access.",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html"
+   }
+  ],
+  "first_seen": "2026-11-10T12:44:47+00:00",
+  "updated": "2026-11-10T12:44:47+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities",
+  "tier": "watch",
+  "score": 64,
+  "headline": "SAP November 2026 Patches Fixes Multiple Maximum-Severity Flaws",
+  "tldr": "SAP released its November 2026 security updates patching 35 vulnerabilities, including four maximum-severity issues affecting NetWeaver, Web Dispatcher, and Gateway software.",
+  "action": "Apply SAP November 2026 security updates across all affected NetWeaver and Web Dispatcher instances.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/"
+   }
+  ],
+  "first_seen": "2026-11-10T12:44:47+00:00",
+  "updated": "2026-11-10T12:44:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Apple Patches iMessage Privacy Flaws and Bluetooth Issues",
+  "tldr": "Apple released security updates to fix iMessage privacy vulnerabilities allowing unauthorized users to join group chats and view past messages, alongside Bluetooth pairing flaws.",
+  "action": "Update Apple devices to the latest available software versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html"
+   }
+  ],
+  "first_seen": "2026-11-10T12:44:47+00:00",
+  "updated": "2026-11-10T12:44:47+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Fireworks AI Discloses Breach Following Third-Party Cloud Compromise",
+  "tldr": "AI startup Fireworks AI disclosed a security breach where attackers accessed development machines after compromising a third-party cloud provider.",
+  "action": "Review third-party cloud access controls and audit development machine logs.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/"
+   }
+  ],
+  "first_seen": "2026-11-10T12:44:47+00:00",
+  "updated": "2026-11-10T12:44:47+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published",
   "tier": "act",
   "score": 77,
@@ -17,10 +196,18 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/"
    }
   ],
   "first_seen": "2026-11-10T04:10:32+00:00",
-  "updated": "2026-11-10T04:10:32+00:00"
+  "updated": "2026-11-10T12:44:47+00:00"
  },
  {
   "key": "nvd:CVE-2026-109795",
@@ -42,10 +229,14 @@
    {
     "source": "NVD",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109795"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html"
    }
   ],
   "first_seen": "2026-11-10T04:10:32+00:00",
-  "updated": "2026-11-10T04:10:32+00:00"
+  "updated": "2026-11-10T12:44:47+00:00"
  },
  {
   "key": "nvd:CVE-2026-120017",
@@ -451,10 +642,18 @@
    {
     "source": "CISA Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-09T20:50:26+00:00",
-  "updated": "2026-11-10T04:10:32+00:00"
+  "updated": "2026-11-10T12:44:47+00:00"
  },
  {
   "key": "kev:CVE-2026-116779",

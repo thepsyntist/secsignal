@@ -4,6 +4,24 @@
 
 ## 2026-11-10
 
+### 🔴 Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)
+`CVE-2026-125350 · exploited`
+
+Google has issued an emergency security update to patch a high-severity use-after-free vulnerability in Chrome's XML component (CVE-2026-125350), which is actively exploited in the wild as a zero-day.
+
+**Do:** Update Google Chrome to the latest version immediately.
+
+[SecurityWeek](https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/) · [The Hacker News](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/)
+
+### 🔴 Barracuda ESG Flaws Exploited to Gain Root Access
+`exploited`
+
+Barracuda Networks warned that attackers are actively exploiting recently patched Email Security Gateway (ESG) vulnerabilities to achieve root command execution.
+
+**Do:** Ensure all Barracuda Email Security Gateway appliances are fully patched and inspect for signs of compromise.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/)
+
 ### 🔴 N-able Takes Cloud Platform Offline Following Zero-Day Disclosures
 `exploited`
 
@@ -11,7 +29,7 @@ N-able took hosted N-central environments offline and advised on-premises custom
 
 **Do:** Take N-central servers offline per vendor advisory until patches are available.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html) · [SecurityWeek](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/)
 
 ### 🔴 SAP NetWeaver Remote Code Execution Vulnerability
 `CVE-2026-109795 · CVSS 9.9`
@@ -20,7 +38,7 @@ SAP NetWeaver lacks sufficient input validation and authorization checks in remo
 
 **Do:** Apply relevant SAP security patches for NetWeaver.
 
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109795)
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109795) · [The Hacker News](https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html)
 
 ### 🔴 SAP NetWeaver AS ABAP Authentication Bypass Vulnerability
 `CVE-2026-120017 · CVSS 10.0`
@@ -57,6 +75,24 @@ SAP Web Dispatcher improperly validates network input, allowing unauthenticated 
 **Do:** Apply SAP security patches.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89126)
+
+### 🔴 Turla Threat Group Deploys Cereal Malware Against Exchange Servers
+`exploited`
+
+The Russian state-sponsored threat group Turla is using a newly discovered modular malware toolset called 'Cereal' to target Microsoft Exchange servers at government organizations and intercept emails.
+
+**Do:** Audit Microsoft Exchange servers for unauthorized access and monitor for indicators of compromise related to Cereal malware.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/) · [The Hacker News](https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html)
+
+### 🔴 France Blames Iran for Sabotage Attack on Supermarket Refrigerators
+`exploited`
+
+The French government stated that an October cyberattack affecting refrigeration controllers at roughly 700 retail sites, causing food losses and fires, was conducted by Iran's IRGC.
+
+**Do:** Isolate and secure industrial refrigeration and HVAC controllers from direct internet access.
+
+[SecurityWeek](https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/) · [The Hacker News](https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html)
 
 ### 🟠 Kubero Authentication Bypass via Hardcoded JWT Secret
 `CVE-2026-125370 · CVSS 9.8`
@@ -112,6 +148,14 @@ SAP Web Dispatcher and ICM lack sufficient request validation, exposing administ
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89119)
 
+### 🟠 SAP November 2026 Patches Fixes Multiple Maximum-Severity Flaws
+
+SAP released its November 2026 security updates patching 35 vulnerabilities, including four maximum-severity issues affecting NetWeaver, Web Dispatcher, and Gateway software.
+
+**Do:** Apply SAP November 2026 security updates across all affected NetWeaver and Web Dispatcher instances.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/)
+
 ### 🟠 Kubeflow Pipelines API Server Authorization Bypass Vulnerability
 `CVE-2026-77596 · CVSS 9.6 · EPSS 0.00`
 
@@ -148,6 +192,14 @@ SAP BusinessObjects BI Platform (Web Intelligence) fails to properly restrict ex
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109798)
 
+### 🟠 Apple Patches iMessage Privacy Flaws and Bluetooth Issues
+
+Apple released security updates to fix iMessage privacy vulnerabilities allowing unauthorized users to join group chats and view past messages, alongside Bluetooth pairing flaws.
+
+**Do:** Update Apple devices to the latest available software versions.
+
+[The Hacker News](https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html)
+
 ### 🟠 Pocket ID Email Verification Token Reuse Vulnerability
 `CVE-2026-115770 · CVSS 9.6 · EPSS 0.00`
 
@@ -156,6 +208,15 @@ Pocket ID allows email verification tokens to remain valid after an account emai
 **Do:** Upgrade Pocket ID backend to a patched version when available.
 
 [GitHub Advisory](https://github.com/advisories/GHSA-rm8c-2cv8-jwf6)
+
+### 🟠 Fireworks AI Discloses Breach Following Third-Party Cloud Compromise
+`exploited`
+
+AI startup Fireworks AI disclosed a security breach where attackers accessed development machines after compromising a third-party cloud provider.
+
+**Do:** Review third-party cloud access controls and audit development machine logs.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/)
 
 ## 2026-11-09
 
@@ -166,7 +227,7 @@ GPUStack contains an improper authentication vulnerability allowing unauthentica
 
 **Do:** Apply vendor mitigations immediately per CISA KEV and BOD 26-04 guidelines.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895) · [GitHub Advisory](https://github.com/advisories/GHSA-gj9m-f8ph-pmhr) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895) · [GitHub Advisory](https://github.com/advisories/GHSA-gj9m-f8ph-pmhr) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html) · [SecurityWeek](https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/)
 
 ### 🔴 SignalWire FreeSwitch Code Injection Vulnerability (CVE-2026-116779)
 `CVE-2026-116779 · EPSS 0.01 · CISA KEV`
@@ -1329,15 +1390,6 @@ CISA added a time-of-check time-of-use (TOCTOU) race condition vulnerability in 
 
 [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-119977) · [The Hacker News](https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/)
 
-### 🔴 Siemens SIMATIC IoT2050 Advanced Missing Auth Flaw Exploited
-`CVE-2026-58115 · EPSS 0.01 · exploited`
-
-A critical missing authentication vulnerability (CVE-2026-58115, CVSS 10.0) in Siemens SIMATIC IoT2050 Advanced devices is under active exploitation to plant remote command backdoors.
-
-**Do:** Apply available security updates from Siemens immediately.
-
-[The Hacker News](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
-
 ### 🟠 Chainstack Discloses Production Infrastructure Breach and Data Exposure
 `exploited`
 
@@ -1371,15 +1423,6 @@ Attackers breached the cPGuard update system to push a malicious script to Linux
 **Do:** Upgrade cPGuard to version 5.88.25 or later and audit Linux servers for unauthorized backdoors and credential compromise.
 
 [The Hacker News](https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/) · [SecurityWeek](https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/)
-
-### 🟠 CryptoPayment Gateway WordPress Plugin Flaw Under Attack
-`CVE-2026-81648 · EPSS 0.00 · exploited`
-
-An unpatched maximum-severity vulnerability (CVE-2026-81648, CVSS 10.0) in the CryptoPayment Gateway WordPress plugin is being targeted by attackers to delete arbitrary files and extract wallet credentials.
-
-**Do:** Disable or remove the CryptoPayment Gateway WordPress plugin until a patch is available.
-
-[The Hacker News](https://thehackernews.com/2026/11/attackers-target-unpatched.html)
 
 ### 🟠 Barracuda Warns of Critical Root Command Injection Vulnerabilities
 `CVE-2026-111560, CVE-2026-116606`
