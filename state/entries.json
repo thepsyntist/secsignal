@@ -1,5 +1,249 @@
 [
  {
+  "key": "nvd:CVE-2026-123710",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Red Hat Quay Authentication and Key Rotation Flaws",
+  "tldr": "Unauthenticated clients can obtain anonymous registry tokens and manipulate service key rotation endpoints in Red Hat Quay, allowing unauthorized signing key installation and repository access.",
+  "action": "Apply Red Hat Quay security updates as provided by Red Hat.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123710"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-110697",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Red Hat Quay SQL Wildcard Flaw Leads to Cross-Tenant Credential Theft",
+  "tldr": "A flaw in Red Hat Quay's robot account listing function allows attackers to use underscores to query and retrieve decrypted authentication tokens from other tenants' namespaces.",
+  "action": "Apply available security patches for Red Hat Quay.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-110697"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110697"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+  "tier": "watch",
+  "score": 66,
+  "headline": "AntiFox AI Platform Abused in AWS Credential Theft Attacks",
+  "tldr": "Attackers are leveraging Alibaba Cloud instances hosting the open-source AntiFox penetration testing platform to target web services and steal AWS production secrets.",
+  "action": "Audit AWS environments for unauthorized credential access and monitor outbound connections to Alibaba Cloud instances running AntiFox.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Critical Zoom Workplace Windows Privilege Escalation (CVE-2026-108186)",
+  "tldr": "An improper input validation vulnerability in Zoom Workplace for Windows (CVE-2026-108186, CVSS 9.6) allows unauthenticated users to conduct privilege escalation.",
+  "action": "Update Zoom Workplace for Windows to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-108186"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Maersk Confirms Data Breach Linked to WhiteArmor Ransomware",
+  "tldr": "Maersk confirmed that unauthorized actors accessed a legacy system inherited from a previous acquisition and extracted data, accompanied by a $5 million ransom demand.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/poland-shuts-down-government-services-platform-cyberattack",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Poland Shuts Down ePUAP Government Platform Following Cyberattack",
+  "tldr": "Poland took its nationwide ePUAP government administrative services platform offline following a cyberattack.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/poland-shuts-down-government-services-platform-cyberattack"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "eMudhra Revokes 8 More Intermediate CAs Following Script Error",
+  "tldr": "eMudhra has revoked 8 additional intermediate certificate authorities following an internal Python script key compromise issue previously disclosed in October.",
+  "action": "Verify and update trust stores if relying on eMudhra intermediate certificates.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-85632",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Sipay WooCommerce Virtual POS Module Auth Bypass (CVE-2026-85632)",
+  "tldr": "Versions 26.8.3 up to 26.9.1 of the Sipay WooCommerce Virtual POS Module suffer from missing authentication and integrity checks, allowing authentication bypass and API message manipulation via MitM.",
+  "action": "Update Sipay WooCommerce Virtual POS Module to version 26.9.1 or higher.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-85632"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85632"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126537",
+  "tier": "watch",
+  "score": 51,
+  "headline": "WordPress Ninja Forms File Uploads Add-on Arbitrary File Flaw (CVE-2026-126537)",
+  "tldr": "The Ninja Forms File Uploads add-on for WordPress up to version 3.3.36 contains a vulnerability allowing arbitrary file deletion and potential file read via external storage services.",
+  "action": "Update Ninja Forms File Uploads add-on beyond version 3.3.36.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126537"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126537"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure",
+  "tier": "watch",
+  "score": 48,
+  "headline": "ICS Patch Tuesday: Siemens and Vendors Flag High-Severity Flaws",
+  "tldr": "Pre-Patch Tuesday advisories highlight high-severity industrial control system vulnerabilities across Siemens, Phoenix Contact, Johnson Controls, and Hitachi Energy.",
+  "action": "Review vendor ICS advisories and apply patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/"
+   }
+  ],
+  "first_seen": "2026-11-11T17:56:22+00:00",
+  "updated": "2026-11-11T17:56:22+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records",
   "tier": "watch",
   "score": 69,
@@ -190,10 +434,14 @@
    {
     "source": "Ars Technica",
     "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
    }
   ],
   "first_seen": "2026-11-11T01:58:33+00:00",
-  "updated": "2026-11-11T01:58:33+00:00"
+  "updated": "2026-11-11T17:56:22+00:00"
  },
  {
   "key": "kev:CVE-2026-124194",
@@ -297,10 +545,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-10T20:53:39+00:00",
-  "updated": "2026-11-10T20:53:39+00:00"
+  "updated": "2026-11-11T17:56:22+00:00"
  },
  {
   "key": "kev:CVE-2026-20320",
@@ -322,10 +574,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-10T20:53:39+00:00",
-  "updated": "2026-11-10T20:53:39+00:00"
+  "updated": "2026-11-11T17:56:22+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
@@ -811,10 +1067,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/"
    }
   ],
   "first_seen": "2026-11-10T04:10:32+00:00",
-  "updated": "2026-11-10T12:44:47+00:00"
+  "updated": "2026-11-11T17:56:22+00:00"
  },
  {
   "key": "nvd:CVE-2026-109795",

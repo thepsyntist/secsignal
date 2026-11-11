@@ -13,6 +13,24 @@ Japanese retailer Nitori discovered an unauthorized network access that may have
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/)
 
+### 🟠 Red Hat Quay Authentication and Key Rotation Flaws
+`CVE-2026-123710 · CVSS 9.8`
+
+Unauthenticated clients can obtain anonymous registry tokens and manipulate service key rotation endpoints in Red Hat Quay, allowing unauthorized signing key installation and repository access.
+
+**Do:** Apply Red Hat Quay security updates as provided by Red Hat.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123710)
+
+### 🟠 Red Hat Quay SQL Wildcard Flaw Leads to Cross-Tenant Credential Theft
+`CVE-2026-110697 · CVSS 9.9`
+
+A flaw in Red Hat Quay's robot account listing function allows attackers to use underscores to query and retrieve decrypted authentication tokens from other tenants' namespaces.
+
+**Do:** Apply available security patches for Red Hat Quay.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-110697)
+
 ### 🟠 WWBN AVideo Authentication Bypass Vulnerability (CVE-2026-126542)
 `CVE-2026-126542 · CVSS 9.8`
 
@@ -31,6 +49,15 @@ Certain React Server Components packages contain an unauthenticated remote code 
 
 [GitHub Advisory](https://github.com/advisories/GHSA-xqc2-xf4c-x3h3)
 
+### 🟠 AntiFox AI Platform Abused in AWS Credential Theft Attacks
+`exploited`
+
+Attackers are leveraging Alibaba Cloud instances hosting the open-source AntiFox penetration testing platform to target web services and steal AWS production secrets.
+
+**Do:** Audit AWS environments for unauthorized credential access and monitor outbound connections to Alibaba Cloud instances running AntiFox.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html)
+
 ### 🟠 Railway Cloud Breach Exposes AI API Keys and Causes $740K Fraud
 `exploited`
 
@@ -40,13 +67,54 @@ Cloud hosting provider Railway suffered a breach where hackers stole customer au
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/) · [The Hacker News](https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html)
 
+### 🟠 Critical Zoom Workplace Windows Privilege Escalation (CVE-2026-108186)
+`CVE-2026-108186`
+
+An improper input validation vulnerability in Zoom Workplace for Windows (CVE-2026-108186, CVSS 9.6) allows unauthenticated users to conduct privilege escalation.
+
+**Do:** Update Zoom Workplace for Windows to the latest patched version.
+
+[The Hacker News](https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html)
+
 ### 🟠 Grok Build Coding Agent Leaks Confidential Info
 
 A security researcher found 35,000 Grok Build applications exposed without authentication, leaking confidential information including data belonging to SpaceX.
 
 **Do:** Audit Grok Build applications and ensure proper authentication controls are enforced.
 
-[Ars Technica](https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/)
+[Ars Technica](https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/) · [The Hacker News](https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html)
+
+### 🟠 Maersk Confirms Data Breach Linked to WhiteArmor Ransomware
+`exploited`
+
+Maersk confirmed that unauthorized actors accessed a legacy system inherited from a previous acquisition and extracted data, accompanied by a $5 million ransom demand.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
+
+### 🟠 Poland Shuts Down ePUAP Government Platform Following Cyberattack
+`exploited`
+
+Poland took its nationwide ePUAP government administrative services platform offline following a cyberattack.
+
+[The Record](https://therecord.media/poland-shuts-down-government-services-platform-cyberattack)
+
+### 🟠 eMudhra Revokes 8 More Intermediate CAs Following Script Error
+`exploited`
+
+eMudhra has revoked 8 additional intermediate certificate authorities following an internal Python script key compromise issue previously disclosed in October.
+
+**Do:** Verify and update trust stores if relying on eMudhra intermediate certificates.
+
+[The Hacker News](https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html)
+
+### 🟠 Sipay WooCommerce Virtual POS Module Auth Bypass (CVE-2026-85632)
+`CVE-2026-85632 · CVSS 9.1`
+
+Versions 26.8.3 up to 26.9.1 of the Sipay WooCommerce Virtual POS Module suffer from missing authentication and integrity checks, allowing authentication bypass and API message manipulation via MitM.
+
+**Do:** Update Sipay WooCommerce Virtual POS Module to version 26.9.1 or higher.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-85632)
 
 ### 🟠 Adobe Connect Incorrect Authorization Flaw (CVE-2026-121355)
 `CVE-2026-121355 · CVSS 9.1`
@@ -65,6 +133,15 @@ Intel and AMD released their Patch Tuesday advisories addressing more than 200 v
 
 [SecurityWeek](https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/)
 
+### 🟠 WordPress Ninja Forms File Uploads Add-on Arbitrary File Flaw (CVE-2026-126537)
+`CVE-2026-126537 · CVSS 9.1`
+
+The Ninja Forms File Uploads add-on for WordPress up to version 3.3.36 contains a vulnerability allowing arbitrary file deletion and potential file read via external storage services.
+
+**Do:** Update Ninja Forms File Uploads add-on beyond version 3.3.36.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126537)
+
 ### 🟠 Adobe Connect Stored XSS Vulnerability (CVE-2026-121904)
 `CVE-2026-121904 · CVSS 9.6`
 
@@ -73,6 +150,14 @@ Adobe Connect is affected by a stored Cross-Site Scripting vulnerability allowin
 **Do:** Apply the latest security updates from Adobe.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-121904)
+
+### 🟠 ICS Patch Tuesday: Siemens and Vendors Flag High-Severity Flaws
+
+Pre-Patch Tuesday advisories highlight high-severity industrial control system vulnerabilities across Siemens, Phoenix Contact, Johnson Controls, and Hitachi Energy.
+
+**Do:** Review vendor ICS advisories and apply patches.
+
+[SecurityWeek](https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/)
 
 ## 2026-11-10
 
@@ -110,7 +195,7 @@ A critical authentication bypass vulnerability in Xen Orchestra (VSA-2026-062) i
 
 **Do:** Apply updates provided by Vates VMS immediately and check logs for signs of compromise.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html) · [SecurityWeek](https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/)
 
 ### 🔴 Now exploited: Barracuda ESG Flaws Exploited to Gain Root Access
 `CVE-2026-111560, CVE-2026-116606 · CISA KEV`
@@ -128,7 +213,7 @@ N-able took hosted N-central environments offline and advised on-premises custom
 
 **Do:** Take N-central servers offline per vendor advisory until patches are available.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html) · [SecurityWeek](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html) · [SecurityWeek](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
 
 ### 🔴 Cisco BroadWorks XXE Vulnerability (CVE-2026-20320) Added to KEV
 `CVE-2026-20320 · EPSS 0.00 · CISA KEV`
@@ -137,7 +222,7 @@ Cisco BroadWorks contains an XML external entity reference vulnerability (CVE-20
 
 **Do:** Apply vendor mitigations in accordance with CISA BOD 26-04 guidance.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-20320)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-20320) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
 
 ### 🔴 SAP NetWeaver Remote Code Execution Vulnerability
 `CVE-2026-109795 · CVSS 9.9`
@@ -1471,15 +1556,6 @@ A flaw in the APT package manager for Debian and Ubuntu allows a MitM attacker d
 
 [The Hacker News](https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html)
 
-### 🔴 Google Patches Critical Remote Code Execution Flaw in Android
-`CVE-2026-58868 · EPSS 0.00`
-
-A critical zero-click RCE flaw, CVE-2026-58868, affects Android 14 through 17. Fixed in the 2026-11-01 security patch level.
-
-**Do:** Apply Android security patch level 2026-11-01 or later.
-
-[The Hacker News](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
-
 ### 🟠 NIKKE PC Game Launcher Compromised to Deliver Malware
 `exploited`
 
@@ -1497,31 +1573,6 @@ French bank Crédit Mutuel Arkéa reported a cyber heist where attackers comprom
 **Do:** Audit third-party vendor access and monitor high-value fund transfers.
 
 [The Record](https://therecord.media/french-bank-confirms-cyber-heist)
-
-### 🟠 Hackers Use N-Day Exploits in Zero-Click Attacks on iOS and Android
-`exploited`
-
-A watering hole campaign associated with Russian hackers targets iOS and Android users with n-day exploits.
-
-**Do:** Ensure mobile devices are fully updated and monitor web traffic for suspicious redirects.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/) · [The Hacker News](https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html) · [Ars Technica](https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/)
-
-### 🟠 Ruby on Rails Active Storage Flaw Allows Arbitrary File Write
-
-A critical flaw in Ruby on Rails Active Storage lets unauthenticated attackers write server files via ImageMagick uploads. Fixed in versions 8.1.4.1 and 8.0.5.2.
-
-**Do:** Upgrade Ruby on Rails to versions 8.1.4.1 or 8.0.5.2.
-
-[The Hacker News](https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html)
-
-### 🟠 Xen Hypervisor Flaws Allow Inter-VM Memory Access
-
-Two flaws in Xen hypervisor versions 4.6 onward allow a malicious guest VM to read and write memory of other VMs, including dom0. Patches are available.
-
-**Do:** Apply Xen hypervisor patches.
-
-[The Hacker News](https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html)
 
 ### 🟠 DreamHost Confirms Data Breach Exposing FTP and Webmail Credentials
 `exploited`
@@ -1547,15 +1598,6 @@ A phishing campaign used Google Calendar invites and fake login pages to hijack 
 Russian web hosting provider Beget suffered a cyberattack that destroyed data across its cloud infrastructure and disrupted hundreds of websites.
 
 [The Record](https://therecord.media/russia-cyberattack-beget-cloud)
-
-### 🟠 Sogou Input Method DNS Requests Hijacked to Deploy DarkVigil Backdoor
-`exploited`
-
-China-aligned threat actors hijacked DNS requests via insecure HTTP in Windows versions of Sogou Input Method to deploy DarkVigil.
-
-**Do:** Audit software using insecure HTTP communication channels and monitor for unauthorized DNS modifications.
-
-[The Hacker News](https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html)
 
 ### 🟠 OpenAI Codex Jailbreak Toolkit Found Containing Prompt Adware
 `exploited`
