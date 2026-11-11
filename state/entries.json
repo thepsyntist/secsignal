@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Grok Build Coding Agent Leaks Confidential Info",
+  "tldr": "A security researcher found 35,000 Grok Build applications exposed without authentication, leaking confidential information including data belonging to SpaceX.",
+  "action": "Audit Grok Build applications and ensure proper authentication controls are enforced.",
+  "category": "breach",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+   }
+  ],
+  "first_seen": "2026-11-11T01:58:33+00:00",
+  "updated": "2026-11-11T01:58:33+00:00"
+ },
+ {
   "key": "kev:CVE-2026-124194",
   "tier": "act",
   "score": 92,
@@ -10,7 +33,12 @@
   "exploited": true,
   "kev": true,
   "cves": [
-   "CVE-2026-124194"
+   "CVE-2026-111560",
+   "CVE-2026-111793",
+   "CVE-2026-116606",
+   "CVE-2026-124194",
+   "CVE-2026-125350",
+   "CVE-2026-20320"
   ],
   "cvss": null,
   "epss": null,
@@ -27,10 +55,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog"
    }
   ],
   "first_seen": "2026-11-10T20:53:39+00:00",
-  "updated": "2026-11-10T20:53:39+00:00"
+  "updated": "2026-11-11T01:58:33+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",

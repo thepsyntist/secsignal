@@ -2,16 +2,26 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-11
+
+### 🟠 Grok Build Coding Agent Leaks Confidential Info
+
+A security researcher found 35,000 Grok Build applications exposed without authentication, leaking confidential information including data belonging to SpaceX.
+
+**Do:** Audit Grok Build applications and ensure proper authentication controls are enforced.
+
+[Ars Technica](https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/)
+
 ## 2026-11-10
 
 ### 🔴 Microsoft Office Outlook Zero-Day (CVE-2026-124194) Actively Exploited
-`CVE-2026-124194 · CISA KEV`
+`CVE-2026-111560, CVE-2026-111793, CVE-2026-116606, CVE-2026-124194 … · CISA KEV`
 
 Microsoft's November 2026 Patch Tuesday fixes an actively exploited Outlook zero-day vulnerability (CVE-2026-124194) involving a missing user interaction for potentially unsafe action.
 
 **Do:** Apply the November 2026 Microsoft security updates immediately.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/) · [SecurityWeek](https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-124194)
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/) · [SecurityWeek](https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-124194) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog)
 
 ### 🔴 Now exploited: Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)
 `CVE-2026-125350 · CISA KEV`
@@ -1502,87 +1512,4 @@ Researchers discovered an OpenAI Codex jailbreak bundle named Haiou that modifie
 **Do:** Audit AI agent configuration files and remove untrusted jailbreak toolkits.
 
 [The Hacker News](https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html)
-
-## 2026-11-03
-
-### 🔴 WordPress Core TOCTOU Race Condition Vulnerability Added to KEV
-`CVE-2026-119977 · EPSS 0.01 · CISA KEV`
-
-CISA added a time-of-check time-of-use (TOCTOU) race condition vulnerability in WordPress Core (CVE-2026-119977) to its Known Exploited Vulnerabilities catalog, which could allow unauthenticated attackers to execute code during the upgrade window.
-
-**Do:** Apply WordPress security updates and mitigations in accordance with vendor and CISA guidance.
-
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-119977) · [The Hacker News](https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/)
-
-### 🟠 Chainstack Discloses Production Infrastructure Breach and Data Exposure
-`exploited`
-
-Blockchain infrastructure provider Chainstack disclosed a production systems breach exposing customer data and password hashes as part of a wider AI-powered campaign.
-
-**Do:** Reset API keys and passwords associated with Chainstack accounts.
-
-[The Hacker News](https://thehackernews.com/2026/11/chainstack-reports-production-systems.html)
-
-### 🟠 Apple Warns German Lawmakers and Staff of Spyware Targeting
-`exploited`
-
-Several German politicians and foreign policy staff received threat notifications from Apple regarding targeted spyware campaigns.
-
-**Do:** Enable Lockdown Mode on Apple devices if considered a high-risk target.
-
-[The Record](https://therecord.media/german-officials-among-apple-spyware-warning-recipients)
-
-### 🟠 npm:@enspirit/elo Sandbox Escape and Code Execution Vulnerability
-`CVE-2026-44267 · CVSS 9.8`
-
-The Elo JavaScript emitter (@enspirit/elo) contains a vulnerability allowing unauthenticated attackers with control over parsed strings to escape the sandbox and execute arbitrary code via unfiltered .constructor member access.
-
-**Do:** Upgrade npm:@enspirit/elo to a patched version or avoid passing untrusted strings to emission paths.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-33r5-xmm8-v6x5)
-
-### 🟠 npm:@enspirit/elo Ruby Backend RCE via Unescaped Interpolation
-`CVE-2026-44266 · CVSS 9.8`
-
-The Elo Ruby backend contains a remote code execution vulnerability due to unescaped interpolation sequences in emitted string literals and subtype-constraint labels, permitting arbitrary shell execution.
-
-**Do:** Upgrade npm:@enspirit/elo and review Elo source strings passed to the Ruby backend.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-7w38-ggh5-v542)
-
-### 🟠 Subnet Solutions PowerSYSTEM Center SQL Injection and Authorization Flaws
-`CVE-2026-63017, CVE-2026-63774`
-
-Subnet Solutions PowerSYSTEM Center versions 2020, 2024, and 2026 contain vulnerabilities (including CVE-2026-63017 and CVE-2026-63774) allowing unauthorized SQL command execution and resource access.
-
-**Do:** Upgrade PowerSYSTEM Center to patched versions in accordance with vendor advisories.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01)
-
-### 🟠 WorkOS Discloses Internal Sales App Breach via AI Tool
-`exploited`
-
-Developer platform WorkOS suffered a data breach after a threat actor used ARTEX AI to access business contact records and customer communication summaries.
-
-**Do:** Review access controls for internal sales and communication applications.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/) · [SecurityWeek](https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/)
-
-### 🟠 Google Reports LLMjacking Attacks Generating High Cloud Charges
-`exploited`
-
-Large language model hijacking (LLMjacking) attacks are generating massive fraudulent cloud charges, with some organizations losing over $100,000 per day.
-
-**Do:** Audit cloud AI resource consumption and implement strict billing alerts and access controls.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/)
-
-### 🟠 mSecure Urges Password and 2FA Resets After Suspicious Activity
-`exploited`
-
-Password manager mSecure urged users to reset passwords, 2FA, and passkeys following suspicious activity detected on its systems.
-
-**Do:** Reset master passwords and multi-factor authentication for mSecure accounts.
-
-[The Hacker News](https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/)
 
