@@ -1,5 +1,178 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Nitori Furniture Data Breach Potentially Exposes 37.6M Records",
+  "tldr": "Japanese retailer Nitori discovered an unauthorized network access that may have compromised up to 37.62 million customer records.",
+  "action": "Monitor accounts for suspicious activity if you are a Nitori customer.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/"
+   }
+  ],
+  "first_seen": "2026-11-11T09:33:43+00:00",
+  "updated": "2026-11-11T09:33:43+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126542",
+  "tier": "watch",
+  "score": 67,
+  "headline": "WWBN AVideo Authentication Bypass Vulnerability (CVE-2026-126542)",
+  "tldr": "WWBN AVideo versions 6.5 through 29.7.1 contain an authentication bypass via Hybridauth social login display names, allowing unauthenticated attackers to log in as any user including administrators.",
+  "action": "Upgrade WWBN AVideo to a patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126542"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126542"
+   }
+  ],
+  "first_seen": "2026-11-11T09:33:43+00:00",
+  "updated": "2026-11-11T09:33:43+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-xqc2-xf4c-x3h3",
+  "tier": "watch",
+  "score": 67,
+  "headline": "React Server Components Unauthenticated RCE (CVE-2026-126187)",
+  "tldr": "Certain React Server Components packages contain an unauthenticated remote code execution vulnerability affecting specific versions when processing crafted payloads with multiple typed arrays.",
+  "action": "Update react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack to patched versions immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126187"
+  ],
+  "cvss": 9.5,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"
+   }
+  ],
+  "first_seen": "2026-11-11T09:33:43+00:00",
+  "updated": "2026-11-11T09:33:43+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+  "tier": "watch",
+  "score": 66,
+  "headline": "Railway Cloud Breach Exposes AI API Keys and Causes $740K Fraud",
+  "tldr": "Cloud hosting provider Railway suffered a breach where hackers stole customer authentication secrets and API keys, generating $740,000 in fraudulent AI usage and potentially exposing up to 100,000 workspaces.",
+  "action": "Rotate all API keys and secrets previously stored on Railway.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html"
+   }
+  ],
+  "first_seen": "2026-11-11T09:33:43+00:00",
+  "updated": "2026-11-11T09:33:43+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-121355",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Adobe Connect Incorrect Authorization Flaw (CVE-2026-121355)",
+  "tldr": "Adobe Connect contains an incorrect authorization vulnerability allowing unauthenticated attackers to gain elevated access to sensitive information or functionality without user interaction.",
+  "action": "Apply the latest updates for Adobe Connect.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-121355"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121355"
+   }
+  ],
+  "first_seen": "2026-11-11T09:33:43+00:00",
+  "updated": "2026-11-11T09:33:43+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Intel and AMD Patch Over 200 Vulnerabilities",
+  "tldr": "Intel and AMD released their Patch Tuesday advisories addressing more than 200 vulnerabilities, including critical Intel TDX software flaws and AMD graphics bugs.",
+  "action": "Apply the latest CPU microcode and vendor firmware updates.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/"
+   }
+  ],
+  "first_seen": "2026-11-11T09:33:43+00:00",
+  "updated": "2026-11-11T09:33:43+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-121904",
+  "tier": "watch",
+  "score": 51,
+  "headline": "Adobe Connect Stored XSS Vulnerability (CVE-2026-121904)",
+  "tldr": "Adobe Connect is affected by a stored Cross-Site Scripting vulnerability allowing a low-privileged user to inject malicious scripts into form fields and potentially compromise victim sessions.",
+  "action": "Apply the latest security updates from Adobe.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-121904"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121904"
+   }
+  ],
+  "first_seen": "2026-11-11T09:33:43+00:00",
+  "updated": "2026-11-11T09:33:43+00:00"
+ },
+ {
   "key": "rss:https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi",
   "tier": "watch",
   "score": 64,
@@ -59,10 +232,22 @@
    {
     "source": "CISA Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html"
    }
   ],
   "first_seen": "2026-11-10T20:53:39+00:00",
-  "updated": "2026-11-11T01:58:33+00:00"
+  "updated": "2026-11-11T09:33:43+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
@@ -452,10 +637,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-10T12:44:47+00:00",
-  "updated": "2026-11-10T20:53:39+00:00"
+  "updated": "2026-11-11T09:33:43+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
@@ -556,10 +745,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/"
    }
   ],
   "first_seen": "2026-11-10T12:44:47+00:00",
-  "updated": "2026-11-10T12:44:47+00:00"
+  "updated": "2026-11-11T09:33:43+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack",
