@@ -1,5 +1,103 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations",
+  "tier": "act",
+  "score": 77,
+  "headline": "Active ScreenConnect Attacks Breach MSPs and Customer Devices",
+  "tldr": "An active malware campaign is targeting managed service providers by compromising ScreenConnect environments to deploy rogue remote-access clients.",
+  "action": "Audit ScreenConnect instances and review connected client devices for unauthorized remote-access tools.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/"
+   }
+  ],
+  "first_seen": "2026-11-12T00:49:44+00:00",
+  "updated": "2026-11-12T00:49:44+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126768",
+  "tier": "watch",
+  "score": 67,
+  "headline": "OpsTree REMS Authentication Bypass Flaw (CVE-2026-126768)",
+  "tldr": "OpsTree REMS through 1.0.0 contains an authentication bypass vulnerability allowing unauthenticated attackers to obtain SuperUser access by manipulating the is_local_auth field.",
+  "action": "Apply available patches or restrict access to OpsTree REMS.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126768"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126768"
+   }
+  ],
+  "first_seen": "2026-11-12T00:49:44+00:00",
+  "updated": "2026-11-12T00:49:44+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126797",
+  "tier": "watch",
+  "score": 67,
+  "headline": "NextScan Hardcoded JWT Signing Key Flaw (CVE-2026-126797)",
+  "tldr": "NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability due to a hardcoded JWT signing key, enabling attackers to forge administrator tokens.",
+  "action": "Update NextScan to a patched version and rotate secrets.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126797"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126797"
+   }
+  ],
+  "first_seen": "2026-11-12T00:49:44+00:00",
+  "updated": "2026-11-12T00:49:44+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126812",
+  "tier": "watch",
+  "score": 64,
+  "headline": "blueprintUE Self-Hosted Default Password Flaw (CVE-2026-126812)",
+  "tldr": "blueprintUE Self-Hosted Edition before 4.3.7 has an insecure default configuration setting MYSQL_ALLOW_EMPTY_PASSWORD=yes, allowing unauthenticated attackers to access MariaDB as root.",
+  "action": "Update blueprintUE to 4.3.7 or later and secure database credentials.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126812"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "docker",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126812"
+   }
+  ],
+  "first_seen": "2026-11-12T00:49:44+00:00",
+  "updated": "2026-11-12T00:49:44+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-123710",
   "tier": "watch",
   "score": 67,
@@ -165,10 +263,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/"
    }
   ],
   "first_seen": "2026-11-11T17:56:22+00:00",
-  "updated": "2026-11-11T17:56:22+00:00"
+  "updated": "2026-11-12T00:49:44+00:00"
  },
  {
   "key": "nvd:CVE-2026-85632",
@@ -1036,10 +1138,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/"
    }
   ],
   "first_seen": "2026-11-10T12:44:47+00:00",
-  "updated": "2026-11-10T20:53:39+00:00"
+  "updated": "2026-11-12T00:49:44+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published",

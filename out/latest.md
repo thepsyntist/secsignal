@@ -2,6 +2,44 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-12
+
+### 🔴 Active ScreenConnect Attacks Breach MSPs and Customer Devices
+`exploited`
+
+An active malware campaign is targeting managed service providers by compromising ScreenConnect environments to deploy rogue remote-access clients.
+
+**Do:** Audit ScreenConnect instances and review connected client devices for unauthorized remote-access tools.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/)
+
+### 🟠 OpsTree REMS Authentication Bypass Flaw (CVE-2026-126768)
+`CVE-2026-126768 · CVSS 9.8`
+
+OpsTree REMS through 1.0.0 contains an authentication bypass vulnerability allowing unauthenticated attackers to obtain SuperUser access by manipulating the is_local_auth field.
+
+**Do:** Apply available patches or restrict access to OpsTree REMS.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126768)
+
+### 🟠 NextScan Hardcoded JWT Signing Key Flaw (CVE-2026-126797)
+`CVE-2026-126797 · CVSS 9.8`
+
+NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability due to a hardcoded JWT signing key, enabling attackers to forge administrator tokens.
+
+**Do:** Update NextScan to a patched version and rotate secrets.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126797)
+
+### 🟠 blueprintUE Self-Hosted Default Password Flaw (CVE-2026-126812)
+`CVE-2026-126812 · CVSS 9.8`
+
+blueprintUE Self-Hosted Edition before 4.3.7 has an insecure default configuration setting MYSQL_ALLOW_EMPTY_PASSWORD=yes, allowing unauthenticated attackers to access MariaDB as root.
+
+**Do:** Update blueprintUE to 4.3.7 or later and secure database credentials.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126812)
+
 ## 2026-11-11
 
 ### 🟠 Nitori Furniture Data Breach Potentially Exposes 37.6M Records
@@ -105,7 +143,7 @@ eMudhra has revoked 8 additional intermediate certificate authorities following 
 
 **Do:** Verify and update trust stores if relying on eMudhra intermediate certificates.
 
-[The Hacker News](https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html)
+[The Hacker News](https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/)
 
 ### 🟠 Sipay WooCommerce Virtual POS Module Auth Bypass (CVE-2026-85632)
 `CVE-2026-85632 · CVSS 9.1`
@@ -497,7 +535,7 @@ AI startup Fireworks AI disclosed a security breach where attackers accessed dev
 
 **Do:** Review third-party cloud access controls and audit development machine logs.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/) · [The Record](https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks) · [The Hacker News](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/) · [The Record](https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks) · [The Hacker News](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/)
 
 ## 2026-11-09
 
@@ -1545,66 +1583,4 @@ October 2026 brought another wave of cyber threats targeting US businesses, with
 The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools
 
 [The Hacker News](https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html)
-
-## 2026-11-04
-
-### 🔴 Debian and Ubuntu APT Flaw Allows Package Swap and Root RCE
-
-A flaw in the APT package manager for Debian and Ubuntu allows a MitM attacker during retry attempts to swap verified packages with malicious ones, executing code as root. Affects Debian 12 and newer.
-
-**Do:** Apply official APT updates from Debian and Ubuntu immediately.
-
-[The Hacker News](https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html)
-
-### 🟠 NIKKE PC Game Launcher Compromised to Deliver Malware
-`exploited`
-
-Developers of Goddess of Victory: NIKKE confirmed a supply-chain attack where PC launcher scripts were tampered with to distribute data-stealing malware targeting credentials and crypto wallets.
-
-**Do:** Check systems running the NIKKE PC launcher for compromise and scan for malware.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/)
-
-### 🟠 Crédit Mutuel Arkéa Suffers Cyber Heist via Supplier Compromise
-`exploited`
-
-French bank Crédit Mutuel Arkéa reported a cyber heist where attackers compromised an unnamed supplier to execute unauthorized transfers totaling an estimated $133 million.
-
-**Do:** Audit third-party vendor access and monitor high-value fund transfers.
-
-[The Record](https://therecord.media/french-bank-confirms-cyber-heist)
-
-### 🟠 DreamHost Confirms Data Breach Exposing FTP and Webmail Credentials
-`exploited`
-
-DreamHost disclosed a data breach where attackers accessed its File Manager platform for two months, stealing customer FTP and SFTP usernames and passwords.
-
-**Do:** Reset FTP and SFTP credentials and review account activity.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/)
-
-### 🟠 Google Calendar Phishing Campaign Bypasses MFA
-`exploited`
-
-A phishing campaign used Google Calendar invites and fake login pages to hijack corporate Google sessions and bypass MFA protections, prompting nearly 900 malicious domains to be taken down.
-
-**Do:** Audit Google Workspace integrations and train users on calendar invite phishing.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/)
-
-### 🟠 Russian Hosting Provider Beget Suffers Cloud Data Wiping Attack
-`exploited`
-
-Russian web hosting provider Beget suffered a cyberattack that destroyed data across its cloud infrastructure and disrupted hundreds of websites.
-
-[The Record](https://therecord.media/russia-cyberattack-beget-cloud)
-
-### 🟠 OpenAI Codex Jailbreak Toolkit Found Containing Prompt Adware
-`exploited`
-
-Researchers discovered an OpenAI Codex jailbreak bundle named Haiou that modifies AI agent instructions to insert unauthorized advertisements for a third-party AI gateway.
-
-**Do:** Audit AI agent configuration files and remove untrusted jailbreak toolkits.
-
-[The Hacker News](https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html)
 
