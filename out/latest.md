@@ -22,6 +22,13 @@ An active malware campaign is targeting managed service providers by compromisin
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/) · [The Hacker News](https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html)
 
+### 🔴 Siemens Desigo, Gridscale
+`CVE-2026-109618, CVE-2026-109619, CVE-2026-111497 · EPSS 1.00 · CISA KEV`
+
+View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as "Node2Shell" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code.
+
+[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01)
+
 ### 🔴 Attacker Hijacks 4,837 GitHub Accounts to Run CI Secret Stealer
 `exploited`
 
@@ -38,7 +45,14 @@ A critical remote code execution flaw in Apache HTTP Server's mod_http2 module a
 
 **Do:** Upgrade Apache HTTP Server to version 2.4.71 or disable HTTP/2.
 
-[The Hacker News](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html)
+[The Hacker News](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html) · [SecurityWeek](https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/)
+
+### 🔴 SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths
+`CVE-2026-84869 · EPSS 0.01 · CISA KEV`
+
+The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the recovered attacker toolkit exploits CVE-2026-84869 (CVSS score: 9.9), an
+
+[The Hacker News](https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html)
 
 ### 🟠 Synology DiskStation Manager Auth API SQL Injection (CVE-2026-76954)
 `CVE-2026-76954 · CVSS 9.8`
@@ -67,6 +81,13 @@ NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability due
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126797)
 
+### 🟠 New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access
+`exploited`
+
+N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. "Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet," N-able said in a new advisory.
+
+[The Hacker News](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/) · [The Hacker News](https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html)
+
 ### 🟠 Node.js and MongoDB Vulnerabilities Threaten Server Stability and Memory
 `CVE-2026-118383`
 
@@ -84,6 +105,56 @@ blueprintUE Self-Hosted Edition before 4.3.7 has an insecure default configurati
 **Do:** Update blueprintUE to 4.3.7 or later and secure database credentials.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126812)
+
+### 🟠 Your Endpoint Management Platform Could Be Your Biggest Security Risk
+
+Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/) · [The Hacker News](https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html)
+
+### 🟠 ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories
+
+A search result isn't always safe. An access request isn't always harmless.
+
+[The Hacker News](https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html)
+
+### 🟠 Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass
+`CVE-2026-120868`
+
+Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-2026-120868 (CVSS score: 9.3) - A memory overflow vulnerability in Packet
+
+[The Hacker News](https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html)
+
+### 🟠 PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution
+`CVE-2026-126325 · EPSS 0.01 · exploited`
+
+PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.
+
+[The Hacker News](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
+
+### 🟠 Apify rotates API tokens, prompts 2FA resets after breach
+
+Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/)
+
+### 🟠 ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations
+
+Abuse of an independent third-party tool led to breaches at ScreenConnect customers, confirmed the software's maker, ConnectWise. Cybersecurity researchers had spotted intrusions at nearly 50.
+
+[The Record](https://therecord.media/connectwise-screenconnect-breaches-third-party-tool)
+
+### 🟠 Hijacked email accounts complicate investigations into European bomb hoaxes
+
+Bomb threats sent to thousands of schools across Europe this week came from a compromised email account at a Taiwanese university, the latest incident in a series of hoax threats that have targeted airports and newsrooms using messages sent from legitimate institutions.
+
+[The Record](https://therecord.media/europe-hoax-email-threats)
+
+### 🟠 Notion Customer Data Compromised in Fireworks AI Hack
+
+The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable.
+
+[SecurityWeek](https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/)
 
 ## 2026-11-11
 
@@ -1482,26 +1553,6 @@ A ransomware attack disrupted Wi-Fi and on-site computers across the Queens Publ
 
 [The Record](https://therecord.media/queens-library-ransomware-causes-disruptions)
 
-### 🟠 Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws
-
-Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws. The post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws appeared first on SecurityWeek .
-
-[SecurityWeek](https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/)
-
-### 🟠 go:github.com/chainguard-dev/kaniko: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry
-`CVE-2026-105769 · CVSS 9.3 · EPSS 0.00`
-
-Affected packages: go:github.com/chainguard-dev/kaniko. ### Summary kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-5q7h-w9jf-cx97)
-
-### 🟠 Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day
-`CVE-2026-107441 · EPSS 0.00 · exploited`
-
-Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek .
-
-[SecurityWeek](https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/)
-
 ### 🟠 OpenAI ChatGPT Lockdown Mode Bypass Vulnerability
 
 A patched vulnerability in OpenAI ChatGPT allowed attackers to bypass Lockdown Mode protections and exfiltrate chat data without user interaction.
@@ -1509,40 +1560,4 @@ A patched vulnerability in OpenAI ChatGPT allowed attackers to bypass Lockdown M
 **Do:** Ensure ChatGPT instances are updated to the latest patched version.
 
 [The Hacker News](https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html)
-
-### 🟠 Hackers backdoor Linux servers using trojanized CWP web server
-
-A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface. [...]
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html)
-
-### 🟠 DigiCert data breach exposes customer information, identity documents
-
-DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/) · [SecurityWeek](https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/) · [The Record](https://therecord.media/digicert-certificate-authority-reports-data-breach)
-
-### 🟠 Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques
-
-Chainalysis, the blockchain analytics company, said Wednesday night that some information belonging to all its users — which its website says include those in the law enforcement and national security sectors — had been exposed in a cyberattack.
-
-[The Record](https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack) · [The Hacker News](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/) · [Ars Technica](https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/)
-
-### 🟠 Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised
-
-The incident comes after supermarkets in a number of European countries reported this week that their fridges and freezers warmed up after they were remotely hacked. The post Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised appeared first on SecurityWeek .
-
-[SecurityWeek](https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/)
-
-### 🟠 ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories
-
-How much damage can someone do without breaking much? Quite a lot, it seems.
-
-[The Hacker News](https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html)
-
-### 🟠 5 Active Cyber Threats That Put US Enterprises at Risk in October 2026
-
-October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption.
-
-[The Hacker News](https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html)
 
