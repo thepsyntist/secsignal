@@ -1,5 +1,130 @@
 [
  {
+  "key": "rss:https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches",
+  "tier": "act",
+  "score": 77,
+  "headline": "N-able N-central Zero-Day Vulnerabilities Under Active Exploitation",
+  "tldr": "Following the public release of over 30 zero-days, hackers are actively targeting unauthenticated N-central vulnerabilities, prompting N-able to rush patches.",
+  "action": "Apply emergency patches for N-able N-central immediately and audit systems for compromise.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/"
+   }
+  ],
+  "first_seen": "2026-11-12T09:55:36+00:00",
+  "updated": "2026-11-12T09:55:36+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "Attacker Hijacks 4,837 GitHub Accounts to Run CI Secret Stealer",
+  "tldr": "An attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in CI workflows across at least 1,806 repositories, collecting accessible cloud and repository secrets.",
+  "action": "Audit GitHub account security, rotate compromised CI secrets, and check workflow logs for unauthorized modifications.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html"
+   }
+  ],
+  "first_seen": "2026-11-12T09:55:36+00:00",
+  "updated": "2026-11-12T09:55:36+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+  "tier": "act",
+  "score": 72,
+  "headline": "Apache HTTP Server HTTP/2 RCE Flaw (CVE-2026-119618)",
+  "tldr": "A critical remote code execution flaw in Apache HTTP Server's mod_http2 module affects versions 2.4.55 through 2.4.70 on servers with HTTP/2 enabled. Fixed in version 2.4.71.",
+  "action": "Upgrade Apache HTTP Server to version 2.4.71 or disable HTTP/2.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-119618"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html"
+   }
+  ],
+  "first_seen": "2026-11-12T09:55:36+00:00",
+  "updated": "2026-11-12T09:55:36+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-76954",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Synology DiskStation Manager Auth API SQL Injection (CVE-2026-76954)",
+  "tldr": "An SQL injection vulnerability in the Auth API of Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read/write files and cause DoS.",
+  "action": "Update Synology DiskStation Manager to the latest patched versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-76954"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76954"
+   }
+  ],
+  "first_seen": "2026-11-12T09:55:36+00:00",
+  "updated": "2026-11-12T09:55:36+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Node.js and MongoDB Vulnerabilities Threaten Server Stability and Memory",
+  "tldr": "Node.js fixed 16 flaws (including HTTP/2 memory leaks and crashes on release lines 24.x and 26.x), and MongoDB patched a pre-auth crash flaw (CVE-2026-118383) in replica sets.",
+  "action": "Upgrade Node.js to versions 22.23.5, 24.22.3, or 26.13.1, and update MongoDB server.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-118383"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html"
+   }
+  ],
+  "first_seen": "2026-11-12T09:55:36+00:00",
+  "updated": "2026-11-12T09:55:36+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations",
   "tier": "act",
   "score": 77,
@@ -17,10 +142,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html"
    }
   ],
   "first_seen": "2026-11-12T00:49:44+00:00",
-  "updated": "2026-11-12T00:49:44+00:00"
+  "updated": "2026-11-12T09:55:36+00:00"
  },
  {
   "key": "nvd:CVE-2026-126768",
@@ -117,10 +246,14 @@
    {
     "source": "NVD",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/"
    }
   ],
   "first_seen": "2026-11-11T17:56:22+00:00",
-  "updated": "2026-11-11T17:56:22+00:00"
+  "updated": "2026-11-12T09:55:36+00:00"
  },
  {
   "key": "nvd:CVE-2026-110697",
@@ -217,10 +350,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/"
    }
   ],
   "first_seen": "2026-11-11T17:56:22+00:00",
-  "updated": "2026-11-11T17:56:22+00:00"
+  "updated": "2026-11-12T09:55:36+00:00"
  },
  {
   "key": "rss:https://therecord.media/poland-shuts-down-government-services-platform-cyberattack",

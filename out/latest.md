@@ -4,6 +4,15 @@
 
 ## 2026-11-12
 
+### 🔴 N-able N-central Zero-Day Vulnerabilities Under Active Exploitation
+`exploited`
+
+Following the public release of over 30 zero-days, hackers are actively targeting unauthenticated N-central vulnerabilities, prompting N-able to rush patches.
+
+**Do:** Apply emergency patches for N-able N-central immediately and audit systems for compromise.
+
+[SecurityWeek](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/)
+
 ### 🔴 Active ScreenConnect Attacks Breach MSPs and Customer Devices
 `exploited`
 
@@ -11,7 +20,34 @@ An active malware campaign is targeting managed service providers by compromisin
 
 **Do:** Audit ScreenConnect instances and review connected client devices for unauthorized remote-access tools.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/) · [The Hacker News](https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html)
+
+### 🔴 Attacker Hijacks 4,837 GitHub Accounts to Run CI Secret Stealer
+`exploited`
+
+An attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in CI workflows across at least 1,806 repositories, collecting accessible cloud and repository secrets.
+
+**Do:** Audit GitHub account security, rotate compromised CI secrets, and check workflow logs for unauthorized modifications.
+
+[The Hacker News](https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html)
+
+### 🔴 Apache HTTP Server HTTP/2 RCE Flaw (CVE-2026-119618)
+`CVE-2026-119618`
+
+A critical remote code execution flaw in Apache HTTP Server's mod_http2 module affects versions 2.4.55 through 2.4.70 on servers with HTTP/2 enabled. Fixed in version 2.4.71.
+
+**Do:** Upgrade Apache HTTP Server to version 2.4.71 or disable HTTP/2.
+
+[The Hacker News](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html)
+
+### 🟠 Synology DiskStation Manager Auth API SQL Injection (CVE-2026-76954)
+`CVE-2026-76954 · CVSS 9.8`
+
+An SQL injection vulnerability in the Auth API of Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read/write files and cause DoS.
+
+**Do:** Update Synology DiskStation Manager to the latest patched versions.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76954)
 
 ### 🟠 OpsTree REMS Authentication Bypass Flaw (CVE-2026-126768)
 `CVE-2026-126768 · CVSS 9.8`
@@ -30,6 +66,15 @@ NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability due
 **Do:** Update NextScan to a patched version and rotate secrets.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126797)
+
+### 🟠 Node.js and MongoDB Vulnerabilities Threaten Server Stability and Memory
+`CVE-2026-118383`
+
+Node.js fixed 16 flaws (including HTTP/2 memory leaks and crashes on release lines 24.x and 26.x), and MongoDB patched a pre-auth crash flaw (CVE-2026-118383) in replica sets.
+
+**Do:** Upgrade Node.js to versions 22.23.5, 24.22.3, or 26.13.1, and update MongoDB server.
+
+[The Hacker News](https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html) · [The Hacker News](https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html)
 
 ### 🟠 blueprintUE Self-Hosted Default Password Flaw (CVE-2026-126812)
 `CVE-2026-126812 · CVSS 9.8`
@@ -58,7 +103,7 @@ Unauthenticated clients can obtain anonymous registry tokens and manipulate serv
 
 **Do:** Apply Red Hat Quay security updates as provided by Red Hat.
 
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123710)
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123710) · [SecurityWeek](https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/)
 
 ### 🟠 Red Hat Quay SQL Wildcard Flaw Leads to Cross-Tenant Credential Theft
 `CVE-2026-110697 · CVSS 9.9`
@@ -127,7 +172,7 @@ A security researcher found 35,000 Grok Build applications exposed without authe
 
 Maersk confirmed that unauthorized actors accessed a legacy system inherited from a previous acquisition and extracted data, accompanied by a $5 million ransom demand.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/) · [SecurityWeek](https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/)
 
 ### 🟠 Poland Shuts Down ePUAP Government Platform Following Cyberattack
 `exploited`
@@ -1403,15 +1448,6 @@ Some WordPress sites remain vulnerable to code execution while installing update
 
 ## 2026-11-05
 
-### 🔴 Apple Multiple Products Authentication Flaw Added to KEV
-`CVE-2024-27834 · EPSS 0.01 · CISA KEV`
-
-Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS contain an improper authentication vulnerability (CVE-2024-27834) allowing pointer authentication bypass. The flaw is actively tracked in CISA's KEV.
-
-**Do:** Apply mitigations or updates in accordance with vendor instructions.
-
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-27834) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog)
-
 ### 🔴 Now exploited: OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux
 `CVE-2026-123158 · CISA KEV`
 
@@ -1420,15 +1456,6 @@ OpenSSH version 10.6p2 fixes a critical flaw affecting certain Alpine Linux conf
 **Do:** Upgrade OpenSSH to version 10.6p2 or later on affected Alpine Linux servers.
 
 [The Hacker News](https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html) · [Ars Technica](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/) · [SecurityWeek](https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html) · [SecurityWeek](https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123158)
-
-### 🔴 Zyxel Fixes Zero-Day Exploit on Network Switches
-`exploited`
-
-Zyxel patched a zero-day vulnerability in its GS1900 series network switches exploited in the wild to compromise nearly 1,000 devices and steal configuration files and credentials.
-
-**Do:** Apply the latest security patches for Zyxel GS1900 series switches immediately.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/)
 
 ### 🔴 US Agencies Warn of Global Cyber Activity Targeting Industrial Refrigeration
 `exploited`
@@ -1439,15 +1466,6 @@ CISA, FBI, HHS, USDA, and DoT issued an advisory regarding malicious cyber activ
 
 [CISA Advisories](https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems) · [The Record](https://therecord.media/cyberattacks-refrigeration-cisa-fbi) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/) · [SecurityWeek](https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/)
 
-### 🟠 Multiple Asian Airlines Announce Breaches via Amadeus IT
-`exploited`
-
-Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines and Malaysia Airlines reported data breaches traced back to supplier Amadeus IT Group.
-
-**Do:** Monitor vendor supply-chain communications and review reservation system access controls.
-
-[The Record](https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident)
-
 ### 🟠 BTCPay Server Information Disclosure Exposes LND Macaroon Credentials
 `CVE-2026-119757 · CVSS 9.8`
 
@@ -1456,33 +1474,6 @@ BTCPay Server before 2.4.2 contains an information disclosure vulnerability allo
 **Do:** Upgrade BTCPay Server to version 2.4.2 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119757)
-
-### 🟠 vtenext Authentication Bypass Flaw Allows Password Change
-`CVE-2025-71457 · CVSS 9.8`
-
-vtenext versions 25.02 before 25.02.1 contain an authentication bypass vulnerability allowing unauthenticated attackers to change account passwords via hub/rpwd.php and log in as administrators.
-
-**Do:** Upgrade vtenext to 25.02.1 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2025-71457)
-
-### 🟠 IBM Watson Speech Services Cartridge Use-After-Free Flaw
-`CVE-2026-82418 · CVSS 9.8`
-
-IBM Watson Speech Services Cartridge 4.0.0 through 5.4.0 contains a use-after-free vulnerability that allows a remote attacker to execute arbitrary code.
-
-**Do:** Apply available patches from IBM.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82418)
-
-### 🟠 VitaFit Cloud API Authentication Bypass Flaw
-`CVE-2026-54384 · CVSS 9.8`
-
-VitaFit cloud API before 2026-10-30 contained an authentication bypass vulnerability allowing attackers to forge logins via social identifiers and access victim accounts.
-
-**Do:** Update VitaFit cloud API to the latest version.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-54384)
 
 ### 🟠 Queens Public Library Suffers Ransomware Attack Disrupting Services
 `exploited`
@@ -1497,15 +1488,6 @@ Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication an
 
 [SecurityWeek](https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/)
 
-### 🟠 VitaFit Cloud API Broken Access Control Flaw
-`CVE-2026-54378 · CVSS 9.6`
-
-VitaFit cloud API before 2026-10-30 contained a broken access control vulnerability allowing authenticated users to obtain temporary AWS credentials and access shared storage buckets.
-
-**Do:** Update VitaFit cloud API to the patched version.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-54378)
-
 ### 🟠 go:github.com/chainguard-dev/kaniko: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry
 `CVE-2026-105769 · CVSS 9.3 · EPSS 0.00`
 
@@ -1513,26 +1495,12 @@ Affected packages: go:github.com/chainguard-dev/kaniko. ### Summary kaniko befor
 
 [GitHub Advisory](https://github.com/advisories/GHSA-5q7h-w9jf-cx97)
 
-### 🟠 CVE-2026-122310: Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but ex
-`CVE-2026-122310 · CVSS 9.9`
-
-Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind # or ?
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-122310)
-
 ### 🟠 Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day
 `CVE-2026-107441 · EPSS 0.00 · exploited`
 
 Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek .
 
 [SecurityWeek](https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/)
-
-### 🟠 Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution
-`exploited`
-
-Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in.
-
-[The Hacker News](https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html)
 
 ### 🟠 OpenAI ChatGPT Lockdown Mode Bypass Vulnerability
 
@@ -1577,10 +1545,4 @@ How much damage can someone do without breaking much? Quite a lot, it seems.
 October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption.
 
 [The Hacker News](https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html)
-
-### 🟠 CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access
-
-The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools
-
-[The Hacker News](https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html)
 
