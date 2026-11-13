@@ -2,6 +2,77 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-13
+
+### 🔴 XWEB EVO Pre-Auth OS Command Injection (CVE-2026-124002)
+`CVE-2026-124002 · CVSS 9.8`
+
+XWEB EVO versions 5.2.3 through 5.6.x contain a pre-authentication OS command injection vulnerability in login.lua, cleanout.lua, and api.lua, allowing root RCE. Note that this product line reached end-of-service in March 2026.
+
+**Do:** Isolate affected XWEB EVO devices from the internet immediately as the product is end-of-life.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124002)
+
+### 🔴 XWEB EVO Hardcoded Backdoor Password (CVE-2026-124004)
+`CVE-2026-124004 · CVSS 9.8`
+
+XWEB EVO before 5.6.2 contains a hardcoded backdoor password ('xwebevonewgeneration') allowing unauthenticated remote attackers to gain full administrative access.
+
+**Do:** Disconnect affected XWEB EVO systems and apply vendor patches or replace end-of-life devices.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124004)
+
+### 🔴 XWEB EVO CGIs Command Injection (CVE-2026-124010)
+`CVE-2026-124010 · CVSS 9.8`
+
+XWEB EVO before 5.6.2 contains a command injection vulnerability in the setuid-root CGI xwconsole.cgi, allowing unauthenticated remote attackers to execute arbitrary root commands.
+
+**Do:** Restrict access to XWEB EVO administrative interfaces and upgrade to version 5.6.2 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124010)
+
+### 🟠 XWEB EVO Arbitrary File Write (CVE-2026-124014)
+`CVE-2026-124014 · CVSS 9.1`
+
+XWEB EVO versions 4.3.0 through 5.8.8 contain an unauthenticated arbitrary file write vulnerability in config.lua allowing attackers to modify /etc/xwebconfig.json and cause denial of service.
+
+**Do:** Restrict network access to vulnerable XWEB EVO installations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124014)
+
+### 🟠 Rucio Unauthenticated Administrator Impersonation (CVE-2026-100397)
+`CVE-2026-100397 · CVSS 9.8`
+
+Rucio accepts SSH challenge tokens as valid authentication credentials without prior validation, allowing unauthenticated attackers to impersonate administrators.
+
+**Do:** Upgrade Rucio to a patched version immediately.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-x585-4vv8-2mh2)
+
+### 🟠 Ruby on Rails Active Storage Arbitrary File Read/Write
+`CVE-2026-122006 · CVSS 9.8 · EPSS 0.01`
+
+Ruby on Rails Active Storage processing attachments with ImageMagick may allow unauthenticated attackers to write or read arbitrary files on the server.
+
+**Do:** Upgrade Ruby on Rails Active Storage to patched versions.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-f3w6-w445-fwh9)
+
+### 🟠 Microsoft 365 Global Outage Disrupts Outlook and Teams
+
+A widespread outage caused by failed server health checks disrupted Microsoft 365 services globally, including Outlook, Microsoft Teams, and Copilot.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/) · [SecurityWeek](https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/)
+
+### 🟠 Linksys EA8100 Authentication Bypass (CVE-2026-127275)
+`CVE-2026-127275 · CVSS 10.0`
+
+Linksys EA8100 version 1.0.3.216940 contains a missing authentication vulnerability in the JNAP API ui_server.lua component. A public exploit is available.
+
+**Do:** Apply vendor updates if available or restrict router management interfaces from the internet.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127275)
+
 ## 2026-11-12
 
 ### 🔴 N-able N-central Zero-Day Vulnerabilities Under Active Exploitation
@@ -36,7 +107,7 @@ An attacker used stolen credentials for 4,837 GitHub accounts to plant a secret 
 
 **Do:** Audit GitHub account security, rotate compromised CI secrets, and check workflow logs for unauthorized modifications.
 
-[The Hacker News](https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html)
+[The Hacker News](https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/)
 
 ### 🔴 Apache HTTP Server HTTP/2 RCE Flaw (CVE-2026-119618)
 `CVE-2026-119618`
@@ -45,14 +116,14 @@ A critical remote code execution flaw in Apache HTTP Server's mod_http2 module a
 
 **Do:** Upgrade Apache HTTP Server to version 2.4.71 or disable HTTP/2.
 
-[The Hacker News](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html) · [SecurityWeek](https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/)
+[The Hacker News](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html) · [SecurityWeek](https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/)
 
 ### 🔴 SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths
 `CVE-2026-84869 · EPSS 0.01 · CISA KEV`
 
 The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the recovered attacker toolkit exploits CVE-2026-84869 (CVSS score: 9.9), an
 
-[The Hacker News](https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html)
+[The Hacker News](https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/)
 
 ### 🟠 Synology DiskStation Manager Auth API SQL Injection (CVE-2026-76954)
 `CVE-2026-76954 · CVSS 9.8`
@@ -86,7 +157,7 @@ NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability due
 
 N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. "Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet," N-able said in a new advisory.
 
-[The Hacker News](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/) · [The Hacker News](https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html)
+[The Hacker News](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/) · [The Hacker News](https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/)
 
 ### 🟠 Node.js and MongoDB Vulnerabilities Threaten Server Stability and Memory
 `CVE-2026-118383`
@@ -243,7 +314,7 @@ A security researcher found 35,000 Grok Build applications exposed without authe
 
 Maersk confirmed that unauthorized actors accessed a legacy system inherited from a previous acquisition and extracted data, accompanied by a $5 million ransom demand.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/) · [SecurityWeek](https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/) · [SecurityWeek](https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/) · [The Record](https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system)
 
 ### 🟠 Poland Shuts Down ePUAP Government Platform Following Cyberattack
 `exploited`
@@ -1516,48 +1587,4 @@ Some WordPress sites remain vulnerable to code execution while installing update
 **Do:** Temporarily block web access to vulnerable installation files during update procedures.
 
 [The Hacker News](https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html)
-
-## 2026-11-05
-
-### 🔴 Now exploited: OpenSSH Critical Long Password Authentication Bypass Flaw in Alpine Linux
-`CVE-2026-123158 · CISA KEV`
-
-OpenSSH version 10.6p2 fixes a critical flaw affecting certain Alpine Linux configurations where long passwords can bypass authentication on accounts with no password.
-
-**Do:** Upgrade OpenSSH to version 10.6p2 or later on affected Alpine Linux servers.
-
-[The Hacker News](https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html) · [Ars Technica](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/) · [SecurityWeek](https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html) · [SecurityWeek](https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123158)
-
-### 🔴 US Agencies Warn of Global Cyber Activity Targeting Industrial Refrigeration
-`exploited`
-
-CISA, FBI, HHS, USDA, and DoT issued an advisory regarding malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems globally.
-
-**Do:** Harden industrial refrigeration and cold chain monitoring systems against unauthorized access.
-
-[CISA Advisories](https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems) · [The Record](https://therecord.media/cyberattacks-refrigeration-cisa-fbi) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/) · [SecurityWeek](https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/)
-
-### 🟠 BTCPay Server Information Disclosure Exposes LND Macaroon Credentials
-`CVE-2026-119757 · CVSS 9.8`
-
-BTCPay Server before 2.4.2 contains an information disclosure vulnerability allowing unauthenticated remote attackers to retrieve LND node .macaroon files and gain full control of funds.
-
-**Do:** Upgrade BTCPay Server to version 2.4.2 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119757)
-
-### 🟠 Queens Public Library Suffers Ransomware Attack Disrupting Services
-`exploited`
-
-A ransomware attack disrupted Wi-Fi and on-site computers across the Queens Public Library system's 66 branches.
-
-[The Record](https://therecord.media/queens-library-ransomware-causes-disruptions)
-
-### 🟠 OpenAI ChatGPT Lockdown Mode Bypass Vulnerability
-
-A patched vulnerability in OpenAI ChatGPT allowed attackers to bypass Lockdown Mode protections and exfiltrate chat data without user interaction.
-
-**Do:** Ensure ChatGPT instances are updated to the latest patched version.
-
-[The Hacker News](https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html)
 

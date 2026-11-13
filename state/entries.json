@@ -1,5 +1,207 @@
 [
  {
+  "key": "nvd:CVE-2026-124002",
+  "tier": "act",
+  "score": 75,
+  "headline": "XWEB EVO Pre-Auth OS Command Injection (CVE-2026-124002)",
+  "tldr": "XWEB EVO versions 5.2.3 through 5.6.x contain a pre-authentication OS command injection vulnerability in login.lua, cleanout.lua, and api.lua, allowing root RCE. Note that this product line reached end-of-service in March 2026.",
+  "action": "Isolate affected XWEB EVO devices from the internet immediately as the product is end-of-life.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124002"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124002"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124004",
+  "tier": "act",
+  "score": 75,
+  "headline": "XWEB EVO Hardcoded Backdoor Password (CVE-2026-124004)",
+  "tldr": "XWEB EVO before 5.6.2 contains a hardcoded backdoor password ('xwebevonewgeneration') allowing unauthenticated remote attackers to gain full administrative access.",
+  "action": "Disconnect affected XWEB EVO systems and apply vendor patches or replace end-of-life devices.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124004"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124004"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124010",
+  "tier": "act",
+  "score": 75,
+  "headline": "XWEB EVO CGIs Command Injection (CVE-2026-124010)",
+  "tldr": "XWEB EVO before 5.6.2 contains a command injection vulnerability in the setuid-root CGI xwconsole.cgi, allowing unauthenticated remote attackers to execute arbitrary root commands.",
+  "action": "Restrict access to XWEB EVO administrative interfaces and upgrade to version 5.6.2 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124010"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124010"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-124014",
+  "tier": "watch",
+  "score": 67,
+  "headline": "XWEB EVO Arbitrary File Write (CVE-2026-124014)",
+  "tldr": "XWEB EVO versions 4.3.0 through 5.8.8 contain an unauthenticated arbitrary file write vulnerability in config.lua allowing attackers to modify /etc/xwebconfig.json and cause denial of service.",
+  "action": "Restrict network access to vulnerable XWEB EVO installations.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124014"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124014"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-x585-4vv8-2mh2",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Rucio Unauthenticated Administrator Impersonation (CVE-2026-100397)",
+  "tldr": "Rucio accepts SSH challenge tokens as valid authentication credentials without prior validation, allowing unauthenticated attackers to impersonate administrators.",
+  "action": "Upgrade Rucio to a patched version immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-100397"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-x585-4vv8-2mh2"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-f3w6-w445-fwh9",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Ruby on Rails Active Storage Arbitrary File Read/Write",
+  "tldr": "Ruby on Rails Active Storage processing attachments with ImageMagick may allow unauthenticated attackers to write or read arbitrary files on the server.",
+  "action": "Upgrade Ruby on Rails Active Storage to patched versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-122006"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00741,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-f3w6-w445-fwh9"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Microsoft 365 Global Outage Disrupts Outlook and Teams",
+  "tldr": "A widespread outage caused by failed server health checks disrupted Microsoft 365 services globally, including Outlook, Microsoft Teams, and Copilot.",
+  "action": "",
+  "category": "outage",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127275",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Linksys EA8100 Authentication Bypass (CVE-2026-127275)",
+  "tldr": "Linksys EA8100 version 1.0.3.216940 contains a missing authentication vulnerability in the JNAP API ui_server.lua component. A public exploit is available.",
+  "action": "Apply vendor updates if available or restrict router management interfaces from the internet.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127275"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127275"
+   }
+  ],
+  "first_seen": "2026-11-13T01:11:15+00:00",
+  "updated": "2026-11-13T01:11:15+00:00"
+ },
+ {
   "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
   "tier": "act",
   "score": 76,
@@ -62,10 +264,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/"
    }
   ],
   "first_seen": "2026-11-12T18:23:49+00:00",
-  "updated": "2026-11-12T18:23:49+00:00"
+  "updated": "2026-11-13T01:11:15+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
@@ -93,10 +299,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/"
    }
   ],
   "first_seen": "2026-11-12T18:23:49+00:00",
-  "updated": "2026-11-12T18:23:49+00:00"
+  "updated": "2026-11-13T01:11:15+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
@@ -331,10 +541,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/"
    }
   ],
   "first_seen": "2026-11-12T09:55:36+00:00",
-  "updated": "2026-11-12T09:55:36+00:00"
+  "updated": "2026-11-13T01:11:15+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
@@ -360,10 +574,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/"
    }
   ],
   "first_seen": "2026-11-12T09:55:36+00:00",
-  "updated": "2026-11-12T18:23:49+00:00"
+  "updated": "2026-11-13T01:11:15+00:00"
  },
  {
   "key": "nvd:CVE-2026-76954",
@@ -649,10 +867,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system"
    }
   ],
   "first_seen": "2026-11-11T17:56:22+00:00",
-  "updated": "2026-11-12T09:55:36+00:00"
+  "updated": "2026-11-13T01:11:15+00:00"
  },
  {
   "key": "rss:https://therecord.media/poland-shuts-down-government-services-platform-cyberattack",
