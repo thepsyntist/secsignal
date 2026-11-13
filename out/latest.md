@@ -4,6 +4,15 @@
 
 ## 2026-11-13
 
+### 🔴 Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited
+`CVE-2026-123039 · exploited`
+
+Attackers are actively exploiting PHP2Shell and a local privilege escalation flaw (CVE-2026-123039) in Check Point Security Gateways to achieve root access, deploy the TSGA backdoor, and wipe ESXi files.
+
+**Do:** Apply available patches for Check Point Security Gateways immediately and audit for indicators of compromise.
+
+[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html)
+
 ### 🔴 XWEB EVO Pre-Auth OS Command Injection (CVE-2026-124002)
 `CVE-2026-124002 · CVSS 9.8`
 
@@ -30,6 +39,15 @@ XWEB EVO before 5.6.2 contains a command injection vulnerability in the setuid-r
 **Do:** Restrict access to XWEB EVO administrative interfaces and upgrade to version 5.6.2 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124010)
+
+### 🟠 Nightmare Eclipse Drops Windows Zero-Day Exploit 'SignDrop'
+`exploited`
+
+Nightmare Eclipse released a Windows zero-day exploit named 'SignDrop' that abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process.
+
+**Do:** Monitor for anomalous CLFS or Windows Defender activity and apply vendor mitigations if available.
+
+[SecurityWeek](https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/)
 
 ### 🟠 XWEB EVO Arbitrary File Write (CVE-2026-124014)
 `CVE-2026-124014 · CVSS 9.1`
@@ -58,6 +76,14 @@ Ruby on Rails Active Storage processing attachments with ImageMagick may allow u
 
 [GitHub Advisory](https://github.com/advisories/GHSA-f3w6-w445-fwh9)
 
+### 🟠 Citrix Patches 10 Critical NetScaler Vulnerabilities
+
+Citrix has patched 10 critical NetScaler vulnerabilities where successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions.
+
+**Do:** Apply the latest NetScaler security updates from Citrix.
+
+[SecurityWeek](https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/)
+
 ### 🟠 Microsoft 365 Global Outage Disrupts Outlook and Teams
 
 A widespread outage caused by failed server health checks disrupted Microsoft 365 services globally, including Outlook, Microsoft Teams, and Copilot.
@@ -73,6 +99,12 @@ Linksys EA8100 version 1.0.3.216940 contains a missing authentication vulnerabil
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127275)
 
+### 🟠 Microsoft Confirms Windows Activation Failures After November Updates
+
+Microsoft confirmed that November Patch Tuesday updates are causing Windows activation and licensing failures accompanied by 0x80041008 error codes.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/)
+
 ## 2026-11-12
 
 ### 🔴 N-able N-central Zero-Day Vulnerabilities Under Active Exploitation
@@ -82,7 +114,7 @@ Following the public release of over 30 zero-days, hackers are actively targetin
 
 **Do:** Apply emergency patches for N-able N-central immediately and audit systems for compromise.
 
-[SecurityWeek](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/)
+[SecurityWeek](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/) · [SecurityWeek](https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html)
 
 ### 🔴 Active ScreenConnect Attacks Breach MSPs and Customer Devices
 `exploited`

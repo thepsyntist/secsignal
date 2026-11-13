@@ -1,5 +1,103 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+  "tier": "act",
+  "score": 87,
+  "headline": "Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited",
+  "tldr": "Attackers are actively exploiting PHP2Shell and a local privilege escalation flaw (CVE-2026-123039) in Check Point Security Gateways to achieve root access, deploy the TSGA backdoor, and wipe ESXi files.",
+  "action": "Apply available patches for Check Point Security Gateways immediately and audit for indicators of compromise.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123039"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "esxi",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
+   }
+  ],
+  "first_seen": "2026-11-13T09:40:50+00:00",
+  "updated": "2026-11-13T09:40:50+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Nightmare Eclipse Drops Windows Zero-Day Exploit 'SignDrop'",
+  "tldr": "Nightmare Eclipse released a Windows zero-day exploit named 'SignDrop' that abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process.",
+  "action": "Monitor for anomalous CLFS or Windows Defender activity and apply vendor mitigations if available.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/"
+   }
+  ],
+  "first_seen": "2026-11-13T09:40:50+00:00",
+  "updated": "2026-11-13T09:40:50+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
+  "tldr": "Citrix has patched 10 critical NetScaler vulnerabilities where successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions.",
+  "action": "Apply the latest NetScaler security updates from Citrix.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "citrix",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/"
+   }
+  ],
+  "first_seen": "2026-11-13T09:40:50+00:00",
+  "updated": "2026-11-13T09:40:50+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Microsoft Confirms Windows Activation Failures After November Updates",
+  "tldr": "Microsoft confirmed that November Patch Tuesday updates are causing Windows activation and licensing failures accompanied by 0x80041008 error codes.",
+  "action": "",
+  "category": "outage",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/"
+   }
+  ],
+  "first_seen": "2026-11-13T09:40:50+00:00",
+  "updated": "2026-11-13T09:40:50+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-124002",
   "tier": "act",
   "score": 75,
@@ -518,10 +616,18 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html"
    }
   ],
   "first_seen": "2026-11-12T09:55:36+00:00",
-  "updated": "2026-11-12T09:55:36+00:00"
+  "updated": "2026-11-13T09:40:50+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
