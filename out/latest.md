@@ -11,7 +11,7 @@ Attackers are actively exploiting PHP2Shell and a local privilege escalation fla
 
 **Do:** Apply available patches for Check Point Security Gateways immediately and audit for indicators of compromise.
 
-[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html)
+[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/)
 
 ### 🔴 XWEB EVO Pre-Auth OS Command Injection (CVE-2026-124002)
 `CVE-2026-124002 · CVSS 9.8`
@@ -40,6 +40,40 @@ XWEB EVO before 5.6.2 contains a command injection vulnerability in the setuid-r
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124010)
 
+### 🔴 SilentAir State-Sponsored Group Hijacks Asian Telecom Networks
+`exploited`
+
+A state-sponsored threat group named SilentAir hijacked mobile network nodes in at least six Asian countries to intercept calls and SMS 2FA codes, primarily targeting Taiwanese subscribers.
+
+**Do:** Audit mobile network infrastructure and review access controls for telecom nodes.
+
+[The Hacker News](https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html) · [SecurityWeek](https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/)
+
+### 🔴 Operation Endgame Disrupts Gootloader, CastleRAT, and StealC
+`exploited`
+
+Law enforcement seized 235 servers and 257 domains, taking down infrastructure behind Gootloader, CastleRAT, and StealC malware while recovering 6.4 million stolen logins.
+
+[SecurityWeek](https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/) · [The Hacker News](https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html)
+
+### 🔴 OpsTree BuildPiper Manifest Privilege Escalation (CVE-2026-127073)
+`CVE-2026-127073 · CVSS 9.9 · EPSS 0.01`
+
+OpsTree BuildPiper before 2.7.0 allows project users to gain Kubernetes cluster-admin rights by submitting unrestricted manifests through the Additional Manifest feature.
+
+**Do:** Upgrade OpsTree BuildPiper to 2.7.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127073)
+
+### 🔴 OpsTree BuildPiper HostPath Authorization Flaw (CVE-2026-127080)
+`CVE-2026-127080 · CVSS 9.9 · EPSS 0.01`
+
+OpsTree BuildPiper before 2.7.0 contains an improper authorization flaw allowing deploy users to define arbitrary hostPath volumes and mount the worker node root filesystem read-write.
+
+**Do:** Upgrade OpsTree BuildPiper to 2.7.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127080)
+
 ### 🟠 Nightmare Eclipse Drops Windows Zero-Day Exploit 'SignDrop'
 `exploited`
 
@@ -47,7 +81,34 @@ Nightmare Eclipse released a Windows zero-day exploit named 'SignDrop' that abus
 
 **Do:** Monitor for anomalous CLFS or Windows Defender activity and apply vendor mitigations if available.
 
-[SecurityWeek](https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/)
+[SecurityWeek](https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/) · [Ars Technica](https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/)
+
+### 🟠 OpenEMR OAuth Scope Canonicalization Flaw (CVE-2026-126473)
+`CVE-2026-126473 · CVSS 9.3 · EPSS 0.00`
+
+OpenEMR before 8.4.0 contains OAuth scope canonicalization flaws allowing unauthenticated attackers to obtain unapproved system-level FHIR access and modify patient records.
+
+**Do:** Upgrade OpenEMR to 8.4.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126473)
+
+### 🟠 PLANET GS-5220 Switch Cookie Buffer Overflow (CVE-2026-109445)
+`CVE-2026-109445 · CVSS 9.8`
+
+PLANET GS-5220-8P2T2S firmware before 3.2412b261008 contains a stack-based buffer overflow via an oversized webstax_auth cookie value, leading to potential denial of service.
+
+**Do:** Apply firmware update version 3.2412b261008 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109445)
+
+### 🟠 sysPass Installation Authentication Bypass RCE (CVE-2026-129110)
+`CVE-2026-129110 · CVSS 9.8`
+
+sysPass 3.0.1 through 3.2.11 contains an authentication bypass flaw allowing unauthenticated attackers to reinstall instances, overwrite configurations, and execute commands via gadget chains.
+
+**Do:** Upgrade sysPass beyond version 3.2.11.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129110)
 
 ### 🟠 XWEB EVO Arbitrary File Write (CVE-2026-124014)
 `CVE-2026-124014 · CVSS 9.1`
@@ -76,6 +137,29 @@ Ruby on Rails Active Storage processing attachments with ImageMagick may allow u
 
 [GitHub Advisory](https://github.com/advisories/GHSA-f3w6-w445-fwh9)
 
+### 🟠 Vvveb Theme Installer Arbitrary File Upload RCE (CVE-2026-126378)
+`CVE-2026-126378 · CVSS 9.4 · EPSS 0.01`
+
+Vvveb through 1.0.8.6 contains an arbitrary file upload vulnerability in the theme installer via path matching flaws, allowing authenticated administrators to achieve remote code execution.
+
+**Do:** Upgrade Vvveb beyond 1.0.8.6 or apply vendor patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126378)
+
+### 🟠 TSMC Confirms Employee Data Breach via Cloud Provider
+`exploited`
+
+TSMC confirmed an employee data breach matching information stored in third-party cloud provider system services, though internal operations remained uncompromised.
+
+[The Record](https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider)
+
+### 🟠 Ransomware Attack Disrupts Belarusian Cloud Firm ActiveCloud
+`exploited`
+
+ActiveCloud suffered a ransomware attack that encrypted parts of its cloud infrastructure, leaving customers without access to key services for several days.
+
+[The Record](https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack)
+
 ### 🟠 Citrix Patches 10 Critical NetScaler Vulnerabilities
 
 Citrix has patched 10 critical NetScaler vulnerabilities where successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions.
@@ -88,22 +172,71 @@ Citrix has patched 10 critical NetScaler vulnerabilities where successful exploi
 
 A widespread outage caused by failed server health checks disrupted Microsoft 365 services globally, including Outlook, Microsoft Teams, and Copilot.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/) · [SecurityWeek](https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/) · [SecurityWeek](https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/) · [SecurityWeek](https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/)
+
+### 🟠 Vvveb Media Trait Denylist Bypass RCE (CVE-2026-126380)
+`CVE-2026-126380 · CVSS 9.4 · EPSS 0.01`
+
+Vvveb before 1.0.9.0 contains a denylist bypass allowing authenticated administrators to upload .phar PHP polyglot files and execute arbitrary OS commands.
+
+**Do:** Upgrade Vvveb to 1.0.9.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126380)
+
+### 🟠 OpenMage Magento LTS OAuth CSRF Flaw (CVE-2026-128049)
+`CVE-2026-128049 · CVSS 9.4 · EPSS 0.00`
+
+OpenMage Magento LTS before 20.18.2 contains a CSRF vulnerability in OAuth confirm actions, allowing attackers to acquire persistent REST API access tokens.
+
+**Do:** Upgrade OpenMage Magento LTS to 20.18.2 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-128049)
 
 ### 🟠 Linksys EA8100 Authentication Bypass (CVE-2026-127275)
-`CVE-2026-127275 · CVSS 10.0`
+`CVE-2026-127275, CVE-2026-127277 · CVSS 10.0`
 
 Linksys EA8100 version 1.0.3.216940 contains a missing authentication vulnerability in the JNAP API ui_server.lua component. A public exploit is available.
 
 **Do:** Apply vendor updates if available or restrict router management interfaces from the internet.
 
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127275)
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127275) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127277)
+
+### 🟠 PostgreSQL Authenticated RCE Flaw (CVE-2026-6460)
+`CVE-2026-6460 · EPSS 0.01`
+
+A type confusion vulnerability tracked as CVE-2026-6460 allows authenticated users who can create objects to execute code on the server with operating system rights. PostgreSQL has released patches and recommends rebuilding C-language extensions.
+
+**Do:** Upgrade PostgreSQL to the latest patched versions and rebuild C-language extensions.
+
+[The Hacker News](https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html)
+
+### 🟠 German Defense Tech Quantum Systems Confirms Cyberattack
+`exploited`
+
+Quantum Systems confirmed a cyberattack in late October orchestrated by hostile actors affecting drone operations infrastructure.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/)
+
+### 🟠 DOJ Details Gootloader Ransomware Campaign Impact
+`exploited`
+
+U.S. officials reported that Gootloader has been used in at least 44 ransomware attacks totaling $29 million since 2018.
+
+[The Record](https://therecord.media/gootloader-ransomware-doj-details)
+
+### 🟠 Trezor Confirms Hidden Hardware Implants in Resold Wallets
+
+Trezor confirmed that Trezor Safe 5 wallets purchased from reseller CryptoBilis contain a malicious circuit board implant capable of stealing recovery phrases and transmitting them over mobile networks.
+
+**Do:** Audit hardware wallets purchased from third-party resellers like CryptoBilis for physical tampering.
+
+[The Hacker News](https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html)
 
 ### 🟠 Microsoft Confirms Windows Activation Failures After November Updates
 
 Microsoft confirmed that November Patch Tuesday updates are causing Windows activation and licensing failures accompanied by 0x80041008 error codes.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/) · [BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/)
 
 ## 2026-11-12
 
@@ -239,7 +372,7 @@ PTC has released patches for a new critical vulnerability impacting Windchill an
 
 Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/) · [SecurityWeek](https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/)
 
 ### 🟠 ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations
 
@@ -1575,15 +1708,6 @@ Hackers are actively exploiting vulnerabilities via Plex Media Server on QNAP NA
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/)
 
-### 🟠 Craft CMS Unauthenticated SQL Injection Vulnerability
-`CVE-2026-123488 · CVSS 9.8`
-
-Craft CMS versions 4.0.0 through 4.18.8 and 5.0.0 through 5.11.1 contain an unauthenticated SQL injection vulnerability in the element search endpoint, allowing remote attackers to read and write the database and gain administrator access.
-
-**Do:** Upgrade Craft CMS to version 4.18.9 or 5.11.2 and above.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123488)
-
 ### 🟠 Fake Security Tools on GitHub Deliver Backdoors and Infostealers
 `exploited`
 
@@ -1592,24 +1716,6 @@ Cybersecurity professionals are being targeted by malicious GitHub repositories 
 **Do:** Audit third-party security repositories and check endpoints for unauthorized infostealers.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/)
-
-### 🟠 D-Link Warns of Zero-Day Vulnerabilities in DGS-3130 Series Switches
-`exploited`
-
-D-Link shared mitigation measures for unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.
-
-**Do:** Apply vendor mitigations for D-Link DGS-3130 series switches.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/)
-
-### 🟠 Microsoft Paint Remote Code Execution Flaw Fixed in Microsoft Store
-`CVE-2026-83844 · EPSS 0.01`
-
-An out-of-bounds read RCE vulnerability in Microsoft Paint (CVE-2026-83844) can be fixed by updating to build 11.2609.401.0 via the Microsoft Store.
-
-**Do:** Update Microsoft Paint via the Microsoft Store to build 11.2609.401.0 or later.
-
-[The Hacker News](https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html)
 
 ### 🟠 WordPress Flaw Update Vulnerability During Installation
 `exploited`

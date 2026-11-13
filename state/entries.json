@@ -1,5 +1,399 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "SilentAir State-Sponsored Group Hijacks Asian Telecom Networks",
+  "tldr": "A state-sponsored threat group named SilentAir hijacked mobile network nodes in at least six Asian countries to intercept calls and SMS 2FA codes, primarily targeting Taiwanese subscribers.",
+  "action": "Audit mobile network infrastructure and review access controls for telecom nodes.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "Operation Endgame Disrupts Gootloader, CastleRAT, and StealC",
+  "tldr": "Law enforcement seized 235 servers and 257 domains, taking down infrastructure behind Gootloader, CastleRAT, and StealC malware while recovering 6.4 million stolen logins.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127073",
+  "tier": "act",
+  "score": 72,
+  "headline": "OpsTree BuildPiper Manifest Privilege Escalation (CVE-2026-127073)",
+  "tldr": "OpsTree BuildPiper before 2.7.0 allows project users to gain Kubernetes cluster-admin rights by submitting unrestricted manifests through the Additional Manifest feature.",
+  "action": "Upgrade OpsTree BuildPiper to 2.7.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127073"
+  ],
+  "cvss": 9.9,
+  "epss": 0.00506,
+  "watch": "kubernetes",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127073"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127080",
+  "tier": "act",
+  "score": 72,
+  "headline": "OpsTree BuildPiper HostPath Authorization Flaw (CVE-2026-127080)",
+  "tldr": "OpsTree BuildPiper before 2.7.0 contains an improper authorization flaw allowing deploy users to define arbitrary hostPath volumes and mount the worker node root filesystem read-write.",
+  "action": "Upgrade OpsTree BuildPiper to 2.7.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127080"
+  ],
+  "cvss": 9.9,
+  "epss": 0.00506,
+  "watch": "kubernetes",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127080"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126473",
+  "tier": "watch",
+  "score": 67,
+  "headline": "OpenEMR OAuth Scope Canonicalization Flaw (CVE-2026-126473)",
+  "tldr": "OpenEMR before 8.4.0 contains OAuth scope canonicalization flaws allowing unauthenticated attackers to obtain unapproved system-level FHIR access and modify patient records.",
+  "action": "Upgrade OpenEMR to 8.4.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126473"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00461,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126473"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-109445",
+  "tier": "watch",
+  "score": 67,
+  "headline": "PLANET GS-5220 Switch Cookie Buffer Overflow (CVE-2026-109445)",
+  "tldr": "PLANET GS-5220-8P2T2S firmware before 3.2412b261008 contains a stack-based buffer overflow via an oversized webstax_auth cookie value, leading to potential denial of service.",
+  "action": "Apply firmware update version 3.2412b261008 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109445"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109445"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-129110",
+  "tier": "watch",
+  "score": 67,
+  "headline": "sysPass Installation Authentication Bypass RCE (CVE-2026-129110)",
+  "tldr": "sysPass 3.0.1 through 3.2.11 contains an authentication bypass flaw allowing unauthenticated attackers to reinstall instances, overwrite configurations, and execute commands via gadget chains.",
+  "action": "Upgrade sysPass beyond version 3.2.11.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-129110"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129110"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126378",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Vvveb Theme Installer Arbitrary File Upload RCE (CVE-2026-126378)",
+  "tldr": "Vvveb through 1.0.8.6 contains an arbitrary file upload vulnerability in the theme installer via path matching flaws, allowing authenticated administrators to achieve remote code execution.",
+  "action": "Upgrade Vvveb beyond 1.0.8.6 or apply vendor patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126378"
+  ],
+  "cvss": 9.4,
+  "epss": 0.0082,
+  "watch": "nginx",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126378"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider",
+  "tier": "watch",
+  "score": 61,
+  "headline": "TSMC Confirms Employee Data Breach via Cloud Provider",
+  "tldr": "TSMC confirmed an employee data breach matching information stored in third-party cloud provider system services, though internal operations remained uncompromised.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Ransomware Attack Disrupts Belarusian Cloud Firm ActiveCloud",
+  "tldr": "ActiveCloud suffered a ransomware attack that encrypted parts of its cloud infrastructure, leaving customers without access to key services for several days.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126380",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Vvveb Media Trait Denylist Bypass RCE (CVE-2026-126380)",
+  "tldr": "Vvveb before 1.0.9.0 contains a denylist bypass allowing authenticated administrators to upload .phar PHP polyglot files and execute arbitrary OS commands.",
+  "action": "Upgrade Vvveb to 1.0.9.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126380"
+  ],
+  "cvss": 9.4,
+  "epss": 0.00643,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126380"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-128049",
+  "tier": "watch",
+  "score": 59,
+  "headline": "OpenMage Magento LTS OAuth CSRF Flaw (CVE-2026-128049)",
+  "tldr": "OpenMage Magento LTS before 20.18.2 contains a CSRF vulnerability in OAuth confirm actions, allowing attackers to acquire persistent REST API access tokens.",
+  "action": "Upgrade OpenMage Magento LTS to 20.18.2 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-128049"
+  ],
+  "cvss": 9.4,
+  "epss": 0.00226,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128049"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "PostgreSQL Authenticated RCE Flaw (CVE-2026-6460)",
+  "tldr": "A type confusion vulnerability tracked as CVE-2026-6460 allows authenticated users who can create objects to execute code on the server with operating system rights. PostgreSQL has released patches and recommends rebuilding C-language extensions.",
+  "action": "Upgrade PostgreSQL to the latest patched versions and rebuild C-language extensions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-6460"
+  ],
+  "cvss": null,
+  "epss": 0.0059,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack",
+  "tier": "watch",
+  "score": 53,
+  "headline": "German Defense Tech Quantum Systems Confirms Cyberattack",
+  "tldr": "Quantum Systems confirmed a cyberattack in late October orchestrated by hostile actors affecting drone operations infrastructure.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/gootloader-ransomware-doj-details",
+  "tier": "watch",
+  "score": 53,
+  "headline": "DOJ Details Gootloader Ransomware Campaign Impact",
+  "tldr": "U.S. officials reported that Gootloader has been used in at least 44 ransomware attacks totaling $29 million since 2018.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/gootloader-ransomware-doj-details"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Trezor Confirms Hidden Hardware Implants in Resold Wallets",
+  "tldr": "Trezor confirmed that Trezor Safe 5 wallets purchased from reseller CryptoBilis contain a malicious circuit board implant capable of stealing recovery phrases and transmitting them over mobile networks.",
+  "action": "Audit hardware wallets purchased from third-party resellers like CryptoBilis for physical tampering.",
+  "category": "supply_chain",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html"
+   }
+  ],
+  "first_seen": "2026-11-13T17:51:28+00:00",
+  "updated": "2026-11-13T17:51:28+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
   "tier": "act",
   "score": 87,
@@ -23,10 +417,18 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
    }
   ],
   "first_seen": "2026-11-13T09:40:50+00:00",
-  "updated": "2026-11-13T09:40:50+00:00"
+  "updated": "2026-11-13T17:51:28+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop",
@@ -46,10 +448,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/"
+   },
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
    }
   ],
   "first_seen": "2026-11-13T09:40:50+00:00",
-  "updated": "2026-11-13T09:40:50+00:00"
+  "updated": "2026-11-13T17:51:28+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities",
@@ -92,10 +498,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/"
    }
   ],
   "first_seen": "2026-11-13T09:40:50+00:00",
-  "updated": "2026-11-13T09:40:50+00:00"
+  "updated": "2026-11-13T17:51:28+00:00"
  },
  {
   "key": "nvd:CVE-2026-124002",
@@ -269,10 +679,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/"
    }
   ],
   "first_seen": "2026-11-13T01:11:15+00:00",
-  "updated": "2026-11-13T01:11:15+00:00"
+  "updated": "2026-11-13T17:51:28+00:00"
  },
  {
   "key": "nvd:CVE-2026-127275",
@@ -285,7 +699,8 @@
   "exploited": false,
   "kev": false,
   "cves": [
-   "CVE-2026-127275"
+   "CVE-2026-127275",
+   "CVE-2026-127277"
   ],
   "cvss": 10.0,
   "epss": null,
@@ -294,10 +709,14 @@
    {
     "source": "NVD",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127275"
+   },
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127277"
    }
   ],
   "first_seen": "2026-11-13T01:11:15+00:00",
-  "updated": "2026-11-13T01:11:15+00:00"
+  "updated": "2026-11-13T17:51:28+00:00"
  },
  {
   "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
@@ -524,10 +943,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/"
    }
   ],
   "first_seen": "2026-11-12T18:23:49+00:00",
-  "updated": "2026-11-12T18:23:49+00:00"
+  "updated": "2026-11-13T17:51:28+00:00"
  },
  {
   "key": "rss:https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
