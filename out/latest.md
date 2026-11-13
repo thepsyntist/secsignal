@@ -4,14 +4,23 @@
 
 ## 2026-11-13
 
-### 🔴 Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited
-`CVE-2026-123039 · exploited`
+### 🔴 Now exploited: Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited
+`CVE-2026-114713, CVE-2026-123039 · CISA KEV`
 
 Attackers are actively exploiting PHP2Shell and a local privilege escalation flaw (CVE-2026-123039) in Check Point Security Gateways to achieve root access, deploy the TSGA backdoor, and wipe ESXi files.
 
 **Do:** Apply available patches for Check Point Security Gateways immediately and audit for indicators of compromise.
 
-[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/)
+[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-114713) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123039)
+
+### 🔴 VITEC EZ TV Platform Server Unauthenticated File Upload RCE
+`CVE-2026-82504 · CVSS 9.8`
+
+VITEC EZ TV Platform Server before 8.5.0 contains an unauthenticated file upload vulnerability allowing remote attackers to upload and execute arbitrary ASPX files, achieving remote code execution. Patches are available.
+
+**Do:** Upgrade VITEC EZ TV Platform Server to version 8.5.0 or apply available patches.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82504)
 
 ### 🔴 XWEB EVO Pre-Auth OS Command Injection (CVE-2026-124002)
 `CVE-2026-124002 · CVSS 9.8`
@@ -83,6 +92,15 @@ Nightmare Eclipse released a Windows zero-day exploit named 'SignDrop' that abus
 
 [SecurityWeek](https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/) · [Ars Technica](https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/)
 
+### 🟠 NginxPulse Unauthenticated SQL Injection (CVE-2026-129171)
+`CVE-2026-129171 · CVSS 9.8`
+
+NginxPulse versions 1.5.0 through 1.6.25 contain an unauthenticated SQL injection vulnerability via /api/stats/:type, allowing attackers to read database contents and execute server files. Patches are available in version 1.6.26.
+
+**Do:** Upgrade NginxPulse to 1.6.26 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129171)
+
 ### 🟠 OpenEMR OAuth Scope Canonicalization Flaw (CVE-2026-126473)
 `CVE-2026-126473 · CVSS 9.3 · EPSS 0.00`
 
@@ -145,6 +163,13 @@ Vvveb through 1.0.8.6 contains an arbitrary file upload vulnerability in the the
 **Do:** Upgrade Vvveb beyond 1.0.8.6 or apply vendor patches.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126378)
+
+### 🟠 City of Osaka Warns of Data Breach Impacting 1 Million
+`exploited`
+
+The City of Osaka in Japan warned residents of a data breach impacting 1 million people amid a wave of local cyber incidents.
+
+[The Record](https://therecord.media/city-of-osaka-japan-email-data-breach)
 
 ### 🟠 TSMC Confirms Employee Data Breach via Cloud Provider
 `exploited`
@@ -210,6 +235,13 @@ A type confusion vulnerability tracked as CVE-2026-6460 allows authenticated use
 
 [The Hacker News](https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html)
 
+### 🟠 University of Texas at Arlington Confirms Data Theft
+`exploited`
+
+The University of Texas at Arlington confirmed that personal information was stolen during a recent cyberattack.
+
+[The Record](https://therecord.media/university-of-texas-arlington-warns-data-breach)
+
 ### 🟠 German Defense Tech Quantum Systems Confirms Cyberattack
 `exploited`
 
@@ -230,7 +262,7 @@ Trezor confirmed that Trezor Safe 5 wallets purchased from reseller CryptoBilis 
 
 **Do:** Audit hardware wallets purchased from third-party resellers like CryptoBilis for physical tampering.
 
-[The Hacker News](https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html)
+[The Hacker News](https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/)
 
 ### 🟠 Microsoft Confirms Windows Activation Failures After November Updates
 
@@ -1633,96 +1665,4 @@ IBM API Connect 10.0.8.0-10.0.8.12 and 12.1.0.0-12.1.1.2 contain an SSRF flaw al
 **Do:** Apply available vendor patches for IBM API Connect.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-18836)
-
-## 2026-11-06
-
-### 🔴 SonicWall SonicOS SSLVPN Authentication Bypass Added to KEV
-`CVE-2026-19868 · CISA KEV`
-
-CISA added CVE-2026-19868, a single-factor authentication vulnerability in SonicWall SonicOS SSLVPN that allows bypassing SAML and MFA controls, to its KEV catalog following active exploitation.
-
-**Do:** Apply vendor-supplied patches immediately and review access logs for unauthorized SSLVPN sessions.
-
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/) · [SecurityWeek](https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/) · [The Hacker News](https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html)
-
-### 🔴 Canonical LXD Restricted Project Bypass RCE Flaw
-`CVSS 9.9`
-
-Canonical LXD contains a vulnerability where instance snapshots ignore lowlevel restriction settings, leading to arbitrary command execution via raw hooks.
-
-**Do:** Upgrade LXD to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-47w9-6r3f-938g)
-
-### 🔴 Canonical LXD Arbitrary File Write via Image Hash
-`CVSS 9.9`
-
-An arbitrary file write exists in the LXD client when a malicious image server returns a crafted image hash header, leading to potential root RCE.
-
-**Do:** Upgrade LXD to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-pjff-c2wc-f6jm)
-
-### 🔴 Canonical LXD Backup Compression Argument Injection Flaw
-`CVSS 9.9`
-
-Improper validation of user-provided backup compression algorithms in LXD leads to argument injection, arbitrary file write, and potential RCE.
-
-**Do:** Upgrade LXD to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-fmc8-p6q7-75cc)
-
-### 🔴 Canonical LXD Host File Read/Write via Rootfs Symlink
-`CVSS 9.9`
-
-A specially crafted image can exploit symlink handling in LXD to read or write arbitrary files on the host system.
-
-**Do:** Upgrade LXD to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-vghh-5rfx-xhq8)
-
-### 🔴 Canonical LXD Host File Read/Write via Templates Symlink
-`CVSS 9.9`
-
-Container image extraction in LXD fails to reject top-level templates symlinks, allowing arbitrary file read and write on the host.
-
-**Do:** Upgrade LXD to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-jpf8-86f3-wp38)
-
-### 🔴 Canonical LXD Arbitrary File Write via Exec-Output Symlink
-`CVSS 9.9`
-
-Improper handling of the exec-output parameter in LXD endpoints allows writing stdout/stderr files to arbitrary locations, leading to RCE.
-
-**Do:** Upgrade LXD to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-9j25-mm2h-2f76)
-
-### 🟠 QNAP NAS Devices Targeted in Plex2Shell Attacks
-`exploited`
-
-Hackers are actively exploiting vulnerabilities via Plex Media Server on QNAP NAS devices in Plex2Shell attack chains.
-
-**Do:** Update Plex Media Server to the latest version via the QNAP App Center.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/)
-
-### 🟠 Fake Security Tools on GitHub Deliver Backdoors and Infostealers
-`exploited`
-
-Cybersecurity professionals are being targeted by malicious GitHub repositories posing as security tools that deploy backdoors and infostealers.
-
-**Do:** Audit third-party security repositories and check endpoints for unauthorized infostealers.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/)
-
-### 🟠 WordPress Flaw Update Vulnerability During Installation
-`exploited`
-
-Some WordPress sites remain vulnerable to code execution while installing updates for an actively exploited flaw because files are unpacked using unpatched code.
-
-**Do:** Temporarily block web access to vulnerable installation files during update procedures.
-
-[The Hacker News](https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html)
 

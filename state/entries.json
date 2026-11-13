@@ -1,5 +1,101 @@
 [
  {
+  "key": "nvd:CVE-2026-82504",
+  "tier": "act",
+  "score": 75,
+  "headline": "VITEC EZ TV Platform Server Unauthenticated File Upload RCE",
+  "tldr": "VITEC EZ TV Platform Server before 8.5.0 contains an unauthenticated file upload vulnerability allowing remote attackers to upload and execute arbitrary ASPX files, achieving remote code execution. Patches are available.",
+  "action": "Upgrade VITEC EZ TV Platform Server to version 8.5.0 or apply available patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82504"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82504"
+   }
+  ],
+  "first_seen": "2026-11-13T23:39:36+00:00",
+  "updated": "2026-11-13T23:39:36+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-129171",
+  "tier": "watch",
+  "score": 67,
+  "headline": "NginxPulse Unauthenticated SQL Injection (CVE-2026-129171)",
+  "tldr": "NginxPulse versions 1.5.0 through 1.6.25 contain an unauthenticated SQL injection vulnerability via /api/stats/:type, allowing attackers to read database contents and execute server files. Patches are available in version 1.6.26.",
+  "action": "Upgrade NginxPulse to 1.6.26 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-129171"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129171"
+   }
+  ],
+  "first_seen": "2026-11-13T23:39:36+00:00",
+  "updated": "2026-11-13T23:39:36+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/city-of-osaka-japan-email-data-breach",
+  "tier": "watch",
+  "score": 61,
+  "headline": "City of Osaka Warns of Data Breach Impacting 1 Million",
+  "tldr": "The City of Osaka in Japan warned residents of a data breach impacting 1 million people amid a wave of local cyber incidents.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/city-of-osaka-japan-email-data-breach"
+   }
+  ],
+  "first_seen": "2026-11-13T23:39:36+00:00",
+  "updated": "2026-11-13T23:39:36+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/university-of-texas-arlington-warns-data-breach",
+  "tier": "watch",
+  "score": 53,
+  "headline": "University of Texas at Arlington Confirms Data Theft",
+  "tldr": "The University of Texas at Arlington confirmed that personal information was stolen during a recent cyberattack.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/university-of-texas-arlington-warns-data-breach"
+   }
+  ],
+  "first_seen": "2026-11-13T23:39:36+00:00",
+  "updated": "2026-11-13T23:39:36+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
   "tier": "act",
   "score": 74,
@@ -388,22 +484,27 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/"
    }
   ],
   "first_seen": "2026-11-13T17:51:28+00:00",
-  "updated": "2026-11-13T17:51:28+00:00"
+  "updated": "2026-11-13T23:39:36+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
   "tier": "act",
   "score": 87,
-  "headline": "Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited",
+  "headline": "Now exploited: Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited",
   "tldr": "Attackers are actively exploiting PHP2Shell and a local privilege escalation flaw (CVE-2026-123039) in Check Point Security Gateways to achieve root access, deploy the TSGA backdoor, and wipe ESXi files.",
   "action": "Apply available patches for Check Point Security Gateways immediately and audit for indicators of compromise.",
   "category": "exploitation",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
+   "CVE-2026-114713",
    "CVE-2026-123039"
   ],
   "cvss": null,
@@ -425,10 +526,22 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039"
    }
   ],
   "first_seen": "2026-11-13T09:40:50+00:00",
-  "updated": "2026-11-13T17:51:28+00:00"
+  "updated": "2026-11-13T23:39:36+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop",
