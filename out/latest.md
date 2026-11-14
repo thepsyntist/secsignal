@@ -2,6 +2,26 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-14
+
+### 🟠 Cursor Confirms Breach and Malicious Claude Code Extension
+`exploited`
+
+Cursor suffered a security breach resulting in the distribution of a malicious Claude Code extension through its marketplace following credential theft from Fireworks AI.
+
+**Do:** Audit and remove unauthorized Claude Code extensions from Cursor.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/)
+
+### 🟠 Dokploy getComposeContainerCommand OS Command Injection (CVE-2026-129433)
+`CVE-2026-129433 · CVSS 9.9`
+
+Dokploy before 0.31.1 contains an OS command injection vulnerability in getComposeContainerCommand() that allows authenticated organization members to execute shell commands via the serviceName parameter, potentially taking over the host.
+
+**Do:** Upgrade Dokploy to 0.31.1 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129433)
+
 ## 2026-11-13
 
 ### 🔴 Now exploited: Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited
@@ -1225,22 +1245,4 @@ IBM WebSphere Extreme Scale 8.6.1.0 to 8.6.2.2 contains a security restriction b
 **Do:** Apply fixes provided by IBM for WebSphere Extreme Scale.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-101117)
-
-## 2026-11-07
-
-### 🟠 Crédit Mutuel Arkéa Hit by $133 Million Cyberattack via Service Provider
-`exploited`
-
-French cooperative bank Crédit Mutuel Arkéa suffered a cyberattack via a service provider resulting in $133 million in fraudulent transactions, prompting system suspensions.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/)
-
-### 🟠 Keycloak Client Management RCE Vulnerability (CVE-2026-120984)
-`CVE-2026-120984 · CVSS 9.1`
-
-A vulnerability in Keycloak's client management component allows authenticated attackers with client management permissions to upload and execute malicious JavaScript policies, leading to remote code execution.
-
-**Do:** Apply the latest vendor patches for Keycloak to address CVE-2026-120984.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120984)
 
