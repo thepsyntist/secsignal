@@ -1228,15 +1228,6 @@ IBM WebSphere Extreme Scale 8.6.1.0 to 8.6.2.2 contains a security restriction b
 
 ## 2026-11-07
 
-### 🔴 Microsoft Entra Device Registration Auth Bypass Flaw (CVE-2026-109469)
-`CVE-2026-109469 · CVSS 10.0`
-
-An authorization bypass vulnerability in Entra Device Registration (CVE-2026-109469, CVSS 10.0) allows unauthorized attackers to elevate privileges over a network.
-
-**Do:** Apply the latest security updates from Microsoft for Entra Device Registration.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109469)
-
 ### 🔴 IBM API Connect Hard-Coded Credentials Flaw (CVE-2026-17360)
 `CVE-2026-17360 · CVSS 9.8`
 
