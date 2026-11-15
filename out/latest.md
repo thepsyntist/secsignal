@@ -2,6 +2,26 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-15
+
+### 🟠 Cyrus SASL Authentication Bypass in SRP Server Mechanism
+`CVE-2026-129483 · CVSS 9.3`
+
+Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the SRP server mechanism due to improper validation of client public values. Unauthenticated attackers can authenticate as any user and learn session keys.
+
+**Do:** Check vendor advisories and apply available patches for Cyrus SASL.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129483)
+
+### 🟠 DrayTek Vigor2960 mainfunction.cgi Command Injection
+`CVE-2026-129449, CVE-2026-129452 · CVSS 9.9`
+
+DrayTek Vigor2960 up to version 1.5.1.6 contains an OS command injection vulnerability in mainfunction.cgi via the swmconfigupload argument. An updated version 1.5.1.7 is available.
+
+**Do:** Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129449) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129452)
+
 ## 2026-11-14
 
 ### 🟠 Cursor Confirms Breach and Malicious Claude Code Extension
@@ -196,7 +216,7 @@ The City of Osaka in Japan warned residents of a data breach impacting 1 million
 
 TSMC confirmed an employee data breach matching information stored in third-party cloud provider system services, though internal operations remained uncompromised.
 
-[The Record](https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider)
+[The Record](https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
 
 ### 🟠 Ransomware Attack Disrupts Belarusian Cloud Firm ActiveCloud
 `exploited`
@@ -1121,32 +1141,6 @@ IBM Concert 1.0 through 3.0.1.1 contains components allowing unsafe command exec
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-15266) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-6715)
 
-### 🟠 Kyverno Namespace Clamp Authorization Bypass (CVE-2026-124440)
-`CVE-2026-124440 · CVSS 9.9`
-
-Kyverno 1.19.1 contains an authorization bypass allowing namespace tenants to issue cluster-scoped API requests and escalate to cluster admin.
-
-**Do:** Upgrade Kyverno to 1.19.2 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124440)
-
-### 🟠 OpenEMR Path Traversal and RCE Vulnerability (CVE-2026-124450)
-`CVE-2026-124450, CVE-2026-124490 · CVSS 9.9`
-
-OpenEMR before 8.3.0 contains a path traversal vulnerability in the fax/sms module, allowing low-privilege users to read configuration files and achieve RCE.
-
-**Do:** Upgrade OpenEMR to 8.3.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124450) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124490)
-
-### 🟠 Iris Ohyama Cloud Service Breach Exposes 7.7 Million Records
-
-Japanese manufacturer Iris Ohyama disclosed that unauthorized access to a third-party cloud service exposed personal information of about 7.7 million people.
-
-**Do:** Audit third-party cloud service integrations and monitor affected customer data.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/) · [SecurityWeek](https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/)
-
 ### 🟠 IBM DataStage on Cloud Pak for Data Path Traversal (CVE-2026-107331)
 `CVE-2026-107331 · CVSS 9.9`
 
@@ -1173,40 +1167,4 @@ IBM Optim 1.0.0, 1.1.0, and 1.2.0 allow remote authenticated attackers to obtain
 **Do:** Apply fixes provided by IBM for Optim versions 1.0.0, 1.1.0, and 1.2.0.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17466)
-
-### 🟠 Craft CMS GraphQL Auth Bypass Vulnerability (CVE-2026-124427)
-`CVE-2026-124427 · CVSS 9.8`
-
-Craft CMS 5.0.0 through 5.11.1 contains an authorization bypass allowing anonymous GraphQL clients to read out-of-scope section entries.
-
-**Do:** Upgrade Craft CMS to 5.11.2 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124427)
-
-### 🟠 OpenEMR OneTimeAuth Token Replay Flaw (CVE-2026-124445)
-`CVE-2026-124445 · CVSS 9.8`
-
-OpenEMR 7.0.1 through 8.3.x ignores one-time use flags and lacks rate limiting on PINs, allowing token replay to expose patient data.
-
-**Do:** Upgrade OpenEMR to 8.4.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124445)
-
-### 🟠 OpenEMR SQL Injection Vulnerability (CVE-2026-124469)
-`CVE-2026-124469 · CVSS 9.9`
-
-OpenEMR before 8.3.0 contains an SQL injection flaw in the Fee Sheet drug-inventory lookup, enabling data extraction.
-
-**Do:** Upgrade OpenEMR to 8.3.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124469)
-
-### 🟠 IBM WebSphere Extreme Scale CSP Bypass (CVE-2026-101117)
-`CVE-2026-101117 · CVSS 9.1`
-
-IBM WebSphere Extreme Scale 8.6.1.0 to 8.6.2.2 contains a security restriction bypass due to improper Content Security Policy configuration.
-
-**Do:** Apply fixes provided by IBM for WebSphere Extreme Scale.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-101117)
 
