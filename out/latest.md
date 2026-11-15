@@ -11,7 +11,7 @@ Cursor suffered a security breach resulting in the distribution of a malicious C
 
 **Do:** Audit and remove unauthorized Claude Code extensions from Cursor.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/) · [The Hacker News](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
 
 ### 🟠 Dokploy getComposeContainerCommand OS Command Injection (CVE-2026-129433)
 `CVE-2026-129433 · CVSS 9.9`
@@ -1112,33 +1112,6 @@ Amplifon Americas suffered a data breach where hackers stole personal, health, a
 
 ## 2026-11-08
 
-### 🔴 OpenAM Self-Registration Privilege Escalation Vulnerability (CVE-2026-123549)
-`CVE-2026-123549 · CVSS 9.8`
-
-OpenAM before 16.1.4 fails to enforce the Valid Creation Attributes list during self-registration, allowing anonymous attackers to assign themselves to administrative groups and gain full administrative control.
-
-**Do:** Upgrade OpenAM to version 16.1.4 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123549)
-
-### 🔴 OpenAM SAML Authentication Bypass Vulnerability (CVE-2026-123550)
-`CVE-2026-123550 · CVSS 9.8`
-
-OpenAM before 16.1.4 contains an authentication bypass in its SAML v2.0 service provider that accepts unsigned assertions, allowing unauthenticated attackers to forge sessions for arbitrary users.
-
-**Do:** Upgrade OpenAM to version 16.1.4 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123550)
-
-### 🔴 OpenAM WebSocket Session Disclosure Vulnerability (CVE-2026-123551)
-`CVE-2026-123551 · CVSS 10.0`
-
-OpenAM versions 14.0.0 through 16.1.3 allow unauthenticated attackers to read live session tokens from the notification WebSocket, enabling session hijacking.
-
-**Do:** Upgrade OpenAM to version 16.1.4 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123551)
-
 ### 🟠 IBM Concert Unsafe Command Execution Vulnerability (CVE-2026-15266)
 `CVE-2026-15266, CVE-2026-6715 · CVSS 9.8`
 
@@ -1165,15 +1138,6 @@ OpenEMR before 8.3.0 contains a path traversal vulnerability in the fax/sms modu
 **Do:** Upgrade OpenEMR to 8.3.0 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124450) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124490)
-
-### 🟠 imgproxy ICO Loader Integer Overflow Vulnerability (CVE-2026-123614)
-`CVE-2026-123614 · CVSS 9.8`
-
-imgproxy 4.0.0 through 4.0.15 contains an integer overflow in the ICO loader, allowing remote attackers to trigger a heap buffer overflow via crafted images.
-
-**Do:** Upgrade imgproxy to version 4.0.16 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123614)
 
 ### 🟠 Iris Ohyama Cloud Service Breach Exposes 7.7 Million Records
 

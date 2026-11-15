@@ -17,10 +17,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
    }
   ],
   "first_seen": "2026-11-14T20:47:29+00:00",
-  "updated": "2026-11-14T20:47:29+00:00"
+  "updated": "2026-11-15T09:35:08+00:00"
  },
  {
   "key": "nvd:CVE-2026-129433",
