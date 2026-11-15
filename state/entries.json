@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks",
+  "tier": "watch",
+  "score": 61,
+  "headline": "FBI Warns ARTEX AI Tool Used in Global Cyberattacks",
+  "tldr": "The FBI warned that threat actors are using the ARTEX AI penetration testing framework to automate global attacks, including a ConnectWise supply-chain breach impacting Microsoft 365 environments.",
+  "action": "Review ConnectWise and Microsoft 365 environments for unauthorized access and monitor for ARTEX indicators.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/"
+   }
+  ],
+  "first_seen": "2026-11-15T22:56:43+00:00",
+  "updated": "2026-11-15T22:56:43+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-129483",
   "tier": "watch",
   "score": 67,

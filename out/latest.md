@@ -13,6 +13,15 @@ Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129483)
 
+### 🟠 FBI Warns ARTEX AI Tool Used in Global Cyberattacks
+`exploited`
+
+The FBI warned that threat actors are using the ARTEX AI penetration testing framework to automate global attacks, including a ConnectWise supply-chain breach impacting Microsoft 365 environments.
+
+**Do:** Review ConnectWise and Microsoft 365 environments for unauthorized access and monitor for ARTEX indicators.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/)
+
 ### 🟠 DrayTek Vigor2960 mainfunction.cgi Command Injection
 `CVE-2026-129449, CVE-2026-129452 · CVSS 9.9`
 
@@ -1129,42 +1138,4 @@ Online fashion retailer Revolve disclosed that a September cyberattack affected 
 Amplifon Americas suffered a data breach where hackers stole personal, health, and insurance information, including Social Security numbers.
 
 [SecurityWeek](https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/) · [The Record](https://therecord.media/amplifon-hearing-aid-company-data-breach)
-
-## 2026-11-08
-
-### 🟠 IBM Concert Unsafe Command Execution Vulnerability (CVE-2026-15266)
-`CVE-2026-15266, CVE-2026-6715 · CVSS 9.8`
-
-IBM Concert 1.0 through 3.0.1.1 contains components allowing unsafe command execution, enabling remote attackers to run arbitrary system commands on the host.
-
-**Do:** Apply the latest security updates for IBM Concert versions 1.0 through 3.0.1.1.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-15266) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-6715)
-
-### 🟠 IBM DataStage on Cloud Pak for Data Path Traversal (CVE-2026-107331)
-`CVE-2026-107331 · CVSS 9.9`
-
-IBM DataStage on Cloud Pak for Data 5.4.0.0 contains an absolute-path traversal vulnerability allowing remote authenticated attackers to obtain sensitive information.
-
-**Do:** Apply available patches from IBM for DataStage on Cloud Pak for Data 5.4.0.0.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-107331)
-
-### 🟠 IBM Process Mining Access Control Vulnerability (CVE-2026-114464)
-`CVE-2026-114464 · CVSS 9.3`
-
-IBM Process Mining 2.0.0 through 2.2.1 contains an improper access control flaw allowing remote attackers to obtain sensitive information.
-
-**Do:** Upgrade IBM Process Mining to version 2.2.2 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114464)
-
-### 🟠 IBM Optim Path Traversal Vulnerability (CVE-2026-17466)
-`CVE-2026-17466 · CVSS 9.1`
-
-IBM Optim 1.0.0, 1.1.0, and 1.2.0 allow remote authenticated attackers to obtain sensitive information via path traversal.
-
-**Do:** Apply fixes provided by IBM for Optim versions 1.0.0, 1.1.0, and 1.2.0.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-17466)
 
