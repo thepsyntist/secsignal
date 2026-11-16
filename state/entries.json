@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Autonomous AI Agent Attacks Target LiteLLM and Dify Deployments to Steal API Keys",
+  "tldr": "Attackers are deploying autonomous AI agents to scan and exploit internet-exposed AI applications like LiteLLM, One API, and Dify to steal AI provider API keys. Stolen API keys are reportedly being fed back to power the automated agents conducting further scans.",
+  "action": "Ensure LiteLLM, Dify, and One API deployments are not exposed to the public internet without authentication.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html"
+   }
+  ],
+  "first_seen": "2026-11-16T18:39:34+00:00",
+  "updated": "2026-11-16T18:39:34+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks",
   "tier": "watch",
   "score": 61,
@@ -676,10 +699,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-13T09:40:50+00:00",
-  "updated": "2026-11-14T15:10:25+00:00"
+  "updated": "2026-11-16T18:39:34+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop",

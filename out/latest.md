@@ -2,6 +2,17 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-16
+
+### 🟠 Autonomous AI Agent Attacks Target LiteLLM and Dify Deployments to Steal API Keys
+`exploited`
+
+Attackers are deploying autonomous AI agents to scan and exploit internet-exposed AI applications like LiteLLM, One API, and Dify to steal AI provider API keys. Stolen API keys are reportedly being fed back to power the automated agents conducting further scans.
+
+**Do:** Ensure LiteLLM, Dify, and One API deployments are not exposed to the public internet without authentication.
+
+[The Hacker News](https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html)
+
 ## 2026-11-15
 
 ### 🟠 Cyrus SASL Authentication Bypass in SRP Server Mechanism
@@ -60,7 +71,7 @@ Attackers are actively exploiting PHP2Shell and a local privilege escalation fla
 
 **Do:** Apply available patches for Check Point Security Gateways immediately and audit for indicators of compromise.
 
-[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-114713) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123039) · [The Hacker News](https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html)
+[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-114713) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123039) · [The Hacker News](https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html) · [SecurityWeek](https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/)
 
 ### 🔴 VITEC EZ TV Platform Server Unauthenticated File Upload RCE
 `CVE-2026-82504 · CVSS 9.8`
@@ -1072,15 +1083,6 @@ A German web hosting company was breached after attackers exploited an interface
 Frontline Education reported that an August data breach impacted over 3 million school district staff and students.
 
 [SecurityWeek](https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/)
-
-### 🟠 U.S. Agencies Warn of Attacks on Industrial Refrigeration Controllers
-`exploited`
-
-Threat actors are actively targeting unpatched or internet-accessible industrial refrigeration and cold-chain monitoring systems globally, potentially causing service disruptions, fire hazards, and inventory loss. U.S. government agencies issued an alert regarding these attacks.
-
-**Do:** Audit industrial refrigeration controllers, disconnect them from the public internet, and apply available patches.
-
-[The Hacker News](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/) · [The Record](https://therecord.media/france-blames-iran-for-fridge-cyberattacks)
 
 ### 🟠 Tasmota Heap Out-of-Bounds Write Vulnerability (CVE-2026-119756)
 `CVE-2026-119756 · CVSS 9.8`
