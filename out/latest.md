@@ -2,6 +2,136 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-17
+
+### 🔴 Optimizely Supply Chain Attack Injects Malicious JavaScript on Major Sites
+`exploited`
+
+A supply chain attack targeting Optimizely has led to malicious JavaScript loading on popular websites including Zoom, CNN, and Salesforce, exposing visitors to credential theft and payment skimming.
+
+**Do:** Audit third-party JavaScript integrations and monitor web apps for unauthorized script execution.
+
+[SecurityWeek](https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/)
+
+### 🔴 BO Team Exploits Log4Shell in VMware vCenter to Compromise Code-Signing Server
+`exploited`
+
+Threat actor BO Team used Log4Shell to breach VMware vCenter at a Russian software developer, resulting in a months-long compromise of its development infrastructure and code-signing server.
+
+**Do:** Patch VMware vCenter against Log4Shell and audit development infrastructure for unauthorized access.
+
+[The Hacker News](https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html)
+
+### 🔴 Barracuda Links Cloud Breach to ARTEX AI Framework and Stolen Key
+`exploited`
+
+Attackers who breached Barracuda's cloud environment used a stolen cloud access key combined with the ARTEX AI penetration testing framework.
+
+**Do:** Rotate cloud access keys and audit access logs for automated AI framework activity.
+
+[SecurityWeek](https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)
+
+### 🟠 Copeland XWEB EVO Controllers Probed by Hackers Following Disclosures
+`exploited`
+
+Threat actors are actively probing newly disclosed vulnerabilities in Copeland XWEB EVO refrigeration controllers following disclosures by Vulncheck.
+
+**Do:** Audit exposure of Copeland XWEB EVO controllers and apply vendor mitigations if available.
+
+[SecurityWeek](https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/)
+
+### 🟠 NodePress Hardcoded JWT Secret Authentication Bypass Vulnerability
+`CVE-2026-129952 · CVSS 9.8`
+
+NodePress through 8.5.1 contains an authentication bypass via a hardcoded JWT fallback key ('nodepress-secret'), allowing unauthenticated attackers to forge administrator tokens.
+
+**Do:** Upgrade NodePress beyond version 8.5.1.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129952)
+
+### 🟠 NodePress Default Admin Password Authentication Bypass Vulnerability
+`CVE-2026-129955 · CVSS 9.8`
+
+NodePress through 8.5.1 contains an authentication bypass using a hardcoded default admin password when NP_ADMIN_DEFAULT_PASSWORD is unset.
+
+**Do:** Upgrade NodePress and ensure default credentials are changed.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129955)
+
+### 🟠 Ghost by muneeb141 OTP Verification Bypass Vulnerability
+`CVE-2026-130070 · CVSS 9.3`
+
+Ghost contains an authentication bypass in the convert_to_real_user method, allowing attackers to skip OTP verification by supplying the bypass_otp parameter and taking over accounts.
+
+**Do:** Apply available patches from the repository.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130070)
+
+### 🟠 TridotsTech go1cms Missing Authentication Privilege Escalation Vulnerability
+`CVE-2026-130071 · CVSS 9.8`
+
+TridotsTech go1cms contains a missing authentication flaw in update_doc, allowing unauthenticated attackers to modify user records and escalate privileges.
+
+**Do:** Update go1cms to fixed commits.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130071)
+
+### 🟠 Cloud Commander Path Traversal and Authentication Bypass Vulnerability
+`CVE-2026-130072 · CVSS 9.1`
+
+Cloud Commander (cloudcmd) before 19.21.4 contains an authentication bypass and path traversal vulnerability via PUT /rename requests, allowing unauthenticated file manipulation.
+
+**Do:** Upgrade Cloud Commander to 19.21.4 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130072)
+
+### 🟠 Zyxel DX3301-T0/EX3301-T0 Out-of-Bounds Write Vulnerability
+`CVE-2026-79614 · CVSS 9.8`
+
+Zyxel DX3301-T0 and EX3301-T0 firmware through 5.50(ABVY.8.3)C0 contain an out-of-bounds write in libclinkc.so allowing unauthenticated attackers to elevate privileges via crafted HTTP requests.
+
+**Do:** Upgrade Zyxel router firmware to patched versions.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-79614)
+
+### 🟠 Danfoss AK-SM800A Refrigeration Controllers Unpatched Remote Takeover Flaws
+
+Six unpatched vulnerabilities in Danfoss AK-SM800A refrigeration controllers allow remote takeover without authentication, with no fix available in firmware version 5.4.0.
+
+**Do:** Isolate Danfoss AK-SM800A controllers from the internet immediately.
+
+[The Hacker News](https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html)
+
+### 🟠 Uber Third-Party Breach Exposes Data of 150,000 People
+`exploited`
+
+Hackers compromised a third-party service provider using stolen internal credentials, accessing Uber data including names, addresses, and driver's license numbers for nearly 150,000 individuals.
+
+[SecurityWeek](https://www.securityweek.com/uber-data-breach-impacts-150000-people/) · [The Record](https://therecord.media/uber-says-150000-impacted-third-party-breach)
+
+### 🟠 NoisyTCP 11-Year-Old Linux Kernel Vulnerability Impacts Servers
+
+An 11-year-old Linux kernel vulnerability dubbed NoisyTCP affects most distributions and allows attackers to crash servers running Nginx, Apache, and SSH with default configurations.
+
+**Do:** Apply Linux kernel security updates when available.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/)
+
+### 🟠 Fandango Media Discloses Payment Card Data Breach on Checkout Pages
+`exploited`
+
+Fandango Media is notifying customers of a breach that exposed payment card details entered on checkout pages.
+
+**Do:** Monitor payment cards used on affected checkout pages for fraudulent activity.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/)
+
+### 🟠 Australian Retailer Coles Investigates Cybersecurity Incident
+
+Coles Group Limited is investigating a cyber security incident, though in-store operations remain unaffected.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/)
+
 ## 2026-11-16
 
 ### 🟠 Autonomous AI Agent Attacks Target LiteLLM and Dify Deployments to Steal API Keys
@@ -980,164 +1110,4 @@ AI startup Fireworks AI disclosed a security breach where attackers accessed dev
 **Do:** Review third-party cloud access controls and audit development machine logs.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/) · [The Record](https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks) · [The Hacker News](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/)
-
-## 2026-11-09
-
-### 🔴 GPUStack Improper Authentication Vulnerability (CVE-2026-102895)
-`CVE-2026-102894, CVE-2026-102895, CVE-2026-116779, CVE-2026-123158 … · EPSS 0.00 · CISA KEV`
-
-GPUStack contains an improper authentication vulnerability allowing unauthenticated administrative access, API-key creation, secret disclosure, and code execution. The vulnerability is actively exploited and listed in CISA KEV.
-
-**Do:** Apply vendor mitigations immediately per CISA KEV and BOD 26-04 guidelines.
-
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-102895) · [GitHub Advisory](https://github.com/advisories/GHSA-gj9m-f8ph-pmhr) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html) · [SecurityWeek](https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/) · [GitHub Advisory](https://github.com/advisories/GHSA-62m9-f875-rqw6)
-
-### 🔴 SignalWire FreeSwitch Code Injection Vulnerability (CVE-2026-116779)
-`CVE-2026-116779 · EPSS 0.01 · CISA KEV`
-
-SignalWire FreeSwitch contains a code injection vulnerability enabling configuration/credential disclosure, call control, and command execution. The flaw is actively exploited and listed in CISA KEV.
-
-**Do:** Apply vendor mitigations immediately or discontinue use of the product per CISA KEV guidelines.
-
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-116779)
-
-### 🔴 Qubole AWS Access Compromised to Breach Customer Accounts
-`exploited`
-
-Attackers used Qubole trusted AWS access credentials between October 14 and October 26 to breach multiple customer accounts and steal stored secrets and data.
-
-**Do:** Audit AWS accounts connected to Qubole for unauthorized access and rotate exposed credentials.
-
-[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/) · [SecurityWeek](https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/)
-
-### 🟠 Russian Cloud Provider Beget Rebuilds After Wiper Attack
-`exploited`
-
-Russian cloud services provider Beget was forced to rebuild its cloud infrastructure from scratch following a data-wiping malware attack.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/)
-
-### 🟠 Plex2Shell Exploit Chain Targeted Against QNAP NAS Users
-`exploited`
-
-Threat actors are actively exploiting a four-flaw exploit chain targeting the Plex Media Server application on QNAP NAS devices.
-
-**Do:** Audit QNAP NAS devices and update Plex Media Server applications.
-
-[SecurityWeek](https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/)
-
-### 🟠 Ethersphere bee-js and Swarm Desktop Compromised for Malware
-`exploited`
-
-Attackers compromised release automation to publish malicious versions bee-js 13.3.0 and Swarm Desktop 0.56.2, which steal wallet keys and install backdoors.
-
-**Do:** Downgrade or remove affected versions of bee-js and Swarm Desktop and check for compromised crypto wallets.
-
-[The Hacker News](https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html)
-
-### 🟠 Web3Auth Flaw Exploited to Steal Keplr Crypto Wallets
-`exploited`
-
-Attackers exploited a security flaw in Web3Auth used by Keplr for Google and Apple sign-in to steal funds from crypto wallets.
-
-**Do:** Review Web3Auth integrations and monitor crypto wallet security.
-
-[The Hacker News](https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html)
-
-### 🟠 LNbits Urges Server Shutdown Amid Active Exploitation Attacks
-`exploited`
-
-The LNbits Bitcoin Lightning wallet project urged operators to shut down servers immediately due to a wave of attacks exploiting new accounts to drain funds.
-
-**Do:** Shut down LNbits servers immediately until security fixes are released and applied.
-
-[The Hacker News](https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html)
-
-### 🟠 rConfig Core and Pro Deserialization RCE Vulnerability (CVE-2026-124079)
-`CVE-2026-124079 · CVSS 9.8`
-
-rConfig Core 8.0.0 before 8.2.19 and rConfig Pro before 8.4.1 contain a deserialization vulnerability allowing unauthenticated network attackers to execute arbitrary code via Redis-backed Laravel Horizon queues.
-
-**Do:** Upgrade rConfig Core to 8.2.19+ and rConfig Pro to 8.4.1+.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124079)
-
-### 🟠 Automaker Apps Vulnerable via Default ForgeRock Credentials
-
-Researchers found default admin credentials on ForgeRock identity servers used by two car brands, allowing complete account takeover, remote door unlocking, and engine starting.
-
-**Do:** Change default credentials on identity provider servers and enforce strict authentication policies.
-
-[The Hacker News](https://thehackernews.com/2026/11/default-adminadmin-server-password.html)
-
-### 🟠 German Web Host Breached via AI Assistant Integration Interface
-`exploited`
-
-A German web hosting company was breached after attackers exploited an interface designed to connect customer accounts with AI assistants.
-
-[The Record](https://therecord.media/cyberattack-germany-ai-mittwald)
-
-### 🟠 Frontline Education Data Breach Affects Over 3 Million
-`exploited`
-
-Frontline Education reported that an August data breach impacted over 3 million school district staff and students.
-
-[SecurityWeek](https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/)
-
-### 🟠 Tasmota Heap Out-of-Bounds Write Vulnerability (CVE-2026-119756)
-`CVE-2026-119756 · CVSS 9.8`
-
-Tasmota through 16.0.0 contains a heap out-of-bounds write vulnerability in SendReceiveDeviceGroupMessage() allowing local network attackers to corrupt memory via UDP port 4447.
-
-**Do:** Apply patch from commit e97e1e4 or update Tasmota.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-119756)
-
-### 🟠 fastapi-code-generator Import-Time RCE via Route Path (CVE-2026-63471)
-`CVE-2026-63471 · CVSS 9.3 · EPSS 0.00`
-
-fastapi-code-generator 0.8.0 emits unescaped route paths into decorators, allowing import-time remote code execution when generated code is loaded by an ASGI server.
-
-**Do:** Update fastapi-code-generator and audit generated application code.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-p2mm-64f6-gmpp)
-
-### 🟠 fastapi-code-generator Import-Time RCE via Status Code (CVE-2026-63469)
-`CVE-2026-63469 · CVSS 9.3 · EPSS 0.00`
-
-fastapi-code-generator 0.8.0 emits unescaped response status-code keys into decorator response dictionaries, allowing import-time code execution when generated code is loaded.
-
-**Do:** Update fastapi-code-generator and audit generated application code.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-6xmv-cjr5-w3q8)
-
-### 🟠 fastapi-code-generator Call-Time RCE via Summary (CVE-2026-63470)
-`CVE-2026-63470 · CVSS 9.3 · EPSS 0.00`
-
-fastapi-code-generator 0.8.0 emits unescaped operation summaries into docstrings, allowing code execution when the generated route handler endpoint is called.
-
-**Do:** Update fastapi-code-generator and audit generated application code.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-h667-4jj2-cgv4)
-
-### 🟠 Vanderbilt University Announces Cyberattack Impacting Systems
-`exploited`
-
-Vanderbilt University warned students and employees of a cyberattack impacting campus devices and systems.
-
-[The Record](https://therecord.media/vanderbilt-cyberattack-ransomware-alert) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/)
-
-### 🟠 Revolve Data Breach Impacts 1.5 Million Individuals
-`exploited`
-
-Online fashion retailer Revolve disclosed that a September cyberattack affected more than 1.5 million individuals.
-
-[SecurityWeek](https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/)
-
-### 🟠 Amplifon Americas Data Breach Impacts 1.3 Million
-`exploited`
-
-Amplifon Americas suffered a data breach where hackers stole personal, health, and insurance information, including Social Security numbers.
-
-[SecurityWeek](https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/) · [The Record](https://therecord.media/amplifon-hearing-aid-company-data-breach)
 

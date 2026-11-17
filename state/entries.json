@@ -1,5 +1,374 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware",
+  "tier": "act",
+  "score": 74,
+  "headline": "Optimizely Supply Chain Attack Injects Malicious JavaScript on Major Sites",
+  "tldr": "A supply chain attack targeting Optimizely has led to malicious JavaScript loading on popular websites including Zoom, CNN, and Salesforce, exposing visitors to credential theft and payment skimming.",
+  "action": "Audit third-party JavaScript integrations and monitor web apps for unauthorized script execution.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "BO Team Exploits Log4Shell in VMware vCenter to Compromise Code-Signing Server",
+  "tldr": "Threat actor BO Team used Log4Shell to breach VMware vCenter at a Russian software developer, resulting in a months-long compromise of its development infrastructure and code-signing server.",
+  "action": "Patch VMware vCenter against Log4Shell and audit development infrastructure for unauthorized access.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "vmware",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack",
+  "tier": "act",
+  "score": 74,
+  "headline": "Barracuda Links Cloud Breach to ARTEX AI Framework and Stolen Key",
+  "tldr": "Attackers who breached Barracuda's cloud environment used a stolen cloud access key combined with the ARTEX AI penetration testing framework.",
+  "action": "Rotate cloud access keys and audit access logs for automated AI framework activity.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Copeland XWEB EVO Controllers Probed by Hackers Following Disclosures",
+  "tldr": "Threat actors are actively probing newly disclosed vulnerabilities in Copeland XWEB EVO refrigeration controllers following disclosures by Vulncheck.",
+  "action": "Audit exposure of Copeland XWEB EVO controllers and apply vendor mitigations if available.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-129952",
+  "tier": "watch",
+  "score": 67,
+  "headline": "NodePress Hardcoded JWT Secret Authentication Bypass Vulnerability",
+  "tldr": "NodePress through 8.5.1 contains an authentication bypass via a hardcoded JWT fallback key ('nodepress-secret'), allowing unauthenticated attackers to forge administrator tokens.",
+  "action": "Upgrade NodePress beyond version 8.5.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-129952"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129952"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-129955",
+  "tier": "watch",
+  "score": 67,
+  "headline": "NodePress Default Admin Password Authentication Bypass Vulnerability",
+  "tldr": "NodePress through 8.5.1 contains an authentication bypass using a hardcoded default admin password when NP_ADMIN_DEFAULT_PASSWORD is unset.",
+  "action": "Upgrade NodePress and ensure default credentials are changed.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-129955"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129955"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130070",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Ghost by muneeb141 OTP Verification Bypass Vulnerability",
+  "tldr": "Ghost contains an authentication bypass in the convert_to_real_user method, allowing attackers to skip OTP verification by supplying the bypass_otp parameter and taking over accounts.",
+  "action": "Apply available patches from the repository.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130070"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130070"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130071",
+  "tier": "watch",
+  "score": 67,
+  "headline": "TridotsTech go1cms Missing Authentication Privilege Escalation Vulnerability",
+  "tldr": "TridotsTech go1cms contains a missing authentication flaw in update_doc, allowing unauthenticated attackers to modify user records and escalate privileges.",
+  "action": "Update go1cms to fixed commits.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130071"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130071"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130072",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Cloud Commander Path Traversal and Authentication Bypass Vulnerability",
+  "tldr": "Cloud Commander (cloudcmd) before 19.21.4 contains an authentication bypass and path traversal vulnerability via PUT /rename requests, allowing unauthenticated file manipulation.",
+  "action": "Upgrade Cloud Commander to 19.21.4 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130072"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130072"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-79614",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Zyxel DX3301-T0/EX3301-T0 Out-of-Bounds Write Vulnerability",
+  "tldr": "Zyxel DX3301-T0 and EX3301-T0 firmware through 5.50(ABVY.8.3)C0 contain an out-of-bounds write in libclinkc.so allowing unauthenticated attackers to elevate privileges via crafted HTTP requests.",
+  "action": "Upgrade Zyxel router firmware to patched versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-79614"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79614"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Danfoss AK-SM800A Refrigeration Controllers Unpatched Remote Takeover Flaws",
+  "tldr": "Six unpatched vulnerabilities in Danfoss AK-SM800A refrigeration controllers allow remote takeover without authentication, with no fix available in firmware version 5.4.0.",
+  "action": "Isolate Danfoss AK-SM800A controllers from the internet immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/uber-says-150000-impacted-third-party-breach",
+  "tier": "watch",
+  "score": 58,
+  "headline": "Uber Third-Party Breach Exposes Data of 150,000 People",
+  "tldr": "Hackers compromised a third-party service provider using stolen internal credentials, accessing Uber data including names, addresses, and driver's license numbers for nearly 150,000 individuals.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/uber-says-150000-impacted-third-party-breach"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers",
+  "tier": "watch",
+  "score": 56,
+  "headline": "NoisyTCP 11-Year-Old Linux Kernel Vulnerability Impacts Servers",
+  "tldr": "An 11-year-old Linux kernel vulnerability dubbed NoisyTCP affects most distributions and allows attackers to crash servers running Nginx, Apache, and SSH with default configurations.",
+  "action": "Apply Linux kernel security updates when available.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Fandango Media Discloses Payment Card Data Breach on Checkout Pages",
+  "tldr": "Fandango Media is notifying customers of a breach that exposed payment card details entered on checkout pages.",
+  "action": "Monitor payment cards used on affected checkout pages for fraudulent activity.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Australian Retailer Coles Investigates Cybersecurity Incident",
+  "tldr": "Coles Group Limited is investigating a cyber security incident, though in-store operations remain unaffected.",
+  "action": "",
+  "category": "breach",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/"
+   }
+  ],
+  "first_seen": "2026-11-17T02:58:29+00:00",
+  "updated": "2026-11-17T02:58:29+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
   "tier": "watch",
   "score": 53,
