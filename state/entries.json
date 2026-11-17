@@ -1,5 +1,1547 @@
 [
  {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
+  "tier": "act",
+  "score": 92,
+  "headline": "Siemens Software Impacted by Node2Shell Brotli Vulnerability",
+  "tldr": "Siemens products are affected by the critical 'Node2Shell' out-of-bounds write vulnerability (CVE-2026-111497) in the Node.js Brotli decoder, which allows remote code execution and is actively exploited.",
+  "action": "Update Siemens software products to the latest patched versions provided in the advisory.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "cvss": null,
+  "epss": 0.82641,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-115731",
+  "tier": "act",
+  "score": 87,
+  "headline": "Perforce Puppet Enterprise Deserialization Flaw Added to KEV",
+  "tldr": "Perforce Puppet Enterprise contains a deserialization vulnerability (CVE-2026-115731) in report-processing code allowing remote code execution, added to CISA KEV due to active exploitation.",
+  "action": "Apply mitigations and updates provided by Perforce for Puppet Enterprise immediately.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-115731"
+  ],
+  "cvss": null,
+  "epss": 0.00366,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+  "tier": "act",
+  "score": 82,
+  "headline": "Critical Oracle Java Base64 Memory Corruption Vulnerability",
+  "tldr": "Oracle Java is affected by a critical memory-corruption vulnerability known as 'Java4Shell' (CVE-2026-114938) in the x86-64 HotSpot JVM Base64 decoder, allowing unauthenticated RCE.",
+  "action": "Identify affected Java installations and apply emergency patches from Oracle.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114938"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds",
+  "tier": "act",
+  "score": 74,
+  "headline": "Cloud Keys Leaked in Docker Hub Images Stolen Within Seconds",
+  "tldr": "Credentials and access secrets exposed in public Docker Hub images are actively extracted and exploited by attackers within seconds of publication.",
+  "action": "Audit public Docker Hub repositories for leaked secrets and implement automated scanning.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "docker",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91456",
+  "tier": "act",
+  "score": 72,
+  "headline": "Oracle WebLogic Server Unauthenticated Core RCE Vulnerability",
+  "tldr": "Oracle WebLogic Server versions 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0, and 15.1.1.0.0 contain a critical unauthenticated RCE vulnerability (CVE-2026-91456) via SOAP.",
+  "action": "Apply the latest Oracle CPU patches for WebLogic Server.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91456"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "weblogic",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91456"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91470",
+  "tier": "act",
+  "score": 72,
+  "headline": "Oracle WebLogic Server T3 and IIOP RCE Vulnerability",
+  "tldr": "Oracle WebLogic Server versions 12.2.1.4.0 through 15.1.1.0.0 contain an unauthenticated RCE vulnerability (CVE-2026-91470) via T3 and IIOP protocols.",
+  "action": "Apply Oracle CPU patches and restrict T3/IIOP access.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91470"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "weblogic",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91470"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91569",
+  "tier": "act",
+  "score": 72,
+  "headline": "Oracle WebLogic Server TopLink Integration RCE Vulnerability",
+  "tldr": "Oracle WebLogic Server versions 12.2.1.4.0 to 15.1.1.0.0 are vulnerable to an unauthenticated RCE via TopLink Integration (CVE-2026-91569) with CVSS 10.0.",
+  "action": "Apply Oracle CPU patches immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91569"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "weblogic",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91569"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Japan RIKEN Fugaku Supercomputer Taken Offline After Cyberattack",
+  "tldr": "Japan's Fugaku supercomputer operated by the RIKEN Center for Computational Science was taken offline following a security breach.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130840",
+  "tier": "watch",
+  "score": 67,
+  "headline": "BISHENG Hard-Coded JWT Secret Authentication Bypass",
+  "tldr": "BISHENG before 3.0.0 contains an authentication bypass vulnerability (CVE-2026-130840) due to a hard-coded default JWT secret, allowing admin takeover.",
+  "action": "Upgrade BISHENG to version 3.0.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130840"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130840"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114784",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Business Intelligence Enterprise Edition Takeover Flaw",
+  "tldr": "Oracle Business Intelligence Enterprise Edition versions 8.2.0.0.0 and 26.01.0.0.0 contain an unauthenticated takeover vulnerability (CVE-2026-114784) with CVSS 10.0.",
+  "action": "Apply Oracle Critical Patch Update.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114784"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114784"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114824",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Platform Security for Java Takeover Vulnerability",
+  "tldr": "Oracle Platform Security for Java versions 12.2.1.4.0 and 14.1.2.0.0 contain an unauthenticated remote takeover flaw (CVE-2026-114824) with CVSS 10.0.",
+  "action": "Apply Oracle Critical Patch Update.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114824"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114824"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114835",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Access Manager Admin Console Takeover Vulnerability",
+  "tldr": "Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 contain an unauthenticated takeover vulnerability (CVE-2026-114835) in the Admin Console with CVSS 10.0.",
+  "action": "Apply Oracle Critical Patch Update.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114835"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114835"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114849",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle APEX Unauthenticated Takeover Vulnerability (CVE-2026-114849)",
+  "tldr": "An easily exploitable vulnerability in Oracle APEX versions 24.1.22, 24.2.21, 26.1.5 and 26.2.0 allows unauthenticated attackers with HTTPS network access to achieve a complete system takeover.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle APEX.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114849"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114849"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114850",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle APEX Unauthenticated Takeover Vulnerability (CVE-2026-114850)",
+  "tldr": "An easily exploitable vulnerability in Oracle APEX versions 24.1.22, 24.2.21, 26.1.5 and 26.2.0 allows unauthenticated attackers with HTTPS network access to achieve a complete system takeover.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle APEX.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114850"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114850"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114863",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle E-Business Suite Universal Work Queue RCE (CVE-2026-114863)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Universal Work Queue versions 12.2.3-12.2.15 via HTTP network access.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114863"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114863"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114880",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle E-Business Suite Document Management RCE (CVE-2026-114880)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Document Management and Collaboration versions 12.2.3-12.2.15.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114880"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114880"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114924",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle E-Business Suite Application Object Library RCE (CVE-2026-114924)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Application Object Library versions 12.2.3-12.2.15.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114924"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114924"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114925",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle E-Business Suite Applications Framework RCE (CVE-2026-114925)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Applications Framework versions 12.2.3-12.2.15 via REST Services.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114925"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114925"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-115047",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Hyperion Infrastructure Technology Takeover Vulnerability (CVE-2026-115047)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115047"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115047"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-115048",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Hyperion Infrastructure Technology Takeover Vulnerability (CVE-2026-115048)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115048"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115048"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-115080",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Hyperion Infrastructure Technology Takeover Vulnerability (CVE-2026-115080)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115080"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115080"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-115086",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Hyperion Planning RMI Takeover Vulnerability (CVE-2026-115086)",
+  "tldr": "An unauthenticated vulnerability via RMI allows remote takeover of Oracle Hyperion Planning version 11.2.26.0.000.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115086"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115086"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-115089",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Hyperion Planning ADF Takeover Vulnerability (CVE-2026-115089)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle Hyperion Planning version 11.2.26.0.000 via Application Development Framework.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115089"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115089"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127324",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127324)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle AutoVue.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127324"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127324"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127325",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127325)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle AutoVue.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127325"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127325"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127326",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127326)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle AutoVue.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127326"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127326"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127327",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127327)",
+  "tldr": "An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle AutoVue.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127327"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127327"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91500",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Access Manager Authentication Engine Vulnerability",
+  "tldr": "A critical CVSS 10.0 vulnerability (CVE-2026-91500) in Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 allows unauthenticated attackers to compromise the system via HTTP.",
+  "action": "Apply the latest security updates from Oracle.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91500"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91500"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91510",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Oracle Access Manager Authentication Engine Vulnerability",
+  "tldr": "A critical CVSS 10.0 vulnerability (CVE-2026-91510) in Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 allows unauthenticated network compromise via HTTP.",
+  "action": "Apply the latest security patches from Oracle.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91510"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91510"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114862",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Oracle PeopleSoft Enterprise PeopleTools WebLogic Component Flaw",
+  "tldr": "Oracle PeopleSoft Enterprise PeopleTools versions 8.61-8.63 contain an unauthenticated vulnerability in the Weblogic component (CVE-2026-114862) allowing data modification.",
+  "action": "Apply Oracle Critical Patch Update for PeopleSoft.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114862"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "weblogic",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114862"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Hugging Face Account Hijacked for Kokoro AI Model",
+  "tldr": "Lack of ownership verification on Hugging Face allowed researchers to take control of the Kokoro text-to-speech model used across major tech platforms.",
+  "action": "Verify model provenance and monitor dependencies for unauthorized modifications.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Tor Releases Emergency Update Amid Ongoing DDoS Attack",
+  "tldr": "The Tor Project released a security update for its network relay software to defend against an ongoing distributed denial-of-service attack overwhelming relays.",
+  "action": "Update Tor relay software to the latest version.",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Google Warns Chinese State Group Developing AI Attack Tools",
+  "tldr": "Google reported that threat actors are increasingly using autonomous multi-agent offensive frameworks like Artex and PentAGI to execute multi-stage intrusions.",
+  "action": "",
+  "category": "advisory",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/nsa-net-disruptions",
+  "tier": "watch",
+  "score": 61,
+  "headline": "NSA Classified Internal Network Faces Unspecified Disruptions",
+  "tldr": "The NSA reported disruptions to its classified internal network NSA Net, leading to staggered arrivals at its headquarters.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/nsa-net-disruptions"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130583",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Rootways Authorize.net CIM Pro for Magento 2 SSRF Flaw",
+  "tldr": "Rootways Authorize.net CIM Pro extension for Magento 2 before 4.1.5 contains an unauthenticated SSRF vulnerability (CVE-2026-130583) allowing credential theft.",
+  "action": "Upgrade Rootways Authorize.net CIM Pro extension to version 4.1.5 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130583"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130583"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130849",
+  "tier": "watch",
+  "score": 59,
+  "headline": "BZFlag bzfs Heap Out-of-Bounds Write Vulnerability",
+  "tldr": "BZFlag bzfs before 2.4.32 contains a heap out-of-bounds write vulnerability (CVE-2026-130849) allowing remote unauthenticated code execution.",
+  "action": "Upgrade BZFlag bzfs to version 2.4.32 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130849"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130849"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130856",
+  "tier": "watch",
+  "score": 59,
+  "headline": "53AIHub Missing Authentication Account Takeover Flaw",
+  "tldr": "53AIHub before 0.5.5 contains a missing authentication vulnerability (CVE-2026-130856) in the initialization endpoint allowing account takeover.",
+  "action": "Upgrade 53AIHub to version 0.5.5 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130856"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130856"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114848",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Database Server Oracle Text Takeover Vulnerability (CVE-2026-114848)",
+  "tldr": "A vulnerability in the Oracle Text component of Oracle Database Server versions 19.3-19.33, 21.3-21.24 and 23.4.0-23.26.3 allows low-privileged attackers with network access via Oracle Net to compromise the component.",
+  "action": "Apply the latest Oracle Critical Patch Update to affected Database Server installations.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114848"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114848"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114856",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle REST Data Services Takeover Vulnerability (CVE-2026-114856)",
+  "tldr": "A vulnerability in Oracle REST Data Services versions 24.2.0-26.3.0 allows unauthenticated attackers with HTTPS access to compromise the product, requiring user interaction.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle REST Data Services.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114856"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114856"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114881",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle E-Business Suite Document Management DoS (CVE-2026-114881)",
+  "tldr": "An unauthenticated vulnerability in Oracle E-Business Suite Document Management and Collaboration versions 12.2.3-12.2.15 allows unauthorized data access and denial of service.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114881"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114881"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114934",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle PeopleSoft Enterprise PeopleTools Vulnerability (CVE-2026-114934)",
+  "tldr": "An unauthenticated vulnerability in Oracle PeopleSoft Enterprise PeopleTools versions 8.61-8.63 allows unauthorized data access or complete system disruption.",
+  "action": "Apply the latest Oracle Critical Patch Update for PeopleSoft.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114934"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114934"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114952",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle MySQL Server Client Programs Vulnerability (CVE-2026-114952)",
+  "tldr": "An unauthenticated vulnerability affects MySQL Server versions 8.4.0-8.4.13, 9.7.0-9.7.4, 26.10, and MySQL Cluster versions 8.0.0-8.0.50, 8.4.0-8.4.13, 9.7.0-9.7.4, 26.10, allowing unauthorized data manipulation.",
+  "action": "Apply the latest Oracle Critical Patch Update for MySQL.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114952"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114952"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114956",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Hyperion Planning Security Vulnerability (CVE-2026-114956)",
+  "tldr": "An unauthenticated vulnerability with required user interaction affects Oracle Hyperion Planning version 11.2.26.0.000.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114956"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114956"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114978",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Hyperion Financial Management Takeover Vulnerability (CVE-2026-114978)",
+  "tldr": "A vulnerability in Oracle Hyperion Financial Management version 11.2.26.0.000 allows low-privileged attackers with network access to achieve a takeover.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114978"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114978"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-114980",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle AutoVue Security Takeover Vulnerability (CVE-2026-114980)",
+  "tldr": "A vulnerability in Oracle AutoVue version 21.1.0 allows low-privileged attackers with network access to take over the component.",
+  "action": "Apply the latest Oracle Critical Patch Update for Oracle AutoVue.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114980"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114980"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-115050",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Hyperion Infrastructure Technology Vulnerability (CVE-2026-115050)",
+  "tldr": "An unauthenticated vulnerability in Oracle Hyperion Infrastructure Technology version 11.2.26.0.000 allows unauthorized data creation, deletion, or modification.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115050"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115050"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-115139",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Hyperion Infrastructure Technology Vulnerability (CVE-2026-115139)",
+  "tldr": "An unauthenticated vulnerability requiring user interaction affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.",
+  "action": "Apply the latest Oracle Critical Patch Update for Hyperion.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115139"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115139"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127362",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Hyperion Financial Close Management Unauth. Vulnerability",
+  "tldr": "An easily exploitable unauthenticated vulnerability (CVE-2026-127362) in Oracle Hyperion Financial Close Management version 11.2.26.0.000 allows network compromise via HTTP.",
+  "action": "Apply the latest security patches provided by Oracle.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127362"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127362"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-127369",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Hyperion Financial Close Management Net Vulnerability",
+  "tldr": "An easily exploitable unauthenticated vulnerability (CVE-2026-127369) in Oracle Hyperion Financial Close Management version 11.2.26.0.000 allows network compromise via Oracle Net.",
+  "action": "Apply the latest security patches provided by Oracle.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-127369"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127369"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91507",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Access Manager Authentication Engine Vulnerability",
+  "tldr": "A vulnerability (CVE-2026-91507) in Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 allows unauthenticated attackers to compromise the system via HTTP.",
+  "action": "Apply the latest security patches from Oracle.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91507"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91507"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91561",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle Service Bus Core RMI Vulnerability",
+  "tldr": "A vulnerability (CVE-2026-91561) in Oracle Service Bus versions 12.2.1.4.0 and 14.1.2.0.0 allows low-privileged attackers with network access via RMI to compromise the system.",
+  "action": "Apply the latest security patches from Oracle.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91561"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91561"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-91618",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Oracle ADF Security Framework Vulnerability",
+  "tldr": "An easily exploitable vulnerability (CVE-2026-91618) in Oracle Application Development Framework version 12.2.1.4.0 allows unauthenticated network compromise via HTTP.",
+  "action": "Apply the latest security patches from Oracle.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-91618"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91618"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-gfv3-m769-5xm3",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Phoenix Format String Injection in applyChatTemplate",
+  "tldr": "A format string injection vulnerability (CVE-2026-53998) in the applyChatTemplate GraphQL endpoint of arize-phoenix allows unauthenticated or low-privileged attackers to read server-side environment variables and secrets.",
+  "action": "Upgrade arize-phoenix to a patched version and ensure authentication is enabled.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-53998"
+  ],
+  "cvss": 10.0,
+  "epss": 0.00356,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-gfv3-m769-5xm3"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Researchers Claim RCE Exploits Bypass Telegram Android Defenses",
+  "tldr": "Security researchers claim malicious chat widgets can bypass Telegram's Android security filters and execute code outside the sandbox.",
+  "action": "Update Telegram to the latest version once patches are available.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Siemens meta-iot2050 Firmware Update Command Injection",
+  "tldr": "Siemens meta-iot2050 from version V01.03.01 contains a command injection vulnerability in the firmware update tool allowing root execution via manipulated configuration files.",
+  "action": "Apply vendor mitigations and prepare fixes for Siemens meta-iot2050.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109830"
+  ],
+  "cvss": null,
+  "epss": 0.00173,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Market Research Giant Ipsos Investigates Internal System Breach",
+  "tldr": "Ipsos disclosed it is investigating a breach of its internal system after filing a complaint with authorities.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Siemens ROS# Code Injection Vulnerability",
+  "tldr": "Siemens ROS# before version 2.3.1 contains a code injection vulnerability allowing arbitrary code execution via crafted message definition files. Patches are available.",
+  "action": "Update Siemens ROS# to version 2.3.1 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109097"
+  ],
+  "cvss": null,
+  "epss": 0.00121,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Dorsett Controls InfoScan Multiple Vulnerabilities",
+  "tldr": "Dorsett Controls InfoScan <=1.45.0 contains multiple vulnerabilities allowing sensitive information disclosure, unauthorized data access, credential recovery, and network traffic manipulation.",
+  "action": "Review vendor advisories and apply updates or mitigations for Dorsett Controls InfoScan.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-117659",
+   "CVE-2026-120157",
+   "CVE-2026-120255",
+   "CVE-2026-120260",
+   "CVE-2026-120271",
+   "CVE-2026-120298"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Siemens Mendix Studio Pro MCP Server Vulnerabilities",
+  "tldr": "Siemens Mendix Studio Pro 11 versions 11.15.0 up to 11.16.0 contain vulnerabilities in the MCP Server allowing unauthorized data access and system compromise.",
+  "action": "Update Siemens Mendix Studio Pro to the latest version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-112136",
+   "CVE-2026-112137"
+  ],
+  "cvss": null,
+  "epss": 0.00304,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Siemens SIMATIC and .NET Client Library Vulnerabilities",
+  "tldr": "Siemens SIMATIC components and .NET Client Library for SIMATIC S7 Webserver API contain authentication bypass, file write, and active content execution flaws.",
+  "action": "Apply available Siemens updates and recommended security mitigations for SIMATIC and S7 APIs.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-58114",
+   "CVE-2026-59082",
+   "CVE-2026-85114",
+   "CVE-2026-85115"
+  ],
+  "cvss": null,
+  "epss": 0.00345,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Siemens Simcenter Femap Out-of-Bounds Read Vulnerability",
+  "tldr": "Siemens Simcenter Femap before version 2606.0002 contains an out-of-bounds read vulnerability triggered when parsing X_T files, leading to application crashes or code execution.",
+  "action": "Update Siemens Simcenter Femap to version 2606.0002 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-64629"
+  ],
+  "cvss": null,
+  "epss": 0.00168,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10"
+   }
+  ],
+  "first_seen": "2026-11-17T22:28:19+00:00",
+  "updated": "2026-11-17T22:28:19+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
   "tier": "act",
   "score": 92,
@@ -135,10 +1677,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/optimizely-malicious-code-customer-sites"
    }
   ],
   "first_seen": "2026-11-17T02:58:29+00:00",
-  "updated": "2026-11-17T13:35:47+00:00"
+  "updated": "2026-11-17T22:28:19+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
@@ -458,10 +2004,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/"
    }
   ],
   "first_seen": "2026-11-17T02:58:29+00:00",
-  "updated": "2026-11-17T02:58:29+00:00"
+  "updated": "2026-11-17T22:28:19+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident",
