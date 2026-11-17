@@ -1,5 +1,107 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+  "tier": "act",
+  "score": 92,
+  "headline": "MSP ScreenConnect Servers Targeted in Exploitation Campaign",
+  "tldr": "More than 40 ScreenConnect servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files.",
+  "action": "Audit ScreenConnect servers for unauthorized guest-pushed files and apply vendor updates.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-84869"
+  ],
+  "cvss": null,
+  "epss": 0.01173,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/"
+   }
+  ],
+  "first_seen": "2026-11-17T13:35:47+00:00",
+  "updated": "2026-11-17T13:35:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+  "tier": "act",
+  "score": 82,
+  "headline": "N-able Patches 17 N-central Flaws Including Zero-Days",
+  "tldr": "N-able released N-central 2026.4 Hotfix 3 to patch 17 critical security flaws, including zero-days exploited in the wild to deploy crypto miners.",
+  "action": "Upgrade N-central to 2026.4 Hotfix 3 immediately.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/"
+   }
+  ],
+  "first_seen": "2026-11-17T13:35:47+00:00",
+  "updated": "2026-11-17T13:35:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "Operation ShadowCloud Deploys GitDoor and GraphDoor Backdoors",
+  "tldr": "Active cyber intrusion campaign targets government sectors in Asia and Africa using Microsoft SharePoint and GitHub for C2.",
+  "action": "Monitor GitHub and SharePoint access logs for abnormal API usage and unauthorized C2 channels.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html"
+   }
+  ],
+  "first_seen": "2026-11-17T13:35:47+00:00",
+  "updated": "2026-11-17T13:35:47+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Access Dental Management Discloses Data Breach Impacting 340,000",
+  "tldr": "Hackers breached Access Dental's network and stole personal, health, and insurance information affecting over 340,000 individuals.",
+  "action": "Monitor affected systems and provide notifications as required by regulatory frameworks.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/"
+   }
+  ],
+  "first_seen": "2026-11-17T13:35:47+00:00",
+  "updated": "2026-11-17T13:35:47+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware",
   "tier": "act",
   "score": 74,
@@ -21,10 +123,22 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/"
    }
   ],
   "first_seen": "2026-11-17T02:58:29+00:00",
-  "updated": "2026-11-17T02:58:29+00:00"
+  "updated": "2026-11-17T13:35:47+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
@@ -294,10 +408,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/uber-says-150000-impacted-third-party-breach"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/"
    }
   ],
   "first_seen": "2026-11-17T02:58:29+00:00",
-  "updated": "2026-11-17T02:58:29+00:00"
+  "updated": "2026-11-17T13:35:47+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers",

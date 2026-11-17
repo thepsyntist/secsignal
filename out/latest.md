@@ -4,6 +4,33 @@
 
 ## 2026-11-17
 
+### 🔴 MSP ScreenConnect Servers Targeted in Exploitation Campaign
+`CVE-2026-84869 · EPSS 0.01 · CISA KEV`
+
+More than 40 ScreenConnect servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files.
+
+**Do:** Audit ScreenConnect servers for unauthorized guest-pushed files and apply vendor updates.
+
+[The Hacker News](https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html) · [SecurityWeek](https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/)
+
+### 🔴 N-able Patches 17 N-central Flaws Including Zero-Days
+`exploited`
+
+N-able released N-central 2026.4 Hotfix 3 to patch 17 critical security flaws, including zero-days exploited in the wild to deploy crypto miners.
+
+**Do:** Upgrade N-central to 2026.4 Hotfix 3 immediately.
+
+[The Hacker News](https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html) · [SecurityWeek](https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/)
+
+### 🔴 Operation ShadowCloud Deploys GitDoor and GraphDoor Backdoors
+`exploited`
+
+Active cyber intrusion campaign targets government sectors in Asia and Africa using Microsoft SharePoint and GitHub for C2.
+
+**Do:** Monitor GitHub and SharePoint access logs for abnormal API usage and unauthorized C2 channels.
+
+[The Hacker News](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
+
 ### 🔴 Optimizely Supply Chain Attack Injects Malicious JavaScript on Major Sites
 `exploited`
 
@@ -11,7 +38,7 @@ A supply chain attack targeting Optimizely has led to malicious JavaScript loadi
 
 **Do:** Audit third-party JavaScript integrations and monitor web apps for unauthorized script execution.
 
-[SecurityWeek](https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/)
+[SecurityWeek](https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/) · [The Hacker News](https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html) · [SecurityWeek](https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/)
 
 ### 🔴 BO Team Exploits Log4Shell in VMware vCenter to Compromise Code-Signing Server
 `exploited`
@@ -102,12 +129,21 @@ Six unpatched vulnerabilities in Danfoss AK-SM800A refrigeration controllers all
 
 [The Hacker News](https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html)
 
+### 🟠 Access Dental Management Discloses Data Breach Impacting 340,000
+`exploited`
+
+Hackers breached Access Dental's network and stole personal, health, and insurance information affecting over 340,000 individuals.
+
+**Do:** Monitor affected systems and provide notifications as required by regulatory frameworks.
+
+[SecurityWeek](https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/)
+
 ### 🟠 Uber Third-Party Breach Exposes Data of 150,000 People
 `exploited`
 
 Hackers compromised a third-party service provider using stolen internal credentials, accessing Uber data including names, addresses, and driver's license numbers for nearly 150,000 individuals.
 
-[SecurityWeek](https://www.securityweek.com/uber-data-breach-impacts-150000-people/) · [The Record](https://therecord.media/uber-says-150000-impacted-third-party-breach)
+[SecurityWeek](https://www.securityweek.com/uber-data-breach-impacts-150000-people/) · [The Record](https://therecord.media/uber-says-150000-impacted-third-party-breach) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
 
 ### 🟠 NoisyTCP 11-Year-Old Linux Kernel Vulnerability Impacts Servers
 
@@ -782,15 +818,6 @@ Microsoft's November 2026 Patch Tuesday fixes an actively exploited Outlook zero
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/) · [SecurityWeek](https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-124194) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html) · [SecurityWeek](https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/) · [The Hacker News](https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html)
 
-### 🔴 Now exploited: Google Chrome XML Use-After-Free Vulnerability (CVE-2026-125350)
-`CVE-2026-125350 · CISA KEV`
-
-Google has issued an emergency security update to patch a high-severity use-after-free vulnerability in Chrome's XML component (CVE-2026-125350), which is actively exploited in the wild as a zero-day.
-
-**Do:** Update Google Chrome to the latest version immediately.
-
-[SecurityWeek](https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/) · [The Hacker News](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-125350)
-
 ### 🔴 AhsayCBS Flaws (CVE-2026-105133, CVE-2026-105134) Exploited to Deploy Backdoor
 `CVE-2026-105133, CVE-2026-105134 · EPSS 0.84 · CISA KEV`
 
@@ -809,24 +836,6 @@ A critical authentication bypass vulnerability in Xen Orchestra (VSA-2026-062) i
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html) · [SecurityWeek](https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/)
 
-### 🔴 Now exploited: Barracuda ESG Flaws Exploited to Gain Root Access
-`CVE-2026-111560, CVE-2026-116606 · CISA KEV`
-
-Barracuda Networks warned that attackers are actively exploiting recently patched Email Security Gateway (ESG) vulnerabilities to achieve root command execution.
-
-**Do:** Ensure all Barracuda Email Security Gateway appliances are fully patched and inspect for signs of compromise.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-111560) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-116606) · [SecurityWeek](https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/)
-
-### 🔴 N-able Takes Cloud Platform Offline Following Zero-Day Disclosures
-`exploited`
-
-N-able took hosted N-central environments offline and advised on-premises customers to shut down servers after a researcher published over 30 alleged zero-days.
-
-**Do:** Take N-central servers offline per vendor advisory until patches are available.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html) · [SecurityWeek](https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
-
 ### 🔴 Cisco BroadWorks XXE Vulnerability (CVE-2026-20320) Added to KEV
 `CVE-2026-20320 · EPSS 0.00 · CISA KEV`
 
@@ -836,51 +845,6 @@ Cisco BroadWorks contains an XML external entity reference vulnerability (CVE-20
 
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-20320) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
 
-### 🔴 SAP NetWeaver Remote Code Execution Vulnerability
-`CVE-2026-109795 · CVSS 9.9`
-
-SAP NetWeaver lacks sufficient input validation and authorization checks in remote-enabled functionality, allowing low-privileged attackers to execute arbitrary code.
-
-**Do:** Apply relevant SAP security patches for NetWeaver.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109795) · [The Hacker News](https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html)
-
-### 🔴 SAP NetWeaver AS ABAP Authentication Bypass Vulnerability
-`CVE-2026-120017 · CVSS 10.0`
-
-SAP NetWeaver AS ABAP and ABAP Platform inadequately verify incoming authentication assertions under specific configurations, enabling user impersonation.
-
-**Do:** Apply SAP security updates for AS ABAP.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-120017)
-
-### 🔴 SAP NetWeaver Application Server ABAP Memory Corruption Flaw
-`CVE-2026-76964 · CVSS 10.0`
-
-SAP NetWeaver Application Server ABAP insufficiently validates network input, allowing unauthenticated attackers to trigger memory corruption and execute code.
-
-**Do:** Apply SAP security patches.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76964)
-
-### 🔴 SAP Gateway Default Access Control List Misconfiguration
-`CVE-2026-89103 · CVSS 10.0`
-
-SAP Gateway activates a default Access Control List with high privileges, allowing external attackers to be treated as internal application servers.
-
-**Do:** Review and harden SAP Gateway ACL configurations.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89103)
-
-### 🔴 SAP Web Dispatcher Memory Corruption Vulnerability
-`CVE-2026-89126 · CVSS 10.0`
-
-SAP Web Dispatcher improperly validates network input, allowing unauthenticated remote attackers to trigger memory corruption and achieve full system compromise.
-
-**Do:** Apply SAP security patches.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89126)
-
 ### 🔴 iOS Sandbox Escape Flaw Threatens Crypto Wallets on iOS 26 and 27
 `exploited`
 
@@ -889,24 +853,6 @@ An active iOS sandbox escape published on GitHub affects iOS 26.7.1, 27.0.1, and
 **Do:** Exercise caution when installing third-party iOS applications; monitor for an official Apple patch.
 
 [The Hacker News](https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/)
-
-### 🔴 Turla Threat Group Deploys Cereal Malware Against Exchange Servers
-`exploited`
-
-The Russian state-sponsored threat group Turla is using a newly discovered modular malware toolset called 'Cereal' to target Microsoft Exchange servers at government organizations and intercept emails.
-
-**Do:** Audit Microsoft Exchange servers for unauthorized access and monitor for indicators of compromise related to Cereal malware.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/) · [The Hacker News](https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html)
-
-### 🔴 France Blames Iran for Sabotage Attack on Supermarket Refrigerators
-`exploited`
-
-The French government stated that an October cyberattack affecting refrigeration controllers at roughly 700 retail sites, causing food losses and fires, was conducted by Iran's IRGC.
-
-**Do:** Isolate and secure industrial refrigeration and HVAC controllers from direct internet access.
-
-[SecurityWeek](https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/) · [The Hacker News](https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html)
 
 ### 🔴 Openwave Messaging Webtop Media Transcoder Flaw in KEV
 `CVE-2026-111793 · EPSS 0.00 · CISA KEV`
@@ -935,86 +881,6 @@ An attacker exploited an RCE flaw in the SGLang inference engine to run code on 
 
 [The Hacker News](https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html)
 
-### 🟠 Kubero Authentication Bypass via Hardcoded JWT Secret
-`CVE-2026-125370 · CVSS 9.8`
-
-Kubero versions 3.0.0 through 3.1.1 use a hardcoded fallback signing secret when JWT_SECRET is unset, allowing unauthenticated attackers to forge administrative JWTs.
-
-**Do:** Set a secure, unique JWT_SECRET environment variable and upgrade Kubero.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125370)
-
-### 🟠 INDOTALENT WHMS Authentication Bypass via Hard-coded JWT Key
-`CVE-2026-125383 · CVSS 9.8`
-
-INDOTALENT WHMS before 10.20261109 contains a hard-coded JWT signing key and issuer in appsettings.json, allowing attackers to forge administrator tokens.
-
-**Do:** Upgrade INDOTALENT WHMS to version 10.20261109 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125383)
-
-### 🟠 SAP NetWeaver Knowledge Management XSL Transformation Flaw
-`CVE-2026-109803 · CVSS 9.9`
-
-SAP NetWeaver Knowledge Management (XML Forms) permits unauthorized XSL transformations leading to potential code execution.
-
-**Do:** Apply relevant SAP security patches.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109803)
-
-### 🟠 D-Link M60 MQTT Broker Hard-coded Credentials Flaw
-`CVE-2026-125086 · CVSS 10.0`
-
-D-Link M60 version 1.12.B01 contains hard-coded credentials within the emDaemon MQTT Broker configuration.
-
-**Do:** Apply firmware updates from D-Link or restrict remote access to the device.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125086)
-
-### 🟠 SAP NetWeaver ABAP Platform Missing Authorization Check
-`CVE-2026-76965 · CVSS 9.9`
-
-SAP NetWeaver AS ABAP lacks authorization checks for internal functionality, enabling low-privileged users to execute OS commands.
-
-**Do:** Apply SAP security patches.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76965)
-
-### 🟠 SAP Web Dispatcher and ICM Request Validation Flaw
-`CVE-2026-89119 · CVSS 9.6`
-
-SAP Web Dispatcher and ICM lack sufficient request validation, exposing administrative functionality to cross-site request attacks.
-
-**Do:** Apply SAP security notes.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-89119)
-
-### 🟠 SAP November 2026 Patches Fixes Multiple Maximum-Severity Flaws
-
-SAP released its November 2026 security updates patching 35 vulnerabilities, including four maximum-severity issues affecting NetWeaver, Web Dispatcher, and Gateway software.
-
-**Do:** Apply SAP November 2026 security updates across all affected NetWeaver and Web Dispatcher instances.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/) · [SecurityWeek](https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/)
-
-### 🟠 Kubeflow Pipelines API Server Authorization Bypass Vulnerability
-`CVE-2026-77596 · CVSS 9.6 · EPSS 0.00`
-
-In multi-user mode, Kubeflow Pipelines API server upload endpoints fail to perform authorization when the target namespace is empty, allowing shared pipeline uploads.
-
-**Do:** Review Kubeflow Pipelines configurations and restrict access to multi-user upload endpoints.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-rjr3-43j3-4q8g)
-
-### 🟠 York University Cyberattack Exposes Personal Data
-`exploited`
-
-York University suffered a cybersecurity incident involving the theft of personal information submitted through online forms dating back to 2007.
-
-**Do:** Monitor accounts and review data retention practices for online form submissions.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/)
-
 ### 🟠 npm:mongoose sanitizeFilter Bypassed in countDocuments (CVE-2026-125120)
 `CVE-2026-125120 · CVSS 9.8 · EPSS 0.01`
 
@@ -1042,24 +908,6 @@ An unauthenticated client can write protected variables and call privileged meth
 
 [GitHub Advisory](https://github.com/advisories/GHSA-xggf-m53x-jc3f)
 
-### 🟠 INDOTALENT WHMS Default Credentials Vulnerability
-`CVE-2026-125384 · CVSS 9.8`
-
-INDOTALENT WHMS before 10.20261109 creates a default admin account with hardcoded credentials (admin@root.com / 123456).
-
-**Do:** Change or remove default administrative credentials immediately.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-125384)
-
-### 🟠 SAP BusinessObjects Web Intelligence External Entity Vulnerability
-`CVE-2026-109798 · CVSS 9.1`
-
-SAP BusinessObjects BI Platform (Web Intelligence) fails to properly restrict external entity resolution during OLAP connection requests, allowing file reading.
-
-**Do:** Apply SAP security notes for BusinessObjects.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109798)
-
 ### 🟠 Adobe Patches 110 Vulnerabilities Across 9 Products
 
 Adobe fixed 110 vulnerabilities across products including AEM, Premiere, Photoshop, After Effects, and Connect.
@@ -1084,30 +932,4 @@ Three threat clusters (including SilentDelivery) linked through shared infrastru
 **Do:** Monitor networks for indicators associated with the Sparrow malware ecosystem and Chinese espionage campaigns.
 
 [The Hacker News](https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html)
-
-### 🟠 Apple Patches iMessage Privacy Flaws and Bluetooth Issues
-
-Apple released security updates to fix iMessage privacy vulnerabilities allowing unauthorized users to join group chats and view past messages, alongside Bluetooth pairing flaws.
-
-**Do:** Update Apple devices to the latest available software versions.
-
-[The Hacker News](https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html) · [SecurityWeek](https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/)
-
-### 🟠 Pocket ID Email Verification Token Reuse Vulnerability
-`CVE-2026-115770 · CVSS 9.6 · EPSS 0.00`
-
-Pocket ID allows email verification tokens to remain valid after an account email address change, enabling verified-email spoofing.
-
-**Do:** Upgrade Pocket ID backend to a patched version when available.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-rm8c-2cv8-jwf6)
-
-### 🟠 Fireworks AI Discloses Breach Following Third-Party Cloud Compromise
-`exploited`
-
-AI startup Fireworks AI disclosed a security breach where attackers accessed development machines after compromising a third-party cloud provider.
-
-**Do:** Review third-party cloud access controls and audit development machine logs.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/) · [The Record](https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks) · [The Hacker News](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/)
 
