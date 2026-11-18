@@ -2,6 +2,52 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-18
+
+### 🔴 Optimizely Third-Party Script Vulnerability Used to Serve Malware
+`exploited`
+
+At least 178 major websites unknowingly served malware via compromised Optimizely integrations, injecting data-stealing payloads to visitors over a 24-hour period.
+
+**Do:** Audit third-party script integrations and enforce strict Content Security Policy (CSP) headers.
+
+[Ars Technica](https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/) · [Krebs on Security](https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/)
+
+### 🔴 Microsoft Agent Framework PyPI Package Compromised with Credential Stealer
+`exploited`
+
+Threat actors compromised Microsoft's agent-framework PyPI package (versions 1.26.1 and 1.26.2) to deploy a cloud credential stealer on Python startup.
+
+**Do:** Remove affected versions of agent-framework and rotate compromised cloud credentials immediately.
+
+[The Hacker News](https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html)
+
+### 🔴 Java4Shell Critical RCE Vulnerability in OpenJDK and Enterprise Apps
+
+A critical vulnerability dubbed Java4Shell in OpenJDK allows unauthenticated attackers to execute remote code on major enterprise applications like Jenkins, Jira, Confluence, and Keycloak.
+
+**Do:** Apply emergency patches for OpenJDK and affected enterprise applications as provided by vendors.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/)
+
+### 🟠 COLD RELIC Hackers Exploit Stolen Google Workspace Data in Breaches
+`exploited`
+
+Russian state-sponsored group Cold Relic weaponized a single cloud compromise to breach a second U.S. organization using stolen Google Workspace data.
+
+**Do:** Audit Google Workspace access logs, enforce phishing-resistant MFA, and monitor for unauthorized token usage.
+
+[The Hacker News](https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html)
+
+### 🟠 OwnTracks Recorder Format String RCE Vulnerability
+`CVE-2026-131852 · CVSS 9.8`
+
+OwnTracks Recorder before 1.0.5 contains a format string vulnerability in json_response() allowing unauthenticated attackers to execute code and leak memory via malicious tid values.
+
+**Do:** Upgrade OwnTracks Recorder to version 1.0.5 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131852)
+
 ## 2026-11-17
 
 ### 🔴 Siemens Software Impacted by Node2Shell Brotli Vulnerability
@@ -38,7 +84,7 @@ Oracle Java is affected by a critical memory-corruption vulnerability known as '
 
 **Do:** Identify affected Java installations and apply emergency patches from Oracle.
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching) · [The Hacker News](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching) · [The Hacker News](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html) · [The Hacker News](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html)
 
 ### 🔴 N-able Patches 17 N-central Flaws Including Zero-Days
 `exploited`
@@ -426,7 +472,7 @@ Google reported that threat actors are increasingly using autonomous multi-agent
 
 The NSA reported disruptions to its classified internal network NSA Net, leading to staggered arrivals at its headquarters.
 
-[The Record](https://therecord.media/nsa-net-disruptions)
+[The Record](https://therecord.media/nsa-net-disruptions) · [SecurityWeek](https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/)
 
 ### 🟠 Access Dental Management Discloses Data Breach Impacting 340,000
 `exploited`
@@ -1262,14 +1308,6 @@ An improper input validation vulnerability in Zoom Workplace for Windows (CVE-20
 **Do:** Update Zoom Workplace for Windows to the latest patched version.
 
 [The Hacker News](https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html)
-
-### 🟠 Grok Build Coding Agent Leaks Confidential Info
-
-A security researcher found 35,000 Grok Build applications exposed without authentication, leaking confidential information including data belonging to SpaceX.
-
-**Do:** Audit Grok Build applications and ensure proper authentication controls are enforced.
-
-[Ars Technica](https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/) · [The Hacker News](https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html)
 
 ### 🟠 Maersk Confirms Data Breach Linked to WhiteArmor Ransomware
 `exploited`

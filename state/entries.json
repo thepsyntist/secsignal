@@ -1,5 +1,126 @@
 [
  {
+  "key": "rss:https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites",
+  "tier": "act",
+  "score": 82,
+  "headline": "Optimizely Third-Party Script Vulnerability Used to Serve Malware",
+  "tldr": "At least 178 major websites unknowingly served malware via compromised Optimizely integrations, injecting data-stealing payloads to visitors over a 24-hour period.",
+  "action": "Audit third-party script integrations and enforce strict Content Security Policy (CSP) headers.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/"
+   },
+   {
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
+   }
+  ],
+  "first_seen": "2026-11-18T07:40:55+00:00",
+  "updated": "2026-11-18T07:40:55+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+  "tier": "act",
+  "score": 77,
+  "headline": "Microsoft Agent Framework PyPI Package Compromised with Credential Stealer",
+  "tldr": "Threat actors compromised Microsoft's agent-framework PyPI package (versions 1.26.1 and 1.26.2) to deploy a cloud credential stealer on Python startup.",
+  "action": "Remove affected versions of agent-framework and rotate compromised cloud credentials immediately.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html"
+   }
+  ],
+  "first_seen": "2026-11-18T07:40:55+00:00",
+  "updated": "2026-11-18T07:40:55+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications",
+  "tier": "act",
+  "score": 72,
+  "headline": "Java4Shell Critical RCE Vulnerability in OpenJDK and Enterprise Apps",
+  "tldr": "A critical vulnerability dubbed Java4Shell in OpenJDK allows unauthenticated attackers to execute remote code on major enterprise applications like Jenkins, Jira, Confluence, and Keycloak.",
+  "action": "Apply emergency patches for OpenJDK and affected enterprise applications as provided by vendors.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/"
+   }
+  ],
+  "first_seen": "2026-11-18T07:40:55+00:00",
+  "updated": "2026-11-18T07:40:55+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "COLD RELIC Hackers Exploit Stolen Google Workspace Data in Breaches",
+  "tldr": "Russian state-sponsored group Cold Relic weaponized a single cloud compromise to breach a second U.S. organization using stolen Google Workspace data.",
+  "action": "Audit Google Workspace access logs, enforce phishing-resistant MFA, and monitor for unauthorized token usage.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html"
+   }
+  ],
+  "first_seen": "2026-11-18T07:40:55+00:00",
+  "updated": "2026-11-18T07:40:55+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-131852",
+  "tier": "watch",
+  "score": 67,
+  "headline": "OwnTracks Recorder Format String RCE Vulnerability",
+  "tldr": "OwnTracks Recorder before 1.0.5 contains a format string vulnerability in json_response() allowing unauthenticated attackers to execute code and leak memory via malicious tid values.",
+  "action": "Upgrade OwnTracks Recorder to version 1.0.5 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-131852"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131852"
+   }
+  ],
+  "first_seen": "2026-11-18T07:40:55+00:00",
+  "updated": "2026-11-18T07:40:55+00:00"
+ },
+ {
   "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
   "tier": "act",
   "score": 92,
@@ -81,10 +202,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
    }
   ],
   "first_seen": "2026-11-17T22:28:19+00:00",
-  "updated": "2026-11-17T22:28:19+00:00"
+  "updated": "2026-11-18T07:40:55+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds",
@@ -848,10 +973,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/nsa-net-disruptions"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/"
    }
   ],
   "first_seen": "2026-11-17T22:28:19+00:00",
-  "updated": "2026-11-17T22:28:19+00:00"
+  "updated": "2026-11-18T07:40:55+00:00"
  },
  {
   "key": "nvd:CVE-2026-130583",
