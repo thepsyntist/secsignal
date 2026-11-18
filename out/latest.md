@@ -48,6 +48,73 @@ OwnTracks Recorder before 1.0.5 contains a format string vulnerability in json_r
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131852)
 
+### 🟠 Microsoft Agent Framework Releases Poisoned With Credential Stealer
+
+Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework Releases Poisoned With Credential Stealer appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/)
+
+### 🟠 Apache warns of Roller RCE vulnerability exploited in attacks
+`exploited`
+
+Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
+
+### 🟠 CVE-2026-130675: Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::n
+`CVE-2026-130675 · CVSS 9.8`
+
+Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransform() that allows attackers to instantiate arbitrary classes by supplying class:null with a __class key. Attackers can reach the method through Craft Commerce's payments/pay redirect template calling customer.photo.getUrl() with a crafted transform to instantiate classes like yii\rb
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130675)
+
+### 🟠 CVE-2018-25443: Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage
+`CVE-2018-25443 · CVSS 9.8`
+
+Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write an executable .aspx file for remote code execution.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2018-25443)
+
+### 🟠 CVE-2021-48023: Weaver E-cology 9.0 contains an unrestricted file upload vulnerability in /page/exportImport/uploadOpera
+`CVE-2021-48023 · CVSS 9.8`
+
+Weaver E-cology 9.0 contains an unrestricted file upload vulnerability in /page/exportImport/uploadOperation.jsp that allows unauthenticated attackers to upload arbitrary JSP files. Attackers can send a crafted multipart POST request with a JSP webshell written to /page/exportImport/fileTransfer/ to achieve remote code execution.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2021-48023)
+
+### 🟠 CVE-2023-54422: iDocView before 13.10.1_20231115 contains an unrestricted file upload vulnerability in the /html/2word e
+`CVE-2023-54422 · CVSS 9.8`
+
+iDocView before 13.10.1_20231115 contains an unrestricted file upload vulnerability in the /html/2word endpoint that allows unauthenticated attackers to write arbitrary files by supplying a malicious url parameter. Attackers can send a crafted GET request with the url parameter to download linked resources with an unsanitized path and unblocked .jsp extension, achieving remote code execution.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2023-54422)
+
+### 🟠 CVE-2026-126755: ArangoDB before 3.12.11 contains an authentication bypass vulnerability caused by a parser differential
+`CVE-2026-126755 · CVSS 9.8`
+
+ArangoDB before 3.12.11 contains an authentication bypass vulnerability caused by a parser differential between the raw path authentication gate and the URL-decoded dispatch logic. Attackers can send requests with a %5f-encoded leading underscore to endpoints like /_db/_system/%5fapi/simple/first-example to reach /_api/* actions as superuser without authentication.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126755)
+
+### 🟠 rubygems:mustache: Mustache for Ruby: RCE using built-in method access
+`CVE-2026-130001 · CVSS 9.8`
+
+Affected packages: rubygems:mustache. > [!NOTE] > The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-5hrj-7fc3-cmx9)
+
+### 🟠 Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization
+
+Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. The post Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/)
+
+### 🟠 Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover
+
+Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/)
+
 ## 2026-11-17
 
 ### 🔴 Siemens Software Impacted by Node2Shell Brotli Vulnerability
@@ -75,7 +142,7 @@ Perforce Puppet Enterprise contains a deserialization vulnerability (CVE-2026-11
 
 **Do:** Apply mitigations and updates provided by Perforce for Puppet Enterprise immediately.
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-115731)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-115731) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html) · [SecurityWeek](https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/)
 
 ### 🔴 Critical Oracle Java Base64 Memory Corruption Vulnerability
 `CVE-2026-114938 · exploited`
@@ -84,7 +151,7 @@ Oracle Java is affected by a critical memory-corruption vulnerability known as '
 
 **Do:** Identify affected Java installations and apply emergency patches from Oracle.
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching) · [The Hacker News](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html) · [The Hacker News](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching) · [The Hacker News](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html) · [The Hacker News](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html) · [The Hacker News](https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html)
 
 ### 🔴 N-able Patches 17 N-central Flaws Including Zero-Days
 `exploited`
@@ -1237,15 +1304,6 @@ The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. 
 
 ## 2026-11-11
 
-### 🟠 Nitori Furniture Data Breach Potentially Exposes 37.6M Records
-`exploited`
-
-Japanese retailer Nitori discovered an unauthorized network access that may have compromised up to 37.62 million customer records.
-
-**Do:** Monitor accounts for suspicious activity if you are a Nitori customer.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/)
-
 ### 🟠 Red Hat Quay Authentication and Key Rotation Flaws
 `CVE-2026-123710 · CVSS 9.8`
 
@@ -1264,24 +1322,6 @@ A flaw in Red Hat Quay's robot account listing function allows attackers to use 
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-110697)
 
-### 🟠 WWBN AVideo Authentication Bypass Vulnerability (CVE-2026-126542)
-`CVE-2026-126542 · CVSS 9.8`
-
-WWBN AVideo versions 6.5 through 29.7.1 contain an authentication bypass via Hybridauth social login display names, allowing unauthenticated attackers to log in as any user including administrators.
-
-**Do:** Upgrade WWBN AVideo to a patched version.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126542)
-
-### 🟠 React Server Components Unauthenticated RCE (CVE-2026-126187)
-`CVE-2026-126187 · CVSS 9.5`
-
-Certain React Server Components packages contain an unauthenticated remote code execution vulnerability affecting specific versions when processing crafted payloads with multiple typed arrays.
-
-**Do:** Update react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack to patched versions immediately.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-xqc2-xf4c-x3h3)
-
 ### 🟠 AntiFox AI Platform Abused in AWS Credential Theft Attacks
 `exploited`
 
@@ -1290,15 +1330,6 @@ Attackers are leveraging Alibaba Cloud instances hosting the open-source AntiFox
 **Do:** Audit AWS environments for unauthorized credential access and monitor outbound connections to Alibaba Cloud instances running AntiFox.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html)
-
-### 🟠 Railway Cloud Breach Exposes AI API Keys and Causes $740K Fraud
-`exploited`
-
-Cloud hosting provider Railway suffered a breach where hackers stole customer authentication secrets and API keys, generating $740,000 in fraudulent AI usage and potentially exposing up to 100,000 workspaces.
-
-**Do:** Rotate all API keys and secrets previously stored on Railway.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/) · [The Hacker News](https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html)
 
 ### 🟠 Critical Zoom Workplace Windows Privilege Escalation (CVE-2026-108186)
 `CVE-2026-108186`
@@ -1341,23 +1372,6 @@ Versions 26.8.3 up to 26.9.1 of the Sipay WooCommerce Virtual POS Module suffer 
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-85632)
 
-### 🟠 Adobe Connect Incorrect Authorization Flaw (CVE-2026-121355)
-`CVE-2026-121355 · CVSS 9.1`
-
-Adobe Connect contains an incorrect authorization vulnerability allowing unauthenticated attackers to gain elevated access to sensitive information or functionality without user interaction.
-
-**Do:** Apply the latest updates for Adobe Connect.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-121355)
-
-### 🟠 Intel and AMD Patch Over 200 Vulnerabilities
-
-Intel and AMD released their Patch Tuesday advisories addressing more than 200 vulnerabilities, including critical Intel TDX software flaws and AMD graphics bugs.
-
-**Do:** Apply the latest CPU microcode and vendor firmware updates.
-
-[SecurityWeek](https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/)
-
 ### 🟠 WordPress Ninja Forms File Uploads Add-on Arbitrary File Flaw (CVE-2026-126537)
 `CVE-2026-126537 · CVSS 9.1`
 
@@ -1366,15 +1380,6 @@ The Ninja Forms File Uploads add-on for WordPress up to version 3.3.36 contains 
 **Do:** Update Ninja Forms File Uploads add-on beyond version 3.3.36.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126537)
-
-### 🟠 Adobe Connect Stored XSS Vulnerability (CVE-2026-121904)
-`CVE-2026-121904 · CVSS 9.6`
-
-Adobe Connect is affected by a stored Cross-Site Scripting vulnerability allowing a low-privileged user to inject malicious scripts into form fields and potentially compromise victim sessions.
-
-**Do:** Apply the latest security updates from Adobe.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-121904)
 
 ### 🟠 ICS Patch Tuesday: Siemens and Vendors Flag High-Severity Flaws
 

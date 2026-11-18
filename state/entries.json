@@ -1,5 +1,251 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
+  "tldr": "Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework Releases Poisoned With Credential Stealer appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Apache warns of Roller RCE vulnerability exploited in attacks",
+  "tldr": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130675",
+  "tier": "watch",
+  "score": 51,
+  "headline": "CVE-2026-130675: Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::n",
+  "tldr": "Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransform() that allows attackers to instantiate arbitrary classes by supplying class:null with a __class key. Attackers can reach the method through Craft Commerce's payments/pay redirect template calling customer.photo.getUrl() with a crafted transform to instantiate classes like yii\\rb",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130675"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130675"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2018-25443",
+  "tier": "watch",
+  "score": 51,
+  "headline": "CVE-2018-25443: Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage",
+  "tldr": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write an executable .aspx file for remote code execution.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2018-25443"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-25443"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2021-48023",
+  "tier": "watch",
+  "score": 51,
+  "headline": "CVE-2021-48023: Weaver E-cology 9.0 contains an unrestricted file upload vulnerability in /page/exportImport/uploadOpera",
+  "tldr": "Weaver E-cology 9.0 contains an unrestricted file upload vulnerability in /page/exportImport/uploadOperation.jsp that allows unauthenticated attackers to upload arbitrary JSP files. Attackers can send a crafted multipart POST request with a JSP webshell written to /page/exportImport/fileTransfer/ to achieve remote code execution.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2021-48023"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-48023"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2023-54422",
+  "tier": "watch",
+  "score": 51,
+  "headline": "CVE-2023-54422: iDocView before 13.10.1_20231115 contains an unrestricted file upload vulnerability in the /html/2word e",
+  "tldr": "iDocView before 13.10.1_20231115 contains an unrestricted file upload vulnerability in the /html/2word endpoint that allows unauthenticated attackers to write arbitrary files by supplying a malicious url parameter. Attackers can send a crafted GET request with the url parameter to download linked resources with an unsanitized path and unblocked .jsp extension, achieving remote code execution.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2023-54422"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-54422"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-126755",
+  "tier": "watch",
+  "score": 51,
+  "headline": "CVE-2026-126755: ArangoDB before 3.12.11 contains an authentication bypass vulnerability caused by a parser differential",
+  "tldr": "ArangoDB before 3.12.11 contains an authentication bypass vulnerability caused by a parser differential between the raw path authentication gate and the URL-decoded dispatch logic. Attackers can send requests with a %5f-encoded leading underscore to endpoints like /_db/_system/%5fapi/simple/first-example to reach /_api/* actions as superuser without authentication.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126755"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126755"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-5hrj-7fc3-cmx9",
+  "tier": "watch",
+  "score": 51,
+  "headline": "rubygems:mustache: Mustache for Ruby: RCE using built-in method access",
+  "tldr": "Affected packages: rubygems:mustache. > [!NOTE] > The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130001"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
+  "tldr": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. The post Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover",
+  "tldr": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/"
+   }
+  ],
+  "first_seen": "2026-11-18T17:20:06+00:00",
+  "updated": "2026-11-18T17:20:06+00:00"
+ },
+ {
   "key": "rss:https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites",
   "tier": "act",
   "score": 82,
@@ -173,10 +419,18 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-17T22:28:19+00:00",
-  "updated": "2026-11-17T22:28:19+00:00"
+  "updated": "2026-11-18T17:20:06+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
@@ -206,10 +460,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html"
    }
   ],
   "first_seen": "2026-11-17T22:28:19+00:00",
-  "updated": "2026-11-18T07:40:55+00:00"
+  "updated": "2026-11-18T17:20:06+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds",
