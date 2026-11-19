@@ -1,5 +1,502 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+  "tier": "act",
+  "score": 92,
+  "headline": "Palo Alto Networks PAN-OS Flaws CVE-2026-109618/19 Exploited",
+  "tldr": "Attackers are actively exploiting unauthenticated RCE vulnerabilities CVE-2026-109618 and CVE-2026-109619 against internet-exposed PAN-OS management interfaces.",
+  "action": "Apply emergency patches and restrict management access from the internet.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-109618",
+   "CVE-2026-109619"
+  ],
+  "cvss": null,
+  "epss": 0.99999,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+  "tier": "act",
+  "score": 87,
+  "headline": "VMware vCenter Authentication Bypass Exploited as Zero-Day",
+  "tldr": "A critical authentication bypass flaw in VMware vCenter was exploited as a zero-day by a China-linked espionage group before Broadcom released patches.",
+  "action": "Apply the latest updates for VMware vCenter across all supported branches immediately.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "vmware",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release",
+  "tier": "act",
+  "score": 74,
+  "headline": "Cisco Expressway Vulnerability Exploited Following PoC Release",
+  "tldr": "Attackers have exploited clustered Cisco Expressway devices at an organization shortly after proof-of-concept code was released, preparing for lateral movement.",
+  "action": "Review Cisco Expressway devices for indicators of compromise and apply vendor patches.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "cisco",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Drupal Patches Critical Remote Code Execution Vulnerability",
+  "tldr": "The Drupal Security Team has patched a critical remote code execution vulnerability that could allow full site takeover.",
+  "action": "Update Drupal core to the latest security release immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-131202",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Splunk Enterprise Security Arbitrary Code Execution Flaw",
+  "tldr": "Splunk Enterprise Security versions below 8.7.0 contain a vulnerability allowing users with the ess_admin role to execute arbitrary code on the search head.",
+  "action": "Upgrade Splunk Enterprise Security to version 8.7.0 or higher.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-131202"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131202"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-131253",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Splunk SOAR App Wizard Code Execution Vulnerability",
+  "tldr": "Splunk SOAR versions below 8.8.0 contain a vulnerability allowing authenticated users with specific permissions to execute arbitrary code via the App Wizard.",
+  "action": "Upgrade Splunk SOAR to version 8.8.0 or higher.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-131253"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131253"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-76535",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Splunk Enterprise RapidDiag Unauthenticated SPL Search Vulnerability",
+  "tldr": "Splunk Enterprise versions below 10.6.1, 10.4.5, 10.2.9, 10.0.12, and 9.4.17 allow unauthenticated users to run arbitrary SPL searches via RapidDiag due to an empty shared secret.",
+  "action": "Upgrade Splunk Enterprise to the latest patched versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-76535"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76535"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-76536",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Splunk Enterprise Clustering REST API Configuration Flaw",
+  "tldr": "Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17 allow unauthenticated users to modify clustering configuration via the REST API using an empty clustering shared secret.",
+  "action": "Upgrade Splunk Enterprise to patched versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-76536"
+  ],
+  "cvss": 9.4,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76536"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Elecbrakes EB2, VM1, and ELBC2000 Safety Flaws",
+  "tldr": "Multiple vulnerabilities (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805) in Elecbrakes EB2 (<=3.0.4.2.0), VM1 (<1.3.4.2.1), and ELBC2000 allow attackers to gain control of trailer brakes or modify firmware.",
+  "action": "Check vendor advisory for available firmware updates.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-124281",
+   "CVE-2026-125273",
+   "CVE-2026-96805"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Transport for London Data Breach Exposes Oyster Card Users",
+  "tldr": "Transport for London announced a data breach exposing account details for approximately 265,000 Oyster photocard customers.",
+  "action": "Notify affected users and monitor accounts for suspicious activity.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+  "tier": "watch",
+  "score": 61,
+  "headline": "European Commission Confirms Cyberattack Using AI Tool",
+  "tldr": "The European Commission confirmed a cyberattack in which threat actors utilized the ARTEX open-source AI hacking platform.",
+  "action": "Review systems for indicators associated with AI-driven attack frameworks.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/ukraine-ransomware-arrests-cyber",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Ukrainian Authorities Arrest International Ransomware Suspects",
+  "tldr": "Ukrainian authorities arrested four suspects linked to an international ransomware network that extorted over $40 million globally.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/ukraine-ransomware-arrests-cyber"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-131287",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Splunk SOAR Playbook Reference Binding Vulnerability",
+  "tldr": "Splunk SOAR versions below 8.8.0 allow users with playbook permissions to cause cross-repository playbook references to run attacker-controlled code when repository names are reused.",
+  "action": "Upgrade Splunk SOAR to version 8.8.0 or higher.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-131287"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131287"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-833v-v58w-294h",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Todoist MCP Server DNS Rebinding Data Access Vulnerability",
+  "tldr": "The self-hosted todoist-mcp-http server (version 10.3.1) is vulnerable to browser DNS rebinding, allowing malicious websites to write and delete data through local MCP endpoints.",
+  "action": "Update todoist-mcp and avoid running the optional Streamable HTTP server exposed to browsers.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-76807"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00216,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-833v-v58w-294h"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-q8v2-3j4h-xg2p",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Jane PHP Open-API-3 PHPDoc Breakout RCE Vulnerability",
+  "tldr": "jane-php/open-api-3 emits raw PHPDoc comment text for query parameters, allowing attackers to inject closing comment syntax and execute arbitrary PHP code during client generation.",
+  "action": "Update jane-php/open-api-3 to a patched version when available.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63412"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00391,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-q8v2-3j4h-xg2p"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-x9xr-53qx-9qcf",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Jane PHP Open-API-3 Header Parameter PHPDoc Breakout RCE",
+  "tldr": "jane-php/open-api-3 allows remote code execution via header parameter names due to unescaped insertion into PHPDoc blocks.",
+  "action": "Update jane-php/open-api-3 to a patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63413"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00312,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-x9xr-53qx-9qcf"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-xwcw-j52r-34x4",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Jane PHP Open-API-3 Parameter Description PHPDoc Breakout RCE",
+  "tldr": "jane-php/open-api-3 contains an RCE vulnerability via parameter descriptions due to raw PHPDoc comment emission.",
+  "action": "Update jane-php/open-api-3 to a patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63411"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00312,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-xwcw-j52r-34x4"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Splunk Patches Multiple Flaws Across Core Products",
+  "tldr": "Splunk released security updates resolving critical and high-severity issues leading to authentication bypass, RCE, and privilege escalation.",
+  "action": "Apply the latest Splunk security patches.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+  "tier": "watch",
+  "score": 56,
+  "headline": "libumqtt Integer Underflow Vulnerability CVE-2026-125132",
+  "tldr": "libumqtt <=1.1.1 contains an integer underflow vulnerability (CVE-2026-125132) allowing remote DoS, memory corruption, or information disclosure.",
+  "action": "Upgrade libumqtt beyond version 1.1.1.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-125132"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Autonomy Logic OpenPLC Runtime Race Condition CVE-2026-126088",
+  "tldr": "Autonomy Logic OpenPLC Runtime <=4.2.4 contains a race condition flaw (CVE-2026-126088) allowing unauthenticated creation of admin accounts.",
+  "action": "Update OpenPLC Runtime to versions above 4.2.4.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-126088"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01"
+   }
+  ],
+  "first_seen": "2026-11-19T20:46:29+00:00",
+  "updated": "2026-11-19T20:46:29+00:00"
+ },
+ {
   "key": "rss:https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public",
   "tier": "act",
   "score": 82,
@@ -17,10 +514,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/"
    }
   ],
   "first_seen": "2026-11-19T10:28:56+00:00",
-  "updated": "2026-11-19T10:28:56+00:00"
+  "updated": "2026-11-19T20:46:29+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
@@ -33,7 +534,8 @@
   "exploited": false,
   "kev": false,
   "cves": [
-   "CVE-2026-115560"
+   "CVE-2026-115560",
+   "CVE-2026-126714"
   ],
   "cvss": null,
   "epss": null,
@@ -46,10 +548,26 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html"
    }
   ],
   "first_seen": "2026-11-19T10:28:56+00:00",
-  "updated": "2026-11-19T10:28:56+00:00"
+  "updated": "2026-11-19T20:46:29+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
@@ -163,10 +681,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/"
    }
   ],
   "first_seen": "2026-11-19T10:28:56+00:00",
-  "updated": "2026-11-19T10:28:56+00:00"
+  "updated": "2026-11-19T20:46:29+00:00"
  },
  {
   "key": "kev:CVE-2024-10441",
@@ -797,10 +1319,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-18T17:20:06+00:00",
-  "updated": "2026-11-19T00:28:47+00:00"
+  "updated": "2026-11-19T20:46:29+00:00"
  },
  {
   "key": "nvd:CVE-2026-130675",

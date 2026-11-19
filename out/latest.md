@@ -4,6 +4,24 @@
 
 ## 2026-11-19
 
+### 🔴 Palo Alto Networks PAN-OS Flaws CVE-2026-109618/19 Exploited
+`CVE-2026-109618, CVE-2026-109619 · EPSS 1.00 · CISA KEV`
+
+Attackers are actively exploiting unauthenticated RCE vulnerabilities CVE-2026-109618 and CVE-2026-109619 against internet-exposed PAN-OS management interfaces.
+
+**Do:** Apply emergency patches and restrict management access from the internet.
+
+[The Hacker News](https://thehackernews.com/2026/11/everything-is-web-application-including.html)
+
+### 🔴 VMware vCenter Authentication Bypass Exploited as Zero-Day
+`exploited`
+
+A critical authentication bypass flaw in VMware vCenter was exploited as a zero-day by a China-linked espionage group before Broadcom released patches.
+
+**Do:** Apply the latest updates for VMware vCenter across all supported branches immediately.
+
+[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/)
+
 ### 🔴 F5 Patches Critical NGINX2Root Flaws with Public PoCs
 `exploited`
 
@@ -11,7 +29,7 @@ F5 patched critical NGINX2Root vulnerabilities that allow remote, unauthenticate
 
 **Do:** Apply the latest security patches from F5 immediately and monitor for exploitation attempts.
 
-[SecurityWeek](https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/)
+[SecurityWeek](https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/)
 
 ### 🔴 Synology DSM Output Encoding Vulnerability Added to KEV
 `CVE-2024-10441 · EPSS 0.01 · CISA KEV`
@@ -49,14 +67,31 @@ Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated
 
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-90436)
 
+### 🔴 Cisco Expressway Vulnerability Exploited Following PoC Release
+`exploited`
+
+Attackers have exploited clustered Cisco Expressway devices at an organization shortly after proof-of-concept code was released, preparing for lateral movement.
+
+**Do:** Review Cisco Expressway devices for indicators of compromise and apply vendor patches.
+
+[SecurityWeek](https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/)
+
+### 🟠 Drupal Patches Critical Remote Code Execution Vulnerability
+
+The Drupal Security Team has patched a critical remote code execution vulnerability that could allow full site takeover.
+
+**Do:** Update Drupal core to the latest security release immediately.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/) · [The Hacker News](https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html)
+
 ### 🟠 PHP Prepares Critical Security Updates for Session Upload RCE
-`CVE-2026-115560`
+`CVE-2026-115560, CVE-2026-126714`
 
 PHP is preparing updates for a critical RCE vulnerability in session upload progress (CVE-2026-115560) disclosed shortly after previous patches.
 
 **Do:** Prepare to apply PHP security updates upon release.
 
-[The Hacker News](https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html) · [SecurityWeek](https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/)
+[The Hacker News](https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html) · [SecurityWeek](https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/) · [The Hacker News](https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html) · [SecurityWeek](https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/) · [The Hacker News](https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html)
 
 ### 🟠 N-able Cloud Server Breach Disrupts Email Security Management
 `exploited`
@@ -75,6 +110,42 @@ A vulnerability in NGINX's HTTP/2 support (CVE-2026-123007), present since versi
 **Do:** Upgrade NGINX to version 1.30.7, 1.31.9, or later.
 
 [The Hacker News](https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html)
+
+### 🟠 Splunk Enterprise Security Arbitrary Code Execution Flaw
+`CVE-2026-131202 · CVSS 9.1`
+
+Splunk Enterprise Security versions below 8.7.0 contain a vulnerability allowing users with the ess_admin role to execute arbitrary code on the search head.
+
+**Do:** Upgrade Splunk Enterprise Security to version 8.7.0 or higher.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131202)
+
+### 🟠 Splunk SOAR App Wizard Code Execution Vulnerability
+`CVE-2026-131253 · CVSS 9.9`
+
+Splunk SOAR versions below 8.8.0 contain a vulnerability allowing authenticated users with specific permissions to execute arbitrary code via the App Wizard.
+
+**Do:** Upgrade Splunk SOAR to version 8.8.0 or higher.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131253)
+
+### 🟠 Splunk Enterprise RapidDiag Unauthenticated SPL Search Vulnerability
+`CVE-2026-76535 · CVSS 9.1`
+
+Splunk Enterprise versions below 10.6.1, 10.4.5, 10.2.9, 10.0.12, and 9.4.17 allow unauthenticated users to run arbitrary SPL searches via RapidDiag due to an empty shared secret.
+
+**Do:** Upgrade Splunk Enterprise to the latest patched versions.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76535)
+
+### 🟠 Splunk Enterprise Clustering REST API Configuration Flaw
+`CVE-2026-76536 · CVSS 9.4`
+
+Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17 allow unauthenticated users to modify clustering configuration via the REST API using an empty clustering shared secret.
+
+**Do:** Upgrade Splunk Enterprise to patched versions.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76536)
 
 ### 🟠 Miren Runtime Authentication Bypass in RPC Layer
 `CVE-2026-75521 · CVSS 10.0`
@@ -112,6 +183,15 @@ Atomic Server provisions a well-known invite at /setup that ignores redeemer ide
 
 [GitHub Advisory](https://github.com/advisories/GHSA-pfwx-xjp4-qxcj)
 
+### 🟠 Elecbrakes EB2, VM1, and ELBC2000 Safety Flaws
+`CVE-2026-124281, CVE-2026-125273, CVE-2026-96805`
+
+Multiple vulnerabilities (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805) in Elecbrakes EB2 (<=3.0.4.2.0), VM1 (<1.3.4.2.1), and ELBC2000 allow attackers to gain control of trailer brakes or modify firmware.
+
+**Do:** Check vendor advisory for available firmware updates.
+
+[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02)
+
 ### 🟠 Ruby Fixes Regex and String Memory-Safety Flaws
 
 Ruby released fixes for seven memory-safety flaws in its regex engine and string case-conversion code, with PoCs showing RCE potential for five of them.
@@ -119,6 +199,31 @@ Ruby released fixes for seven memory-safety flaws in its regex engine and string
 **Do:** Update Ruby to the latest fixed versions.
 
 [The Hacker News](https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html)
+
+### 🟠 Transport for London Data Breach Exposes Oyster Card Users
+`exploited`
+
+Transport for London announced a data breach exposing account details for approximately 265,000 Oyster photocard customers.
+
+**Do:** Notify affected users and monitor accounts for suspicious activity.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/)
+
+### 🟠 European Commission Confirms Cyberattack Using AI Tool
+`exploited`
+
+The European Commission confirmed a cyberattack in which threat actors utilized the ARTEX open-source AI hacking platform.
+
+**Do:** Review systems for indicators associated with AI-driven attack frameworks.
+
+[The Record](https://therecord.media/european-commission-confirms-cyberattack-using-ai)
+
+### 🟠 Ukrainian Authorities Arrest International Ransomware Suspects
+`exploited`
+
+Ukrainian authorities arrested four suspects linked to an international ransomware network that extorted over $40 million globally.
+
+[The Record](https://therecord.media/ukraine-ransomware-arrests-cyber)
 
 ### 🟠 F5 Warns of Critical BIG-IP Traffic Management Flaws
 
@@ -136,6 +241,51 @@ A reported cyberattack on Wellington IT exposed sensitive information belonging 
 **Do:** Review Wellington IT advisory and monitor credit union accounts.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/)
+
+### 🟠 Splunk SOAR Playbook Reference Binding Vulnerability
+`CVE-2026-131287 · CVSS 9.6`
+
+Splunk SOAR versions below 8.8.0 allow users with playbook permissions to cause cross-repository playbook references to run attacker-controlled code when repository names are reused.
+
+**Do:** Upgrade Splunk SOAR to version 8.8.0 or higher.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131287)
+
+### 🟠 Todoist MCP Server DNS Rebinding Data Access Vulnerability
+`CVE-2026-76807 · CVSS 9.3 · EPSS 0.00`
+
+The self-hosted todoist-mcp-http server (version 10.3.1) is vulnerable to browser DNS rebinding, allowing malicious websites to write and delete data through local MCP endpoints.
+
+**Do:** Update todoist-mcp and avoid running the optional Streamable HTTP server exposed to browsers.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-833v-v58w-294h)
+
+### 🟠 Jane PHP Open-API-3 PHPDoc Breakout RCE Vulnerability
+`CVE-2026-63412 · CVSS 9.3 · EPSS 0.00`
+
+jane-php/open-api-3 emits raw PHPDoc comment text for query parameters, allowing attackers to inject closing comment syntax and execute arbitrary PHP code during client generation.
+
+**Do:** Update jane-php/open-api-3 to a patched version when available.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-q8v2-3j4h-xg2p)
+
+### 🟠 Jane PHP Open-API-3 Header Parameter PHPDoc Breakout RCE
+`CVE-2026-63413 · CVSS 9.3 · EPSS 0.00`
+
+jane-php/open-api-3 allows remote code execution via header parameter names due to unescaped insertion into PHPDoc blocks.
+
+**Do:** Update jane-php/open-api-3 to a patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-x9xr-53qx-9qcf)
+
+### 🟠 Jane PHP Open-API-3 Parameter Description PHPDoc Breakout RCE
+`CVE-2026-63411 · CVSS 9.3 · EPSS 0.00`
+
+jane-php/open-api-3 contains an RCE vulnerability via parameter descriptions due to raw PHPDoc comment emission.
+
+**Do:** Update jane-php/open-api-3 to a patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-xwcw-j52r-34x4)
 
 ### 🟠 LaraDashboard SocialAuthService Authentication Bypass
 `CVE-2026-130754 · CVSS 9.8`
@@ -245,6 +395,32 @@ DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132143)
 
+### 🟠 Splunk Patches Multiple Flaws Across Core Products
+
+Splunk released security updates resolving critical and high-severity issues leading to authentication bypass, RCE, and privilege escalation.
+
+**Do:** Apply the latest Splunk security patches.
+
+[SecurityWeek](https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/)
+
+### 🟠 libumqtt Integer Underflow Vulnerability CVE-2026-125132
+`CVE-2026-125132`
+
+libumqtt <=1.1.1 contains an integer underflow vulnerability (CVE-2026-125132) allowing remote DoS, memory corruption, or information disclosure.
+
+**Do:** Upgrade libumqtt beyond version 1.1.1.
+
+[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03)
+
+### 🟠 Autonomy Logic OpenPLC Runtime Race Condition CVE-2026-126088
+`CVE-2026-126088`
+
+Autonomy Logic OpenPLC Runtime <=4.2.4 contains a race condition flaw (CVE-2026-126088) allowing unauthenticated creation of admin accounts.
+
+**Do:** Update OpenPLC Runtime to versions above 4.2.4.
+
+[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01)
+
 ### 🟠 Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle
 
 A researcher published proof-of-concept exploits against memory-corruption bugs in PostgreSQL, MySQL, ClickHouse, and Oracle allowing low-privilege database accounts to run code.
@@ -264,7 +440,7 @@ A researcher published proof-of-concept exploits against memory-corruption bugs 
 
 NVIDIA is investigating claims by the Gentlemen ransomware group after the company was listed on their dark web leak site.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/) · [SecurityWeek](https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/)
 
 ## 2026-11-18
 
@@ -323,7 +499,7 @@ Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps,
 
 Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html) · [SecurityWeek](https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/)
 
 ### 🟠 CVE-2026-130675: Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::n
 `CVE-2026-130675 · CVSS 9.8`
@@ -1411,77 +1587,4 @@ Trezor confirmed that Trezor Safe 5 wallets purchased from reseller CryptoBilis 
 Microsoft confirmed that November Patch Tuesday updates are causing Windows activation and licensing failures accompanied by 0x80041008 error codes.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/) · [BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/)
-
-## 2026-11-12
-
-### 🔴 Siemens Desigo, Gridscale
-`CVE-2026-109618, CVE-2026-109619, CVE-2026-111497 · EPSS 1.00 · CISA KEV`
-
-View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as "Node2Shell" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01)
-
-### 🔴 SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths
-`CVE-2026-84869 · EPSS 0.01 · CISA KEV`
-
-The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the recovered attacker toolkit exploits CVE-2026-84869 (CVSS score: 9.9), an
-
-[The Hacker News](https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/)
-
-### 🟠 New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access
-`exploited`
-
-N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. "Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet," N-able said in a new advisory.
-
-[The Hacker News](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/) · [The Hacker News](https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/)
-
-### 🟠 Your Endpoint Management Platform Could Be Your Biggest Security Risk
-
-Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/) · [The Hacker News](https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html)
-
-### 🟠 ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories
-
-A search result isn't always safe. An access request isn't always harmless.
-
-[The Hacker News](https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html)
-
-### 🟠 Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass
-`CVE-2026-120868`
-
-Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-2026-120868 (CVSS score: 9.3) - A memory overflow vulnerability in Packet
-
-[The Hacker News](https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html)
-
-### 🟠 PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution
-`CVE-2026-126325 · EPSS 0.01 · exploited`
-
-PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.
-
-[The Hacker News](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
-
-### 🟠 Apify rotates API tokens, prompts 2FA resets after breach
-
-Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/) · [SecurityWeek](https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/)
-
-### 🟠 ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations
-
-Abuse of an independent third-party tool led to breaches at ScreenConnect customers, confirmed the software's maker, ConnectWise. Cybersecurity researchers had spotted intrusions at nearly 50.
-
-[The Record](https://therecord.media/connectwise-screenconnect-breaches-third-party-tool)
-
-### 🟠 Hijacked email accounts complicate investigations into European bomb hoaxes
-
-Bomb threats sent to thousands of schools across Europe this week came from a compromised email account at a Taiwanese university, the latest incident in a series of hoax threats that have targeted airports and newsrooms using messages sent from legitimate institutions.
-
-[The Record](https://therecord.media/europe-hoax-email-threats)
-
-### 🟠 Notion Customer Data Compromised in Fireworks AI Hack
-
-The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable.
-
-[SecurityWeek](https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/)
 
