@@ -4,6 +4,15 @@
 
 ## 2026-11-19
 
+### 🔴 F5 Patches Critical NGINX2Root Flaws with Public PoCs
+`exploited`
+
+F5 patched critical NGINX2Root vulnerabilities that allow remote, unauthenticated attackers to execute arbitrary code, with public proof-of-concept exploits available.
+
+**Do:** Apply the latest security patches from F5 immediately and monitor for exploitation attempts.
+
+[SecurityWeek](https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/)
+
 ### 🔴 Synology DSM Output Encoding Vulnerability Added to KEV
 `CVE-2024-10441 · EPSS 0.01 · CISA KEV`
 
@@ -40,6 +49,24 @@ Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated
 
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-90436)
 
+### 🟠 PHP Prepares Critical Security Updates for Session Upload RCE
+`CVE-2026-115560`
+
+PHP is preparing updates for a critical RCE vulnerability in session upload progress (CVE-2026-115560) disclosed shortly after previous patches.
+
+**Do:** Prepare to apply PHP security updates upon release.
+
+[The Hacker News](https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html) · [SecurityWeek](https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/)
+
+### 🟠 N-able Cloud Server Breach Disrupts Email Security Management
+`exploited`
+
+Unauthorized access to an N-able Mail Assure and Spam Experts Hosted Cloud server caused management interfaces and APIs to be disabled.
+
+**Do:** Monitor N-able security advisories and review cloud management logs.
+
+[The Hacker News](https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html)
+
 ### 🟠 NGINX HTTP/2 Remote Code Execution Vulnerability (CVE-2026-123007)
 `CVE-2026-123007`
 
@@ -48,6 +75,15 @@ A vulnerability in NGINX's HTTP/2 support (CVE-2026-123007), present since versi
 **Do:** Upgrade NGINX to version 1.30.7, 1.31.9, or later.
 
 [The Hacker News](https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html)
+
+### 🟠 Miren Runtime Authentication Bypass in RPC Layer
+`CVE-2026-75521 · CVSS 10.0`
+
+Miren Runtime RPC server fails to verify client certificates against the cluster CA, allowing any network-reachable party to present a self-signed cert and gain superuser access.
+
+**Do:** Upgrade Miren Runtime to a patched version and restrict network access to the RPC listener.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-8fh7-7q4q-cq52)
 
 ### 🟠 Fleet SAML SSO Authentication Bypass Vulnerability
 `CVE-2026-130759 · CVSS 9.9`
@@ -75,6 +111,14 @@ Atomic Server provisions a well-known invite at /setup that ignores redeemer ide
 **Do:** Upgrade atomic-server or disable unauthenticated setup invites.
 
 [GitHub Advisory](https://github.com/advisories/GHSA-pfwx-xjp4-qxcj)
+
+### 🟠 Ruby Fixes Regex and String Memory-Safety Flaws
+
+Ruby released fixes for seven memory-safety flaws in its regex engine and string case-conversion code, with PoCs showing RCE potential for five of them.
+
+**Do:** Update Ruby to the latest fixed versions.
+
+[The Hacker News](https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html)
 
 ### 🟠 F5 Warns of Critical BIG-IP Traffic Management Flaws
 
@@ -201,12 +245,26 @@ DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132143)
 
+### 🟠 Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle
+
+A researcher published proof-of-concept exploits against memory-corruption bugs in PostgreSQL, MySQL, ClickHouse, and Oracle allowing low-privilege database accounts to run code.
+
+**Do:** Review database permissions and apply vendor patches for underlying memory-corruption issues.
+
+[The Hacker News](https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html)
+
 ### 🟠 CISA Adds Four Known Exploited Vulnerabilities to Catalog
 `CVE-2024-10441, CVE-2026-40217, CVE-2026-90436, CVE-2026-90817 · EPSS 0.17 · CISA KEV`
 
 
 
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog)
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html)
+
+### 🟠 NVIDIA Investigating Gentlemen Ransomware Breach Claims
+
+NVIDIA is investigating claims by the Gentlemen ransomware group after the company was listed on their dark web leak site.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
 
 ## 2026-11-18
 
@@ -234,7 +292,7 @@ A critical vulnerability dubbed Java4Shell in OpenJDK allows unauthenticated att
 
 **Do:** Apply emergency patches for OpenJDK and affected enterprise applications as provided by vendors.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/) · [SecurityWeek](https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/)
 
 ### 🟠 COLD RELIC Hackers Exploit Stolen Google Workspace Data in Breaches
 `exploited`
@@ -1356,48 +1414,12 @@ Microsoft confirmed that November Patch Tuesday updates are causing Windows acti
 
 ## 2026-11-12
 
-### 🔴 N-able N-central Zero-Day Vulnerabilities Under Active Exploitation
-`exploited`
-
-Following the public release of over 30 zero-days, hackers are actively targeting unauthenticated N-central vulnerabilities, prompting N-able to rush patches.
-
-**Do:** Apply emergency patches for N-able N-central immediately and audit systems for compromise.
-
-[SecurityWeek](https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/) · [SecurityWeek](https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html)
-
-### 🔴 Active ScreenConnect Attacks Breach MSPs and Customer Devices
-`exploited`
-
-An active malware campaign is targeting managed service providers by compromising ScreenConnect environments to deploy rogue remote-access clients.
-
-**Do:** Audit ScreenConnect instances and review connected client devices for unauthorized remote-access tools.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/) · [The Hacker News](https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html)
-
 ### 🔴 Siemens Desigo, Gridscale
 `CVE-2026-109618, CVE-2026-109619, CVE-2026-111497 · EPSS 1.00 · CISA KEV`
 
 View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as "Node2Shell" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code.
 
 [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01)
-
-### 🔴 Attacker Hijacks 4,837 GitHub Accounts to Run CI Secret Stealer
-`exploited`
-
-An attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in CI workflows across at least 1,806 repositories, collecting accessible cloud and repository secrets.
-
-**Do:** Audit GitHub account security, rotate compromised CI secrets, and check workflow logs for unauthorized modifications.
-
-[The Hacker News](https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/)
-
-### 🔴 Apache HTTP Server HTTP/2 RCE Flaw (CVE-2026-119618)
-`CVE-2026-119618`
-
-A critical remote code execution flaw in Apache HTTP Server's mod_http2 module affects versions 2.4.55 through 2.4.70 on servers with HTTP/2 enabled. Fixed in version 2.4.71.
-
-**Do:** Upgrade Apache HTTP Server to version 2.4.71 or disable HTTP/2.
-
-[The Hacker News](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html) · [SecurityWeek](https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/)
 
 ### 🔴 SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths
 `CVE-2026-84869 · EPSS 0.01 · CISA KEV`
@@ -1406,57 +1428,12 @@ The ongoing campaign targeting ConnectWise ScreenConnect deployments involves th
 
 [The Hacker News](https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/)
 
-### 🟠 Synology DiskStation Manager Auth API SQL Injection (CVE-2026-76954)
-`CVE-2026-76954 · CVSS 9.8`
-
-An SQL injection vulnerability in the Auth API of Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read/write files and cause DoS.
-
-**Do:** Update Synology DiskStation Manager to the latest patched versions.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76954)
-
-### 🟠 OpsTree REMS Authentication Bypass Flaw (CVE-2026-126768)
-`CVE-2026-126768 · CVSS 9.8`
-
-OpsTree REMS through 1.0.0 contains an authentication bypass vulnerability allowing unauthenticated attackers to obtain SuperUser access by manipulating the is_local_auth field.
-
-**Do:** Apply available patches or restrict access to OpsTree REMS.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126768)
-
-### 🟠 NextScan Hardcoded JWT Signing Key Flaw (CVE-2026-126797)
-`CVE-2026-126797 · CVSS 9.8`
-
-NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability due to a hardcoded JWT signing key, enabling attackers to forge administrator tokens.
-
-**Do:** Update NextScan to a patched version and rotate secrets.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126797)
-
 ### 🟠 New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access
 `exploited`
 
 N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. "Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet," N-able said in a new advisory.
 
 [The Hacker News](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/) · [The Hacker News](https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/)
-
-### 🟠 Node.js and MongoDB Vulnerabilities Threaten Server Stability and Memory
-`CVE-2026-118383`
-
-Node.js fixed 16 flaws (including HTTP/2 memory leaks and crashes on release lines 24.x and 26.x), and MongoDB patched a pre-auth crash flaw (CVE-2026-118383) in replica sets.
-
-**Do:** Upgrade Node.js to versions 22.23.5, 24.22.3, or 26.13.1, and update MongoDB server.
-
-[The Hacker News](https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html) · [The Hacker News](https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html)
-
-### 🟠 blueprintUE Self-Hosted Default Password Flaw (CVE-2026-126812)
-`CVE-2026-126812 · CVSS 9.8`
-
-blueprintUE Self-Hosted Edition before 4.3.7 has an insecure default configuration setting MYSQL_ALLOW_EMPTY_PASSWORD=yes, allowing unauthenticated attackers to access MariaDB as root.
-
-**Do:** Update blueprintUE to 4.3.7 or later and secure database credentials.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126812)
 
 ### 🟠 Your Endpoint Management Platform Could Be Your Biggest Security Risk
 

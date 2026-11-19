@@ -1,5 +1,174 @@
 [
  {
+  "key": "rss:https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public",
+  "tier": "act",
+  "score": 82,
+  "headline": "F5 Patches Critical NGINX2Root Flaws with Public PoCs",
+  "tldr": "F5 patched critical NGINX2Root vulnerabilities that allow remote, unauthenticated attackers to execute arbitrary code, with public proof-of-concept exploits available.",
+  "action": "Apply the latest security patches from F5 immediately and monitor for exploitation attempts.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "f5",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/"
+   }
+  ],
+  "first_seen": "2026-11-19T10:28:56+00:00",
+  "updated": "2026-11-19T10:28:56+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "PHP Prepares Critical Security Updates for Session Upload RCE",
+  "tldr": "PHP is preparing updates for a critical RCE vulnerability in session upload progress (CVE-2026-115560) disclosed shortly after previous patches.",
+  "action": "Prepare to apply PHP security updates upon release.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-115560"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/"
+   }
+  ],
+  "first_seen": "2026-11-19T10:28:56+00:00",
+  "updated": "2026-11-19T10:28:56+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "N-able Cloud Server Breach Disrupts Email Security Management",
+  "tldr": "Unauthorized access to an N-able Mail Assure and Spam Experts Hosted Cloud server caused management interfaces and APIs to be disabled.",
+  "action": "Monitor N-able security advisories and review cloud management logs.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html"
+   }
+  ],
+  "first_seen": "2026-11-19T10:28:56+00:00",
+  "updated": "2026-11-19T10:28:56+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-8fh7-7q4q-cq52",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Miren Runtime Authentication Bypass in RPC Layer",
+  "tldr": "Miren Runtime RPC server fails to verify client certificates against the cluster CA, allowing any network-reachable party to present a self-signed cert and gain superuser access.",
+  "action": "Upgrade Miren Runtime to a patched version and restrict network access to the RPC listener.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-75521"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52"
+   }
+  ],
+  "first_seen": "2026-11-19T10:28:56+00:00",
+  "updated": "2026-11-19T10:28:56+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Ruby Fixes Regex and String Memory-Safety Flaws",
+  "tldr": "Ruby released fixes for seven memory-safety flaws in its regex engine and string case-conversion code, with PoCs showing RCE potential for five of them.",
+  "action": "Update Ruby to the latest fixed versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html"
+   }
+  ],
+  "first_seen": "2026-11-19T10:28:56+00:00",
+  "updated": "2026-11-19T10:28:56+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+  "tldr": "A researcher published proof-of-concept exploits against memory-corruption bugs in PostgreSQL, MySQL, ClickHouse, and Oracle allowing low-privilege database accounts to run code.",
+  "action": "Review database permissions and apply vendor patches for underlying memory-corruption issues.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html"
+   }
+  ],
+  "first_seen": "2026-11-19T10:28:56+00:00",
+  "updated": "2026-11-19T10:28:56+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims",
+  "tier": "watch",
+  "score": 48,
+  "headline": "NVIDIA Investigating Gentlemen Ransomware Breach Claims",
+  "tldr": "NVIDIA is investigating claims by the Gentlemen ransomware group after the company was listed on their dark web leak site.",
+  "action": "",
+  "category": "breach",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/"
+   }
+  ],
+  "first_seen": "2026-11-19T10:28:56+00:00",
+  "updated": "2026-11-19T10:28:56+00:00"
+ },
+ {
   "key": "kev:CVE-2024-10441",
   "tier": "act",
   "score": 79,
@@ -568,10 +737,14 @@
    {
     "source": "CISA Advisories",
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html"
    }
   ],
   "first_seen": "2026-11-19T00:28:47+00:00",
-  "updated": "2026-11-19T00:28:47+00:00"
+  "updated": "2026-11-19T10:28:56+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials",
@@ -893,10 +1066,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/"
    }
   ],
   "first_seen": "2026-11-18T07:40:55+00:00",
-  "updated": "2026-11-18T07:40:55+00:00"
+  "updated": "2026-11-19T10:28:56+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
