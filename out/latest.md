@@ -2,6 +2,212 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-19
+
+### 🔴 Synology DSM Output Encoding Vulnerability Added to KEV
+`CVE-2024-10441 · EPSS 0.01 · CISA KEV`
+
+Synology DiskStation Manager (DSM) contains an improper encoding or escaping vulnerability in the system plugin daemon, which is actively exploited in the wild.
+
+**Do:** Apply vendor mitigations and follow CISA KEV guidance.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2024-10441)
+
+### 🔴 BerriAI LiteLLM Unprotected Channel RCE Added to KEV
+`CVE-2026-40217 · EPSS 0.17 · CISA KEV`
+
+BerriAI LiteLLM contains an unprotected alternate channel vulnerability at /guardrails/test_custom_code allowing remote code execution via bytecode rewriting, confirmed exploited in the wild.
+
+**Do:** Apply vendor mitigations and follow CISA KEV guidance.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-40217)
+
+### 🔴 Vanderbilt REDCap Code Injection Vulnerability Added to KEV
+`CVE-2026-90817 · EPSS 0.04 · CISA KEV`
+
+Vanderbilt REDCap contains a code injection vulnerability allowing unauthenticated remote code execution via crafted HTTP requests and public survey hashes, actively exploited in the wild.
+
+**Do:** Apply vendor mitigations and follow CISA KEV guidance.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-90817)
+
+### 🔴 Apache Axis Unsafe Reflection Vulnerability Added to KEV
+`CVE-2026-90436 · EPSS 0.01 · CISA KEV`
+
+Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated remote code execution via crafted SOAP fault messages, confirmed exploited in the wild.
+
+**Do:** Discontinue use of EoL versions or apply vendor-recommended updates.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-90436)
+
+### 🟠 NGINX HTTP/2 Remote Code Execution Vulnerability (CVE-2026-123007)
+`CVE-2026-123007`
+
+A vulnerability in NGINX's HTTP/2 support (CVE-2026-123007), present since version 1.9.5, allows unauthenticated attackers to execute code on servers with HTTP/2 enabled. Fixed in versions 1.31.9 and 1.30.7.
+
+**Do:** Upgrade NGINX to version 1.30.7, 1.31.9, or later.
+
+[The Hacker News](https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html)
+
+### 🟠 Fleet SAML SSO Authentication Bypass Vulnerability
+`CVE-2026-130759 · CVSS 9.9`
+
+Fleet from 4.71.0 before 4.88.2 contains an authentication bypass in the SAML SSO callback using unvalidated client identifiers, allowing attackers to log in as global admin.
+
+**Do:** Upgrade Fleet to version 4.88.2 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130759)
+
+### 🟠 Incus TLS Client Chain Authentication Bypass Vulnerability
+`CVE-2026-130778 · CVSS 10.0`
+
+Incus before 7.6.0 contains an authentication bypass allowing remote attackers to authenticate as any trusted certificate by appending its public certificate to the presented TLS client chain.
+
+**Do:** Upgrade Incus to version 7.6.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130778)
+
+### 🟠 Atomic Server Unauthenticated Setup Invite Drive Write Access
+`CVE-2026-69157 · CVSS 9.8 · EPSS 0.01`
+
+Atomic Server provisions a well-known invite at /setup that ignores redeemer identity, allowing unauthenticated attackers to gain write access to the entire Drive and take over the instance.
+
+**Do:** Upgrade atomic-server or disable unauthenticated setup invites.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-pfwx-xjp4-qxcj)
+
+### 🟠 F5 Warns of Critical BIG-IP Traffic Management Flaws
+
+Six critical vulnerabilities in F5 BIG-IP allow unauthenticated attackers to crash the Traffic Management Microkernel (TMM) or potentially achieve RCE under specific iRule or APM setups.
+
+**Do:** Review F5 advisory and apply recommended hotfixes or configuration workarounds.
+
+[The Hacker News](https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html)
+
+### 🟠 Data Breach Impacts Irish Credit Unions in Wellington IT Hack
+`exploited`
+
+A reported cyberattack on Wellington IT exposed sensitive information belonging to members of multiple credit unions in Ireland.
+
+**Do:** Review Wellington IT advisory and monitor credit union accounts.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/)
+
+### 🟠 LaraDashboard SocialAuthService Authentication Bypass
+`CVE-2026-130754 · CVSS 9.8`
+
+All versions of LaraDashboard contain an authentication bypass in SocialAuthService::findOrCreateUser() that links social logins by email without provider verification, allowing unauthenticated account takeovers.
+
+**Do:** Apply updates or patches provided by LaraDashboard.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130754)
+
+### 🟠 pnpm exe Embedded Node.js eMudhra CA Trust Issue
+`CVE-2026-130756 · CVSS 9.8`
+
+pnpm exe before 10.34.8 embeds an outdated Node.js runtime that trusts compromised eMudhra intermediate CA certificates, enabling network attackers to perform MITM attacks during registry TLS connections.
+
+**Do:** Upgrade pnpm exe to version 10.34.8 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130756)
+
+### 🟠 Incus Backup and Image Metadata Handling Vulnerability
+`CVE-2026-130771 · CVSS 9.9`
+
+Incus before 7.6.0 fails to reject special files, hard links, or symlinks in backup or image metadata, allowing restricted project users to read or overwrite host files.
+
+**Do:** Upgrade Incus to version 7.6.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130771)
+
+### 🟠 Incus Custom Volume Snapshot Path Traversal Flaw
+`CVE-2026-130779 · CVSS 9.6`
+
+Incus before 7.6.0 contains a path traversal vulnerability in custom volume imports, allowing attackers to use traversal sequences in snapshot names to delete arbitrary host directories as root.
+
+**Do:** Upgrade Incus to version 7.6.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130779)
+
+### 🟠 Incus Migration Peer Path Traversal Vulnerability
+`CVE-2026-130780 · CVSS 9.9`
+
+Incus before 7.6.0 contains a path traversal vulnerability allowing malicious migration peers to write outside intended directories via unvalidated volume and snapshot names.
+
+**Do:** Upgrade Incus to version 7.6.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130780)
+
+### 🟠 Incus Event Stream Secret Exposure Vulnerability
+`CVE-2026-130783 · CVSS 9.6`
+
+Incus before 7.6.0 exposes certificate and cluster join token secrets through the default project event stream, allowing restricted clients to capture tokens and enroll unrestricted certificates.
+
+**Do:** Upgrade Incus to version 7.6.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130783)
+
+### 🟠 Incus Default Project Resource Authorization Bypass
+`CVE-2026-130784 · CVSS 9.9`
+
+Incus before 7.6.0 contains an authorization bypass allowing restricted clients to create and access default project resources, potentially enabling arbitrary code execution on the host.
+
+**Do:** Upgrade Incus to version 7.6.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130784)
+
+### 🟠 Incus OCI Configuration Injection Vulnerability
+`CVE-2026-130786 · CVSS 9.9`
+
+Incus before 7.6.0 contains a configuration injection vulnerability allowing users launching instances from controlled images to inject LXC directives and run commands as root.
+
+**Do:** Upgrade Incus to version 7.6.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130786)
+
+### 🟠 DrayTek Vigor2960 setSWMProfile Buffer Overflow
+`CVE-2026-132139 · CVSS 9.9`
+
+DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in the setSWMProfile function via manipulated filename arguments, with public exploits available.
+
+**Do:** Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132139)
+
+### 🟠 DrayTek Vigor2960 Jsonstatus Buffer Overflow
+`CVE-2026-132141 · CVSS 9.9`
+
+DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in the Jsonstatus component via manipulated usefile arguments, with public exploits available.
+
+**Do:** Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132141)
+
+### 🟠 DrayTek Vigor2960 CGI Process Buffer Overflow
+`CVE-2026-132142 · CVSS 9.1`
+
+DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in the dataflowstatus CGI function via manipulated option arguments, with public exploits available.
+
+**Do:** Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132142)
+
+### 🟠 DrayTek Vigor2960 Backup Handler Buffer Overflow
+`CVE-2026-132143 · CVSS 9.9`
+
+DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in doWebBackup via manipulated path/value arguments, with public exploits available.
+
+**Do:** Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132143)
+
+### 🟠 CISA Adds Four Known Exploited Vulnerabilities to Catalog
+`CVE-2024-10441, CVE-2026-40217, CVE-2026-90436, CVE-2026-90817 · EPSS 0.17 · CISA KEV`
+
+
+
+[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog)
+
 ## 2026-11-18
 
 ### 🔴 Optimizely Third-Party Script Vulnerability Used to Serve Malware
@@ -55,11 +261,11 @@ Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps,
 [SecurityWeek](https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/)
 
 ### 🟠 Apache warns of Roller RCE vulnerability exploited in attacks
-`exploited`
+`CVE-2026-129448 · exploited`
 
 Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html)
 
 ### 🟠 CVE-2026-130675: Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::n
 `CVE-2026-130675 · CVSS 9.8`
@@ -1301,91 +1507,4 @@ Bomb threats sent to thousands of schools across Europe this week came from a co
 The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable.
 
 [SecurityWeek](https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/)
-
-## 2026-11-11
-
-### 🟠 Red Hat Quay Authentication and Key Rotation Flaws
-`CVE-2026-123710 · CVSS 9.8`
-
-Unauthenticated clients can obtain anonymous registry tokens and manipulate service key rotation endpoints in Red Hat Quay, allowing unauthorized signing key installation and repository access.
-
-**Do:** Apply Red Hat Quay security updates as provided by Red Hat.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123710) · [SecurityWeek](https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/)
-
-### 🟠 Red Hat Quay SQL Wildcard Flaw Leads to Cross-Tenant Credential Theft
-`CVE-2026-110697 · CVSS 9.9`
-
-A flaw in Red Hat Quay's robot account listing function allows attackers to use underscores to query and retrieve decrypted authentication tokens from other tenants' namespaces.
-
-**Do:** Apply available security patches for Red Hat Quay.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-110697)
-
-### 🟠 AntiFox AI Platform Abused in AWS Credential Theft Attacks
-`exploited`
-
-Attackers are leveraging Alibaba Cloud instances hosting the open-source AntiFox penetration testing platform to target web services and steal AWS production secrets.
-
-**Do:** Audit AWS environments for unauthorized credential access and monitor outbound connections to Alibaba Cloud instances running AntiFox.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html)
-
-### 🟠 Critical Zoom Workplace Windows Privilege Escalation (CVE-2026-108186)
-`CVE-2026-108186`
-
-An improper input validation vulnerability in Zoom Workplace for Windows (CVE-2026-108186, CVSS 9.6) allows unauthenticated users to conduct privilege escalation.
-
-**Do:** Update Zoom Workplace for Windows to the latest patched version.
-
-[The Hacker News](https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html)
-
-### 🟠 Maersk Confirms Data Breach Linked to WhiteArmor Ransomware
-`exploited`
-
-Maersk confirmed that unauthorized actors accessed a legacy system inherited from a previous acquisition and extracted data, accompanied by a $5 million ransom demand.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/) · [SecurityWeek](https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/) · [The Record](https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system)
-
-### 🟠 Poland Shuts Down ePUAP Government Platform Following Cyberattack
-`exploited`
-
-Poland took its nationwide ePUAP government administrative services platform offline following a cyberattack.
-
-[The Record](https://therecord.media/poland-shuts-down-government-services-platform-cyberattack)
-
-### 🟠 eMudhra Revokes 8 More Intermediate CAs Following Script Error
-`exploited`
-
-eMudhra has revoked 8 additional intermediate certificate authorities following an internal Python script key compromise issue previously disclosed in October.
-
-**Do:** Verify and update trust stores if relying on eMudhra intermediate certificates.
-
-[The Hacker News](https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/)
-
-### 🟠 Sipay WooCommerce Virtual POS Module Auth Bypass (CVE-2026-85632)
-`CVE-2026-85632 · CVSS 9.1`
-
-Versions 26.8.3 up to 26.9.1 of the Sipay WooCommerce Virtual POS Module suffer from missing authentication and integrity checks, allowing authentication bypass and API message manipulation via MitM.
-
-**Do:** Update Sipay WooCommerce Virtual POS Module to version 26.9.1 or higher.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-85632)
-
-### 🟠 WordPress Ninja Forms File Uploads Add-on Arbitrary File Flaw (CVE-2026-126537)
-`CVE-2026-126537 · CVSS 9.1`
-
-The Ninja Forms File Uploads add-on for WordPress up to version 3.3.36 contains a vulnerability allowing arbitrary file deletion and potential file read via external storage services.
-
-**Do:** Update Ninja Forms File Uploads add-on beyond version 3.3.36.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126537)
-
-### 🟠 ICS Patch Tuesday: Siemens and Vendors Flag High-Severity Flaws
-
-Pre-Patch Tuesday advisories highlight high-severity industrial control system vulnerabilities across Siemens, Phoenix Contact, Johnson Controls, and Hitachi Energy.
-
-**Do:** Review vendor ICS advisories and apply patches.
-
-[SecurityWeek](https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/)
 

@@ -1,5 +1,579 @@
 [
  {
+  "key": "kev:CVE-2024-10441",
+  "tier": "act",
+  "score": 79,
+  "headline": "Synology DSM Output Encoding Vulnerability Added to KEV",
+  "tldr": "Synology DiskStation Manager (DSM) contains an improper encoding or escaping vulnerability in the system plugin daemon, which is actively exploited in the wild.",
+  "action": "Apply vendor mitigations and follow CISA KEV guidance.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2024-10441"
+  ],
+  "cvss": null,
+  "epss": 0.01251,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-40217",
+  "tier": "act",
+  "score": 79,
+  "headline": "BerriAI LiteLLM Unprotected Channel RCE Added to KEV",
+  "tldr": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability at /guardrails/test_custom_code allowing remote code execution via bytecode rewriting, confirmed exploited in the wild.",
+  "action": "Apply vendor mitigations and follow CISA KEV guidance.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-40217"
+  ],
+  "cvss": null,
+  "epss": 0.1702,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-90817",
+  "tier": "act",
+  "score": 79,
+  "headline": "Vanderbilt REDCap Code Injection Vulnerability Added to KEV",
+  "tldr": "Vanderbilt REDCap contains a code injection vulnerability allowing unauthenticated remote code execution via crafted HTTP requests and public survey hashes, actively exploited in the wild.",
+  "action": "Apply vendor mitigations and follow CISA KEV guidance.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-90817"
+  ],
+  "cvss": null,
+  "epss": 0.03749,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-90436",
+  "tier": "act",
+  "score": 79,
+  "headline": "Apache Axis Unsafe Reflection Vulnerability Added to KEV",
+  "tldr": "Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated remote code execution via crafted SOAP fault messages, confirmed exploited in the wild.",
+  "action": "Discontinue use of EoL versions or apply vendor-recommended updates.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-90436"
+  ],
+  "cvss": null,
+  "epss": 0.01128,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "NGINX HTTP/2 Remote Code Execution Vulnerability (CVE-2026-123007)",
+  "tldr": "A vulnerability in NGINX's HTTP/2 support (CVE-2026-123007), present since version 1.9.5, allows unauthenticated attackers to execute code on servers with HTTP/2 enabled. Fixed in versions 1.31.9 and 1.30.7.",
+  "action": "Upgrade NGINX to version 1.30.7, 1.31.9, or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123007"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "nginx",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130759",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Fleet SAML SSO Authentication Bypass Vulnerability",
+  "tldr": "Fleet from 4.71.0 before 4.88.2 contains an authentication bypass in the SAML SSO callback using unvalidated client identifiers, allowing attackers to log in as global admin.",
+  "action": "Upgrade Fleet to version 4.88.2 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130759"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130759"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130778",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Incus TLS Client Chain Authentication Bypass Vulnerability",
+  "tldr": "Incus before 7.6.0 contains an authentication bypass allowing remote attackers to authenticate as any trusted certificate by appending its public certificate to the presented TLS client chain.",
+  "action": "Upgrade Incus to version 7.6.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130778"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130778"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-pfwx-xjp4-qxcj",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Atomic Server Unauthenticated Setup Invite Drive Write Access",
+  "tldr": "Atomic Server provisions a well-known invite at /setup that ignores redeemer identity, allowing unauthenticated attackers to gain write access to the entire Drive and take over the instance.",
+  "action": "Upgrade atomic-server or disable unauthenticated setup invites.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-69157"
+  ],
+  "cvss": 9.8,
+  "epss": 0.00512,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-pfwx-xjp4-qxcj"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "F5 Warns of Critical BIG-IP Traffic Management Flaws",
+  "tldr": "Six critical vulnerabilities in F5 BIG-IP allow unauthenticated attackers to crash the Traffic Management Microkernel (TMM) or potentially achieve RCE under specific iRule or APM setups.",
+  "action": "Review F5 advisory and apply recommended hotfixes or configuration workarounds.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "f5",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Data Breach Impacts Irish Credit Unions in Wellington IT Hack",
+  "tldr": "A reported cyberattack on Wellington IT exposed sensitive information belonging to members of multiple credit unions in Ireland.",
+  "action": "Review Wellington IT advisory and monitor credit union accounts.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130754",
+  "tier": "watch",
+  "score": 59,
+  "headline": "LaraDashboard SocialAuthService Authentication Bypass",
+  "tldr": "All versions of LaraDashboard contain an authentication bypass in SocialAuthService::findOrCreateUser() that links social logins by email without provider verification, allowing unauthenticated account takeovers.",
+  "action": "Apply updates or patches provided by LaraDashboard.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130754"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130754"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130756",
+  "tier": "watch",
+  "score": 59,
+  "headline": "pnpm exe Embedded Node.js eMudhra CA Trust Issue",
+  "tldr": "pnpm exe before 10.34.8 embeds an outdated Node.js runtime that trusts compromised eMudhra intermediate CA certificates, enabling network attackers to perform MITM attacks during registry TLS connections.",
+  "action": "Upgrade pnpm exe to version 10.34.8 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130756"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130756"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130771",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Incus Backup and Image Metadata Handling Vulnerability",
+  "tldr": "Incus before 7.6.0 fails to reject special files, hard links, or symlinks in backup or image metadata, allowing restricted project users to read or overwrite host files.",
+  "action": "Upgrade Incus to version 7.6.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130771"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130771"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130779",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Incus Custom Volume Snapshot Path Traversal Flaw",
+  "tldr": "Incus before 7.6.0 contains a path traversal vulnerability in custom volume imports, allowing attackers to use traversal sequences in snapshot names to delete arbitrary host directories as root.",
+  "action": "Upgrade Incus to version 7.6.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130779"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130779"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130780",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Incus Migration Peer Path Traversal Vulnerability",
+  "tldr": "Incus before 7.6.0 contains a path traversal vulnerability allowing malicious migration peers to write outside intended directories via unvalidated volume and snapshot names.",
+  "action": "Upgrade Incus to version 7.6.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130780"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130780"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130783",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Incus Event Stream Secret Exposure Vulnerability",
+  "tldr": "Incus before 7.6.0 exposes certificate and cluster join token secrets through the default project event stream, allowing restricted clients to capture tokens and enroll unrestricted certificates.",
+  "action": "Upgrade Incus to version 7.6.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130783"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130783"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130784",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Incus Default Project Resource Authorization Bypass",
+  "tldr": "Incus before 7.6.0 contains an authorization bypass allowing restricted clients to create and access default project resources, potentially enabling arbitrary code execution on the host.",
+  "action": "Upgrade Incus to version 7.6.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130784"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130784"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-130786",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Incus OCI Configuration Injection Vulnerability",
+  "tldr": "Incus before 7.6.0 contains a configuration injection vulnerability allowing users launching instances from controlled images to inject LXC directives and run commands as root.",
+  "action": "Upgrade Incus to version 7.6.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-130786"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130786"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-132139",
+  "tier": "watch",
+  "score": 59,
+  "headline": "DrayTek Vigor2960 setSWMProfile Buffer Overflow",
+  "tldr": "DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in the setSWMProfile function via manipulated filename arguments, with public exploits available.",
+  "action": "Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-132139"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132139"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-132141",
+  "tier": "watch",
+  "score": 59,
+  "headline": "DrayTek Vigor2960 Jsonstatus Buffer Overflow",
+  "tldr": "DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in the Jsonstatus component via manipulated usefile arguments, with public exploits available.",
+  "action": "Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-132141"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132141"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-132142",
+  "tier": "watch",
+  "score": 59,
+  "headline": "DrayTek Vigor2960 CGI Process Buffer Overflow",
+  "tldr": "DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in the dataflowstatus CGI function via manipulated option arguments, with public exploits available.",
+  "action": "Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-132142"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132142"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-132143",
+  "tier": "watch",
+  "score": 59,
+  "headline": "DrayTek Vigor2960 Backup Handler Buffer Overflow",
+  "tldr": "DrayTek Vigor2960 up to 1.5.1.6 contains a remote stack-based buffer overflow in doWebBackup via manipulated path/value arguments, with public exploits available.",
+  "action": "Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-132143"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132143"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
+  "key": "rss:https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+  "tier": "watch",
+  "score": 55,
+  "headline": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+  "tldr": "",
+  "action": "",
+  "category": "advisory",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2024-10441",
+   "CVE-2026-40217",
+   "CVE-2026-90436",
+   "CVE-2026-90817"
+  ],
+  "cvss": null,
+  "epss": 0.1702,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+   }
+  ],
+  "first_seen": "2026-11-19T00:28:47+00:00",
+  "updated": "2026-11-19T00:28:47+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials",
   "tier": "watch",
   "score": 61,
@@ -36,7 +610,9 @@
   "category": "",
   "exploited": true,
   "kev": false,
-  "cves": [],
+  "cves": [
+   "CVE-2026-129448"
+  ],
   "cvss": null,
   "epss": null,
   "watch": "",
@@ -44,10 +620,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html"
    }
   ],
   "first_seen": "2026-11-18T17:20:06+00:00",
-  "updated": "2026-11-18T17:20:06+00:00"
+  "updated": "2026-11-19T00:28:47+00:00"
  },
  {
   "key": "nvd:CVE-2026-130675",
