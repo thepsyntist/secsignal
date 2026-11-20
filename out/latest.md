@@ -22,12 +22,20 @@ Daptin contains an unauthenticated SQL injection vulnerability via the 'sort' qu
 
 [GitHub Advisory](https://github.com/advisories/GHSA-hq2p-f2vj-v3cm)
 
+### 🟠 F5 Patches Critical BIG-IP RCE and DoS Vulnerabilities
+
+F5 released emergency patches for five critical BIG-IP vulnerabilities that could allow attackers to trigger denial-of-service or achieve remote code execution. Patches are available from F5.
+
+**Do:** Apply the latest F5 BIG-IP security patches immediately.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/)
+
 ### 🟠 SBC Medical Group Data Breach Exposes 1.6 Million Customers
 `exploited`
 
 SBC Medical Group disclosed two cybersecurity incidents exposing sensitive customer and employee personal data belonging to 1.6 million people.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/) · [SecurityWeek](https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/)
 
 ### 🟠 Etherpad Pre-Auth Arbitrary File Read Vulnerability
 `CVE-2026-114516 · CVSS 9.8`
@@ -83,6 +91,33 @@ NLTK 3.10.3 contains an incomplete fix for JVM argument-injection and untrusted 
 
 [GitHub Advisory](https://github.com/advisories/GHSA-x8q7-6c7m-52gw)
 
+### 🟠 Gladys Assistant Backup Restore OS Command Injection
+`CVE-2026-133500 · CVSS 9.1 · exploited`
+
+Gladys Assistant up to 4.71.0 contains an OS command injection vulnerability in the gateway.downloadBackup.js component via manipulation of the file_url argument. A public exploit is available, and version 4.72.0 fixes the issue.
+
+**Do:** Upgrade Gladys Assistant to version 4.72.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-133500)
+
+### 🟠 Gladys Assistant Backup Restore Path Traversal Flaw
+`CVE-2026-133501 · CVSS 9.0 · exploited`
+
+Gladys Assistant up to 4.71.0 contains a path traversal flaw in the backup download handler. Public exploits exist, and upgrading to version 4.72.0 mitigates the issue.
+
+**Do:** Upgrade Gladys Assistant to version 4.72.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-133501)
+
+### 🟠 Linux KVM Flaw Lets Guest VMs Access Host Memory on AMD
+`CVE-2026-99312 · EPSS 0.00`
+
+A flaw tracked as CVE-2026-99312 in Linux KVM allows guest VMs to read host memory on systems with AMD processors and nested virtualization enabled. Fixed kernels have been released.
+
+**Do:** Update Linux kernel to a patched version with the KVM fix.
+
+[The Hacker News](https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html)
+
 ### 🟠 IBM Guardium Data Protection SharePoint S-TAP RelayService Flaw
 `CVE-2026-82339 · CVSS 9.1`
 
@@ -109,6 +144,14 @@ ASUS released Control Center Express v1.7.29 to fix three critical vulnerabiliti
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/)
 
+### 🟠 SonicWall Warns Generation 6 Firewalls Unpatched for Critical Flaws
+
+SonicWall urged customers running Generation 6 firewalls to retire and replace them immediately, noting they will not receive security patches for critical flaws amid rising AI-assisted attacks.
+
+**Do:** Retire and replace SonicWall Gen 6 firewalls and remove them from the internet edge.
+
+[The Hacker News](https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html)
+
 ### 🟠 Jupyter MCP Server DNS Rebinding Management Route Flaw
 `CVE-2026-77359 · CVSS 9.3`
 
@@ -117,6 +160,32 @@ Jupyter MCP Server contains a DNS rebinding vulnerability in custom management r
 **Do:** Update jupyter-mcp-server to the latest patched version.
 
 [GitHub Advisory](https://github.com/advisories/GHSA-9x8x-crjq-g64h)
+
+### 🟠 Ruby Patches Ruby2Shell Heap Buffer Overflow RCE Vulnerability
+`CVE-2026-132825 · EPSS 0.00`
+
+Ruby patched a heap-based buffer overflow vulnerability tracked as CVE-2026-132825, known as Ruby2Shell, which could lead to remote code execution.
+
+**Do:** Update Ruby to the latest patched version.
+
+[SecurityWeek](https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/)
+
+### 🟠 ROMULUS ClickFix Attacks Deliver New CNCMachineRMS RAT Variant
+`exploited`
+
+Threat actors are using the ROMULUS ClickFix malware delivery platform to distribute an undocumented remote access trojan similar to CNCMachineRMS via signed binary sideloading.
+
+**Do:** Monitor endpoints for suspicious ClickFix lures and binary sideloading activity.
+
+[The Hacker News](https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html)
+
+### 🟠 Unpatched Windows FastUnlock Flaw Allows Program Execution on Locked PCs
+
+An unpatched local zero-day technique called FastUnlock allows a user with physical access to a locked Windows PC to run limited-privilege programs without signing in.
+
+**Do:** Restrict physical access to endpoints.
+
+[The Hacker News](https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html)
 
 ## 2026-11-19
 
@@ -130,13 +199,13 @@ Attackers are actively exploiting unauthenticated RCE vulnerabilities CVE-2026-1
 [The Hacker News](https://thehackernews.com/2026/11/everything-is-web-application-including.html)
 
 ### 🔴 VMware vCenter Authentication Bypass Exploited as Zero-Day
-`exploited`
+`CVE-2026-123890 · exploited`
 
 A critical authentication bypass flaw in VMware vCenter was exploited as a zero-day by a China-linked espionage group before Broadcom released patches.
 
 **Do:** Apply the latest updates for VMware vCenter across all supported branches immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/)
+[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) · [The Hacker News](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html)
 
 ### 🔴 F5 Patches Critical NGINX2Root Flaws with Public PoCs
 `exploited`
@@ -184,13 +253,13 @@ Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-90436)
 
 ### 🔴 Cisco Expressway Vulnerability Exploited Following PoC Release
-`exploited`
+`CVE-2026-76466 · exploited`
 
 Attackers have exploited clustered Cisco Expressway devices at an organization shortly after proof-of-concept code was released, preparing for lateral movement.
 
 **Do:** Review Cisco Expressway devices for indicators of compromise and apply vendor patches.
 
-[SecurityWeek](https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/)
+[SecurityWeek](https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html)
 
 ### 🟠 Drupal Patches Critical Remote Code Execution Vulnerability
 
@@ -216,7 +285,7 @@ Unauthorized access to an N-able Mail Assure and Spam Experts Hosted Cloud serve
 
 **Do:** Monitor N-able security advisories and review cloud management logs.
 
-[The Hacker News](https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html)
+[The Hacker News](https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html) · [SecurityWeek](https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/)
 
 ### 🟠 NGINX HTTP/2 Remote Code Execution Vulnerability (CVE-2026-123007)
 `CVE-2026-123007`
@@ -332,7 +401,7 @@ The European Commission confirmed a cyberattack in which threat actors utilized 
 
 **Do:** Review systems for indicators associated with AI-driven attack frameworks.
 
-[The Record](https://therecord.media/european-commission-confirms-cyberattack-using-ai)
+[The Record](https://therecord.media/european-commission-confirms-cyberattack-using-ai) · [SecurityWeek](https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/)
 
 ### 🟠 Ukrainian Authorities Arrest International Ransomware Suspects
 `exploited`
@@ -1438,15 +1507,6 @@ Dokploy before 0.31.1 contains an OS command injection vulnerability in getCompo
 
 ## 2026-11-13
 
-### 🔴 Now exploited: Check Point Gateways PHP2Shell and Gaia OS Privilege Escalation Exploited
-`CVE-2026-114713, CVE-2026-123039 · CISA KEV`
-
-Attackers are actively exploiting PHP2Shell and a local privilege escalation flaw (CVE-2026-123039) in Check Point Security Gateways to achieve root access, deploy the TSGA backdoor, and wipe ESXi files.
-
-**Do:** Apply available patches for Check Point Security Gateways immediately and audit for indicators of compromise.
-
-[SecurityWeek](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-114713) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123039) · [The Hacker News](https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html) · [SecurityWeek](https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/)
-
 ### 🔴 VITEC EZ TV Platform Server Unauthenticated File Upload RCE
 `CVE-2026-82504 · CVSS 9.8`
 
@@ -1489,15 +1549,6 @@ OpsTree BuildPiper before 2.7.0 contains an improper authorization flaw allowing
 **Do:** Upgrade OpsTree BuildPiper to 2.7.0 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127080)
-
-### 🟠 Nightmare Eclipse Drops Windows Zero-Day Exploit 'SignDrop'
-`exploited`
-
-Nightmare Eclipse released a Windows zero-day exploit named 'SignDrop' that abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process.
-
-**Do:** Monitor for anomalous CLFS or Windows Defender activity and apply vendor mitigations if available.
-
-[SecurityWeek](https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/) · [Ars Technica](https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/)
 
 ### 🟠 NginxPulse Unauthenticated SQL Injection (CVE-2026-129171)
 `CVE-2026-129171 · CVSS 9.8`
@@ -1565,14 +1616,6 @@ ActiveCloud suffered a ransomware attack that encrypted parts of its cloud infra
 
 [The Record](https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack)
 
-### 🟠 Citrix Patches 10 Critical NetScaler Vulnerabilities
-
-Citrix has patched 10 critical NetScaler vulnerabilities where successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions.
-
-**Do:** Apply the latest NetScaler security updates from Citrix.
-
-[SecurityWeek](https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/)
-
 ### 🟠 Vvveb Media Trait Denylist Bypass RCE (CVE-2026-126380)
 `CVE-2026-126380 · CVSS 9.4 · EPSS 0.01`
 
@@ -1628,10 +1671,4 @@ Trezor confirmed that Trezor Safe 5 wallets purchased from reseller CryptoBilis 
 **Do:** Audit hardware wallets purchased from third-party resellers like CryptoBilis for physical tampering.
 
 [The Hacker News](https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/)
-
-### 🟠 Microsoft Confirms Windows Activation Failures After November Updates
-
-Microsoft confirmed that November Patch Tuesday updates are causing Windows activation and licensing failures accompanied by 0x80041008 error codes.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/) · [BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/)
 

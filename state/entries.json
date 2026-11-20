@@ -1,5 +1,197 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws",
+  "tier": "watch",
+  "score": 69,
+  "headline": "F5 Patches Critical BIG-IP RCE and DoS Vulnerabilities",
+  "tldr": "F5 released emergency patches for five critical BIG-IP vulnerabilities that could allow attackers to trigger denial-of-service or achieve remote code execution. Patches are available from F5.",
+  "action": "Apply the latest F5 BIG-IP security patches immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "f5",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-133500",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Gladys Assistant Backup Restore OS Command Injection",
+  "tldr": "Gladys Assistant up to 4.71.0 contains an OS command injection vulnerability in the gateway.downloadBackup.js component via manipulation of the file_url argument. A public exploit is available, and version 4.72.0 fixes the issue.",
+  "action": "Upgrade Gladys Assistant to version 4.72.0 or later.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-133500"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133500"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-133501",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Gladys Assistant Backup Restore Path Traversal Flaw",
+  "tldr": "Gladys Assistant up to 4.71.0 contains a path traversal flaw in the backup download handler. Public exploits exist, and upgrading to version 4.72.0 mitigates the issue.",
+  "action": "Upgrade Gladys Assistant to version 4.72.0 or later.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-133501"
+  ],
+  "cvss": 9.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133501"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Linux KVM Flaw Lets Guest VMs Access Host Memory on AMD",
+  "tldr": "A flaw tracked as CVE-2026-99312 in Linux KVM allows guest VMs to read host memory on systems with AMD processors and nested virtualization enabled. Fixed kernels have been released.",
+  "action": "Update Linux kernel to a patched version with the KVM fix.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-99312"
+  ],
+  "cvss": null,
+  "epss": 0.00187,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "SonicWall Warns Generation 6 Firewalls Unpatched for Critical Flaws",
+  "tldr": "SonicWall urged customers running Generation 6 firewalls to retire and replace them immediately, noting they will not receive security patches for critical flaws amid rising AI-assisted attacks.",
+  "action": "Retire and replace SonicWall Gen 6 firewalls and remove them from the internet edge.",
+  "category": "advisory",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "sonicwall",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Ruby Patches Ruby2Shell Heap Buffer Overflow RCE Vulnerability",
+  "tldr": "Ruby patched a heap-based buffer overflow vulnerability tracked as CVE-2026-132825, known as Ruby2Shell, which could lead to remote code execution.",
+  "action": "Update Ruby to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-132825"
+  ],
+  "cvss": null,
+  "epss": 0.00174,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "ROMULUS ClickFix Attacks Deliver New CNCMachineRMS RAT Variant",
+  "tldr": "Threat actors are using the ROMULUS ClickFix malware delivery platform to distribute an undocumented remote access trojan similar to CNCMachineRMS via signed binary sideloading.",
+  "action": "Monitor endpoints for suspicious ClickFix lures and binary sideloading activity.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Unpatched Windows FastUnlock Flaw Allows Program Execution on Locked PCs",
+  "tldr": "An unpatched local zero-day technique called FastUnlock allows a user with physical access to a locked Windows PC to run limited-privilege programs without signing in.",
+  "action": "Restrict physical access to endpoints.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html"
+   }
+  ],
+  "first_seen": "2026-11-20T13:06:30+00:00",
+  "updated": "2026-11-20T13:06:30+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-84236",
   "tier": "act",
   "score": 80,
@@ -67,10 +259,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/"
    }
   ],
   "first_seen": "2026-11-20T03:27:47+00:00",
-  "updated": "2026-11-20T03:27:47+00:00"
+  "updated": "2026-11-20T13:06:30+00:00"
  },
  {
   "key": "ghsa:GHSA-mc8w-wjhw-45x5",
@@ -356,7 +552,9 @@
   "category": "exploitation",
   "exploited": true,
   "kev": false,
-  "cves": [],
+  "cves": [
+   "CVE-2026-123890"
+  ],
   "cvss": null,
   "epss": null,
   "watch": "vmware",
@@ -372,10 +570,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
    }
   ],
   "first_seen": "2026-11-19T20:46:29+00:00",
-  "updated": "2026-11-20T03:27:47+00:00"
+  "updated": "2026-11-20T13:06:30+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release",
@@ -387,7 +589,9 @@
   "category": "exploitation",
   "exploited": true,
   "kev": false,
-  "cves": [],
+  "cves": [
+   "CVE-2026-76466"
+  ],
   "cvss": null,
   "epss": null,
   "watch": "cisco",
@@ -395,10 +599,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
    }
   ],
   "first_seen": "2026-11-19T20:46:29+00:00",
-  "updated": "2026-11-19T20:46:29+00:00"
+  "updated": "2026-11-20T13:06:30+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
@@ -595,10 +803,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"
    }
   ],
   "first_seen": "2026-11-19T20:46:29+00:00",
-  "updated": "2026-11-19T20:46:29+00:00"
+  "updated": "2026-11-20T13:06:30+00:00"
  },
  {
   "key": "rss:https://therecord.media/ukraine-ransomware-arrests-cyber",
@@ -912,10 +1124,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/"
    }
   ],
   "first_seen": "2026-11-19T10:28:56+00:00",
-  "updated": "2026-11-19T10:28:56+00:00"
+  "updated": "2026-11-20T13:06:30+00:00"
  },
  {
   "key": "ghsa:GHSA-8fh7-7q4q-cq52",
