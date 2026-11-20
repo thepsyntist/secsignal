@@ -1,5 +1,326 @@
 [
  {
+  "key": "nvd:CVE-2026-84236",
+  "tier": "act",
+  "score": 80,
+  "headline": "IBM Guardium Data Protection Insecure Deserialization Vulnerability",
+  "tldr": "IBM Guardium Data Protection 12.2 contains an insecure deserialization vulnerability in the SharePoint Tap MulticastTransceiver component (CVE-2026-84236), enabling unauthenticated remote code execution.",
+  "action": "Apply patches provided by IBM for Guardium Data Protection 12.2 immediately.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-84236"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "sharepoint",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84236"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-hq2p-f2vj-v3cm",
+  "tier": "act",
+  "score": 72,
+  "headline": "Daptin Unauthenticated SQL Injection via Sort Parameter",
+  "tldr": "Daptin contains an unauthenticated SQL injection vulnerability via the 'sort' query parameter on entity list endpoints (CVE-2026-77367), allowing attackers to inject arbitrary SQL.",
+  "action": "Update Daptin to the patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-77367"
+  ],
+  "cvss": 9.4,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-hq2p-f2vj-v3cm"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers",
+  "tier": "watch",
+  "score": 69,
+  "headline": "SBC Medical Group Data Breach Exposes 1.6 Million Customers",
+  "tldr": "SBC Medical Group disclosed two cybersecurity incidents exposing sensitive customer and employee personal data belonging to 1.6 million people.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-mc8w-wjhw-45x5",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Etherpad Pre-Auth Arbitrary File Read Vulnerability",
+  "tldr": "Etherpad-lite contains an unauthenticated path-traversal vulnerability in the static file handler (CVE-2026-114516) allowing remote users to read arbitrary files on the server.",
+  "action": "Update ep_etherpad-lite to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-114516"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-p34x-fmph-9fjx",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Flyto2 Core Arbitrary File Write Incomplete Fix",
+  "tldr": "Flyto2 Core contains an arbitrary file write vulnerability via unguarded write modules (CVE-2026-77312, building on CVE-2026-67429), allowing authenticated clients to achieve code execution.",
+  "action": "Update pip:flyto-core to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-77312"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-p34x-fmph-9fjx"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-p32v-8v8j-j534",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Refitter OpenAPI Content-Type Code Execution Vulnerability",
+  "tldr": "Refitter allows arbitrary code execution through unescaped OpenAPI content-type values (CVE-2026-63344), injecting a top-level file class with a ModuleInitializer method.",
+  "action": "Update Refitter to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63344"
+  ],
+  "cvss": 9.3,
+  "epss": 0.0035,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-p32v-8v8j-j534"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-58x9-vjvp-6mx8",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Refitter OpenAPI Header Parameter Code Execution Flaw",
+  "tldr": "Refitter allows code execution through unescaped OpenAPI header parameter names (CVE-2026-63346), injecting malicious .NET code executed at assembly load time.",
+  "action": "Update Refitter to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63346"
+  ],
+  "cvss": 9.3,
+  "epss": 0.0035,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-58x9-vjvp-6mx8"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-3fhm-p725-h3g3",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Refitter OpenAPI Path Code Execution Vulnerability",
+  "tldr": "Refitter allows arbitrary code execution through unescaped OpenAPI paths (CVE-2026-63345), injecting a top-level file class with a ModuleInitializer method.",
+  "action": "Update Refitter to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-63345"
+  ],
+  "cvss": 9.3,
+  "epss": 0.0035,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-3fhm-p725-h3g3"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-x8q7-6c7m-52gw",
+  "tier": "watch",
+  "score": 67,
+  "headline": "NLTK Incomplete JVM/JAR Sandbox Bypass Vulnerability",
+  "tldr": "NLTK 3.10.3 contains an incomplete fix for JVM argument-injection and untrusted JAR execution (CVE-2026-128138), allowing sandbox bypass through unvalidated launcher tokens.",
+  "action": "Update NLTK beyond version 3.10.3 or apply vendor guidance.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-128138"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-x8q7-6c7m-52gw"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82339",
+  "tier": "watch",
+  "score": 64,
+  "headline": "IBM Guardium Data Protection SharePoint S-TAP RelayService Flaw",
+  "tldr": "IBM Guardium Data Protection 12.2 contains a missing authentication vulnerability in the SharePoint S-TAP RelayService (CVE-2026-82339) allowing unauthenticated network attackers to inject forged audit events and access monitoring policies.",
+  "action": "Apply available security updates from IBM for Guardium Data Protection 12.2.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82339"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "sharepoint",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82339"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-wj7x-58c2-5793",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Daptin Broken Access Control in YJS Collaboration Endpoint",
+  "tldr": "Daptin is vulnerable to broken access control (IDOR) in the generic YJS WebSocket collaboration endpoint (CVE-2026-77369), allowing any authenticated user to read documents without proper per-resource checks.",
+  "action": "Update Daptin to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-77369"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-wj7x-58c2-5793"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express",
+  "tier": "watch",
+  "score": 64,
+  "headline": "ASUS Control Center Express Hard-Coded Key and Critical Flaws",
+  "tldr": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities including hard-coded keys that could let remote attackers gain administrative control.",
+  "action": "Upgrade ASUS Control Center Express to v1.7.29 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-9x8x-crjq-g64h",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Jupyter MCP Server DNS Rebinding Management Route Flaw",
+  "tldr": "Jupyter MCP Server contains a DNS rebinding vulnerability in custom management routes (CVE-2026-77359), allowing malicious websites to replace the active Jupyter backend.",
+  "action": "Update jupyter-mcp-server to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-77359"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h"
+   }
+  ],
+  "first_seen": "2026-11-20T03:27:47+00:00",
+  "updated": "2026-11-20T03:27:47+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/everything-is-web-application-including.html",
   "tier": "act",
   "score": 92,
@@ -47,10 +368,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"
    }
   ],
   "first_seen": "2026-11-19T20:46:29+00:00",
-  "updated": "2026-11-19T20:46:29+00:00"
+  "updated": "2026-11-20T03:27:47+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release",

@@ -2,6 +2,122 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-20
+
+### 🔴 IBM Guardium Data Protection Insecure Deserialization Vulnerability
+`CVE-2026-84236 · CVSS 9.8`
+
+IBM Guardium Data Protection 12.2 contains an insecure deserialization vulnerability in the SharePoint Tap MulticastTransceiver component (CVE-2026-84236), enabling unauthenticated remote code execution.
+
+**Do:** Apply patches provided by IBM for Guardium Data Protection 12.2 immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-84236)
+
+### 🔴 Daptin Unauthenticated SQL Injection via Sort Parameter
+`CVE-2026-77367 · CVSS 9.4`
+
+Daptin contains an unauthenticated SQL injection vulnerability via the 'sort' query parameter on entity list endpoints (CVE-2026-77367), allowing attackers to inject arbitrary SQL.
+
+**Do:** Update Daptin to the patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-hq2p-f2vj-v3cm)
+
+### 🟠 SBC Medical Group Data Breach Exposes 1.6 Million Customers
+`exploited`
+
+SBC Medical Group disclosed two cybersecurity incidents exposing sensitive customer and employee personal data belonging to 1.6 million people.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/)
+
+### 🟠 Etherpad Pre-Auth Arbitrary File Read Vulnerability
+`CVE-2026-114516 · CVSS 9.8`
+
+Etherpad-lite contains an unauthenticated path-traversal vulnerability in the static file handler (CVE-2026-114516) allowing remote users to read arbitrary files on the server.
+
+**Do:** Update ep_etherpad-lite to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-mc8w-wjhw-45x5)
+
+### 🟠 Flyto2 Core Arbitrary File Write Incomplete Fix
+`CVE-2026-77312 · CVSS 10.0`
+
+Flyto2 Core contains an arbitrary file write vulnerability via unguarded write modules (CVE-2026-77312, building on CVE-2026-67429), allowing authenticated clients to achieve code execution.
+
+**Do:** Update pip:flyto-core to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-p34x-fmph-9fjx)
+
+### 🟠 Refitter OpenAPI Content-Type Code Execution Vulnerability
+`CVE-2026-63344 · CVSS 9.3 · EPSS 0.00`
+
+Refitter allows arbitrary code execution through unescaped OpenAPI content-type values (CVE-2026-63344), injecting a top-level file class with a ModuleInitializer method.
+
+**Do:** Update Refitter to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-p32v-8v8j-j534)
+
+### 🟠 Refitter OpenAPI Header Parameter Code Execution Flaw
+`CVE-2026-63346 · CVSS 9.3 · EPSS 0.00`
+
+Refitter allows code execution through unescaped OpenAPI header parameter names (CVE-2026-63346), injecting malicious .NET code executed at assembly load time.
+
+**Do:** Update Refitter to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-58x9-vjvp-6mx8)
+
+### 🟠 Refitter OpenAPI Path Code Execution Vulnerability
+`CVE-2026-63345 · CVSS 9.3 · EPSS 0.00`
+
+Refitter allows arbitrary code execution through unescaped OpenAPI paths (CVE-2026-63345), injecting a top-level file class with a ModuleInitializer method.
+
+**Do:** Update Refitter to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-3fhm-p725-h3g3)
+
+### 🟠 NLTK Incomplete JVM/JAR Sandbox Bypass Vulnerability
+`CVE-2026-128138 · CVSS 9.8`
+
+NLTK 3.10.3 contains an incomplete fix for JVM argument-injection and untrusted JAR execution (CVE-2026-128138), allowing sandbox bypass through unvalidated launcher tokens.
+
+**Do:** Update NLTK beyond version 3.10.3 or apply vendor guidance.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-x8q7-6c7m-52gw)
+
+### 🟠 IBM Guardium Data Protection SharePoint S-TAP RelayService Flaw
+`CVE-2026-82339 · CVSS 9.1`
+
+IBM Guardium Data Protection 12.2 contains a missing authentication vulnerability in the SharePoint S-TAP RelayService (CVE-2026-82339) allowing unauthenticated network attackers to inject forged audit events and access monitoring policies.
+
+**Do:** Apply available security updates from IBM for Guardium Data Protection 12.2.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82339)
+
+### 🟠 Daptin Broken Access Control in YJS Collaboration Endpoint
+`CVE-2026-77369 · CVSS 9.6`
+
+Daptin is vulnerable to broken access control (IDOR) in the generic YJS WebSocket collaboration endpoint (CVE-2026-77369), allowing any authenticated user to read documents without proper per-resource checks.
+
+**Do:** Update Daptin to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-wj7x-58c2-5793)
+
+### 🟠 ASUS Control Center Express Hard-Coded Key and Critical Flaws
+
+ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities including hard-coded keys that could let remote attackers gain administrative control.
+
+**Do:** Upgrade ASUS Control Center Express to v1.7.29 or later.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/)
+
+### 🟠 Jupyter MCP Server DNS Rebinding Management Route Flaw
+`CVE-2026-77359 · CVSS 9.3`
+
+Jupyter MCP Server contains a DNS rebinding vulnerability in custom management routes (CVE-2026-77359), allowing malicious websites to replace the active Jupyter backend.
+
+**Do:** Update jupyter-mcp-server to the latest patched version.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-9x8x-crjq-g64h)
+
 ## 2026-11-19
 
 ### 🔴 Palo Alto Networks PAN-OS Flaws CVE-2026-109618/19 Exploited
@@ -20,7 +136,7 @@ A critical authentication bypass flaw in VMware vCenter was exploited as a zero-
 
 **Do:** Apply the latest updates for VMware vCenter across all supported branches immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/)
+[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/)
 
 ### 🔴 F5 Patches Critical NGINX2Root Flaws with Public PoCs
 `exploited`
@@ -1340,33 +1456,6 @@ VITEC EZ TV Platform Server before 8.5.0 contains an unauthenticated file upload
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82504)
 
-### 🔴 XWEB EVO Pre-Auth OS Command Injection (CVE-2026-124002)
-`CVE-2026-124002 · CVSS 9.8`
-
-XWEB EVO versions 5.2.3 through 5.6.x contain a pre-authentication OS command injection vulnerability in login.lua, cleanout.lua, and api.lua, allowing root RCE. Note that this product line reached end-of-service in March 2026.
-
-**Do:** Isolate affected XWEB EVO devices from the internet immediately as the product is end-of-life.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124002)
-
-### 🔴 XWEB EVO Hardcoded Backdoor Password (CVE-2026-124004)
-`CVE-2026-124004 · CVSS 9.8`
-
-XWEB EVO before 5.6.2 contains a hardcoded backdoor password ('xwebevonewgeneration') allowing unauthenticated remote attackers to gain full administrative access.
-
-**Do:** Disconnect affected XWEB EVO systems and apply vendor patches or replace end-of-life devices.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124004)
-
-### 🔴 XWEB EVO CGIs Command Injection (CVE-2026-124010)
-`CVE-2026-124010 · CVSS 9.8`
-
-XWEB EVO before 5.6.2 contains a command injection vulnerability in the setuid-root CGI xwconsole.cgi, allowing unauthenticated remote attackers to execute arbitrary root commands.
-
-**Do:** Restrict access to XWEB EVO administrative interfaces and upgrade to version 5.6.2 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124010)
-
 ### 🔴 SilentAir State-Sponsored Group Hijacks Asian Telecom Networks
 `exploited`
 
@@ -1446,33 +1535,6 @@ sysPass 3.0.1 through 3.2.11 contains an authentication bypass flaw allowing una
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129110)
 
-### 🟠 XWEB EVO Arbitrary File Write (CVE-2026-124014)
-`CVE-2026-124014 · CVSS 9.1`
-
-XWEB EVO versions 4.3.0 through 5.8.8 contain an unauthenticated arbitrary file write vulnerability in config.lua allowing attackers to modify /etc/xwebconfig.json and cause denial of service.
-
-**Do:** Restrict network access to vulnerable XWEB EVO installations.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-124014)
-
-### 🟠 Rucio Unauthenticated Administrator Impersonation (CVE-2026-100397)
-`CVE-2026-100397 · CVSS 9.8`
-
-Rucio accepts SSH challenge tokens as valid authentication credentials without prior validation, allowing unauthenticated attackers to impersonate administrators.
-
-**Do:** Upgrade Rucio to a patched version immediately.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-x585-4vv8-2mh2)
-
-### 🟠 Ruby on Rails Active Storage Arbitrary File Read/Write
-`CVE-2026-122006 · CVSS 9.8 · EPSS 0.01`
-
-Ruby on Rails Active Storage processing attachments with ImageMagick may allow unauthenticated attackers to write or read arbitrary files on the server.
-
-**Do:** Upgrade Ruby on Rails Active Storage to patched versions.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-f3w6-w445-fwh9)
-
 ### 🟠 Vvveb Theme Installer Arbitrary File Upload RCE (CVE-2026-126378)
 `CVE-2026-126378 · CVSS 9.4 · EPSS 0.01`
 
@@ -1511,12 +1573,6 @@ Citrix has patched 10 critical NetScaler vulnerabilities where successful exploi
 
 [SecurityWeek](https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/)
 
-### 🟠 Microsoft 365 Global Outage Disrupts Outlook and Teams
-
-A widespread outage caused by failed server health checks disrupted Microsoft 365 services globally, including Outlook, Microsoft Teams, and Copilot.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/) · [SecurityWeek](https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/) · [SecurityWeek](https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/)
-
 ### 🟠 Vvveb Media Trait Denylist Bypass RCE (CVE-2026-126380)
 `CVE-2026-126380 · CVSS 9.4 · EPSS 0.01`
 
@@ -1534,15 +1590,6 @@ OpenMage Magento LTS before 20.18.2 contains a CSRF vulnerability in OAuth confi
 **Do:** Upgrade OpenMage Magento LTS to 20.18.2 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-128049)
-
-### 🟠 Linksys EA8100 Authentication Bypass (CVE-2026-127275)
-`CVE-2026-127275, CVE-2026-127277 · CVSS 10.0`
-
-Linksys EA8100 version 1.0.3.216940 contains a missing authentication vulnerability in the JNAP API ui_server.lua component. A public exploit is available.
-
-**Do:** Apply vendor updates if available or restrict router management interfaces from the internet.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127275) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127277)
 
 ### 🟠 PostgreSQL Authenticated RCE Flaw (CVE-2026-6460)
 `CVE-2026-6460 · EPSS 0.01`
