@@ -4,6 +4,15 @@
 
 ## 2026-11-20
 
+### 🔴 SAP NetWeaver JNDI Data Query Logic Flaw
+`CVE-2025-42884 · EPSS 0.00 · CISA KEV`
+
+SAP NetWeaver Enterprise Portal contains an improper neutralization vulnerability in data query logic (CVE-2025-42884) allowing unauthenticated attackers to disclose or modify server information. Listed in CISA KEV.
+
+**Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance.
+
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2025-42884)
+
 ### 🔴 IBM Guardium Data Protection Insecure Deserialization Vulnerability
 `CVE-2026-84236 · CVSS 9.8`
 
@@ -21,6 +30,15 @@ Daptin contains an unauthenticated SQL injection vulnerability via the 'sort' qu
 **Do:** Update Daptin to the patched version.
 
 [GitHub Advisory](https://github.com/advisories/GHSA-hq2p-f2vj-v3cm)
+
+### 🟠 N-able Server Breach Causes Global Mail Assure and SpamExperts Outage
+`exploited`
+
+Attackers breached an N-able server, causing a major worldwide service outage affecting Mail Assure and SpamExperts Hosted Cloud services.
+
+**Do:** Check N-able status updates and advisory guidance.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/)
 
 ### 🟠 F5 Patches Critical BIG-IP RCE and DoS Vulnerabilities
 
@@ -91,6 +109,15 @@ NLTK 3.10.3 contains an incomplete fix for JVM argument-injection and untrusted 
 
 [GitHub Advisory](https://github.com/advisories/GHSA-x8q7-6c7m-52gw)
 
+### 🟠 Fabio Access-Control Bypass via Unnormalized Request Paths
+`CVE-2026-104099 · CVSS 9.1 · EPSS 0.00`
+
+go:github.com/fabiolb/fabio has an access-control bypass (CVE-2026-104099) where route selection uses raw unnormalized request paths, allowing unauthenticated attackers to bypass per-route ACL and basic-auth gates using dot-segments or encoded dots.
+
+**Do:** Update fabio to a version with normalized request path handling.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-4hrh-34w3-5ww8)
+
 ### 🟠 Gladys Assistant Backup Restore OS Command Injection
 `CVE-2026-133500 · CVSS 9.1 · exploited`
 
@@ -144,6 +171,20 @@ ASUS released Control Center Express v1.7.29 to fix three critical vulnerabiliti
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/)
 
+### 🟠 Bell Canada Breach Exposes Enterprise Customer Data
+`exploited`
+
+Bell Canada confirmed a threat actor breached its systems and stole enterprise customer data, including circuit provisioning information.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/)
+
+### 🟠 J.P. Morgan Chase Third-Party Data Breach
+`exploited`
+
+J.P. Morgan Chase suffered a data breach following a cyberattack at a third-party service provider that exposed customer personal information and marketing data.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/)
+
 ### 🟠 SonicWall Warns Generation 6 Firewalls Unpatched for Critical Flaws
 
 SonicWall urged customers running Generation 6 firewalls to retire and replace them immediately, noting they will not receive security patches for critical flaws amid rising AI-assisted attacks.
@@ -151,6 +192,15 @@ SonicWall urged customers running Generation 6 firewalls to retire and replace t
 **Do:** Retire and replace SonicWall Gen 6 firewalls and remove them from the internet edge.
 
 [The Hacker News](https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html)
+
+### 🟠 D-Link DCS-935L Local Recording CGI OS Command Injection
+`CVE-2026-133680 · CVSS 9.9`
+
+D-Link DCS-935L version 1.10.01 contains an OS command injection vulnerability (CVE-2026-133680) in the loginRouter function of web/cgi-bin/localrecording/setconf.cgi via manipulated account/password arguments. A public exploit is available.
+
+**Do:** Restrict access to vulnerable D-Link devices or replace end-of-life hardware.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-133680)
 
 ### 🟠 Jupyter MCP Server DNS Rebinding Management Route Flaw
 `CVE-2026-77359 · CVSS 9.3`
@@ -161,6 +211,15 @@ Jupyter MCP Server contains a DNS rebinding vulnerability in custom management r
 
 [GitHub Advisory](https://github.com/advisories/GHSA-9x8x-crjq-g64h)
 
+### 🟠 WhatsApp for Android Incomplete Ad-Reply URL Validation Flaw
+`CVE-2026-23871 · exploited`
+
+WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4 contain a vulnerability (CVE-2026-23871) involving incomplete validation of external ad-reply URLs, suspected of exploitation in scam campaigns.
+
+**Do:** Update WhatsApp for Android to version 2.26.17.4 or later.
+
+[SecurityWeek](https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/) · [The Hacker News](https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html)
+
 ### 🟠 Ruby Patches Ruby2Shell Heap Buffer Overflow RCE Vulnerability
 `CVE-2026-132825 · EPSS 0.00`
 
@@ -169,6 +228,27 @@ Ruby patched a heap-based buffer overflow vulnerability tracked as CVE-2026-1328
 **Do:** Update Ruby to the latest patched version.
 
 [SecurityWeek](https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/)
+
+### 🟠 West Virginia Legislature Hit by Ongoing Cyber Incident
+`exploited`
+
+The West Virginia Legislature experienced an ongoing cybersecurity incident affecting IT systems without spreading to other government entities.
+
+[The Record](https://therecord.media/west-virginia-legislature-cyberattack)
+
+### 🟠 The Container Store Restores Systems Following Cyberattack
+`exploited`
+
+The Container Store restored its website and systems following a cybersecurity incident.
+
+[The Record](https://therecord.media/container-store-restores-systems-cyberattack)
+
+### 🟠 Bazuka Android Malware Framework Disclosed
+`exploited`
+
+Researchers disclosed a new Android malware framework called Bazuka featuring fake screen overlays and LLM integration for command and control at scale.
+
+[The Hacker News](https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html)
 
 ### 🟠 ROMULUS ClickFix Attacks Deliver New CNCMachineRMS RAT Variant
 `exploited`
@@ -198,14 +278,14 @@ Attackers are actively exploiting unauthenticated RCE vulnerabilities CVE-2026-1
 
 [The Hacker News](https://thehackernews.com/2026/11/everything-is-web-application-including.html)
 
-### 🔴 VMware vCenter Authentication Bypass Exploited as Zero-Day
-`CVE-2026-123890 · exploited`
+### 🔴 Now exploited: VMware vCenter Authentication Bypass Exploited as Zero-Day
+`CVE-2025-42884, CVE-2026-123890, CVE-2026-129448, CVE-2026-76466 · CISA KEV`
 
 A critical authentication bypass flaw in VMware vCenter was exploited as a zero-day by a China-linked espionage group before Broadcom released patches.
 
 **Do:** Apply the latest updates for VMware vCenter across all supported branches immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) · [The Hacker News](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html)
+[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) · [The Hacker News](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog)
 
 ### 🔴 F5 Patches Critical NGINX2Root Flaws with Public PoCs
 `exploited`
@@ -252,14 +332,14 @@ Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated
 
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-90436)
 
-### 🔴 Cisco Expressway Vulnerability Exploited Following PoC Release
-`CVE-2026-76466 · exploited`
+### 🔴 Now exploited: Cisco Expressway Vulnerability Exploited Following PoC Release
+`CVE-2026-76466 · CISA KEV`
 
 Attackers have exploited clustered Cisco Expressway devices at an organization shortly after proof-of-concept code was released, preparing for lateral movement.
 
 **Do:** Review Cisco Expressway devices for indicators of compromise and apply vendor patches.
 
-[SecurityWeek](https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html)
+[SecurityWeek](https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-76466)
 
 ### 🟠 Drupal Patches Critical Remote Code Execution Vulnerability
 
@@ -655,6 +735,13 @@ A critical vulnerability dubbed Java4Shell in OpenJDK allows unauthenticated att
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/) · [SecurityWeek](https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/)
 
+### 🔴 Now exploited: Apache warns of Roller RCE vulnerability exploited in attacks
+`CVE-2026-129448 · CISA KEV`
+
+Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html) · [SecurityWeek](https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-129448)
+
 ### 🟠 COLD RELIC Hackers Exploit Stolen Google Workspace Data in Breaches
 `exploited`
 
@@ -678,13 +765,6 @@ OwnTracks Recorder before 1.0.5 contains a format string vulnerability in json_r
 Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework Releases Poisoned With Credential Stealer appeared first on SecurityWeek .
 
 [SecurityWeek](https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/)
-
-### 🟠 Apache warns of Roller RCE vulnerability exploited in attacks
-`CVE-2026-129448 · exploited`
-
-Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html) · [SecurityWeek](https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/)
 
 ### 🟠 CVE-2026-130675: Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::n
 `CVE-2026-130675 · CVSS 9.8`
@@ -1516,40 +1596,6 @@ VITEC EZ TV Platform Server before 8.5.0 contains an unauthenticated file upload
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82504)
 
-### 🔴 SilentAir State-Sponsored Group Hijacks Asian Telecom Networks
-`exploited`
-
-A state-sponsored threat group named SilentAir hijacked mobile network nodes in at least six Asian countries to intercept calls and SMS 2FA codes, primarily targeting Taiwanese subscribers.
-
-**Do:** Audit mobile network infrastructure and review access controls for telecom nodes.
-
-[The Hacker News](https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html) · [SecurityWeek](https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/)
-
-### 🔴 Operation Endgame Disrupts Gootloader, CastleRAT, and StealC
-`exploited`
-
-Law enforcement seized 235 servers and 257 domains, taking down infrastructure behind Gootloader, CastleRAT, and StealC malware while recovering 6.4 million stolen logins.
-
-[SecurityWeek](https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/) · [The Hacker News](https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html)
-
-### 🔴 OpsTree BuildPiper Manifest Privilege Escalation (CVE-2026-127073)
-`CVE-2026-127073 · CVSS 9.9 · EPSS 0.01`
-
-OpsTree BuildPiper before 2.7.0 allows project users to gain Kubernetes cluster-admin rights by submitting unrestricted manifests through the Additional Manifest feature.
-
-**Do:** Upgrade OpsTree BuildPiper to 2.7.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127073)
-
-### 🔴 OpsTree BuildPiper HostPath Authorization Flaw (CVE-2026-127080)
-`CVE-2026-127080 · CVSS 9.9 · EPSS 0.01`
-
-OpsTree BuildPiper before 2.7.0 contains an improper authorization flaw allowing deploy users to define arbitrary hostPath volumes and mount the worker node root filesystem read-write.
-
-**Do:** Upgrade OpsTree BuildPiper to 2.7.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127080)
-
 ### 🟠 NginxPulse Unauthenticated SQL Injection (CVE-2026-129171)
 `CVE-2026-129171 · CVSS 9.8`
 
@@ -1559,42 +1605,6 @@ NginxPulse versions 1.5.0 through 1.6.25 contain an unauthenticated SQL injectio
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129171)
 
-### 🟠 OpenEMR OAuth Scope Canonicalization Flaw (CVE-2026-126473)
-`CVE-2026-126473 · CVSS 9.3 · EPSS 0.00`
-
-OpenEMR before 8.4.0 contains OAuth scope canonicalization flaws allowing unauthenticated attackers to obtain unapproved system-level FHIR access and modify patient records.
-
-**Do:** Upgrade OpenEMR to 8.4.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126473)
-
-### 🟠 PLANET GS-5220 Switch Cookie Buffer Overflow (CVE-2026-109445)
-`CVE-2026-109445 · CVSS 9.8`
-
-PLANET GS-5220-8P2T2S firmware before 3.2412b261008 contains a stack-based buffer overflow via an oversized webstax_auth cookie value, leading to potential denial of service.
-
-**Do:** Apply firmware update version 3.2412b261008 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109445)
-
-### 🟠 sysPass Installation Authentication Bypass RCE (CVE-2026-129110)
-`CVE-2026-129110 · CVSS 9.8`
-
-sysPass 3.0.1 through 3.2.11 contains an authentication bypass flaw allowing unauthenticated attackers to reinstall instances, overwrite configurations, and execute commands via gadget chains.
-
-**Do:** Upgrade sysPass beyond version 3.2.11.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129110)
-
-### 🟠 Vvveb Theme Installer Arbitrary File Upload RCE (CVE-2026-126378)
-`CVE-2026-126378 · CVSS 9.4 · EPSS 0.01`
-
-Vvveb through 1.0.8.6 contains an arbitrary file upload vulnerability in the theme installer via path matching flaws, allowing authenticated administrators to achieve remote code execution.
-
-**Do:** Upgrade Vvveb beyond 1.0.8.6 or apply vendor patches.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126378)
-
 ### 🟠 City of Osaka Warns of Data Breach Impacting 1 Million
 `exploited`
 
@@ -1602,73 +1612,10 @@ The City of Osaka in Japan warned residents of a data breach impacting 1 million
 
 [The Record](https://therecord.media/city-of-osaka-japan-email-data-breach)
 
-### 🟠 TSMC Confirms Employee Data Breach via Cloud Provider
-`exploited`
-
-TSMC confirmed an employee data breach matching information stored in third-party cloud provider system services, though internal operations remained uncompromised.
-
-[The Record](https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/)
-
-### 🟠 Ransomware Attack Disrupts Belarusian Cloud Firm ActiveCloud
-`exploited`
-
-ActiveCloud suffered a ransomware attack that encrypted parts of its cloud infrastructure, leaving customers without access to key services for several days.
-
-[The Record](https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack)
-
-### 🟠 Vvveb Media Trait Denylist Bypass RCE (CVE-2026-126380)
-`CVE-2026-126380 · CVSS 9.4 · EPSS 0.01`
-
-Vvveb before 1.0.9.0 contains a denylist bypass allowing authenticated administrators to upload .phar PHP polyglot files and execute arbitrary OS commands.
-
-**Do:** Upgrade Vvveb to 1.0.9.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-126380)
-
-### 🟠 OpenMage Magento LTS OAuth CSRF Flaw (CVE-2026-128049)
-`CVE-2026-128049 · CVSS 9.4 · EPSS 0.00`
-
-OpenMage Magento LTS before 20.18.2 contains a CSRF vulnerability in OAuth confirm actions, allowing attackers to acquire persistent REST API access tokens.
-
-**Do:** Upgrade OpenMage Magento LTS to 20.18.2 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-128049)
-
-### 🟠 PostgreSQL Authenticated RCE Flaw (CVE-2026-6460)
-`CVE-2026-6460 · EPSS 0.01`
-
-A type confusion vulnerability tracked as CVE-2026-6460 allows authenticated users who can create objects to execute code on the server with operating system rights. PostgreSQL has released patches and recommends rebuilding C-language extensions.
-
-**Do:** Upgrade PostgreSQL to the latest patched versions and rebuild C-language extensions.
-
-[The Hacker News](https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html)
-
 ### 🟠 University of Texas at Arlington Confirms Data Theft
 `exploited`
 
 The University of Texas at Arlington confirmed that personal information was stolen during a recent cyberattack.
 
 [The Record](https://therecord.media/university-of-texas-arlington-warns-data-breach)
-
-### 🟠 German Defense Tech Quantum Systems Confirms Cyberattack
-`exploited`
-
-Quantum Systems confirmed a cyberattack in late October orchestrated by hostile actors affecting drone operations infrastructure.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/)
-
-### 🟠 DOJ Details Gootloader Ransomware Campaign Impact
-`exploited`
-
-U.S. officials reported that Gootloader has been used in at least 44 ransomware attacks totaling $29 million since 2018.
-
-[The Record](https://therecord.media/gootloader-ransomware-doj-details)
-
-### 🟠 Trezor Confirms Hidden Hardware Implants in Resold Wallets
-
-Trezor confirmed that Trezor Safe 5 wallets purchased from reseller CryptoBilis contain a malicious circuit board implant capable of stealing recovery phrases and transmitting them over mobile networks.
-
-**Do:** Audit hardware wallets purchased from third-party resellers like CryptoBilis for physical tampering.
-
-[The Hacker News](https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/)
 

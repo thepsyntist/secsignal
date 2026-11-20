@@ -1,5 +1,247 @@
 [
  {
+  "key": "kev:CVE-2025-42884",
+  "tier": "act",
+  "score": 87,
+  "headline": "SAP NetWeaver JNDI Data Query Logic Flaw",
+  "tldr": "SAP NetWeaver Enterprise Portal contains an improper neutralization vulnerability in data query logic (CVE-2025-42884) allowing unauthenticated attackers to disclose or modify server information. Listed in CISA KEV.",
+  "action": "Apply vendor mitigations and follow CISA BOD 26-04 guidance.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2025-42884"
+  ],
+  "cvss": null,
+  "epss": 0.00276,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage",
+  "tier": "watch",
+  "score": 69,
+  "headline": "N-able Server Breach Causes Global Mail Assure and SpamExperts Outage",
+  "tldr": "Attackers breached an N-able server, causing a major worldwide service outage affecting Mail Assure and SpamExperts Hosted Cloud services.",
+  "action": "Check N-able status updates and advisory guidance.",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-4hrh-34w3-5ww8",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Fabio Access-Control Bypass via Unnormalized Request Paths",
+  "tldr": "go:github.com/fabiolb/fabio has an access-control bypass (CVE-2026-104099) where route selection uses raw unnormalized request paths, allowing unauthenticated attackers to bypass per-route ACL and basic-auth gates using dot-segments or encoded dots.",
+  "action": "Update fabio to a version with normalized request path handling.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-104099"
+  ],
+  "cvss": 9.1,
+  "epss": 0.00477,
+  "watch": "github",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-4hrh-34w3-5ww8"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Bell Canada Breach Exposes Enterprise Customer Data",
+  "tldr": "Bell Canada confirmed a threat actor breached its systems and stole enterprise customer data, including circuit provisioning information.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info",
+  "tier": "watch",
+  "score": 61,
+  "headline": "J.P. Morgan Chase Third-Party Data Breach",
+  "tldr": "J.P. Morgan Chase suffered a data breach following a cyberattack at a third-party service provider that exposed customer personal information and marketing data.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-133680",
+  "tier": "watch",
+  "score": 59,
+  "headline": "D-Link DCS-935L Local Recording CGI OS Command Injection",
+  "tldr": "D-Link DCS-935L version 1.10.01 contains an OS command injection vulnerability (CVE-2026-133680) in the loginRouter function of web/cgi-bin/localrecording/setconf.cgi via manipulated account/password arguments. A public exploit is available.",
+  "action": "Restrict access to vulnerable D-Link devices or replace end-of-life hardware.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-133680"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133680"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+  "tier": "watch",
+  "score": 58,
+  "headline": "WhatsApp for Android Incomplete Ad-Reply URL Validation Flaw",
+  "tldr": "WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4 contain a vulnerability (CVE-2026-23871) involving incomplete validation of external ad-reply URLs, suspected of exploitation in scam campaigns.",
+  "action": "Update WhatsApp for Android to version 2.26.17.4 or later.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-23871"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/west-virginia-legislature-cyberattack",
+  "tier": "watch",
+  "score": 53,
+  "headline": "West Virginia Legislature Hit by Ongoing Cyber Incident",
+  "tldr": "The West Virginia Legislature experienced an ongoing cybersecurity incident affecting IT systems without spreading to other government entities.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/west-virginia-legislature-cyberattack"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/container-store-restores-systems-cyberattack",
+  "tier": "watch",
+  "score": 53,
+  "headline": "The Container Store Restores Systems Following Cyberattack",
+  "tldr": "The Container Store restored its website and systems following a cybersecurity incident.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/container-store-restores-systems-cyberattack"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Bazuka Android Malware Framework Disclosed",
+  "tldr": "Researchers disclosed a new Android malware framework called Bazuka featuring fake screen overlays and LLM integration for command and control at scale.",
+  "action": "",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html"
+   }
+  ],
+  "first_seen": "2026-11-20T21:52:09+00:00",
+  "updated": "2026-11-20T21:52:09+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws",
   "tier": "watch",
   "score": 69,
@@ -546,14 +788,17 @@
   "key": "rss:https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
   "tier": "act",
   "score": 87,
-  "headline": "VMware vCenter Authentication Bypass Exploited as Zero-Day",
+  "headline": "Now exploited: VMware vCenter Authentication Bypass Exploited as Zero-Day",
   "tldr": "A critical authentication bypass flaw in VMware vCenter was exploited as a zero-day by a China-linked espionage group before Broadcom released patches.",
   "action": "Apply the latest updates for VMware vCenter across all supported branches immediately.",
   "category": "exploitation",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
-   "CVE-2026-123890"
+   "CVE-2025-42884",
+   "CVE-2026-123890",
+   "CVE-2026-129448",
+   "CVE-2026-76466"
   ],
   "cvss": null,
   "epss": null,
@@ -574,21 +819,29 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
    }
   ],
   "first_seen": "2026-11-19T20:46:29+00:00",
-  "updated": "2026-11-20T13:06:30+00:00"
+  "updated": "2026-11-20T21:52:09+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release",
   "tier": "act",
   "score": 74,
-  "headline": "Cisco Expressway Vulnerability Exploited Following PoC Release",
+  "headline": "Now exploited: Cisco Expressway Vulnerability Exploited Following PoC Release",
   "tldr": "Attackers have exploited clustered Cisco Expressway devices at an organization shortly after proof-of-concept code was released, preparing for lateral movement.",
   "action": "Review Cisco Expressway devices for indicators of compromise and apply vendor patches.",
   "category": "exploitation",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
    "CVE-2026-76466"
   ],
@@ -603,10 +856,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
    }
   ],
   "first_seen": "2026-11-19T20:46:29+00:00",
-  "updated": "2026-11-20T13:06:30+00:00"
+  "updated": "2026-11-20T21:52:09+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
@@ -1838,14 +2095,14 @@
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks",
-  "tier": "watch",
+  "tier": "act",
   "score": 53,
-  "headline": "Apache warns of Roller RCE vulnerability exploited in attacks",
+  "headline": "Now exploited: Apache warns of Roller RCE vulnerability exploited in attacks",
   "tldr": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
   "action": "",
   "category": "",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
    "CVE-2026-129448"
   ],
@@ -1864,10 +2121,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448"
    }
   ],
   "first_seen": "2026-11-18T17:20:06+00:00",
-  "updated": "2026-11-19T20:46:29+00:00"
+  "updated": "2026-11-20T21:52:09+00:00"
  },
  {
   "key": "nvd:CVE-2026-130675",
