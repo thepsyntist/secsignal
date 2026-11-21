@@ -1585,37 +1585,3 @@ Dokploy before 0.31.1 contains an OS command injection vulnerability in getCompo
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129433)
 
-## 2026-11-13
-
-### 🔴 VITEC EZ TV Platform Server Unauthenticated File Upload RCE
-`CVE-2026-82504 · CVSS 9.8`
-
-VITEC EZ TV Platform Server before 8.5.0 contains an unauthenticated file upload vulnerability allowing remote attackers to upload and execute arbitrary ASPX files, achieving remote code execution. Patches are available.
-
-**Do:** Upgrade VITEC EZ TV Platform Server to version 8.5.0 or apply available patches.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82504)
-
-### 🟠 NginxPulse Unauthenticated SQL Injection (CVE-2026-129171)
-`CVE-2026-129171 · CVSS 9.8`
-
-NginxPulse versions 1.5.0 through 1.6.25 contain an unauthenticated SQL injection vulnerability via /api/stats/:type, allowing attackers to read database contents and execute server files. Patches are available in version 1.6.26.
-
-**Do:** Upgrade NginxPulse to 1.6.26 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129171)
-
-### 🟠 City of Osaka Warns of Data Breach Impacting 1 Million
-`exploited`
-
-The City of Osaka in Japan warned residents of a data breach impacting 1 million people amid a wave of local cyber incidents.
-
-[The Record](https://therecord.media/city-of-osaka-japan-email-data-breach)
-
-### 🟠 University of Texas at Arlington Confirms Data Theft
-`exploited`
-
-The University of Texas at Arlington confirmed that personal information was stolen during a recent cyberattack.
-
-[The Record](https://therecord.media/university-of-texas-arlington-warns-data-breach)
-
