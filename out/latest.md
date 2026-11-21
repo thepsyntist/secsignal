@@ -4,6 +4,22 @@
 
 ## 2026-11-21
 
+### 🔴 Microsoft Entra Connect Health Flaw Exploited in Tenant Breach
+`exploited`
+
+Attackers exploited a vulnerability in Microsoft Entra Connect Health to gain unauthorized access to administrator email addresses and tenant configuration information.
+
+**Do:** Review Microsoft security advisories and audit Entra tenant configuration and access logs.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/)
+
+### 🔴 FBI National Crime Information Center Database Breached
+`exploited`
+
+FBI systems containing the National Crime Information Center (NCIC) database used for law enforcement information sharing have reportedly been breached.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/)
+
 ### 🔴 MONAI Label Arbitrary File Write Zero-Day Exploited by AI Agents
 `exploited`
 

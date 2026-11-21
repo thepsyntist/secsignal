@@ -1,5 +1,51 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data",
+  "tier": "act",
+  "score": 82,
+  "headline": "Microsoft Entra Connect Health Flaw Exploited in Tenant Breach",
+  "tldr": "Attackers exploited a vulnerability in Microsoft Entra Connect Health to gain unauthorized access to administrator email addresses and tenant configuration information.",
+  "action": "Review Microsoft security advisories and audit Entra tenant configuration and access logs.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "entra",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/"
+   }
+  ],
+  "first_seen": "2026-11-21T20:35:03+00:00",
+  "updated": "2026-11-21T20:35:03+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database",
+  "tier": "act",
+  "score": 77,
+  "headline": "FBI National Crime Information Center Database Breached",
+  "tldr": "FBI systems containing the National Crime Information Center (NCIC) database used for law enforcement information sharing have reportedly been breached.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
+   }
+  ],
+  "first_seen": "2026-11-21T20:35:03+00:00",
+  "updated": "2026-11-21T20:35:03+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
   "tier": "act",
   "score": 74,
