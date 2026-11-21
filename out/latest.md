@@ -2,6 +2,26 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-21
+
+### 🔴 MONAI Label Arbitrary File Write Zero-Day Exploited by AI Agents
+`exploited`
+
+China-linked threat actors used autonomous AI agents to discover and exploit a zero-day arbitrary file write vulnerability in MONAI Label 0.8.5 and earlier, gaining root access to a university server.
+
+**Do:** Upgrade MONAI Label beyond version 0.8.5 or restrict network access to the server.
+
+[The Hacker News](https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html) · [SecurityWeek](https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/)
+
+### 🟠 GnuPG GPGME Memory Bug CVE-2026-129975
+`CVE-2026-129975`
+
+A memory bug in GPGME versions prior to 2.3.0, triggered by a malicious OpenPGP key with a long user ID, could expose application data. Fixed versions have been released.
+
+**Do:** Upgrade GPGME to version 2.3.0 or later.
+
+[The Hacker News](https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html)
+
 ## 2026-11-20
 
 ### 🔴 SAP NetWeaver JNDI Data Query Logic Flaw
@@ -285,7 +305,7 @@ A critical authentication bypass flaw in VMware vCenter was exploited as a zero-
 
 **Do:** Apply the latest updates for VMware vCenter across all supported branches immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) · [The Hacker News](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog)
+[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) · [The Hacker News](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html)
 
 ### 🔴 F5 Patches Critical NGINX2Root Flaws with Public PoCs
 `exploited`
