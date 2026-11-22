@@ -2,6 +2,17 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-22
+
+### 🟠 Rackspace Spot Cloud Platform Breach Exposes Kubernetes Secrets
+`exploited`
+
+Rackspace notified customers that compromised credentials led to a breach of its Rackspace Spot platform, enabling attackers to deploy unauthorized workloads and access Kubernetes secrets in customer clusters.
+
+**Do:** Audit Rackspace Spot environments, rotate compromised credentials, and check Kubernetes clusters for unauthorized workloads.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/)
+
 ## 2026-11-21
 
 ### 🔴 Microsoft Entra Connect Health Flaw Exploited in Tenant Breach
@@ -18,7 +29,7 @@ Attackers exploited a vulnerability in Microsoft Entra Connect Health to gain un
 
 FBI systems containing the National Crime Information Center (NCIC) database used for law enforcement information sharing have reportedly been breached.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/) · [SecurityWeek](https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/)
 
 ### 🔴 MONAI Label Arbitrary File Write Zero-Day Exploited by AI Agents
 `exploited`
@@ -1600,24 +1611,4 @@ DrayTek Vigor2960 up to version 1.5.1.6 contains an OS command injection vulnera
 **Do:** Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129449) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129452)
-
-## 2026-11-14
-
-### 🟠 Cursor Confirms Breach and Malicious Claude Code Extension
-`exploited`
-
-Cursor suffered a security breach resulting in the distribution of a malicious Claude Code extension through its marketplace following credential theft from Fireworks AI.
-
-**Do:** Audit and remove unauthorized Claude Code extensions from Cursor.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/) · [The Hacker News](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
-
-### 🟠 Dokploy getComposeContainerCommand OS Command Injection (CVE-2026-129433)
-`CVE-2026-129433 · CVSS 9.9`
-
-Dokploy before 0.31.1 contains an OS command injection vulnerability in getComposeContainerCommand() that allows authenticated organization members to execute shell commands via the serviceName parameter, potentially taking over the host.
-
-**Do:** Upgrade Dokploy to 0.31.1 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129433)
 

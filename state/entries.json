@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets",
+  "tier": "watch",
+  "score": 66,
+  "headline": "Rackspace Spot Cloud Platform Breach Exposes Kubernetes Secrets",
+  "tldr": "Rackspace notified customers that compromised credentials led to a breach of its Rackspace Spot platform, enabling attackers to deploy unauthorized workloads and access Kubernetes secrets in customer clusters.",
+  "action": "Audit Rackspace Spot environments, rotate compromised credentials, and check Kubernetes clusters for unauthorized workloads.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "kubernetes",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/"
+   }
+  ],
+  "first_seen": "2026-11-22T02:19:04+00:00",
+  "updated": "2026-11-22T02:19:04+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data",
   "tier": "act",
   "score": 82,
@@ -40,10 +63,14 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/"
    }
   ],
   "first_seen": "2026-11-21T20:35:03+00:00",
-  "updated": "2026-11-21T20:35:03+00:00"
+  "updated": "2026-11-22T02:19:04+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
