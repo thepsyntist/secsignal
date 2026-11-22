@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Cleverbridge Data Breach Exposes Credit Card Numbers and CVVs",
+  "tldr": "E-commerce platform Cleverbridge suffered a data breach exposing customer payment card information, including credit card numbers and CVV security codes.",
+  "action": "Review statements for unauthorized transactions if you made purchases via Cleverbridge.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/"
+   }
+  ],
+  "first_seen": "2026-11-22T17:53:02+00:00",
+  "updated": "2026-11-22T17:53:02+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
   "tier": "watch",
   "score": 61,

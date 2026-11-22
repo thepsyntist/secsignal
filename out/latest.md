@@ -13,6 +13,15 @@ Rackspace notified customers that compromised credentials led to a breach of its
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/)
 
+### 🟠 Cleverbridge Data Breach Exposes Credit Card Numbers and CVVs
+`exploited`
+
+E-commerce platform Cleverbridge suffered a data breach exposing customer payment card information, including credit card numbers and CVV security codes.
+
+**Do:** Review statements for unauthorized transactions if you made purchases via Cleverbridge.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/)
+
 ### 🟠 OpenRouter Drops AI Providers Following Months of Prompt Theft
 `exploited`
 
@@ -1602,15 +1611,6 @@ Attackers are deploying autonomous AI agents to scan and exploit internet-expose
 
 ## 2026-11-15
 
-### 🟠 Cyrus SASL Authentication Bypass in SRP Server Mechanism
-`CVE-2026-129483 · CVSS 9.3`
-
-Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the SRP server mechanism due to improper validation of client public values. Unauthenticated attackers can authenticate as any user and learn session keys.
-
-**Do:** Check vendor advisories and apply available patches for Cyrus SASL.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129483)
-
 ### 🟠 FBI Warns ARTEX AI Tool Used in Global Cyberattacks
 `exploited`
 
@@ -1619,13 +1619,4 @@ The FBI warned that threat actors are using the ARTEX AI penetration testing fra
 **Do:** Review ConnectWise and Microsoft 365 environments for unauthorized access and monitor for ARTEX indicators.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/)
-
-### 🟠 DrayTek Vigor2960 mainfunction.cgi Command Injection
-`CVE-2026-129449, CVE-2026-129452 · CVSS 9.9`
-
-DrayTek Vigor2960 up to version 1.5.1.6 contains an OS command injection vulnerability in mainfunction.cgi via the swmconfigupload argument. An updated version 1.5.1.7 is available.
-
-**Do:** Upgrade DrayTek Vigor2960 to version 1.5.1.7 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129449) · [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129452)
 
