@@ -1,5 +1,51 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+  "tier": "watch",
+  "score": 61,
+  "headline": "OpenRouter Drops AI Providers Following Months of Prompt Theft",
+  "tldr": "Attackers stole prompts and data from inside three AI inference providers for months, prompting OpenRouter to drop the providers.",
+  "action": "Audit AI vendor data retention policies and review integrations with third-party inference providers.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+   }
+  ],
+  "first_seen": "2026-11-22T09:55:02+00:00",
+  "updated": "2026-11-22T09:55:02+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Ghostscript Sandbox-Escape RCE Vulnerability in File Processing Apps",
+  "tldr": "A now-patched flaw in Ghostscript allows crafted files to escape the security sandbox and achieve remote code execution on servers processing PDFs and images.",
+  "action": "Update Ghostscript to the latest patched version across all Linux servers handling user-uploaded documents.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html"
+   }
+  ],
+  "first_seen": "2026-11-22T09:55:02+00:00",
+  "updated": "2026-11-22T09:55:02+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets",
   "tier": "watch",
   "score": 66,

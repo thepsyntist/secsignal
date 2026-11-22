@@ -13,6 +13,23 @@ Rackspace notified customers that compromised credentials led to a breach of its
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/)
 
+### 🟠 OpenRouter Drops AI Providers Following Months of Prompt Theft
+`exploited`
+
+Attackers stole prompts and data from inside three AI inference providers for months, prompting OpenRouter to drop the providers.
+
+**Do:** Audit AI vendor data retention policies and review integrations with third-party inference providers.
+
+[The Hacker News](https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html)
+
+### 🟠 Ghostscript Sandbox-Escape RCE Vulnerability in File Processing Apps
+
+A now-patched flaw in Ghostscript allows crafted files to escape the security sandbox and achieve remote code execution on servers processing PDFs and images.
+
+**Do:** Update Ghostscript to the latest patched version across all Linux servers handling user-uploaded documents.
+
+[The Hacker News](https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html)
+
 ## 2026-11-21
 
 ### 🔴 Microsoft Entra Connect Health Flaw Exploited in Tenant Breach
