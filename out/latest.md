@@ -4,6 +4,15 @@
 
 ## 2026-11-22
 
+### 🟠 GL.iNet Cloud Remote Management Flaw Exploited
+`exploited`
+
+Hackers are actively exploiting a vulnerability in GL.iNet cloud remote management services to install custom malware, backdoors, and reverse shells on customer routers and KVM devices.
+
+**Do:** Disable cloud remote management on GL.iNet devices and check for unauthorized backdoors.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/)
+
 ### 🟠 Rackspace Spot Cloud Platform Breach Exposes Kubernetes Secrets
 `exploited`
 
@@ -1608,15 +1617,4 @@ Attackers are deploying autonomous AI agents to scan and exploit internet-expose
 **Do:** Ensure LiteLLM, Dify, and One API deployments are not exposed to the public internet without authentication.
 
 [The Hacker News](https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html)
-
-## 2026-11-15
-
-### 🟠 FBI Warns ARTEX AI Tool Used in Global Cyberattacks
-`exploited`
-
-The FBI warned that threat actors are using the ARTEX AI penetration testing framework to automate global attacks, including a ConnectWise supply-chain breach impacting Microsoft 365 environments.
-
-**Do:** Review ConnectWise and Microsoft 365 environments for unauthorized access and monitor for ARTEX indicators.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/)
 

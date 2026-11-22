@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices",
+  "tier": "watch",
+  "score": 69,
+  "headline": "GL.iNet Cloud Remote Management Flaw Exploited",
+  "tldr": "Hackers are actively exploiting a vulnerability in GL.iNet cloud remote management services to install custom malware, backdoors, and reverse shells on customer routers and KVM devices.",
+  "action": "Disable cloud remote management on GL.iNet devices and check for unauthorized backdoors.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/"
+   }
+  ],
+  "first_seen": "2026-11-22T23:39:15+00:00",
+  "updated": "2026-11-22T23:39:15+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach",
   "tier": "watch",
   "score": 61,
