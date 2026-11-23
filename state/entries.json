@@ -1,5 +1,347 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+  "tier": "act",
+  "score": 87,
+  "headline": "ConnectWise ScreenConnect Client Flaw CVE-2026-84869 Exploited",
+  "tldr": "Threat actors are actively exploiting CVE-2026-84869, a critical client-side vulnerability in ConnectWise ScreenConnect allowing guests to execute payloads on technicians' hosts.",
+  "action": "Upgrade ScreenConnect immediately to the latest patched version.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-84869"
+  ],
+  "cvss": null,
+  "epss": 0.01173,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/norway-microsoft-cyberattack-equinor",
+  "tier": "act",
+  "score": 87,
+  "headline": "Microsoft Azure API Management Flaw Exploited in Energy Sector Attacks",
+  "tldr": "Hackers exploited an Azure API Management Classic tier vulnerability to steal API credentials, targeting Norwegian energy companies like Equinor and Skagerak Energi.",
+  "action": "Review Azure API Management configurations and rotate compromised API credentials.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/norway-microsoft-cyberattack-equinor"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+  "tier": "act",
+  "score": 77,
+  "headline": "Idunno.AntiCsrf ASP.NET Library RCE Flaw CVE-2026-131914 Exploited",
+  "tldr": "A critical RCE vulnerability in the legacy Idunno.AntiCsrf ASP.NET library (versions 0.9.1.0 and 0.9.1 Beta) is being exploited in the wild.",
+  "action": "Discontinue using Idunno.AntiCsrf immediately.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-131914"
+  ],
+  "cvss": null,
+  "epss": 0.00614,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks",
+  "tier": "act",
+  "score": 74,
+  "headline": "SAP NetWeaver and Cisco Expressway Flaws Exploited in Attacks",
+  "tldr": "Threat actors are actively exploiting vulnerabilities in SAP NetWeaver and Cisco Expressway to leak/modify server info and execute root commands.",
+  "action": "Apply the latest security updates for SAP NetWeaver and Cisco Expressway.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "cisco",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-120382",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Synology DiskStation Manager OAuth API Command Vulnerability",
+  "tldr": "Synology DiskStation Manager (DSM) versions before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 contain an argument delimiter command vulnerability in the OAuth API allowing arbitrary file read/write and DoS.",
+  "action": "Update Synology DSM to the latest fixed versions.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-120382"
+  ],
+  "cvss": 9.8,
+  "epss": 0.01214,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120382"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-135208",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Kerberos Agent Authentication Bypass Flaw CVE-2026-135208",
+  "tldr": "Kerberos Agent before 3.14.4 contains an authentication bypass flaw due to a hard-coded JWT secret key, allowing attackers to forge administrator tokens.",
+  "action": "Update Kerberos Agent to version 3.14.4 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-135208"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135208"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-2r3w-c2vx-fv5g",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Xen Orchestra xo-server Empty-Object Login Token Flaw",
+  "tldr": "Xen Orchestra npm package xo-server contains a REST cookie parsing vulnerability allowing attackers to authenticate via an empty-object token.",
+  "action": "Update xo-server to the latest patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-133469"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Binary-Parser Code Injection Flaw CVE-2026-134814",
+  "tldr": "Binary-parser versions prior to 2.3.1 contain a code injection vulnerability allowing attackers who control parser definitions to execute arbitrary code.",
+  "action": "Update binary-parser to version 2.3.1 or higher.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-134814"
+  ],
+  "cvss": null,
+  "epss": 0.00608,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Spanish LaLiga Confirms Data Breach Exposing Fan Data",
+  "tldr": "Spain's LaLiga disclosed a data breach exposing personal info of users and affiliated club services.",
+  "action": "Monitor accounts for potential phishing or credential reuse.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/austrian-foreign-ministry-says-website-hacked",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Austrian Foreign Ministry Website Breached",
+  "tldr": "Hackers breached an Austrian Foreign Ministry website, accessing employee names and official contact details.",
+  "action": "Audit web application perimeters and authentication logs.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/austrian-foreign-ministry-says-website-hacked"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted",
+  "tier": "watch",
+  "score": 61,
+  "headline": "BadBox 3.0 Ad Fraud Operation Disrupted",
+  "tldr": "Law enforcement or researchers disrupted the BadBox 3.0 operation involving backdoors on low-cost consumer devices used for ad fraud and proxies.",
+  "action": "Scan consumer and IoT devices for unauthorized proxy or ad-fraud activity.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path",
+  "tier": "watch",
+  "score": 56,
+  "headline": "phpAfterShell Deserialization RCE Vulnerability",
+  "tldr": "Interrupted session overwrites in phpAfterShell can allow attackers controlling fresh data to trigger deserialization and RCE.",
+  "action": "Apply available patches or security updates for phpAfterShell.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards",
+  "tier": "watch",
+  "score": 53,
+  "headline": "GlobeTopper Suffers Cyberattack Disrupting Operations",
+  "tldr": "B2B top-up provider GlobeTopper suffered a disruption and financial loss after a cyberattack involving stolen gift cards.",
+  "action": "Review access controls for B2B top-up platforms.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Webworm Uses Modified SoftEther VPN for Stealth Access",
+  "tldr": "China-aligned actor Webworm is using a customized SoftEther VPN Bridge disguised as network-monitoring software to evade detection.",
+  "action": "Monitor network perimeters for anomalous or disguised SoftEther VPN traffic signatures.",
+  "category": "malware",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html"
+   }
+  ],
+  "first_seen": "2026-11-23T20:19:04+00:00",
+  "updated": "2026-11-23T20:19:04+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited",
   "tier": "act",
   "score": 82,
@@ -40,10 +382,18 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/"
    }
   ],
   "first_seen": "2026-11-22T23:39:15+00:00",
-  "updated": "2026-11-22T23:39:15+00:00"
+  "updated": "2026-11-23T20:19:04+00:00"
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach",
@@ -86,10 +436,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/"
    }
   ],
   "first_seen": "2026-11-22T09:55:02+00:00",
-  "updated": "2026-11-22T09:55:02+00:00"
+  "updated": "2026-11-23T20:19:04+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
@@ -182,10 +536,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/fbi-cyberattack-data-breach"
    }
   ],
   "first_seen": "2026-11-21T20:35:03+00:00",
-  "updated": "2026-11-22T02:19:04+00:00"
+  "updated": "2026-11-23T20:19:04+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
@@ -274,7 +632,9 @@
   "category": "outage",
   "exploited": true,
   "kev": false,
-  "cves": [],
+  "cves": [
+   "CVE-2026-134624"
+  ],
   "cvss": null,
   "epss": null,
   "watch": "",
@@ -282,10 +642,18 @@
    {
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/"
    }
   ],
   "first_seen": "2026-11-20T21:52:09+00:00",
-  "updated": "2026-11-20T21:52:09+00:00"
+  "updated": "2026-11-23T20:19:04+00:00"
  },
  {
   "key": "ghsa:GHSA-4hrh-34w3-5ww8",
