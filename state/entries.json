@@ -1,5 +1,28 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited",
+  "tier": "act",
+  "score": 82,
+  "headline": "Cisco Expressway RCE Flaw Actively Exploited",
+  "tldr": "CISA added a critical Cisco Expressway RCE vulnerability to its KEV catalog after confirming active exploitation in the wild.",
+  "action": "Apply the latest security updates from Cisco immediately.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "cisco",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/"
+   }
+  ],
+  "first_seen": "2026-11-23T07:51:04+00:00",
+  "updated": "2026-11-23T07:51:04+00:00"
+ },
+ {
   "key": "rss:https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices",
   "tier": "watch",
   "score": 69,
