@@ -22,6 +22,13 @@ Improper authentication in Azure Event Grid allows an unauthorized attacker to e
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-62841)
 
+### 🔴 VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation
+`CVE-2026-123903 · exploited`
+
+Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system.
+
+[The Hacker News](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html) · [SecurityWeek](https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/)
+
 ### 🟠 Korea Electric Power Corporation Breached, Impacting 1.5 Million
 `exploited`
 
@@ -67,6 +74,39 @@ Improper authorization in M365 Copilot allows an authorized attacker to elevate 
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-50691)
 
+### 🟠 CVE-2026-123167: SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a
+`CVE-2026-123167 · CVSS 9.1 · exploited`
+
+SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123167)
+
+### 🟠 CVE-2026-123168: SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could l
+`CVE-2026-123168 · CVSS 9.1 · exploited`
+
+SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could lead to privilege escalation into the root user in Linux installations. The risk is lower for Windows installations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123168)
+
+### 🟠 CVE-2026-123172: Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead 
+`CVE-2026-123172 · CVSS 9.1 · exploited`
+
+Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead to the escalation of privileges to root for Linux installations. The risk is lower for Windows installations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-123172)
+
+### 🟠 McDonald’s Japan discloses breach exposing customer purchase and location data
+
+McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data.
+
+[The Record](https://therecord.media/japan-mcdonalds-cyberattack-breach) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/)
+
+### 🟠 European Commission Uncovers Data Breach in Cyberattack Investigation
+
+Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October. The post European Commission Uncovers Data Breach in Cyberattack Investigation appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/)
+
 ### 🟠 Authentication Methods Portal Extension XSS Flaw CVE-2026-109490
 `CVE-2026-109490 · CVSS 9.3`
 
@@ -102,6 +142,85 @@ Cross-site scripting in Azure Portal allows an unauthorized attacker to perform 
 **Do:** Apply the latest updates for Azure Portal.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-70305)
+
+### 🟠 CVE-2026-82315: SolarWinds Serv-U is affected by another Time-of-Check to Time-of-Use (TOCTOU) vulnerability.
+`CVE-2026-82315 · CVSS 9.1`
+
+SolarWinds Serv-U is affected by another Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82315)
+
+### 🟠 CVE-2026-82316: SolarWinds Serv-U is affected by a Time-of-Check to Time-of-Use (TOCTOU) vulnerability.
+`CVE-2026-82316 · CVSS 9.1`
+
+SolarWinds Serv-U is affected by a Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82316)
+
+### 🟠 CVE-2026-82319: SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability.
+`CVE-2026-82319 · CVSS 9.1`
+
+SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may allow a user to modify protected files outside their home directory.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82319)
+
+### 🟠 CVE-2026-82320: SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain
+`CVE-2026-82320 · CVSS 9.1`
+
+SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82320)
+
+### 🟠 CVE-2026-82321: SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain admin
+`CVE-2026-82321 · CVSS 9.1`
+
+SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82321)
+
+### 🟠 CVE-2026-82322: SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a 
+`CVE-2026-82322 · CVSS 9.1`
+
+SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a domain group administrator to bypass restrictions and escalate privileges to the server administrator level. The risk is lower for Windows installations.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82322)
+
+### 🟠 Amazon says hackers' AI agents found and exploited 0-day with little human input
+`exploited`
+
+The Cairn AI framework is proving to be a boon for defenders and attackers.
+
+[Ars Technica](https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/)
+
+### 🟠 From Vulnerability Noise to Resilience: Rethinking Security in the AI Era
+
+AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software resilience.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/)
+
+### 🟠 McDonald's Japan data breach exposes customer location information
+
+McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/)
+
+### 🟠 Carnegie Endowment for International Peace says third-party breach leaked donation info
+
+Some donors to the Carnegie Endowment for International Peace had their information leaked due to a cyberattack on a third-party vendor named Soapbox Engage.
+
+[The Record](https://therecord.media/carnegie-endowment-data-breach)
+
+### 🟠 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO
+
+Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .
+
+[SecurityWeek](https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/)
+
+### 🟠 Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns
+
+A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of
+
+[The Hacker News](https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html)
 
 ## 2026-11-23
 
@@ -357,7 +476,7 @@ Attackers breached an N-able server, causing a major worldwide service outage af
 
 **Do:** Check N-able status updates and advisory guidance.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html) · [SecurityWeek](https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133968) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-134624)
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html) · [SecurityWeek](https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133968) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-134624) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
 
 ### 🟠 F5 Patches Critical BIG-IP RCE and DoS Vulnerabilities
 
@@ -1150,15 +1269,6 @@ Siemens products are affected by the critical 'Node2Shell' out-of-bounds write v
 
 [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03)
 
-### 🔴 MSP ScreenConnect Servers Targeted in Exploitation Campaign
-`CVE-2026-84869 · EPSS 0.01 · CISA KEV`
-
-More than 40 ScreenConnect servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files.
-
-**Do:** Audit ScreenConnect servers for unauthorized guest-pushed files and apply vendor updates.
-
-[The Hacker News](https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html) · [SecurityWeek](https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/)
-
 ### 🔴 Perforce Puppet Enterprise Deserialization Flaw Added to KEV
 `CVE-2026-115731 · EPSS 0.00 · CISA KEV`
 
@@ -1177,15 +1287,6 @@ Oracle Java is affected by a critical memory-corruption vulnerability known as '
 
 [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching) · [The Hacker News](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html) · [The Hacker News](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html) · [The Hacker News](https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html)
 
-### 🔴 N-able Patches 17 N-central Flaws Including Zero-Days
-`exploited`
-
-N-able released N-central 2026.4 Hotfix 3 to patch 17 critical security flaws, including zero-days exploited in the wild to deploy crypto miners.
-
-**Do:** Upgrade N-central to 2026.4 Hotfix 3 immediately.
-
-[The Hacker News](https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html) · [SecurityWeek](https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/)
-
 ### 🔴 Cloud Keys Leaked in Docker Hub Images Stolen Within Seconds
 `exploited`
 
@@ -1194,15 +1295,6 @@ Credentials and access secrets exposed in public Docker Hub images are actively 
 **Do:** Audit public Docker Hub repositories for leaked secrets and implement automated scanning.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/)
-
-### 🔴 Operation ShadowCloud Deploys GitDoor and GraphDoor Backdoors
-`exploited`
-
-Active cyber intrusion campaign targets government sectors in Asia and Africa using Microsoft SharePoint and GitHub for C2.
-
-**Do:** Monitor GitHub and SharePoint access logs for abnormal API usage and unauthorized C2 channels.
-
-[The Hacker News](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
 
 ### 🔴 Oracle WebLogic Server Unauthenticated Core RCE Vulnerability
 `CVE-2026-91456 · CVSS 9.8`
@@ -1466,15 +1558,6 @@ Google reported that threat actors are increasingly using autonomous multi-agent
 The NSA reported disruptions to its classified internal network NSA Net, leading to staggered arrivals at its headquarters.
 
 [The Record](https://therecord.media/nsa-net-disruptions) · [SecurityWeek](https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/)
-
-### 🟠 Access Dental Management Discloses Data Breach Impacting 340,000
-`exploited`
-
-Hackers breached Access Dental's network and stole personal, health, and insurance information affecting over 340,000 individuals.
-
-**Do:** Monitor affected systems and provide notifications as required by regulatory frameworks.
-
-[SecurityWeek](https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/)
 
 ### 🟠 Rootways Authorize.net CIM Pro for Magento 2 SSRF Flaw
 `CVE-2026-130583 · CVSS 9.3`

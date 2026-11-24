@@ -1,5 +1,451 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+  "tier": "act",
+  "score": 71,
+  "headline": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+  "tldr": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123903"
+  ],
+  "cvss": null,
+  "epss": null,
+  "watch": "vmware",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-123167",
+  "tier": "watch",
+  "score": 61,
+  "headline": "CVE-2026-123167: SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a",
+  "tldr": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123167"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-123168",
+  "tier": "watch",
+  "score": 61,
+  "headline": "CVE-2026-123168: SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could l",
+  "tldr": "SolarWinds Serv-U is affected by an insufficient validation vulnerability that, when exploited, could lead to privilege escalation into the root user in Linux installations. The risk is lower for Windows installations.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123168"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123168"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-123172",
+  "tier": "watch",
+  "score": 61,
+  "headline": "CVE-2026-123172: Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead ",
+  "tldr": "Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead to the escalation of privileges to root for Linux installations. The risk is lower for Windows installations.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-123172"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123172"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/japan-mcdonalds-cyberattack-breach",
+  "tier": "watch",
+  "score": 61,
+  "headline": "McDonald’s Japan discloses breach exposing customer purchase and location data",
+  "tldr": "McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/japan-mcdonalds-cyberattack-breach"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach",
+  "tier": "watch",
+  "score": 61,
+  "headline": "European Commission Uncovers Data Breach in Cyberattack Investigation",
+  "tldr": "Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October. The post European Commission Uncovers Data Breach in Cyberattack Investigation appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82315",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-82315: SolarWinds Serv-U is affected by another Time-of-Check to Time-of-Use (TOCTOU) vulnerability.",
+  "tldr": "SolarWinds Serv-U is affected by another Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82315"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82315"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82316",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-82316: SolarWinds Serv-U is affected by a Time-of-Check to Time-of-Use (TOCTOU) vulnerability.",
+  "tldr": "SolarWinds Serv-U is affected by a Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to access or modify protected files outside the intended directory, potentially leading to code execution.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82316"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82316"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82319",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-82319: SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability.",
+  "tldr": "SolarWinds Serv-U is affected by a time-of-check to time-of-use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may allow a user to modify protected files outside their home directory.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82319"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82319"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82320",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-82320: SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain",
+  "tldr": "SolarWinds Serv-U was found to be affected by another type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82320"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82320"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82321",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-82321: SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain admin",
+  "tldr": "SolarWinds Serv-U was found to be affected by a type confusion vulnerability that may allow domain administrators to escalate privileges to that of a system administrator. The risk is lower for Windows installations.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82321"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82321"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82322",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CVE-2026-82322: SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a ",
+  "tldr": "SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a domain group administrator to bypass restrictions and escalate privileges to the server administrator level. The risk is lower for Windows installations.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82322"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "solarwinds",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82322"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+  "tldr": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+  "action": "",
+  "category": "",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era",
+  "tier": "watch",
+  "score": 48,
+  "headline": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+  "tldr": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software resilience.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information",
+  "tier": "watch",
+  "score": 48,
+  "headline": "McDonald's Japan data breach exposes customer location information",
+  "tldr": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/carnegie-endowment-data-breach",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Carnegie Endowment for International Peace says third-party breach leaked donation info",
+  "tldr": "Some donors to the Carnegie Endowment for International Peace had their information leaked due to a cyberattack on a third-party vendor named Soapbox Engage.",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/carnegie-endowment-data-breach"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco",
+  "tier": "watch",
+  "score": 48,
+  "headline": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+  "tldr": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+  "tier": "watch",
+  "score": 48,
+  "headline": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+  "tldr": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html"
+   }
+  ],
+  "first_seen": "2026-11-24T17:55:10+00:00",
+  "updated": "2026-11-24T17:55:10+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-70193",
   "tier": "act",
   "score": 80,
@@ -936,10 +1382,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
    }
   ],
   "first_seen": "2026-11-20T21:52:09+00:00",
-  "updated": "2026-11-24T04:50:38+00:00"
+  "updated": "2026-11-24T17:55:10+00:00"
  },
  {
   "key": "ghsa:GHSA-4hrh-34w3-5ww8",
