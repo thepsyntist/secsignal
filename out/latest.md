@@ -2,6 +2,107 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-24
+
+### 🔴 Microsoft SharePoint Path Traversal RCE Vulnerability CVE-2026-70193
+`CVE-2026-70193 · CVSS 9.9`
+
+A path traversal vulnerability in Microsoft Office SharePoint allows an authorized attacker to execute code over a network. It carries a CVSS score of 9.9.
+
+**Do:** Apply the latest security updates for Microsoft SharePoint.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-70193)
+
+### 🔴 Azure Event Grid Improper Authentication Flaw CVE-2026-62841
+`CVE-2026-62841 · CVSS 10.0`
+
+Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network with a CVSS score of 10.0.
+
+**Do:** Apply the latest security updates for Azure Event Grid.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-62841)
+
+### 🟠 Korea Electric Power Corporation Breached, Impacting 1.5 Million
+`exploited`
+
+A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data, impacting 1.5 million.
+
+**Do:** Monitor internal networks and review access controls for critical infrastructure systems.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/)
+
+### 🟠 Profile Data Roaming Service SSRF Privilege Escalation CVE-2026-109480
+`CVE-2026-109480 · CVSS 9.6`
+
+A server-side request forgery vulnerability in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.
+
+**Do:** Apply available security patches for PDRS.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109480)
+
+### 🟠 Azure Machine Learning SSRF Privilege Escalation CVE-2026-118285
+`CVE-2026-118285 · CVSS 9.6`
+
+A server-side request forgery vulnerability in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.
+
+**Do:** Apply the latest Azure Machine Learning updates.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-118285)
+
+### 🟠 Azure Site Recovery Improper Access Control CVE-2026-118286
+`CVE-2026-118286 · CVSS 9.1`
+
+Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.
+
+**Do:** Apply the latest updates for Azure Site Recovery.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-118286)
+
+### 🟠 M365 Copilot Improper Authorization Flaw CVE-2026-50691
+`CVE-2026-50691 · CVSS 9.9`
+
+Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.
+
+**Do:** Apply the latest security updates for M365 Copilot.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-50691)
+
+### 🟠 Authentication Methods Portal Extension XSS Flaw CVE-2026-109490
+`CVE-2026-109490 · CVSS 9.3`
+
+An XSS vulnerability in the Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.
+
+**Do:** Apply available security updates from Microsoft.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-109490)
+
+### 🟠 Microsoft Clarity Authorization Bypass Flaw CVE-2026-113824
+`CVE-2026-113824 · CVSS 9.1`
+
+An authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.
+
+**Do:** Apply available updates for Microsoft Clarity.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-113824)
+
+### 🟠 Azure DevTest Labs Authentication Bypass CVE-2026-69899
+`CVE-2026-69899 · CVSS 9.1`
+
+Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.
+
+**Do:** Apply available patches for Azure DevTest Labs.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-69899)
+
+### 🟠 Azure Portal XSS Flaw CVE-2026-70305
+`CVE-2026-70305 · CVSS 9.6`
+
+Cross-site scripting in Azure Portal allows an unauthorized attacker to perform spoofing over a network.
+
+**Do:** Apply the latest updates for Azure Portal.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-70305)
+
 ## 2026-11-23
 
 ### 🔴 ConnectWise ScreenConnect Client Flaw CVE-2026-84869 Exploited
@@ -249,14 +350,14 @@ Daptin contains an unauthenticated SQL injection vulnerability via the 'sort' qu
 
 [GitHub Advisory](https://github.com/advisories/GHSA-hq2p-f2vj-v3cm)
 
-### 🟠 N-able Server Breach Causes Global Mail Assure and SpamExperts Outage
-`CVE-2026-134624 · exploited`
+### 🔴 Now exploited: N-able Server Breach Causes Global Mail Assure and SpamExperts Outage
+`CVE-2026-133968, CVE-2026-134624 · CISA KEV`
 
 Attackers breached an N-able server, causing a major worldwide service outage affecting Mail Assure and SpamExperts Hosted Cloud services.
 
 **Do:** Check N-able status updates and advisory guidance.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html) · [SecurityWeek](https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html) · [SecurityWeek](https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133968) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-134624)
 
 ### 🟠 F5 Patches Critical BIG-IP RCE and DoS Vulnerabilities
 
@@ -1103,33 +1204,6 @@ Active cyber intrusion campaign targets government sectors in Asia and Africa us
 
 [The Hacker News](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
 
-### 🔴 Optimizely Supply Chain Attack Injects Malicious JavaScript on Major Sites
-`exploited`
-
-A supply chain attack targeting Optimizely has led to malicious JavaScript loading on popular websites including Zoom, CNN, and Salesforce, exposing visitors to credential theft and payment skimming.
-
-**Do:** Audit third-party JavaScript integrations and monitor web apps for unauthorized script execution.
-
-[SecurityWeek](https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/) · [The Hacker News](https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html) · [SecurityWeek](https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/) · [The Record](https://therecord.media/optimizely-malicious-code-customer-sites)
-
-### 🔴 BO Team Exploits Log4Shell in VMware vCenter to Compromise Code-Signing Server
-`exploited`
-
-Threat actor BO Team used Log4Shell to breach VMware vCenter at a Russian software developer, resulting in a months-long compromise of its development infrastructure and code-signing server.
-
-**Do:** Patch VMware vCenter against Log4Shell and audit development infrastructure for unauthorized access.
-
-[The Hacker News](https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html)
-
-### 🔴 Barracuda Links Cloud Breach to ARTEX AI Framework and Stolen Key
-`exploited`
-
-Attackers who breached Barracuda's cloud environment used a stolen cloud access key combined with the ARTEX AI penetration testing framework.
-
-**Do:** Rotate cloud access keys and audit access logs for automated AI framework activity.
-
-[SecurityWeek](https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)
-
 ### 🔴 Oracle WebLogic Server Unauthenticated Core RCE Vulnerability
 `CVE-2026-91456 · CVSS 9.8`
 
@@ -1163,15 +1237,6 @@ Oracle WebLogic Server versions 12.2.1.4.0 to 15.1.1.0.0 are vulnerable to an un
 Japan's Fugaku supercomputer operated by the RIKEN Center for Computational Science was taken offline following a security breach.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/)
-
-### 🟠 Copeland XWEB EVO Controllers Probed by Hackers Following Disclosures
-`exploited`
-
-Threat actors are actively probing newly disclosed vulnerabilities in Copeland XWEB EVO refrigeration controllers following disclosures by Vulncheck.
-
-**Do:** Audit exposure of Copeland XWEB EVO controllers and apply vendor mitigations if available.
-
-[SecurityWeek](https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/)
 
 ### 🟠 BISHENG Hard-Coded JWT Secret Authentication Bypass
 `CVE-2026-130840 · CVSS 9.8`
@@ -1362,60 +1427,6 @@ A critical CVSS 10.0 vulnerability (CVE-2026-91510) in Oracle Access Manager ver
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91510)
 
-### 🟠 NodePress Hardcoded JWT Secret Authentication Bypass Vulnerability
-`CVE-2026-129952 · CVSS 9.8`
-
-NodePress through 8.5.1 contains an authentication bypass via a hardcoded JWT fallback key ('nodepress-secret'), allowing unauthenticated attackers to forge administrator tokens.
-
-**Do:** Upgrade NodePress beyond version 8.5.1.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129952)
-
-### 🟠 NodePress Default Admin Password Authentication Bypass Vulnerability
-`CVE-2026-129955 · CVSS 9.8`
-
-NodePress through 8.5.1 contains an authentication bypass using a hardcoded default admin password when NP_ADMIN_DEFAULT_PASSWORD is unset.
-
-**Do:** Upgrade NodePress and ensure default credentials are changed.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-129955)
-
-### 🟠 Ghost by muneeb141 OTP Verification Bypass Vulnerability
-`CVE-2026-130070 · CVSS 9.3`
-
-Ghost contains an authentication bypass in the convert_to_real_user method, allowing attackers to skip OTP verification by supplying the bypass_otp parameter and taking over accounts.
-
-**Do:** Apply available patches from the repository.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130070)
-
-### 🟠 TridotsTech go1cms Missing Authentication Privilege Escalation Vulnerability
-`CVE-2026-130071 · CVSS 9.8`
-
-TridotsTech go1cms contains a missing authentication flaw in update_doc, allowing unauthenticated attackers to modify user records and escalate privileges.
-
-**Do:** Update go1cms to fixed commits.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130071)
-
-### 🟠 Cloud Commander Path Traversal and Authentication Bypass Vulnerability
-`CVE-2026-130072 · CVSS 9.1`
-
-Cloud Commander (cloudcmd) before 19.21.4 contains an authentication bypass and path traversal vulnerability via PUT /rename requests, allowing unauthenticated file manipulation.
-
-**Do:** Upgrade Cloud Commander to 19.21.4 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130072)
-
-### 🟠 Zyxel DX3301-T0/EX3301-T0 Out-of-Bounds Write Vulnerability
-`CVE-2026-79614 · CVSS 9.8`
-
-Zyxel DX3301-T0 and EX3301-T0 firmware through 5.50(ABVY.8.3)C0 contain an out-of-bounds write in libclinkc.so allowing unauthenticated attackers to elevate privileges via crafted HTTP requests.
-
-**Do:** Upgrade Zyxel router firmware to patched versions.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-79614)
-
 ### 🟠 Oracle PeopleSoft Enterprise PeopleTools WebLogic Component Flaw
 `CVE-2026-114862 · CVSS 9.1`
 
@@ -1424,14 +1435,6 @@ Oracle PeopleSoft Enterprise PeopleTools versions 8.61-8.63 contain an unauthent
 **Do:** Apply Oracle Critical Patch Update for PeopleSoft.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114862)
-
-### 🟠 Danfoss AK-SM800A Refrigeration Controllers Unpatched Remote Takeover Flaws
-
-Six unpatched vulnerabilities in Danfoss AK-SM800A refrigeration controllers allow remote takeover without authentication, with no fix available in firmware version 5.4.0.
-
-**Do:** Isolate Danfoss AK-SM800A controllers from the internet immediately.
-
-[The Hacker News](https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html)
 
 ### 🟠 Hugging Face Account Hijacked for Kokoro AI Model
 `exploited`
@@ -1644,13 +1647,6 @@ A format string injection vulnerability (CVE-2026-53998) in the applyChatTemplat
 
 [GitHub Advisory](https://github.com/advisories/GHSA-gfv3-m769-5xm3)
 
-### 🟠 Uber Third-Party Breach Exposes Data of 150,000 People
-`exploited`
-
-Hackers compromised a third-party service provider using stolen internal credentials, accessing Uber data including names, addresses, and driver's license numbers for nearly 150,000 individuals.
-
-[SecurityWeek](https://www.securityweek.com/uber-data-breach-impacts-150000-people/) · [The Record](https://therecord.media/uber-says-150000-impacted-third-party-breach) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/)
-
 ### 🟠 Researchers Claim RCE Exploits Bypass Telegram Android Defenses
 
 Security researchers claim malicious chat widgets can bypass Telegram's Android security filters and execute code outside the sandbox.
@@ -1668,29 +1664,12 @@ Siemens meta-iot2050 from version V01.03.01 contains a command injection vulnera
 
 [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11)
 
-### 🟠 NoisyTCP 11-Year-Old Linux Kernel Vulnerability Impacts Servers
-
-An 11-year-old Linux kernel vulnerability dubbed NoisyTCP affects most distributions and allows attackers to crash servers running Nginx, Apache, and SSH with default configurations.
-
-**Do:** Apply Linux kernel security updates when available.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/)
-
 ### 🟠 Market Research Giant Ipsos Investigates Internal System Breach
 `exploited`
 
 Ipsos disclosed it is investigating a breach of its internal system after filing a complaint with authorities.
 
 [SecurityWeek](https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/)
-
-### 🟠 Fandango Media Discloses Payment Card Data Breach on Checkout Pages
-`exploited`
-
-Fandango Media is notifying customers of a breach that exposed payment card details entered on checkout pages.
-
-**Do:** Monitor payment cards used on affected checkout pages for fraudulent activity.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/) · [SecurityWeek](https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/)
 
 ### 🟠 Siemens ROS# Code Injection Vulnerability
 `CVE-2026-109097 · EPSS 0.00`
@@ -1736,10 +1715,4 @@ Siemens Simcenter Femap before version 2606.0002 contains an out-of-bounds read 
 **Do:** Update Siemens Simcenter Femap to version 2606.0002 or later.
 
 [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10)
-
-### 🟠 Australian Retailer Coles Investigates Cybersecurity Incident
-
-Coles Group Limited is investigating a cyber security incident, though in-store operations remain unaffected.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/)
 

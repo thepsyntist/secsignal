@@ -1,5 +1,278 @@
 [
  {
+  "key": "nvd:CVE-2026-70193",
+  "tier": "act",
+  "score": 80,
+  "headline": "Microsoft SharePoint Path Traversal RCE Vulnerability CVE-2026-70193",
+  "tldr": "A path traversal vulnerability in Microsoft Office SharePoint allows an authorized attacker to execute code over a network. It carries a CVSS score of 9.9.",
+  "action": "Apply the latest security updates for Microsoft SharePoint.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-70193"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "sharepoint",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-62841",
+  "tier": "act",
+  "score": 75,
+  "headline": "Azure Event Grid Improper Authentication Flaw CVE-2026-62841",
+  "tldr": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network with a CVSS score of 10.0.",
+  "action": "Apply the latest security updates for Azure Event Grid.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-62841"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Korea Electric Power Corporation Breached, Impacting 1.5 Million",
+  "tldr": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data, impacting 1.5 million.",
+  "action": "Monitor internal networks and review access controls for critical infrastructure systems.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-109480",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Profile Data Roaming Service SSRF Privilege Escalation CVE-2026-109480",
+  "tldr": "A server-side request forgery vulnerability in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+  "action": "Apply available security patches for PDRS.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109480"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109480"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-118285",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Azure Machine Learning SSRF Privilege Escalation CVE-2026-118285",
+  "tldr": "A server-side request forgery vulnerability in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
+  "action": "Apply the latest Azure Machine Learning updates.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-118285"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118285"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-118286",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Azure Site Recovery Improper Access Control CVE-2026-118286",
+  "tldr": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
+  "action": "Apply the latest updates for Azure Site Recovery.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-118286"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118286"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-50691",
+  "tier": "watch",
+  "score": 67,
+  "headline": "M365 Copilot Improper Authorization Flaw CVE-2026-50691",
+  "tldr": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+  "action": "Apply the latest security updates for M365 Copilot.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-50691"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50691"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-109490",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Authentication Methods Portal Extension XSS Flaw CVE-2026-109490",
+  "tldr": "An XSS vulnerability in the Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
+  "action": "Apply available security updates from Microsoft.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-109490"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109490"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-113824",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Microsoft Clarity Authorization Bypass Flaw CVE-2026-113824",
+  "tldr": "An authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
+  "action": "Apply available updates for Microsoft Clarity.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-113824"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113824"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-69899",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Azure DevTest Labs Authentication Bypass CVE-2026-69899",
+  "tldr": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
+  "action": "Apply available patches for Azure DevTest Labs.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-69899"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69899"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-70305",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Azure Portal XSS Flaw CVE-2026-70305",
+  "tldr": "Cross-site scripting in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
+  "action": "Apply the latest updates for Azure Portal.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-70305"
+  ],
+  "cvss": 9.6,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70305"
+   }
+  ],
+  "first_seen": "2026-11-24T04:50:38+00:00",
+  "updated": "2026-11-24T04:50:38+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
   "tier": "act",
   "score": 87,
@@ -624,15 +897,16 @@
  },
  {
   "key": "rss:https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage",
-  "tier": "watch",
+  "tier": "act",
   "score": 69,
-  "headline": "N-able Server Breach Causes Global Mail Assure and SpamExperts Outage",
+  "headline": "Now exploited: N-able Server Breach Causes Global Mail Assure and SpamExperts Outage",
   "tldr": "Attackers breached an N-able server, causing a major worldwide service outage affecting Mail Assure and SpamExperts Hosted Cloud services.",
   "action": "Check N-able status updates and advisory guidance.",
   "category": "outage",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
+   "CVE-2026-133968",
    "CVE-2026-134624"
   ],
   "cvss": null,
@@ -650,10 +924,22 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
    }
   ],
   "first_seen": "2026-11-20T21:52:09+00:00",
-  "updated": "2026-11-23T20:19:04+00:00"
+  "updated": "2026-11-24T04:50:38+00:00"
  },
  {
   "key": "ghsa:GHSA-4hrh-34w3-5ww8",
