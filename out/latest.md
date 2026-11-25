@@ -4,6 +4,42 @@
 
 ## 2026-11-25
 
+### 🔴 Palo Alto Networks patches Fragnesia flaw used to root firewalls
+`exploited`
+
+A China-linked hacking group chained PHP2Shell with the Fragnesia vulnerability in AI-assisted attacks targeting firewall servers.
+
+**Do:** Apply the latest patches from Palo Alto Networks immediately.
+
+[SecurityWeek](https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/)
+
+### 🔴 US Treasury FinCEN takes systems offline after cyber incident
+`exploited`
+
+The U.S. Treasury Department's Financial Crimes Enforcement Network experienced unauthorized access to a subset of systems and took them offline.
+
+**Do:** Review reporting deadlines and follow FinCEN guidance for BSA filings.
+
+[The Record](https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident) · [The Hacker News](https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html) · [SecurityWeek](https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/)
+
+### 🔴 CISA adds Drupal flaw found by Anthropic scanner to KEV
+`exploited`
+
+A Drupal vulnerability discovered by an AI scanner is actively exploited in attacks, leading to a CISA emergency directive.
+
+**Do:** Patch Drupal installations per CISA KEV timeline.
+
+[SecurityWeek](https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/)
+
+### 🔴 GeoServer RCE flaws CVE-2026-120705 and CVE-2026-129243 exploited
+`CVE-2026-120705, CVE-2026-129243 · exploited`
+
+Threat actors are actively exploiting arbitrary file read and RCE vulnerabilities in GeoServer (CVE-2026-120705 and CVE-2026-129243).
+
+**Do:** Upgrade GeoServer to patched versions immediately.
+
+[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
+
 ### 🔴 npm:ruflo MCP bridge unauthenticated RCE vulnerability
 `CVE-2026-59726 · CVSS 10.0 · EPSS 0.06`
 
@@ -12,6 +48,33 @@ The ruflo MCP bridge shipping in ruflo/docker-compose.yml exposes an unauthentic
 **Do:** Update ruflo and ensure Docker Compose configurations do not bind management ports to all network interfaces.
 
 [GitHub Advisory](https://github.com/advisories/GHSA-c4hm-4h84-2cf3)
+
+### 🟠 Ransomware attack disrupts Guadeloupe hospital operations
+`exploited`
+
+A suspected ransomware attack impaired the University Hospital of Guadeloupe, forcing the postponement of surgeries and suspension of cancer treatments.
+
+**Do:** Ensure robust backup and incident response protocols are active.
+
+[The Record](https://therecord.media/guadeloupe-ransomware-hospital-cyber)
+
+### 🟠 Check Point and Hex.pm servers targeted in AI-driven attacks
+`exploited`
+
+Attackers compromised Check Point management servers and Hex.pm package registry servers using automated tooling and unauthenticated flaws.
+
+**Do:** Audit Check Point management servers and update dependencies securely.
+
+[The Hacker News](https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html)
+
+### 🟠 WordPress blocks six backdoored WP Connect plugins
+`exploited`
+
+WordPress proactively removed six plugins developed by WP Connect after their developer accounts were compromised to inject RCE backdoors.
+
+**Do:** Verify plugin integrity and remove any unauthorized or compromised versions.
+
+[The Hacker News](https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html)
 
 ### 🟠 Rackspace Shuts Down Spot Cloud After Security Breach
 `exploited`
@@ -27,7 +90,16 @@ Rackspace is shutting down its Spot cloud platform after a security breach expos
 
 An unclassified CIA system was compromised in a cyberattack, though specific details on the compromised data or attribution remain unclear.
 
-[SecurityWeek](https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/)
+[SecurityWeek](https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/)
+
+### 🟠 Com-affiliated threat actors execute vishing campaign for cloud access
+`exploited`
+
+Threat actors have used vishing attacks to hijack cloud accounts across financial, healthcare, and legal sectors for extortion.
+
+**Do:** Enforce phishing-resistant MFA across all cloud accounts.
+
+[The Hacker News](https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html)
 
 ### 🟠 Colorado myColorado App Cyberattack Impacts 150,000
 `exploited`
@@ -43,7 +115,7 @@ A cyberattack on the myColorado digital identification app resulted in data thef
 
 Turnitin detected unauthorized activity involving certain customer-facing systems.
 
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/)
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/) · [SecurityWeek](https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/)
 
 ### 🟠 BusyBox tftpd path traversal vulnerability
 `CVE-2026-136411 · CVSS 9.8`
@@ -310,7 +382,7 @@ A critical RCE vulnerability in the legacy Idunno.AntiCsrf ASP.NET library (vers
 
 **Do:** Discontinue using Idunno.AntiCsrf immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132224) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-131914) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132165)
+[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132224) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-131914) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132165) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/) · [The Hacker News](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html) · [SecurityWeek](https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/)
 
 ### 🔴 SAP NetWeaver and Cisco Expressway Flaws Exploited in Attacks
 `exploited`
@@ -1199,56 +1271,12 @@ NVIDIA is investigating claims by the Gentlemen ransomware group after the compa
 
 ## 2026-11-18
 
-### 🔴 Optimizely Third-Party Script Vulnerability Used to Serve Malware
-`exploited`
-
-At least 178 major websites unknowingly served malware via compromised Optimizely integrations, injecting data-stealing payloads to visitors over a 24-hour period.
-
-**Do:** Audit third-party script integrations and enforce strict Content Security Policy (CSP) headers.
-
-[Ars Technica](https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/) · [Krebs on Security](https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/)
-
-### 🔴 Microsoft Agent Framework PyPI Package Compromised with Credential Stealer
-`exploited`
-
-Threat actors compromised Microsoft's agent-framework PyPI package (versions 1.26.1 and 1.26.2) to deploy a cloud credential stealer on Python startup.
-
-**Do:** Remove affected versions of agent-framework and rotate compromised cloud credentials immediately.
-
-[The Hacker News](https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html)
-
-### 🔴 Java4Shell Critical RCE Vulnerability in OpenJDK and Enterprise Apps
-
-A critical vulnerability dubbed Java4Shell in OpenJDK allows unauthenticated attackers to execute remote code on major enterprise applications like Jenkins, Jira, Confluence, and Keycloak.
-
-**Do:** Apply emergency patches for OpenJDK and affected enterprise applications as provided by vendors.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/) · [SecurityWeek](https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/)
-
 ### 🔴 Now exploited: Apache warns of Roller RCE vulnerability exploited in attacks
 `CVE-2026-129448 · CISA KEV`
 
 Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/) · [The Hacker News](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html) · [SecurityWeek](https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-129448)
-
-### 🟠 COLD RELIC Hackers Exploit Stolen Google Workspace Data in Breaches
-`exploited`
-
-Russian state-sponsored group Cold Relic weaponized a single cloud compromise to breach a second U.S. organization using stolen Google Workspace data.
-
-**Do:** Audit Google Workspace access logs, enforce phishing-resistant MFA, and monitor for unauthorized token usage.
-
-[The Hacker News](https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html)
-
-### 🟠 OwnTracks Recorder Format String RCE Vulnerability
-`CVE-2026-131852 · CVSS 9.8`
-
-OwnTracks Recorder before 1.0.5 contains a format string vulnerability in json_response() allowing unauthenticated attackers to execute code and leak memory via malicious tid values.
-
-**Do:** Upgrade OwnTracks Recorder to version 1.0.5 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131852)
 
 ### 🟠 Microsoft Agent Framework Releases Poisoned With Credential Stealer
 
