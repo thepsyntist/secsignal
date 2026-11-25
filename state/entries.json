@@ -1,5 +1,147 @@
 [
  {
+  "key": "ghsa:GHSA-c4hm-4h84-2cf3",
+  "tier": "act",
+  "score": 72,
+  "headline": "npm:ruflo MCP bridge unauthenticated RCE vulnerability",
+  "tldr": "The ruflo MCP bridge shipping in ruflo/docker-compose.yml exposes an unauthenticated POST /mcp endpoint, allowing remote attackers to achieve remote code execution and steal provider API keys.",
+  "action": "Update ruflo and ensure Docker Compose configurations do not bind management ports to all network interfaces.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-59726"
+  ],
+  "cvss": 10.0,
+  "epss": 0.06244,
+  "watch": "docker",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-c4hm-4h84-2cf3"
+   }
+  ],
+  "first_seen": "2026-11-25T02:34:32+00:00",
+  "updated": "2026-11-25T02:34:32+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Rackspace Shuts Down Spot Cloud After Security Breach",
+  "tldr": "Rackspace is shutting down its Spot cloud platform after a security breach exposed customer Kubernetes clusters and secrets.",
+  "action": "Migrate services and download data from Rackspace Spot before December 8.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/"
+   }
+  ],
+  "first_seen": "2026-11-25T02:34:32+00:00",
+  "updated": "2026-11-25T02:34:32+00:00"
+ },
+ {
+  "key": "rss:https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Unclassified CIA System Breached in Cyberattack",
+  "tldr": "An unclassified CIA system was compromised in a cyberattack, though specific details on the compromised data or attribution remain unclear.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
+   }
+  ],
+  "first_seen": "2026-11-25T02:34:32+00:00",
+  "updated": "2026-11-25T02:34:32+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/mycolorado-app-down-data-breach",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Colorado myColorado App Cyberattack Impacts 150,000",
+  "tldr": "A cyberattack on the myColorado digital identification app resulted in data theft affecting 150,000 users.",
+  "action": "Monitor accounts and follow guidance from Colorado state agencies.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/mycolorado-app-down-data-breach"
+   }
+  ],
+  "first_seen": "2026-11-25T02:34:32+00:00",
+  "updated": "2026-11-25T02:34:32+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems",
+  "tier": "watch",
+  "score": 53,
+  "headline": "Turnitin Discloses Unauthorized Activity on Systems",
+  "tldr": "Turnitin detected unauthorized activity involving certain customer-facing systems.",
+  "action": "",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/"
+   }
+  ],
+  "first_seen": "2026-11-25T02:34:32+00:00",
+  "updated": "2026-11-25T02:34:32+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-136411",
+  "tier": "watch",
+  "score": 51,
+  "headline": "BusyBox tftpd path traversal vulnerability",
+  "tldr": "BusyBox through 1.38.0 contains an absolute path traversal vulnerability in tftpd allowing unauthenticated remote attackers to read or overwrite sensitive files.",
+  "action": "Update BusyBox to a patched version when available.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-136411"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136411"
+   }
+  ],
+  "first_seen": "2026-11-25T02:34:32+00:00",
+  "updated": "2026-11-25T02:34:32+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
   "tier": "act",
   "score": 71,
@@ -778,14 +920,16 @@
   "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
   "tier": "act",
   "score": 77,
-  "headline": "Idunno.AntiCsrf ASP.NET Library RCE Flaw CVE-2026-131914 Exploited",
+  "headline": "Now exploited: Idunno.AntiCsrf ASP.NET Library RCE Flaw CVE-2026-131914 Exploited",
   "tldr": "A critical RCE vulnerability in the legacy Idunno.AntiCsrf ASP.NET library (versions 0.9.1.0 and 0.9.1 Beta) is being exploited in the wild.",
   "action": "Discontinue using Idunno.AntiCsrf immediately.",
   "category": "vulnerability",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
-   "CVE-2026-131914"
+   "CVE-2026-131914",
+   "CVE-2026-132165",
+   "CVE-2026-132224"
   ],
   "cvss": null,
   "epss": 0.00614,
@@ -794,10 +938,26 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165"
    }
   ],
   "first_seen": "2026-11-23T20:19:04+00:00",
-  "updated": "2026-11-23T20:19:04+00:00"
+  "updated": "2026-11-25T02:34:32+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks",

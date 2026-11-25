@@ -2,6 +2,58 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-25
+
+### 🔴 npm:ruflo MCP bridge unauthenticated RCE vulnerability
+`CVE-2026-59726 · CVSS 10.0 · EPSS 0.06`
+
+The ruflo MCP bridge shipping in ruflo/docker-compose.yml exposes an unauthenticated POST /mcp endpoint, allowing remote attackers to achieve remote code execution and steal provider API keys.
+
+**Do:** Update ruflo and ensure Docker Compose configurations do not bind management ports to all network interfaces.
+
+[GitHub Advisory](https://github.com/advisories/GHSA-c4hm-4h84-2cf3)
+
+### 🟠 Rackspace Shuts Down Spot Cloud After Security Breach
+`exploited`
+
+Rackspace is shutting down its Spot cloud platform after a security breach exposed customer Kubernetes clusters and secrets.
+
+**Do:** Migrate services and download data from Rackspace Spot before December 8.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/)
+
+### 🟠 Unclassified CIA System Breached in Cyberattack
+`exploited`
+
+An unclassified CIA system was compromised in a cyberattack, though specific details on the compromised data or attribution remain unclear.
+
+[SecurityWeek](https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/)
+
+### 🟠 Colorado myColorado App Cyberattack Impacts 150,000
+`exploited`
+
+A cyberattack on the myColorado digital identification app resulted in data theft affecting 150,000 users.
+
+**Do:** Monitor accounts and follow guidance from Colorado state agencies.
+
+[The Record](https://therecord.media/mycolorado-app-down-data-breach)
+
+### 🟠 Turnitin Discloses Unauthorized Activity on Systems
+`exploited`
+
+Turnitin detected unauthorized activity involving certain customer-facing systems.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/)
+
+### 🟠 BusyBox tftpd path traversal vulnerability
+`CVE-2026-136411 · CVSS 9.8`
+
+BusyBox through 1.38.0 contains an absolute path traversal vulnerability in tftpd allowing unauthenticated remote attackers to read or overwrite sensitive files.
+
+**Do:** Update BusyBox to a patched version when available.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-136411)
+
 ## 2026-11-24
 
 ### 🔴 Microsoft SharePoint Path Traversal RCE Vulnerability CVE-2026-70193
@@ -251,14 +303,14 @@ CISA added a critical Cisco Expressway RCE vulnerability to its KEV catalog afte
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/)
 
-### 🔴 Idunno.AntiCsrf ASP.NET Library RCE Flaw CVE-2026-131914 Exploited
-`CVE-2026-131914 · EPSS 0.01 · exploited`
+### 🔴 Now exploited: Idunno.AntiCsrf ASP.NET Library RCE Flaw CVE-2026-131914 Exploited
+`CVE-2026-131914, CVE-2026-132165, CVE-2026-132224 · EPSS 0.01 · CISA KEV`
 
 A critical RCE vulnerability in the legacy Idunno.AntiCsrf ASP.NET library (versions 0.9.1.0 and 0.9.1 Beta) is being exploited in the wild.
 
 **Do:** Discontinue using Idunno.AntiCsrf immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html)
+[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132224) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-131914) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132165)
 
 ### 🔴 SAP NetWeaver and Cisco Expressway Flaws Exploited in Attacks
 `exploited`
@@ -1257,545 +1309,4 @@ Star Blizzard weaponized data and identities stolen in late 2025 to phish and co
 Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .
 
 [SecurityWeek](https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/)
-
-## 2026-11-17
-
-### 🔴 Siemens Software Impacted by Node2Shell Brotli Vulnerability
-`CVE-2026-111497 · EPSS 0.83 · CISA KEV`
-
-Siemens products are affected by the critical 'Node2Shell' out-of-bounds write vulnerability (CVE-2026-111497) in the Node.js Brotli decoder, which allows remote code execution and is actively exploited.
-
-**Do:** Update Siemens software products to the latest patched versions provided in the advisory.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03)
-
-### 🔴 Perforce Puppet Enterprise Deserialization Flaw Added to KEV
-`CVE-2026-115731 · EPSS 0.00 · CISA KEV`
-
-Perforce Puppet Enterprise contains a deserialization vulnerability (CVE-2026-115731) in report-processing code allowing remote code execution, added to CISA KEV due to active exploitation.
-
-**Do:** Apply mitigations and updates provided by Perforce for Puppet Enterprise immediately.
-
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-115731) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html) · [SecurityWeek](https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/)
-
-### 🔴 Critical Oracle Java Base64 Memory Corruption Vulnerability
-`CVE-2026-114938 · exploited`
-
-Oracle Java is affected by a critical memory-corruption vulnerability known as 'Java4Shell' (CVE-2026-114938) in the x86-64 HotSpot JVM Base64 decoder, allowing unauthenticated RCE.
-
-**Do:** Identify affected Java installations and apply emergency patches from Oracle.
-
-[CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching) · [The Hacker News](https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html) · [The Hacker News](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html) · [The Hacker News](https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html)
-
-### 🔴 Cloud Keys Leaked in Docker Hub Images Stolen Within Seconds
-`exploited`
-
-Credentials and access secrets exposed in public Docker Hub images are actively extracted and exploited by attackers within seconds of publication.
-
-**Do:** Audit public Docker Hub repositories for leaked secrets and implement automated scanning.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/)
-
-### 🔴 Oracle WebLogic Server Unauthenticated Core RCE Vulnerability
-`CVE-2026-91456 · CVSS 9.8`
-
-Oracle WebLogic Server versions 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0, and 15.1.1.0.0 contain a critical unauthenticated RCE vulnerability (CVE-2026-91456) via SOAP.
-
-**Do:** Apply the latest Oracle CPU patches for WebLogic Server.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91456)
-
-### 🔴 Oracle WebLogic Server T3 and IIOP RCE Vulnerability
-`CVE-2026-91470 · CVSS 9.8`
-
-Oracle WebLogic Server versions 12.2.1.4.0 through 15.1.1.0.0 contain an unauthenticated RCE vulnerability (CVE-2026-91470) via T3 and IIOP protocols.
-
-**Do:** Apply Oracle CPU patches and restrict T3/IIOP access.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91470)
-
-### 🔴 Oracle WebLogic Server TopLink Integration RCE Vulnerability
-`CVE-2026-91569 · CVSS 10.0`
-
-Oracle WebLogic Server versions 12.2.1.4.0 to 15.1.1.0.0 are vulnerable to an unauthenticated RCE via TopLink Integration (CVE-2026-91569) with CVSS 10.0.
-
-**Do:** Apply Oracle CPU patches immediately.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91569)
-
-### 🟠 Japan RIKEN Fugaku Supercomputer Taken Offline After Cyberattack
-`exploited`
-
-Japan's Fugaku supercomputer operated by the RIKEN Center for Computational Science was taken offline following a security breach.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/)
-
-### 🟠 BISHENG Hard-Coded JWT Secret Authentication Bypass
-`CVE-2026-130840 · CVSS 9.8`
-
-BISHENG before 3.0.0 contains an authentication bypass vulnerability (CVE-2026-130840) due to a hard-coded default JWT secret, allowing admin takeover.
-
-**Do:** Upgrade BISHENG to version 3.0.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130840)
-
-### 🟠 Oracle Business Intelligence Enterprise Edition Takeover Flaw
-`CVE-2026-114784 · CVSS 10.0`
-
-Oracle Business Intelligence Enterprise Edition versions 8.2.0.0.0 and 26.01.0.0.0 contain an unauthenticated takeover vulnerability (CVE-2026-114784) with CVSS 10.0.
-
-**Do:** Apply Oracle Critical Patch Update.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114784)
-
-### 🟠 Oracle Platform Security for Java Takeover Vulnerability
-`CVE-2026-114824 · CVSS 10.0`
-
-Oracle Platform Security for Java versions 12.2.1.4.0 and 14.1.2.0.0 contain an unauthenticated remote takeover flaw (CVE-2026-114824) with CVSS 10.0.
-
-**Do:** Apply Oracle Critical Patch Update.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114824)
-
-### 🟠 Oracle Access Manager Admin Console Takeover Vulnerability
-`CVE-2026-114835 · CVSS 10.0`
-
-Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 contain an unauthenticated takeover vulnerability (CVE-2026-114835) in the Admin Console with CVSS 10.0.
-
-**Do:** Apply Oracle Critical Patch Update.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114835)
-
-### 🟠 Oracle APEX Unauthenticated Takeover Vulnerability (CVE-2026-114849)
-`CVE-2026-114849 · CVSS 9.8`
-
-An easily exploitable vulnerability in Oracle APEX versions 24.1.22, 24.2.21, 26.1.5 and 26.2.0 allows unauthenticated attackers with HTTPS network access to achieve a complete system takeover.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle APEX.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114849)
-
-### 🟠 Oracle APEX Unauthenticated Takeover Vulnerability (CVE-2026-114850)
-`CVE-2026-114850 · CVSS 9.8`
-
-An easily exploitable vulnerability in Oracle APEX versions 24.1.22, 24.2.21, 26.1.5 and 26.2.0 allows unauthenticated attackers with HTTPS network access to achieve a complete system takeover.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle APEX.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114850)
-
-### 🟠 Oracle E-Business Suite Universal Work Queue RCE (CVE-2026-114863)
-`CVE-2026-114863 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Universal Work Queue versions 12.2.3-12.2.15 via HTTP network access.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114863)
-
-### 🟠 Oracle E-Business Suite Document Management RCE (CVE-2026-114880)
-`CVE-2026-114880 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Document Management and Collaboration versions 12.2.3-12.2.15.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114880)
-
-### 🟠 Oracle E-Business Suite Application Object Library RCE (CVE-2026-114924)
-`CVE-2026-114924 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Application Object Library versions 12.2.3-12.2.15.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114924)
-
-### 🟠 Oracle E-Business Suite Applications Framework RCE (CVE-2026-114925)
-`CVE-2026-114925 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle E-Business Suite Applications Framework versions 12.2.3-12.2.15 via REST Services.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114925)
-
-### 🟠 Oracle Hyperion Infrastructure Technology Takeover Vulnerability (CVE-2026-115047)
-`CVE-2026-115047 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-115047)
-
-### 🟠 Oracle Hyperion Infrastructure Technology Takeover Vulnerability (CVE-2026-115048)
-`CVE-2026-115048 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-115048)
-
-### 🟠 Oracle Hyperion Infrastructure Technology Takeover Vulnerability (CVE-2026-115080)
-`CVE-2026-115080 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-115080)
-
-### 🟠 Oracle Hyperion Planning RMI Takeover Vulnerability (CVE-2026-115086)
-`CVE-2026-115086 · CVSS 9.8`
-
-An unauthenticated vulnerability via RMI allows remote takeover of Oracle Hyperion Planning version 11.2.26.0.000.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-115086)
-
-### 🟠 Oracle Hyperion Planning ADF Takeover Vulnerability (CVE-2026-115089)
-`CVE-2026-115089 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle Hyperion Planning version 11.2.26.0.000 via Application Development Framework.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-115089)
-
-### 🟠 Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127324)
-`CVE-2026-127324 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle AutoVue.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127324)
-
-### 🟠 Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127325)
-`CVE-2026-127325 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle AutoVue.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127325)
-
-### 🟠 Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127326)
-`CVE-2026-127326 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle AutoVue.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127326)
-
-### 🟠 Oracle AutoVue Unauthenticated Takeover Vulnerability (CVE-2026-127327)
-`CVE-2026-127327 · CVSS 9.8`
-
-An unauthenticated remote takeover vulnerability affects Oracle AutoVue version 21.1.0 via HTTP.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle AutoVue.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127327)
-
-### 🟠 Oracle Access Manager Authentication Engine Vulnerability
-`CVE-2026-91500 · CVSS 10.0`
-
-A critical CVSS 10.0 vulnerability (CVE-2026-91500) in Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 allows unauthenticated attackers to compromise the system via HTTP.
-
-**Do:** Apply the latest security updates from Oracle.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91500)
-
-### 🟠 Oracle Access Manager Authentication Engine Vulnerability
-`CVE-2026-91510 · CVSS 10.0`
-
-A critical CVSS 10.0 vulnerability (CVE-2026-91510) in Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 allows unauthenticated network compromise via HTTP.
-
-**Do:** Apply the latest security patches from Oracle.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91510)
-
-### 🟠 Oracle PeopleSoft Enterprise PeopleTools WebLogic Component Flaw
-`CVE-2026-114862 · CVSS 9.1`
-
-Oracle PeopleSoft Enterprise PeopleTools versions 8.61-8.63 contain an unauthenticated vulnerability in the Weblogic component (CVE-2026-114862) allowing data modification.
-
-**Do:** Apply Oracle Critical Patch Update for PeopleSoft.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114862)
-
-### 🟠 Hugging Face Account Hijacked for Kokoro AI Model
-`exploited`
-
-Lack of ownership verification on Hugging Face allowed researchers to take control of the Kokoro text-to-speech model used across major tech platforms.
-
-**Do:** Verify model provenance and monitor dependencies for unauthorized modifications.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/)
-
-### 🟠 Tor Releases Emergency Update Amid Ongoing DDoS Attack
-`exploited`
-
-The Tor Project released a security update for its network relay software to defend against an ongoing distributed denial-of-service attack overwhelming relays.
-
-**Do:** Update Tor relay software to the latest version.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/)
-
-### 🟠 Google Warns Chinese State Group Developing AI Attack Tools
-
-Google reported that threat actors are increasingly using autonomous multi-agent offensive frameworks like Artex and PentAGI to execute multi-stage intrusions.
-
-[SecurityWeek](https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/) · [The Record](https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage)
-
-### 🟠 NSA Classified Internal Network Faces Unspecified Disruptions
-`exploited`
-
-The NSA reported disruptions to its classified internal network NSA Net, leading to staggered arrivals at its headquarters.
-
-[The Record](https://therecord.media/nsa-net-disruptions) · [SecurityWeek](https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/)
-
-### 🟠 Rootways Authorize.net CIM Pro for Magento 2 SSRF Flaw
-`CVE-2026-130583 · CVSS 9.3`
-
-Rootways Authorize.net CIM Pro extension for Magento 2 before 4.1.5 contains an unauthenticated SSRF vulnerability (CVE-2026-130583) allowing credential theft.
-
-**Do:** Upgrade Rootways Authorize.net CIM Pro extension to version 4.1.5 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130583)
-
-### 🟠 BZFlag bzfs Heap Out-of-Bounds Write Vulnerability
-`CVE-2026-130849 · CVSS 9.8`
-
-BZFlag bzfs before 2.4.32 contains a heap out-of-bounds write vulnerability (CVE-2026-130849) allowing remote unauthenticated code execution.
-
-**Do:** Upgrade BZFlag bzfs to version 2.4.32 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130849)
-
-### 🟠 53AIHub Missing Authentication Account Takeover Flaw
-`CVE-2026-130856 · CVSS 9.8`
-
-53AIHub before 0.5.5 contains a missing authentication vulnerability (CVE-2026-130856) in the initialization endpoint allowing account takeover.
-
-**Do:** Upgrade 53AIHub to version 0.5.5 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-130856)
-
-### 🟠 Oracle Database Server Oracle Text Takeover Vulnerability (CVE-2026-114848)
-`CVE-2026-114848 · CVSS 9.9`
-
-A vulnerability in the Oracle Text component of Oracle Database Server versions 19.3-19.33, 21.3-21.24 and 23.4.0-23.26.3 allows low-privileged attackers with network access via Oracle Net to compromise the component.
-
-**Do:** Apply the latest Oracle Critical Patch Update to affected Database Server installations.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114848)
-
-### 🟠 Oracle REST Data Services Takeover Vulnerability (CVE-2026-114856)
-`CVE-2026-114856 · CVSS 9.6`
-
-A vulnerability in Oracle REST Data Services versions 24.2.0-26.3.0 allows unauthenticated attackers with HTTPS access to compromise the product, requiring user interaction.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle REST Data Services.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114856)
-
-### 🟠 Oracle E-Business Suite Document Management DoS (CVE-2026-114881)
-`CVE-2026-114881 · CVSS 9.1`
-
-An unauthenticated vulnerability in Oracle E-Business Suite Document Management and Collaboration versions 12.2.3-12.2.15 allows unauthorized data access and denial of service.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle E-Business Suite.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114881)
-
-### 🟠 Oracle PeopleSoft Enterprise PeopleTools Vulnerability (CVE-2026-114934)
-`CVE-2026-114934 · CVSS 9.3`
-
-An unauthenticated vulnerability in Oracle PeopleSoft Enterprise PeopleTools versions 8.61-8.63 allows unauthorized data access or complete system disruption.
-
-**Do:** Apply the latest Oracle Critical Patch Update for PeopleSoft.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114934)
-
-### 🟠 Oracle MySQL Server Client Programs Vulnerability (CVE-2026-114952)
-`CVE-2026-114952 · CVSS 9.1`
-
-An unauthenticated vulnerability affects MySQL Server versions 8.4.0-8.4.13, 9.7.0-9.7.4, 26.10, and MySQL Cluster versions 8.0.0-8.0.50, 8.4.0-8.4.13, 9.7.0-9.7.4, 26.10, allowing unauthorized data manipulation.
-
-**Do:** Apply the latest Oracle Critical Patch Update for MySQL.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114952)
-
-### 🟠 Oracle Hyperion Planning Security Vulnerability (CVE-2026-114956)
-`CVE-2026-114956 · CVSS 9.3`
-
-An unauthenticated vulnerability with required user interaction affects Oracle Hyperion Planning version 11.2.26.0.000.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114956)
-
-### 🟠 Oracle Hyperion Financial Management Takeover Vulnerability (CVE-2026-114978)
-`CVE-2026-114978 · CVSS 9.9`
-
-A vulnerability in Oracle Hyperion Financial Management version 11.2.26.0.000 allows low-privileged attackers with network access to achieve a takeover.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114978)
-
-### 🟠 Oracle AutoVue Security Takeover Vulnerability (CVE-2026-114980)
-`CVE-2026-114980 · CVSS 9.9`
-
-A vulnerability in Oracle AutoVue version 21.1.0 allows low-privileged attackers with network access to take over the component.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Oracle AutoVue.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-114980)
-
-### 🟠 Oracle Hyperion Infrastructure Technology Vulnerability (CVE-2026-115050)
-`CVE-2026-115050 · CVSS 9.1`
-
-An unauthenticated vulnerability in Oracle Hyperion Infrastructure Technology version 11.2.26.0.000 allows unauthorized data creation, deletion, or modification.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-115050)
-
-### 🟠 Oracle Hyperion Infrastructure Technology Vulnerability (CVE-2026-115139)
-`CVE-2026-115139 · CVSS 9.3`
-
-An unauthenticated vulnerability requiring user interaction affects Oracle Hyperion Infrastructure Technology version 11.2.26.0.000.
-
-**Do:** Apply the latest Oracle Critical Patch Update for Hyperion.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-115139)
-
-### 🟠 Oracle Hyperion Financial Close Management Unauth. Vulnerability
-`CVE-2026-127362 · CVSS 9.1`
-
-An easily exploitable unauthenticated vulnerability (CVE-2026-127362) in Oracle Hyperion Financial Close Management version 11.2.26.0.000 allows network compromise via HTTP.
-
-**Do:** Apply the latest security patches provided by Oracle.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127362)
-
-### 🟠 Oracle Hyperion Financial Close Management Net Vulnerability
-`CVE-2026-127369 · CVSS 9.1`
-
-An easily exploitable unauthenticated vulnerability (CVE-2026-127369) in Oracle Hyperion Financial Close Management version 11.2.26.0.000 allows network compromise via Oracle Net.
-
-**Do:** Apply the latest security patches provided by Oracle.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-127369)
-
-### 🟠 Oracle Access Manager Authentication Engine Vulnerability
-`CVE-2026-91507 · CVSS 9.3`
-
-A vulnerability (CVE-2026-91507) in Oracle Access Manager versions 12.2.1.4.0 and 14.1.2.1.0 allows unauthenticated attackers to compromise the system via HTTP.
-
-**Do:** Apply the latest security patches from Oracle.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91507)
-
-### 🟠 Oracle Service Bus Core RMI Vulnerability
-`CVE-2026-91561 · CVSS 9.6`
-
-A vulnerability (CVE-2026-91561) in Oracle Service Bus versions 12.2.1.4.0 and 14.1.2.0.0 allows low-privileged attackers with network access via RMI to compromise the system.
-
-**Do:** Apply the latest security patches from Oracle.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91561)
-
-### 🟠 Oracle ADF Security Framework Vulnerability
-`CVE-2026-91618 · CVSS 9.1`
-
-An easily exploitable vulnerability (CVE-2026-91618) in Oracle Application Development Framework version 12.2.1.4.0 allows unauthenticated network compromise via HTTP.
-
-**Do:** Apply the latest security patches from Oracle.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-91618)
-
-### 🟠 Phoenix Format String Injection in applyChatTemplate
-`CVE-2026-53998 · CVSS 10.0 · EPSS 0.00`
-
-A format string injection vulnerability (CVE-2026-53998) in the applyChatTemplate GraphQL endpoint of arize-phoenix allows unauthenticated or low-privileged attackers to read server-side environment variables and secrets.
-
-**Do:** Upgrade arize-phoenix to a patched version and ensure authentication is enabled.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-gfv3-m769-5xm3)
-
-### 🟠 Researchers Claim RCE Exploits Bypass Telegram Android Defenses
-
-Security researchers claim malicious chat widgets can bypass Telegram's Android security filters and execute code outside the sandbox.
-
-**Do:** Update Telegram to the latest version once patches are available.
-
-[The Hacker News](https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html)
-
-### 🟠 Siemens meta-iot2050 Firmware Update Command Injection
-`CVE-2026-109830 · EPSS 0.00`
-
-Siemens meta-iot2050 from version V01.03.01 contains a command injection vulnerability in the firmware update tool allowing root execution via manipulated configuration files.
-
-**Do:** Apply vendor mitigations and prepare fixes for Siemens meta-iot2050.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11)
-
-### 🟠 Market Research Giant Ipsos Investigates Internal System Breach
-`exploited`
-
-Ipsos disclosed it is investigating a breach of its internal system after filing a complaint with authorities.
-
-[SecurityWeek](https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/)
-
-### 🟠 Siemens ROS# Code Injection Vulnerability
-`CVE-2026-109097 · EPSS 0.00`
-
-Siemens ROS# before version 2.3.1 contains a code injection vulnerability allowing arbitrary code execution via crafted message definition files. Patches are available.
-
-**Do:** Update Siemens ROS# to version 2.3.1 or later.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06)
-
-### 🟠 Dorsett Controls InfoScan Multiple Vulnerabilities
-`CVE-2026-117659, CVE-2026-120157, CVE-2026-120255, CVE-2026-120260 …`
-
-Dorsett Controls InfoScan <=1.45.0 contains multiple vulnerabilities allowing sensitive information disclosure, unauthorized data access, credential recovery, and network traffic manipulation.
-
-**Do:** Review vendor advisories and apply updates or mitigations for Dorsett Controls InfoScan.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01)
-
-### 🟠 Siemens Mendix Studio Pro MCP Server Vulnerabilities
-`CVE-2026-112136, CVE-2026-112137 · EPSS 0.00`
-
-Siemens Mendix Studio Pro 11 versions 11.15.0 up to 11.16.0 contain vulnerabilities in the MCP Server allowing unauthorized data access and system compromise.
-
-**Do:** Update Siemens Mendix Studio Pro to the latest version.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05)
-
-### 🟠 Siemens SIMATIC and .NET Client Library Vulnerabilities
-`CVE-2026-58114, CVE-2026-59082, CVE-2026-85114, CVE-2026-85115 · EPSS 0.00`
-
-Siemens SIMATIC components and .NET Client Library for SIMATIC S7 Webserver API contain authentication bypass, file write, and active content execution flaws.
-
-**Do:** Apply available Siemens updates and recommended security mitigations for SIMATIC and S7 APIs.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08) · [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09)
-
-### 🟠 Siemens Simcenter Femap Out-of-Bounds Read Vulnerability
-`CVE-2026-64629 · EPSS 0.00`
-
-Siemens Simcenter Femap before version 2606.0002 contains an out-of-bounds read vulnerability triggered when parsing X_T files, leading to application crashes or code execution.
-
-**Do:** Update Siemens Simcenter Femap to version 2606.0002 or later.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10)
 
