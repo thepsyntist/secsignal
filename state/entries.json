@@ -1,5 +1,522 @@
 [
  {
+  "key": "kev:CVE-2026-103406",
+  "tier": "act",
+  "score": 84,
+  "headline": "HPE Juniper Session Smart Conductor/Router RCE CVE-2026-103406",
+  "tldr": "HPE Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability allowing unauthenticated remote command execution as root via a crafted salt minion ID.",
+  "action": "Apply mitigations or updates per vendor instructions in accordance with CISA BOD 26-04.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-103406"
+  ],
+  "cvss": null,
+  "epss": 0.0086,
+  "watch": "juniper",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-133324",
+  "tier": "act",
+  "score": 79,
+  "headline": "Mitel MiCollab AWV Auth Bypass CVE-2026-133324",
+  "tldr": "Mitel MiCollab Audio, Web and Video Conferencing component fails securely, allowing unauthenticated attackers to bypass authentication and perform unauthorized actions.",
+  "action": "Apply vendor mitigations per CISA KEV instructions.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-133324"
+  ],
+  "cvss": null,
+  "epss": 0.00414,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-133275",
+  "tier": "act",
+  "score": 79,
+  "headline": "Mitel MiCollab AWV Unrestricted File Upload CVE-2026-133275",
+  "tldr": "Mitel MiCollab Audio, Web and Video Conferencing component suffers from insufficient file type validation, enabling arbitrary file uploads by unauthenticated attackers.",
+  "action": "Apply vendor mitigations per CISA KEV instructions.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-133275"
+  ],
+  "cvss": null,
+  "epss": 0.00315,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-133311",
+  "tier": "act",
+  "score": 79,
+  "headline": "Mitel MiCollab AWV Weak Authentication CVE-2026-133311",
+  "tldr": "Mitel MiCollab Audio, Web and Video Conferencing component contains a weak authentication flaw allowing unauthenticated access to sensitive information via specific identifiers.",
+  "action": "Apply vendor mitigations per CISA KEV instructions.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-133311"
+  ],
+  "cvss": null,
+  "epss": 0.00396,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-133303",
+  "tier": "act",
+  "score": 79,
+  "headline": "Mitel MiCollab AWV XML Injection CVE-2026-133303",
+  "tldr": "Mitel MiCollab Audio, Web and Video Conferencing component contains an XML injection vulnerability allowing unauthenticated command execution using pre-staged content.",
+  "action": "Apply vendor mitigations per CISA KEV instructions.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-133303"
+  ],
+  "cvss": null,
+  "epss": 0.00515,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2026-133323",
+  "tier": "act",
+  "score": 79,
+  "headline": "Mitel MiCollab AWV OS Command Injection CVE-2026-133323",
+  "tldr": "Mitel MiCollab Audio, Web and Video Conferencing component contains an OS command injection vulnerability allowing unauthenticated attackers to execute arbitrary system commands.",
+  "action": "Apply vendor mitigations per CISA KEV instructions.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2026-133323"
+  ],
+  "cvss": null,
+  "epss": 0.02546,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach",
+  "tier": "act",
+  "score": 74,
+  "headline": "1Password Discloses Customer Data Breach via GitHub Account Compromise",
+  "tldr": "1Password suffered a data breach after an employee's corporate GitHub account was compromised and used to deploy malicious code to backend services, stealing customer data.",
+  "action": "Review internal GitHub access controls, tokens, and monitor for unauthorized backend modifications.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-136821",
+  "tier": "act",
+  "score": 72,
+  "headline": "D-Link R32 TZLocation OS Command Injection CVE-2026-136821",
+  "tldr": "D-Link R32 1.10B02 contains an OS command injection vulnerability in the SetTimeSettings function of the DHMAPI Action Handler via the TZLocation argument with public exploits available.",
+  "action": "Discontinue use or apply vendor patches if available.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-136821"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136821"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-136822",
+  "tier": "act",
+  "score": 72,
+  "headline": "D-Link R32 SetDeviceSettings OS Command Injection CVE-2026-136822",
+  "tldr": "D-Link R32 1.10B02 contains an OS command injection vulnerability in SetDeviceSettings via the TZLocation argument with public exploits available.",
+  "action": "Discontinue use or apply vendor patches if available.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-136822"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136822"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-136823",
+  "tier": "act",
+  "score": 72,
+  "headline": "D-Link R32 httpd fpath OS Command Injection CVE-2026-136823",
+  "tldr": "D-Link R32 1.10B02 contains an OS command injection vulnerability in /usr/bin/httpd via the fpath argument with public exploits available.",
+  "action": "Discontinue use or apply vendor patches if available.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": false,
+  "cves": [
+   "CVE-2026-136823"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136823"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2025-41450",
+  "tier": "act",
+  "score": 71,
+  "headline": "Danfoss AK-SM 800A Series Auth Bypass CVE-2025-41450",
+  "tldr": "Danfoss AK-SM 800A Series controllers contain an improper authentication vulnerability allowing attackers to generate web reports exposing sensitive internal data.",
+  "action": "Apply vendor mitigations and follow CISA KEV guidance.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2025-41450"
+  ],
+  "cvss": null,
+  "epss": 0.00513,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2023-25914",
+  "tier": "act",
+  "score": 71,
+  "headline": "Danfoss AK-SM 800A Series Path Traversal CVE-2023-25914",
+  "tldr": "Danfoss AK-SM 800A Series contains a path traversal vulnerability in the XML interface allowing attackers to read server system files.",
+  "action": "Apply vendor mitigations and follow CISA KEV guidance.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2023-25914"
+  ],
+  "cvss": null,
+  "epss": 0.01078,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "kev:CVE-2023-25915",
+  "tier": "act",
+  "score": 71,
+  "headline": "Danfoss AK-SM 800A Series Input Validation Flaw CVE-2023-25915",
+  "tldr": "Danfoss AK-SM 800A Series contains an input validation vulnerability allowing remote attackers to run arbitrary commands.",
+  "action": "Apply vendor mitigations and follow CISA KEV guidance.",
+  "category": "vulnerability",
+  "exploited": true,
+  "kev": true,
+  "cves": [
+   "CVE-2023-25915"
+  ],
+  "cvss": null,
+  "epss": 0.01431,
+  "watch": "",
+  "links": [
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "rss:https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos",
+  "tier": "watch",
+  "score": 69,
+  "headline": "France blames Iranian cyber unit for sabotaging supermarket freezers",
+  "tldr": "France attributes cyber sabotage of hundreds of supermarket freezers to an Iranian cyber unit, disrupting operations.",
+  "action": "Review industrial control system and refrigeration network segmentation and monitoring.",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-82489",
+  "tier": "watch",
+  "score": 67,
+  "headline": "openIMIS Report Module Unauthenticated RCE CVE-2026-82489",
+  "tldr": "openIMIS before 2026-10 contains an unauthenticated RCE and file read vulnerability in the report module via preview printIf expressions and key parameters, leading to root command execution.",
+  "action": "Upgrade openIMIS to 2026-10 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-82489"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82489"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137090",
+  "tier": "watch",
+  "score": 59,
+  "headline": "build-git-clone OS Command Injection CVE-2026-137090",
+  "tldr": "build-git-clone before 1.0.4 contains an OS command injection vulnerability in the clone() function via crafted repository URLs containing shell metacharacters.",
+  "action": "Upgrade build-git-clone to version 1.0.4 or higher.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137090"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137090"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-7wwv-x6mc-pxqx",
+  "tier": "watch",
+  "score": 59,
+  "headline": "TastyIgniter Media Manager Unrestricted File Upload RCE CVE-2026-69179",
+  "tldr": "TastyIgniter Media Manager accepts .htaccess uploads, allowing authenticated admin users to achieve remote code execution.",
+  "action": "Restrict file upload types in Media Manager and upgrade when patches are available.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-69179"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-7wwv-x6mc-pxqx"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-743w-g9pf-8p94",
+  "tier": "watch",
+  "score": 59,
+  "headline": "TastyIgniter Mail Template Editor SSTI RCE CVE-2026-69178",
+  "tldr": "TastyIgniter mail template editor suffers from server-side template injection allowing authenticated admins with proper permissions to achieve arbitrary PHP execution.",
+  "action": "Audit admin mail template permissions and restrict access.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-69178"
+  ],
+  "cvss": 9.1,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-743w-g9pf-8p94"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers",
+  "tier": "watch",
+  "score": 56,
+  "headline": "CISA Warns of Critical Flaws in Danfoss Refrigeration Controllers",
+  "tldr": "CISA issued a warning regarding critical unpatched vulnerabilities in Danfoss AK-SM 8xxA Series commercial refrigeration controllers.",
+  "action": "Review CISA advisories and isolate affected controllers from the internet.",
+  "category": "advisory",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/fifa-data-breach-limited",
+  "tier": "watch",
+  "score": 53,
+  "headline": "FIFA Discloses Cyberattack Accessing Personal and Business Data",
+  "tldr": "FIFA announced it is investigating a recent cyberattack that provided hackers access to a limited set of personal and business information.",
+  "action": "Monitor internal alerts and investigate any unusual activity related to FIFA networks.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/fifa-data-breach-limited"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
+  "key": "ghsa:GHSA-crj3-q72p-ggqm",
+  "tier": "watch",
+  "score": 51,
+  "headline": "@waline/client Stored XSS Privilege Escalation CVE-2026-64670",
+  "tldr": "@waline/client renders un-sanitized comment edits via v-html, allowing unauthenticated commenters to achieve stored XSS against moderators who click Edit.",
+  "action": "Upgrade @waline/client to a patched version.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-64670"
+  ],
+  "cvss": 9.3,
+  "epss": 0.00384,
+  "watch": "",
+  "links": [
+   {
+    "source": "GitHub Advisory",
+    "url": "https://github.com/advisories/GHSA-crj3-q72p-ggqm"
+   }
+  ],
+  "first_seen": "2026-11-26T00:29:56+00:00",
+  "updated": "2026-11-26T00:29:56+00:00"
+ },
+ {
   "key": "rss:https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls",
   "tier": "act",
   "score": 82,
@@ -17,10 +534,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/"
    }
   ],
   "first_seen": "2026-11-25T14:32:47+00:00",
-  "updated": "2026-11-25T14:32:47+00:00"
+  "updated": "2026-11-26T00:29:56+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
@@ -97,10 +618,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/"
    }
   ],
   "first_seen": "2026-11-25T14:32:47+00:00",
-  "updated": "2026-11-25T14:32:47+00:00"
+  "updated": "2026-11-26T00:29:56+00:00"
  },
  {
   "key": "rss:https://therecord.media/guadeloupe-ransomware-hospital-cyber",
@@ -1253,15 +1778,24 @@
  },
  {
   "key": "ghsa:GHSA-2r3w-c2vx-fv5g",
-  "tier": "watch",
+  "tier": "act",
   "score": 67,
-  "headline": "Xen Orchestra xo-server Empty-Object Login Token Flaw",
+  "headline": "Now exploited: Xen Orchestra xo-server Empty-Object Login Token Flaw",
   "tldr": "Xen Orchestra npm package xo-server contains a REST cookie parsing vulnerability allowing attackers to authenticate via an empty-object token.",
   "action": "Update xo-server to the latest patched version.",
   "category": "vulnerability",
-  "exploited": false,
-  "kev": false,
+  "exploited": true,
+  "kev": true,
   "cves": [
+   "CVE-2023-25914",
+   "CVE-2023-25915",
+   "CVE-2025-41450",
+   "CVE-2026-103406",
+   "CVE-2026-133275",
+   "CVE-2026-133303",
+   "CVE-2026-133311",
+   "CVE-2026-133323",
+   "CVE-2026-133324",
    "CVE-2026-133469"
   ],
   "cvss": 9.8,
@@ -1271,10 +1805,18 @@
    {
     "source": "GitHub Advisory",
     "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog"
    }
   ],
   "first_seen": "2026-11-23T20:19:04+00:00",
-  "updated": "2026-11-23T20:19:04+00:00"
+  "updated": "2026-11-26T00:29:56+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
