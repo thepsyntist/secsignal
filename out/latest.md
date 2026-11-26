@@ -11,7 +11,7 @@ HPE Juniper Session Smart Conductor and Session Smart Router contain an OS comma
 
 **Do:** Apply mitigations or updates per vendor instructions in accordance with CISA BOD 26-04.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-103406)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-103406) · [SecurityWeek](https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/)
 
 ### 🔴 Mitel MiCollab AWV Auth Bypass CVE-2026-133324
 `CVE-2026-133324 · EPSS 0.00 · CISA KEV`
@@ -20,7 +20,7 @@ Mitel MiCollab Audio, Web and Video Conferencing component fails securely, allow
 
 **Do:** Apply vendor mitigations per CISA KEV instructions.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133324)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133324) · [SecurityWeek](https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/)
 
 ### 🔴 Mitel MiCollab AWV Unrestricted File Upload CVE-2026-133275
 `CVE-2026-133275 · EPSS 0.00 · CISA KEV`
@@ -57,6 +57,24 @@ Mitel MiCollab Audio, Web and Video Conferencing component contains an OS comman
 **Do:** Apply vendor mitigations per CISA KEV instructions.
 
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133323)
+
+### 🔴 Budibase Prototype Pollution MongoDB Filter Erasure CVE-2026-137498
+`CVE-2026-137498 · CVSS 10.0`
+
+Budibase Server from 3.39.18 to 4.0.0 contains a prototype pollution vulnerability allowing unauthenticated attackers to erase MongoDB query filters and access all collection documents.
+
+**Do:** Upgrade Budibase Server to version 4.0.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137498)
+
+### 🔴 North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories
+`exploited`
+
+Threat actors linked to North Korea poisoned over 7,600 GitHub repositories with a Python loader in a supply chain campaign dating back to February 2025.
+
+**Do:** Audit GitHub repositories and dependencies for unauthorized Python loaders in utils or conftest.py.
+
+[The Hacker News](https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html)
 
 ### 🔴 1Password Discloses Customer Data Breach via GitHub Account Compromise
 `exploited`
@@ -130,6 +148,60 @@ France attributes cyber sabotage of hundreds of supermarket freezers to an Irani
 
 [Ars Technica](https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/)
 
+### 🟠 llama.cpp ggml RPC server Out-of-Bounds Write CVE-2026-137567
+`CVE-2026-137567 · CVSS 9.8`
+
+llama.cpp versions b11450 to b12658 contain an out-of-bounds write vulnerability in the ggml RPC server that allows unauthenticated attackers to crash the server or execute code.
+
+**Do:** Upgrade llama.cpp to b12658 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137567)
+
+### 🟠 Traefik Path Traversal Auth Bypass CVE-2026-137481
+`CVE-2026-137481 · CVSS 9.3`
+
+Traefik before 2.11.62, 3.x before 3.7.18, and 3.8.0-rc.1 contain an auth bypass via unresolved dot-segments in the sanitizePath option, allowing unauthenticated attackers to reach protected resources.
+
+**Do:** Upgrade Traefik to 2.11.62, 3.7.18, or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137481)
+
+### 🟠 Budibase Attachment Key Object Authorization Flaw CVE-2026-137494
+`CVE-2026-137494 · CVSS 9.9`
+
+Budibase before 4.0.0 contains a broken object-level authorization vulnerability allowing authenticated users with table write access to read, update, or delete other tenants' files.
+
+**Do:** Upgrade Budibase to version 4.0.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137494)
+
+### 🟠 Budibase OIDC Account Linking Auth Bypass CVE-2026-137499
+`CVE-2026-137499 · CVSS 9.8`
+
+Budibase from 3.41.0 to 4.0.0 contains an authentication bypass via unverified-email OIDC/SSO account linking, allowing attackers to take over global Builder accounts.
+
+**Do:** Upgrade Budibase to version 4.0.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137499)
+
+### 🟠 ToolJet OAuth SSO Email Verification Auth Bypass CVE-2026-137536
+`CVE-2026-137536 · CVSS 9.8`
+
+ToolJet before 3.21.94-beta contains an authentication bypass in its OAuth SSO sign-in module, allowing unauthenticated attackers to hijack user sessions using unverified emails.
+
+**Do:** Upgrade ToolJet to 3.21.94-beta or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137536)
+
+### 🟠 LaraDashboard Module Path Traversal RCE CVE-2026-137544
+`CVE-2026-137544 · CVSS 9.4`
+
+LaraDashboard before 1.5.0 contains a path traversal vulnerability in module parsing, allowing attackers with module.create permission to achieve unauthenticated remote code execution.
+
+**Do:** Upgrade LaraDashboard to 1.5.0 or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137544)
+
 ### 🟠 openIMIS Report Module Unauthenticated RCE CVE-2026-82489
 `CVE-2026-82489 · CVSS 9.8`
 
@@ -144,6 +216,15 @@ openIMIS before 2026-10 contains an unauthenticated RCE and file read vulnerabil
 Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. "While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a
 
 [The Hacker News](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html) · [SecurityWeek](https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/)
+
+### 🟠 Frappe Framework Missing Document Authorization CVE-2026-137550
+`CVE-2026-137550 · CVSS 9.8`
+
+Frappe Framework before 15.122.0 and 16.50.0 lacks proper authorization checks in Document.update(), allowing unauthorized document modification or submission.
+
+**Do:** Upgrade Frappe Framework to 15.122.0 or 16.50.0 respectively.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137550)
 
 ### 🟠 build-git-clone OS Command Injection CVE-2026-137090
 `CVE-2026-137090 · CVSS 9.8`
@@ -187,7 +268,7 @@ FIFA announced it is investigating a recent cyberattack that provided hackers ac
 
 **Do:** Monitor internal alerts and investigate any unusual activity related to FIFA networks.
 
-[The Record](https://therecord.media/fifa-data-breach-limited)
+[The Record](https://therecord.media/fifa-data-breach-limited) · [SecurityWeek](https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/)
 
 ### 🟠 @waline/client Stored XSS Privilege Escalation CVE-2026-64670
 `CVE-2026-64670 · CVSS 9.3 · EPSS 0.00`
@@ -1024,182 +1105,4 @@ An unpatched local zero-day technique called FastUnlock allows a user with physi
 **Do:** Restrict physical access to endpoints.
 
 [The Hacker News](https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html)
-
-## 2026-11-19
-
-### 🔴 Palo Alto Networks PAN-OS Flaws CVE-2026-109618/19 Exploited
-`CVE-2026-109618, CVE-2026-109619 · EPSS 1.00 · CISA KEV`
-
-Attackers are actively exploiting unauthenticated RCE vulnerabilities CVE-2026-109618 and CVE-2026-109619 against internet-exposed PAN-OS management interfaces.
-
-**Do:** Apply emergency patches and restrict management access from the internet.
-
-[The Hacker News](https://thehackernews.com/2026/11/everything-is-web-application-including.html)
-
-### 🔴 Now exploited: VMware vCenter Authentication Bypass Exploited as Zero-Day
-`CVE-2025-42884, CVE-2026-123890, CVE-2026-129448, CVE-2026-76466 · CISA KEV`
-
-A critical authentication bypass flaw in VMware vCenter was exploited as a zero-day by a China-linked espionage group before Broadcom released patches.
-
-**Do:** Apply the latest updates for VMware vCenter across all supported branches immediately.
-
-[The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) · [The Hacker News](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html)
-
-### 🔴 Now exploited: Cisco Expressway Vulnerability Exploited Following PoC Release
-`CVE-2026-76466 · CISA KEV`
-
-Attackers have exploited clustered Cisco Expressway devices at an organization shortly after proof-of-concept code was released, preparing for lateral movement.
-
-**Do:** Review Cisco Expressway devices for indicators of compromise and apply vendor patches.
-
-[SecurityWeek](https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-76466)
-
-### 🟠 Drupal Patches Critical Remote Code Execution Vulnerability
-
-The Drupal Security Team has patched a critical remote code execution vulnerability that could allow full site takeover.
-
-**Do:** Update Drupal core to the latest security release immediately.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/) · [The Hacker News](https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html)
-
-### 🟠 Splunk Enterprise Security Arbitrary Code Execution Flaw
-`CVE-2026-131202 · CVSS 9.1`
-
-Splunk Enterprise Security versions below 8.7.0 contain a vulnerability allowing users with the ess_admin role to execute arbitrary code on the search head.
-
-**Do:** Upgrade Splunk Enterprise Security to version 8.7.0 or higher.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131202)
-
-### 🟠 Splunk SOAR App Wizard Code Execution Vulnerability
-`CVE-2026-131253 · CVSS 9.9`
-
-Splunk SOAR versions below 8.8.0 contain a vulnerability allowing authenticated users with specific permissions to execute arbitrary code via the App Wizard.
-
-**Do:** Upgrade Splunk SOAR to version 8.8.0 or higher.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131253)
-
-### 🟠 Splunk Enterprise RapidDiag Unauthenticated SPL Search Vulnerability
-`CVE-2026-76535 · CVSS 9.1`
-
-Splunk Enterprise versions below 10.6.1, 10.4.5, 10.2.9, 10.0.12, and 9.4.17 allow unauthenticated users to run arbitrary SPL searches via RapidDiag due to an empty shared secret.
-
-**Do:** Upgrade Splunk Enterprise to the latest patched versions.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76535)
-
-### 🟠 Splunk Enterprise Clustering REST API Configuration Flaw
-`CVE-2026-76536 · CVSS 9.4`
-
-Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17 allow unauthenticated users to modify clustering configuration via the REST API using an empty clustering shared secret.
-
-**Do:** Upgrade Splunk Enterprise to patched versions.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76536)
-
-### 🟠 Elecbrakes EB2, VM1, and ELBC2000 Safety Flaws
-`CVE-2026-124281, CVE-2026-125273, CVE-2026-96805`
-
-Multiple vulnerabilities (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805) in Elecbrakes EB2 (<=3.0.4.2.0), VM1 (<1.3.4.2.1), and ELBC2000 allow attackers to gain control of trailer brakes or modify firmware.
-
-**Do:** Check vendor advisory for available firmware updates.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02)
-
-### 🟠 Transport for London Data Breach Exposes Oyster Card Users
-`exploited`
-
-Transport for London announced a data breach exposing account details for approximately 265,000 Oyster photocard customers.
-
-**Do:** Notify affected users and monitor accounts for suspicious activity.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/)
-
-### 🟠 European Commission Confirms Cyberattack Using AI Tool
-`exploited`
-
-The European Commission confirmed a cyberattack in which threat actors utilized the ARTEX open-source AI hacking platform.
-
-**Do:** Review systems for indicators associated with AI-driven attack frameworks.
-
-[The Record](https://therecord.media/european-commission-confirms-cyberattack-using-ai) · [SecurityWeek](https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/)
-
-### 🟠 Ukrainian Authorities Arrest International Ransomware Suspects
-`exploited`
-
-Ukrainian authorities arrested four suspects linked to an international ransomware network that extorted over $40 million globally.
-
-[The Record](https://therecord.media/ukraine-ransomware-arrests-cyber)
-
-### 🟠 Splunk SOAR Playbook Reference Binding Vulnerability
-`CVE-2026-131287 · CVSS 9.6`
-
-Splunk SOAR versions below 8.8.0 allow users with playbook permissions to cause cross-repository playbook references to run attacker-controlled code when repository names are reused.
-
-**Do:** Upgrade Splunk SOAR to version 8.8.0 or higher.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-131287)
-
-### 🟠 Todoist MCP Server DNS Rebinding Data Access Vulnerability
-`CVE-2026-76807 · CVSS 9.3 · EPSS 0.00`
-
-The self-hosted todoist-mcp-http server (version 10.3.1) is vulnerable to browser DNS rebinding, allowing malicious websites to write and delete data through local MCP endpoints.
-
-**Do:** Update todoist-mcp and avoid running the optional Streamable HTTP server exposed to browsers.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-833v-v58w-294h)
-
-### 🟠 Jane PHP Open-API-3 PHPDoc Breakout RCE Vulnerability
-`CVE-2026-63412 · CVSS 9.3 · EPSS 0.00`
-
-jane-php/open-api-3 emits raw PHPDoc comment text for query parameters, allowing attackers to inject closing comment syntax and execute arbitrary PHP code during client generation.
-
-**Do:** Update jane-php/open-api-3 to a patched version when available.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-q8v2-3j4h-xg2p)
-
-### 🟠 Jane PHP Open-API-3 Header Parameter PHPDoc Breakout RCE
-`CVE-2026-63413 · CVSS 9.3 · EPSS 0.00`
-
-jane-php/open-api-3 allows remote code execution via header parameter names due to unescaped insertion into PHPDoc blocks.
-
-**Do:** Update jane-php/open-api-3 to a patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-x9xr-53qx-9qcf)
-
-### 🟠 Jane PHP Open-API-3 Parameter Description PHPDoc Breakout RCE
-`CVE-2026-63411 · CVSS 9.3 · EPSS 0.00`
-
-jane-php/open-api-3 contains an RCE vulnerability via parameter descriptions due to raw PHPDoc comment emission.
-
-**Do:** Update jane-php/open-api-3 to a patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-xwcw-j52r-34x4)
-
-### 🟠 Splunk Patches Multiple Flaws Across Core Products
-
-Splunk released security updates resolving critical and high-severity issues leading to authentication bypass, RCE, and privilege escalation.
-
-**Do:** Apply the latest Splunk security patches.
-
-[SecurityWeek](https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/)
-
-### 🟠 libumqtt Integer Underflow Vulnerability CVE-2026-125132
-`CVE-2026-125132`
-
-libumqtt <=1.1.1 contains an integer underflow vulnerability (CVE-2026-125132) allowing remote DoS, memory corruption, or information disclosure.
-
-**Do:** Upgrade libumqtt beyond version 1.1.1.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03)
-
-### 🟠 Autonomy Logic OpenPLC Runtime Race Condition CVE-2026-126088
-`CVE-2026-126088`
-
-Autonomy Logic OpenPLC Runtime <=4.2.4 contains a race condition flaw (CVE-2026-126088) allowing unauthenticated creation of admin accounts.
-
-**Do:** Update OpenPLC Runtime to versions above 4.2.4.
-
-[CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01)
 

@@ -1,5 +1,228 @@
 [
  {
+  "key": "nvd:CVE-2026-137498",
+  "tier": "act",
+  "score": 75,
+  "headline": "Budibase Prototype Pollution MongoDB Filter Erasure CVE-2026-137498",
+  "tldr": "Budibase Server from 3.39.18 to 4.0.0 contains a prototype pollution vulnerability allowing unauthenticated attackers to erase MongoDB query filters and access all collection documents.",
+  "action": "Upgrade Budibase Server to version 4.0.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137498"
+  ],
+  "cvss": 10.0,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137498"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+  "tier": "act",
+  "score": 74,
+  "headline": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories",
+  "tldr": "Threat actors linked to North Korea poisoned over 7,600 GitHub repositories with a Python loader in a supply chain campaign dating back to February 2025.",
+  "action": "Audit GitHub repositories and dependencies for unauthorized Python loaders in utils or conftest.py.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137567",
+  "tier": "watch",
+  "score": 67,
+  "headline": "llama.cpp ggml RPC server Out-of-Bounds Write CVE-2026-137567",
+  "tldr": "llama.cpp versions b11450 to b12658 contain an out-of-bounds write vulnerability in the ggml RPC server that allows unauthenticated attackers to crash the server or execute code.",
+  "action": "Upgrade llama.cpp to b12658 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137567"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137567"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137481",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Traefik Path Traversal Auth Bypass CVE-2026-137481",
+  "tldr": "Traefik before 2.11.62, 3.x before 3.7.18, and 3.8.0-rc.1 contain an auth bypass via unresolved dot-segments in the sanitizePath option, allowing unauthenticated attackers to reach protected resources.",
+  "action": "Upgrade Traefik to 2.11.62, 3.7.18, or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137481"
+  ],
+  "cvss": 9.3,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137481"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137494",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Budibase Attachment Key Object Authorization Flaw CVE-2026-137494",
+  "tldr": "Budibase before 4.0.0 contains a broken object-level authorization vulnerability allowing authenticated users with table write access to read, update, or delete other tenants' files.",
+  "action": "Upgrade Budibase to version 4.0.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137494"
+  ],
+  "cvss": 9.9,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137494"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137499",
+  "tier": "watch",
+  "score": 67,
+  "headline": "Budibase OIDC Account Linking Auth Bypass CVE-2026-137499",
+  "tldr": "Budibase from 3.41.0 to 4.0.0 contains an authentication bypass via unverified-email OIDC/SSO account linking, allowing attackers to take over global Builder accounts.",
+  "action": "Upgrade Budibase to version 4.0.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137499"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137499"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137536",
+  "tier": "watch",
+  "score": 67,
+  "headline": "ToolJet OAuth SSO Email Verification Auth Bypass CVE-2026-137536",
+  "tldr": "ToolJet before 3.21.94-beta contains an authentication bypass in its OAuth SSO sign-in module, allowing unauthenticated attackers to hijack user sessions using unverified emails.",
+  "action": "Upgrade ToolJet to 3.21.94-beta or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137536"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137536"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137544",
+  "tier": "watch",
+  "score": 67,
+  "headline": "LaraDashboard Module Path Traversal RCE CVE-2026-137544",
+  "tldr": "LaraDashboard before 1.5.0 contains a path traversal vulnerability in module parsing, allowing attackers with module.create permission to achieve unauthenticated remote code execution.",
+  "action": "Upgrade LaraDashboard to 1.5.0 or later.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137544"
+  ],
+  "cvss": 9.4,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137544"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137550",
+  "tier": "watch",
+  "score": 59,
+  "headline": "Frappe Framework Missing Document Authorization CVE-2026-137550",
+  "tldr": "Frappe Framework before 15.122.0 and 16.50.0 lacks proper authorization checks in Document.update(), allowing unauthorized document modification or submission.",
+  "action": "Upgrade Frappe Framework to 15.122.0 or 16.50.0 respectively.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137550"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137550"
+   }
+  ],
+  "first_seen": "2026-11-26T21:41:29+00:00",
+  "updated": "2026-11-26T21:41:29+00:00"
+ },
+ {
   "key": "rss:https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
   "tier": "watch",
   "score": 66,
@@ -46,10 +269,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/"
    }
   ],
   "first_seen": "2026-11-26T00:29:56+00:00",
-  "updated": "2026-11-26T00:29:56+00:00"
+  "updated": "2026-11-26T21:41:29+00:00"
  },
  {
   "key": "kev:CVE-2026-133324",
@@ -71,10 +298,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/"
    }
   ],
   "first_seen": "2026-11-26T00:29:56+00:00",
-  "updated": "2026-11-26T00:29:56+00:00"
+  "updated": "2026-11-26T21:41:29+00:00"
  },
  {
   "key": "kev:CVE-2026-133275",
@@ -517,10 +748,14 @@
    {
     "source": "The Record",
     "url": "https://therecord.media/fifa-data-breach-limited"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/"
    }
   ],
   "first_seen": "2026-11-26T00:29:56+00:00",
-  "updated": "2026-11-26T00:29:56+00:00"
+  "updated": "2026-11-26T21:41:29+00:00"
  },
  {
   "key": "ghsa:GHSA-crj3-q72p-ggqm",
