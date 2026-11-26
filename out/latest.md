@@ -29,7 +29,7 @@ Mitel MiCollab Audio, Web and Video Conferencing component suffers from insuffic
 
 **Do:** Apply vendor mitigations per CISA KEV instructions.
 
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133275)
+[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133275) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html)
 
 ### 🔴 Mitel MiCollab AWV Weak Authentication CVE-2026-133311
 `CVE-2026-133311 · EPSS 0.00 · CISA KEV`
@@ -138,6 +138,12 @@ openIMIS before 2026-10 contains an unauthenticated RCE and file read vulnerabil
 **Do:** Upgrade openIMIS to 2026-10 or later.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82489)
+
+### 🟠 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach
+
+Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. "While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a
+
+[The Hacker News](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html) · [SecurityWeek](https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/)
 
 ### 🟠 build-git-clone OS Command Injection CVE-2026-137090
 `CVE-2026-137090 · CVSS 9.8`
@@ -566,13 +572,13 @@ CISA added a critical Cisco Expressway RCE vulnerability to its KEV catalog afte
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/)
 
 ### 🔴 Now exploited: Idunno.AntiCsrf ASP.NET Library RCE Flaw CVE-2026-131914 Exploited
-`CVE-2026-131914, CVE-2026-132165, CVE-2026-132224 · EPSS 0.01 · CISA KEV`
+`CVE-2026-131914, CVE-2026-132165, CVE-2026-132224, CVE-2026-136716 · EPSS 0.01 · CISA KEV`
 
 A critical RCE vulnerability in the legacy Idunno.AntiCsrf ASP.NET library (versions 0.9.1.0 and 0.9.1 Beta) is being exploited in the wild.
 
 **Do:** Discontinue using Idunno.AntiCsrf immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132224) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-131914) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132165) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/) · [The Hacker News](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html) · [SecurityWeek](https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/)
+[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132224) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-131914) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-132165) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/) · [The Hacker News](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html) · [SecurityWeek](https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/) · [The Hacker News](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html)
 
 ### 🔴 SAP NetWeaver and Cisco Expressway Flaws Exploited in Attacks
 `exploited`
@@ -1039,15 +1045,6 @@ A critical authentication bypass flaw in VMware vCenter was exploited as a zero-
 
 [The Hacker News](https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html) · [SecurityWeek](https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) · [The Hacker News](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html)
 
-### 🔴 F5 Patches Critical NGINX2Root Flaws with Public PoCs
-`exploited`
-
-F5 patched critical NGINX2Root vulnerabilities that allow remote, unauthenticated attackers to execute arbitrary code, with public proof-of-concept exploits available.
-
-**Do:** Apply the latest security patches from F5 immediately and monitor for exploitation attempts.
-
-[SecurityWeek](https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/)
-
 ### 🔴 Now exploited: Cisco Expressway Vulnerability Exploited Following PoC Release
 `CVE-2026-76466 · CISA KEV`
 
@@ -1064,24 +1061,6 @@ The Drupal Security Team has patched a critical remote code execution vulnerabil
 **Do:** Update Drupal core to the latest security release immediately.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/) · [The Hacker News](https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html)
-
-### 🟠 PHP Prepares Critical Security Updates for Session Upload RCE
-`CVE-2026-115560, CVE-2026-126714`
-
-PHP is preparing updates for a critical RCE vulnerability in session upload progress (CVE-2026-115560) disclosed shortly after previous patches.
-
-**Do:** Prepare to apply PHP security updates upon release.
-
-[The Hacker News](https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html) · [SecurityWeek](https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/) · [The Hacker News](https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html) · [SecurityWeek](https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/) · [The Hacker News](https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html)
-
-### 🟠 N-able Cloud Server Breach Disrupts Email Security Management
-`exploited`
-
-Unauthorized access to an N-able Mail Assure and Spam Experts Hosted Cloud server caused management interfaces and APIs to be disabled.
-
-**Do:** Monitor N-able security advisories and review cloud management logs.
-
-[The Hacker News](https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html) · [SecurityWeek](https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/)
 
 ### 🟠 Splunk Enterprise Security Arbitrary Code Execution Flaw
 `CVE-2026-131202 · CVSS 9.1`
@@ -1119,15 +1098,6 @@ Splunk Enterprise versions below 10.4.5, 10.2.9, 10.0.12, and 9.4.17 allow unaut
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-76536)
 
-### 🟠 Miren Runtime Authentication Bypass in RPC Layer
-`CVE-2026-75521 · CVSS 10.0`
-
-Miren Runtime RPC server fails to verify client certificates against the cluster CA, allowing any network-reachable party to present a self-signed cert and gain superuser access.
-
-**Do:** Upgrade Miren Runtime to a patched version and restrict network access to the RPC listener.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-8fh7-7q4q-cq52)
-
 ### 🟠 Elecbrakes EB2, VM1, and ELBC2000 Safety Flaws
 `CVE-2026-124281, CVE-2026-125273, CVE-2026-96805`
 
@@ -1136,14 +1106,6 @@ Multiple vulnerabilities (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805) in E
 **Do:** Check vendor advisory for available firmware updates.
 
 [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02)
-
-### 🟠 Ruby Fixes Regex and String Memory-Safety Flaws
-
-Ruby released fixes for seven memory-safety flaws in its regex engine and string case-conversion code, with PoCs showing RCE potential for five of them.
-
-**Do:** Update Ruby to the latest fixed versions.
-
-[The Hacker News](https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html)
 
 ### 🟠 Transport for London Data Breach Exposes Oyster Card Users
 `exploited`
@@ -1240,18 +1202,4 @@ Autonomy Logic OpenPLC Runtime <=4.2.4 contains a race condition flaw (CVE-2026-
 **Do:** Update OpenPLC Runtime to versions above 4.2.4.
 
 [CISA Advisories](https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01)
-
-### 🟠 Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle
-
-A researcher published proof-of-concept exploits against memory-corruption bugs in PostgreSQL, MySQL, ClickHouse, and Oracle allowing low-privilege database accounts to run code.
-
-**Do:** Review database permissions and apply vendor patches for underlying memory-corruption issues.
-
-[The Hacker News](https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html)
-
-### 🟠 NVIDIA Investigating Gentlemen Ransomware Breach Claims
-
-NVIDIA is investigating claims by the Gentlemen ransomware group after the company was listed on their dark web leak site.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/) · [SecurityWeek](https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/)
 

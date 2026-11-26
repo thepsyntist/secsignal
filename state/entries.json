@@ -1,5 +1,32 @@
 [
  {
+  "key": "rss:https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+  "tier": "watch",
+  "score": 66,
+  "headline": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+  "tldr": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a",
+  "action": "",
+  "category": "",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/"
+   }
+  ],
+  "first_seen": "2026-11-26T11:01:52+00:00",
+  "updated": "2026-11-26T11:01:52+00:00"
+ },
+ {
   "key": "kev:CVE-2026-103406",
   "tier": "act",
   "score": 84,
@@ -69,10 +96,14 @@
    {
     "source": "CISA KEV",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html"
    }
   ],
   "first_seen": "2026-11-26T00:29:56+00:00",
-  "updated": "2026-11-26T00:29:56+00:00"
+  "updated": "2026-11-26T11:01:52+00:00"
  },
  {
   "key": "kev:CVE-2026-133311",
@@ -1661,7 +1692,8 @@
   "cves": [
    "CVE-2026-131914",
    "CVE-2026-132165",
-   "CVE-2026-132224"
+   "CVE-2026-132224",
+   "CVE-2026-136716"
   ],
   "cvss": null,
   "epss": 0.00614,
@@ -1698,10 +1730,14 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/"
+   },
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html"
    }
   ],
   "first_seen": "2026-11-23T20:19:04+00:00",
-  "updated": "2026-11-25T14:32:47+00:00"
+  "updated": "2026-11-26T11:01:52+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks",
