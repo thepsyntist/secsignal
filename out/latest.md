@@ -2,6 +2,17 @@
 
 🔴 act now · 🟠 worth knowing
 
+## 2026-11-27
+
+### 🔴 Direk Tech Smart Portal Missing Authorization Active Directory Privilege Escalation
+`CVE-2026-137706 · CVSS 9.9`
+
+Direk Tech Smart Portal contains a missing authorization vulnerability (CVE-2026-137706) with a CVSS score of 9.9. Authenticated remote attackers can exploit this flaw to add specified accounts to the Active Directory Domain Admins group, achieving domain administrator privileges.
+
+**Do:** Apply vendor patches or restrict access to Direk Tech Smart Portal immediately.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137706)
+
 ## 2026-11-26
 
 ### 🔴 HPE Juniper Session Smart Conductor/Router RCE CVE-2026-103406
@@ -852,24 +863,6 @@ SAP NetWeaver Enterprise Portal contains an improper neutralization vulnerabilit
 
 [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2025-42884)
 
-### 🔴 IBM Guardium Data Protection Insecure Deserialization Vulnerability
-`CVE-2026-84236 · CVSS 9.8`
-
-IBM Guardium Data Protection 12.2 contains an insecure deserialization vulnerability in the SharePoint Tap MulticastTransceiver component (CVE-2026-84236), enabling unauthenticated remote code execution.
-
-**Do:** Apply patches provided by IBM for Guardium Data Protection 12.2 immediately.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-84236)
-
-### 🔴 Daptin Unauthenticated SQL Injection via Sort Parameter
-`CVE-2026-77367 · CVSS 9.4`
-
-Daptin contains an unauthenticated SQL injection vulnerability via the 'sort' query parameter on entity list endpoints (CVE-2026-77367), allowing attackers to inject arbitrary SQL.
-
-**Do:** Update Daptin to the patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-hq2p-f2vj-v3cm)
-
 ### 🔴 Now exploited: N-able Server Breach Causes Global Mail Assure and SpamExperts Outage
 `CVE-2026-133968, CVE-2026-134624 · CISA KEV`
 
@@ -886,67 +879,6 @@ F5 released emergency patches for five critical BIG-IP vulnerabilities that coul
 **Do:** Apply the latest F5 BIG-IP security patches immediately.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/)
-
-### 🟠 SBC Medical Group Data Breach Exposes 1.6 Million Customers
-`exploited`
-
-SBC Medical Group disclosed two cybersecurity incidents exposing sensitive customer and employee personal data belonging to 1.6 million people.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/) · [SecurityWeek](https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/)
-
-### 🟠 Etherpad Pre-Auth Arbitrary File Read Vulnerability
-`CVE-2026-114516 · CVSS 9.8`
-
-Etherpad-lite contains an unauthenticated path-traversal vulnerability in the static file handler (CVE-2026-114516) allowing remote users to read arbitrary files on the server.
-
-**Do:** Update ep_etherpad-lite to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-mc8w-wjhw-45x5)
-
-### 🟠 Flyto2 Core Arbitrary File Write Incomplete Fix
-`CVE-2026-77312 · CVSS 10.0`
-
-Flyto2 Core contains an arbitrary file write vulnerability via unguarded write modules (CVE-2026-77312, building on CVE-2026-67429), allowing authenticated clients to achieve code execution.
-
-**Do:** Update pip:flyto-core to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-p34x-fmph-9fjx)
-
-### 🟠 Refitter OpenAPI Content-Type Code Execution Vulnerability
-`CVE-2026-63344 · CVSS 9.3 · EPSS 0.00`
-
-Refitter allows arbitrary code execution through unescaped OpenAPI content-type values (CVE-2026-63344), injecting a top-level file class with a ModuleInitializer method.
-
-**Do:** Update Refitter to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-p32v-8v8j-j534)
-
-### 🟠 Refitter OpenAPI Header Parameter Code Execution Flaw
-`CVE-2026-63346 · CVSS 9.3 · EPSS 0.00`
-
-Refitter allows code execution through unescaped OpenAPI header parameter names (CVE-2026-63346), injecting malicious .NET code executed at assembly load time.
-
-**Do:** Update Refitter to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-58x9-vjvp-6mx8)
-
-### 🟠 Refitter OpenAPI Path Code Execution Vulnerability
-`CVE-2026-63345 · CVSS 9.3 · EPSS 0.00`
-
-Refitter allows arbitrary code execution through unescaped OpenAPI paths (CVE-2026-63345), injecting a top-level file class with a ModuleInitializer method.
-
-**Do:** Update Refitter to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-3fhm-p725-h3g3)
-
-### 🟠 NLTK Incomplete JVM/JAR Sandbox Bypass Vulnerability
-`CVE-2026-128138 · CVSS 9.8`
-
-NLTK 3.10.3 contains an incomplete fix for JVM argument-injection and untrusted JAR execution (CVE-2026-128138), allowing sandbox bypass through unvalidated launcher tokens.
-
-**Do:** Update NLTK beyond version 3.10.3 or apply vendor guidance.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-x8q7-6c7m-52gw)
 
 ### 🟠 Fabio Access-Control Bypass via Unnormalized Request Paths
 `CVE-2026-104099 · CVSS 9.1 · EPSS 0.00`
@@ -984,32 +916,6 @@ A flaw tracked as CVE-2026-99312 in Linux KVM allows guest VMs to read host memo
 
 [The Hacker News](https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html)
 
-### 🟠 IBM Guardium Data Protection SharePoint S-TAP RelayService Flaw
-`CVE-2026-82339 · CVSS 9.1`
-
-IBM Guardium Data Protection 12.2 contains a missing authentication vulnerability in the SharePoint S-TAP RelayService (CVE-2026-82339) allowing unauthenticated network attackers to inject forged audit events and access monitoring policies.
-
-**Do:** Apply available security updates from IBM for Guardium Data Protection 12.2.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-82339)
-
-### 🟠 Daptin Broken Access Control in YJS Collaboration Endpoint
-`CVE-2026-77369 · CVSS 9.6`
-
-Daptin is vulnerable to broken access control (IDOR) in the generic YJS WebSocket collaboration endpoint (CVE-2026-77369), allowing any authenticated user to read documents without proper per-resource checks.
-
-**Do:** Update Daptin to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-wj7x-58c2-5793)
-
-### 🟠 ASUS Control Center Express Hard-Coded Key and Critical Flaws
-
-ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities including hard-coded keys that could let remote attackers gain administrative control.
-
-**Do:** Upgrade ASUS Control Center Express to v1.7.29 or later.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/)
-
 ### 🟠 Bell Canada Breach Exposes Enterprise Customer Data
 `exploited`
 
@@ -1040,15 +946,6 @@ D-Link DCS-935L version 1.10.01 contains an OS command injection vulnerability (
 **Do:** Restrict access to vulnerable D-Link devices or replace end-of-life hardware.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-133680)
-
-### 🟠 Jupyter MCP Server DNS Rebinding Management Route Flaw
-`CVE-2026-77359 · CVSS 9.3`
-
-Jupyter MCP Server contains a DNS rebinding vulnerability in custom management routes (CVE-2026-77359), allowing malicious websites to replace the active Jupyter backend.
-
-**Do:** Update jupyter-mcp-server to the latest patched version.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-9x8x-crjq-g64h)
 
 ### 🟠 WhatsApp for Android Incomplete Ad-Reply URL Validation Flaw
 `CVE-2026-23871 · exploited`
