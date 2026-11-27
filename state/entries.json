@@ -1,5 +1,122 @@
 [
  {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts",
+  "tier": "watch",
+  "score": 69,
+  "headline": "pCloud Pass Confirms Password Manager Cyberattack",
+  "tldr": "The pCloud Pass password manager suffered a cyberattack where unknown devices connected to user accounts despite 2FA being enabled.",
+  "action": "Review account access logs, rotate master passwords, and monitor accounts for unauthorized activity.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/"
+   }
+  ],
+  "first_seen": "2026-11-27T22:45:14+00:00",
+  "updated": "2026-11-27T22:45:14+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach",
+  "tier": "watch",
+  "score": 69,
+  "headline": "US Air Force Cloud One Platform Reported Breached",
+  "tldr": "Hackers have reportedly breached the US Air Force's Cloud One computing platform amid a wave of recent federal agency cyberattacks.",
+  "action": "Review federal threat intelligence and harden cloud infrastructure access controls.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/"
+   }
+  ],
+  "first_seen": "2026-11-27T22:45:14+00:00",
+  "updated": "2026-11-27T22:45:14+00:00"
+ },
+ {
+  "key": "nvd:CVE-2026-137964",
+  "tier": "watch",
+  "score": 64,
+  "headline": "ToolJet Release Workflow Command Injection Vulnerability",
+  "tldr": "ToolJet before 3.21.96-LTS contains a command injection vulnerability in its GitHub Actions release workflow via pull request titles, allowing unauthorized merges into enterprise repositories. A fix is available.",
+  "action": "Upgrade ToolJet to 3.21.96-LTS or later.",
+  "category": "supply_chain",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-137964"
+  ],
+  "cvss": 9.8,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "NVD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137964"
+   }
+  ],
+  "first_seen": "2026-11-27T22:45:14+00:00",
+  "updated": "2026-11-27T22:45:14+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Boston Scientific Data Breach Exposes Personal and Medical Info",
+  "tldr": "Medical technology company Boston Scientific is sending breach notices to individuals affected by a cyberattack.",
+  "action": "Monitor affected individuals for identity theft and watch for official guidance.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/"
+   }
+  ],
+  "first_seen": "2026-11-27T22:45:14+00:00",
+  "updated": "2026-11-27T22:45:14+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/japan-education-ministry-cyberattack",
+  "tier": "watch",
+  "score": 61,
+  "headline": "Japan Education Ministry Procurement System Breached",
+  "tldr": "Japan's education ministry disclosed a cyberattack on its government procurement system, potentially exposing business information and email addresses.",
+  "action": "Audit procurement system access logs and monitor for compromised credentials.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/japan-education-ministry-cyberattack"
+   }
+  ],
+  "first_seen": "2026-11-27T22:45:14+00:00",
+  "updated": "2026-11-27T22:45:14+00:00"
+ },
+ {
   "key": "rss:https://therecord.media/sap-germany-cyberattack-github",
   "tier": "act",
   "score": 84,
@@ -121,10 +238,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/"
    }
   ],
   "first_seen": "2026-11-27T13:59:01+00:00",
-  "updated": "2026-11-27T13:59:01+00:00"
+  "updated": "2026-11-27T22:45:14+00:00"
  },
  {
   "key": "rss:https://therecord.media/france-afp-hit-by-cyberattack",
@@ -1067,15 +1188,16 @@
   "key": "rss:https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
   "tier": "act",
   "score": 77,
-  "headline": "GeoServer RCE flaws CVE-2026-120705 and CVE-2026-129243 exploited",
+  "headline": "Now exploited: GeoServer RCE flaws CVE-2026-120705 and CVE-2026-129243 exploited",
   "tldr": "Threat actors are actively exploiting arbitrary file read and RCE vulnerabilities in GeoServer (CVE-2026-120705 and CVE-2026-129243).",
   "action": "Upgrade GeoServer to patched versions immediately.",
   "category": "vulnerability",
   "exploited": true,
-  "kev": false,
+  "kev": true,
   "cves": [
    "CVE-2026-120705",
-   "CVE-2026-129243"
+   "CVE-2026-129243",
+   "CVE-2026-136716"
   ],
   "cvss": null,
   "epss": null,
@@ -1088,10 +1210,26 @@
    {
     "source": "SecurityWeek",
     "url": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/"
+   },
+   {
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243"
+   },
+   {
+    "source": "CISA KEV",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716"
    }
   ],
   "first_seen": "2026-11-25T14:32:47+00:00",
-  "updated": "2026-11-26T00:29:56+00:00"
+  "updated": "2026-11-27T22:45:14+00:00"
  },
  {
   "key": "rss:https://therecord.media/guadeloupe-ransomware-hospital-cyber",

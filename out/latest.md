@@ -31,6 +31,24 @@ The Drupal security team reported that attackers are actively exploiting a secon
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/)
 
+### 🟠 pCloud Pass Confirms Password Manager Cyberattack
+`exploited`
+
+The pCloud Pass password manager suffered a cyberattack where unknown devices connected to user accounts despite 2FA being enabled.
+
+**Do:** Review account access logs, rotate master passwords, and monitor accounts for unauthorized activity.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/)
+
+### 🟠 US Air Force Cloud One Platform Reported Breached
+`exploited`
+
+Hackers have reportedly breached the US Air Force's Cloud One computing platform amid a wave of recent federal agency cyberattacks.
+
+**Do:** Review federal threat intelligence and harden cloud infrastructure access controls.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/)
+
 ### 🟠 SoftwareOK Official Site Trojanized to Deliver Malware via Q-Dir and DesktopOK
 `exploited`
 
@@ -49,13 +67,40 @@ Switzerland's cybersecurity agency reported that AI agents were used in cyberatt
 
 [The Hacker News](https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html)
 
+### 🟠 ToolJet Release Workflow Command Injection Vulnerability
+`CVE-2026-137964 · CVSS 9.8`
+
+ToolJet before 3.21.96-LTS contains a command injection vulnerability in its GitHub Actions release workflow via pull request titles, allowing unauthorized merges into enterprise repositories. A fix is available.
+
+**Do:** Upgrade ToolJet to 3.21.96-LTS or later.
+
+[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137964)
+
 ### 🟠 Cacti Unauthenticated RCE Zero-Day Vulnerability Disclosed
 
 An unpatched zero-day vulnerability in the open-source network monitoring tool Cacti enables remote code execution via guest access in four HTTP requests.
 
 **Do:** Restrict public access to Cacti installations and monitor for unauthorized command execution.
 
-[The Hacker News](https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html)
+[The Hacker News](https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/)
+
+### 🟠 Boston Scientific Data Breach Exposes Personal and Medical Info
+`exploited`
+
+Medical technology company Boston Scientific is sending breach notices to individuals affected by a cyberattack.
+
+**Do:** Monitor affected individuals for identity theft and watch for official guidance.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/)
+
+### 🟠 Japan Education Ministry Procurement System Breached
+`exploited`
+
+Japan's education ministry disclosed a cyberattack on its government procurement system, potentially exposing business information and email addresses.
+
+**Do:** Audit procurement system access logs and monitor for compromised credentials.
+
+[The Record](https://therecord.media/japan-education-ministry-cyberattack)
 
 ### 🟠 French News Agency AFP Takes Platform Offline Following Cyberattack
 `exploited`
@@ -379,14 +424,14 @@ A Drupal vulnerability discovered by an AI scanner is actively exploited in atta
 
 [SecurityWeek](https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/)
 
-### 🔴 GeoServer RCE flaws CVE-2026-120705 and CVE-2026-129243 exploited
-`CVE-2026-120705, CVE-2026-129243 · exploited`
+### 🔴 Now exploited: GeoServer RCE flaws CVE-2026-120705 and CVE-2026-129243 exploited
+`CVE-2026-120705, CVE-2026-129243, CVE-2026-136716 · CISA KEV`
 
 Threat actors are actively exploiting arbitrary file read and RCE vulnerabilities in GeoServer (CVE-2026-120705 and CVE-2026-129243).
 
 **Do:** Upgrade GeoServer to patched versions immediately.
 
-[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html) · [SecurityWeek](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/)
+[The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html) · [SecurityWeek](https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-120705) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-129243) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-136716)
 
 ### 🔴 npm:ruflo MCP bridge unauthenticated RCE vulnerability
 `CVE-2026-59726 · CVSS 10.0 · EPSS 0.06`
@@ -911,86 +956,4 @@ A memory bug in GPGME versions prior to 2.3.0, triggered by a malicious OpenPGP 
 **Do:** Upgrade GPGME to version 2.3.0 or later.
 
 [The Hacker News](https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html)
-
-## 2026-11-20
-
-### 🔴 SAP NetWeaver JNDI Data Query Logic Flaw
-`CVE-2025-42884 · EPSS 0.00 · CISA KEV`
-
-SAP NetWeaver Enterprise Portal contains an improper neutralization vulnerability in data query logic (CVE-2025-42884) allowing unauthenticated attackers to disclose or modify server information. Listed in CISA KEV.
-
-**Do:** Apply vendor mitigations and follow CISA BOD 26-04 guidance.
-
-[CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2025-42884)
-
-### 🔴 Now exploited: N-able Server Breach Causes Global Mail Assure and SpamExperts Outage
-`CVE-2026-133968, CVE-2026-134624 · CISA KEV`
-
-Attackers breached an N-able server, causing a major worldwide service outage affecting Mail Assure and SpamExperts Hosted Cloud services.
-
-**Do:** Check N-able status updates and advisory guidance.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html) · [SecurityWeek](https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133968) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-134624) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
-
-### 🟠 Fabio Access-Control Bypass via Unnormalized Request Paths
-`CVE-2026-104099 · CVSS 9.1 · EPSS 0.00`
-
-go:github.com/fabiolb/fabio has an access-control bypass (CVE-2026-104099) where route selection uses raw unnormalized request paths, allowing unauthenticated attackers to bypass per-route ACL and basic-auth gates using dot-segments or encoded dots.
-
-**Do:** Update fabio to a version with normalized request path handling.
-
-[GitHub Advisory](https://github.com/advisories/GHSA-4hrh-34w3-5ww8)
-
-### 🟠 Bell Canada Breach Exposes Enterprise Customer Data
-`exploited`
-
-Bell Canada confirmed a threat actor breached its systems and stole enterprise customer data, including circuit provisioning information.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/)
-
-### 🟠 J.P. Morgan Chase Third-Party Data Breach
-`exploited`
-
-J.P. Morgan Chase suffered a data breach following a cyberattack at a third-party service provider that exposed customer personal information and marketing data.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/)
-
-### 🟠 D-Link DCS-935L Local Recording CGI OS Command Injection
-`CVE-2026-133680 · CVSS 9.9`
-
-D-Link DCS-935L version 1.10.01 contains an OS command injection vulnerability (CVE-2026-133680) in the loginRouter function of web/cgi-bin/localrecording/setconf.cgi via manipulated account/password arguments. A public exploit is available.
-
-**Do:** Restrict access to vulnerable D-Link devices or replace end-of-life hardware.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-133680)
-
-### 🟠 WhatsApp for Android Incomplete Ad-Reply URL Validation Flaw
-`CVE-2026-23871 · exploited`
-
-WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4 contain a vulnerability (CVE-2026-23871) involving incomplete validation of external ad-reply URLs, suspected of exploitation in scam campaigns.
-
-**Do:** Update WhatsApp for Android to version 2.26.17.4 or later.
-
-[SecurityWeek](https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/) · [The Hacker News](https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html)
-
-### 🟠 West Virginia Legislature Hit by Ongoing Cyber Incident
-`exploited`
-
-The West Virginia Legislature experienced an ongoing cybersecurity incident affecting IT systems without spreading to other government entities.
-
-[The Record](https://therecord.media/west-virginia-legislature-cyberattack)
-
-### 🟠 The Container Store Restores Systems Following Cyberattack
-`exploited`
-
-The Container Store restored its website and systems following a cybersecurity incident.
-
-[The Record](https://therecord.media/container-store-restores-systems-cyberattack)
-
-### 🟠 Bazuka Android Malware Framework Disclosed
-`exploited`
-
-Researchers disclosed a new Android malware framework called Bazuka featuring fake screen overlays and LLM integration for command and control at scale.
-
-[The Hacker News](https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html)
 
