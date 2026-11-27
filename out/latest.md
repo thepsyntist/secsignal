@@ -4,6 +4,15 @@
 
 ## 2026-11-27
 
+### 🔴 SAP and British DWP Confirm Cyberattacks and Source Code Access
+`exploited`
+
+SAP and the UK Department for Work and Pensions experienced security incidents, with SAP detecting unauthorized access and source code modification via compromised employee GitHub tokens.
+
+**Do:** Audit employee GitHub tokens and review access controls for development environments.
+
+[The Record](https://therecord.media/uk-department-work-pensions-cyber-incident) · [SecurityWeek](https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/) · [BleepingComputer](https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/) · [The Record](https://therecord.media/sap-germany-cyberattack-github)
+
 ### 🔴 Direk Tech Smart Portal Missing Authorization Active Directory Privilege Escalation
 `CVE-2026-137706 · CVSS 9.9`
 
@@ -12,6 +21,57 @@ Direk Tech Smart Portal contains a missing authorization vulnerability (CVE-2026
 **Do:** Apply vendor patches or restrict access to Direk Tech Smart Portal immediately.
 
 [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-137706)
+
+### 🔴 Drupal Warns of Second Site Takeover Vulnerability Exploited in Attacks
+`exploited`
+
+The Drupal security team reported that attackers are actively exploiting a second critical vulnerability allowing site takeover on unpatched websites.
+
+**Do:** Apply available Drupal security updates immediately.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/)
+
+### 🟠 SoftwareOK Official Site Trojanized to Deliver Malware via Q-Dir and DesktopOK
+`exploited`
+
+Attackers tampered with Q-Dir and DesktopOK installation files and update processes distributed via the official SoftwareOK website to distribute remote access malware.
+
+**Do:** Verify integrity of downloaded SoftwareOK utilities and monitor endpoints for unauthorized remote access tools.
+
+[The Hacker News](https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html)
+
+### 🟠 Switzerland Confirms AI-Assisted Cyberattacks Breach Critical Infrastructure
+`exploited`
+
+Switzerland's cybersecurity agency reported that AI agents were used in cyberattacks that successfully breached computer systems at two critical infrastructure operators.
+
+**Do:** Review defensive postures against automated and AI-assisted credential access and lateral movement.
+
+[The Hacker News](https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html)
+
+### 🟠 Cacti Unauthenticated RCE Zero-Day Vulnerability Disclosed
+
+An unpatched zero-day vulnerability in the open-source network monitoring tool Cacti enables remote code execution via guest access in four HTTP requests.
+
+**Do:** Restrict public access to Cacti installations and monitor for unauthorized command execution.
+
+[The Hacker News](https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html)
+
+### 🟠 French News Agency AFP Takes Platform Offline Following Cyberattack
+`exploited`
+
+Agence France-Presse was hit by a cyberattack forcing the offline transition of one of its primary news distribution platforms.
+
+[The Record](https://therecord.media/france-afp-hit-by-cyberattack)
+
+### 🟠 Linux Kernel NFS Server CVE-2026-99362 Remote Root Privilege Escalation
+`CVE-2026-99362 · EPSS 0.01`
+
+A critical vulnerability, CVE-2026-99362, in the Linux kernel's Network File System (NFS) server allows remote attackers to gain root privileges.
+
+**Do:** Apply the latest Linux kernel patches addressing CVE-2026-99362.
+
+[BleepingComputer](https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/)
 
 ## 2026-11-26
 
@@ -353,7 +413,7 @@ Attackers compromised Check Point management servers and Hex.pm package registry
 
 **Do:** Audit Check Point management servers and update dependencies securely.
 
-[The Hacker News](https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html)
+[The Hacker News](https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html) · [SecurityWeek](https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/)
 
 ### 🟠 WordPress blocks six backdoored WP Connect plugins
 `exploited`
@@ -872,14 +932,6 @@ Attackers breached an N-able server, causing a major worldwide service outage af
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/) · [The Hacker News](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html) · [SecurityWeek](https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/) · [CISA Advisories](https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-133968) · [CISA KEV](https://nvd.nist.gov/vuln/detail/CVE-2026-134624) · [The Hacker News](https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html)
 
-### 🟠 F5 Patches Critical BIG-IP RCE and DoS Vulnerabilities
-
-F5 released emergency patches for five critical BIG-IP vulnerabilities that could allow attackers to trigger denial-of-service or achieve remote code execution. Patches are available from F5.
-
-**Do:** Apply the latest F5 BIG-IP security patches immediately.
-
-[BleepingComputer](https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/)
-
 ### 🟠 Fabio Access-Control Bypass via Unnormalized Request Paths
 `CVE-2026-104099 · CVSS 9.1 · EPSS 0.00`
 
@@ -888,33 +940,6 @@ go:github.com/fabiolb/fabio has an access-control bypass (CVE-2026-104099) where
 **Do:** Update fabio to a version with normalized request path handling.
 
 [GitHub Advisory](https://github.com/advisories/GHSA-4hrh-34w3-5ww8)
-
-### 🟠 Gladys Assistant Backup Restore OS Command Injection
-`CVE-2026-133500 · CVSS 9.1 · exploited`
-
-Gladys Assistant up to 4.71.0 contains an OS command injection vulnerability in the gateway.downloadBackup.js component via manipulation of the file_url argument. A public exploit is available, and version 4.72.0 fixes the issue.
-
-**Do:** Upgrade Gladys Assistant to version 4.72.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-133500)
-
-### 🟠 Gladys Assistant Backup Restore Path Traversal Flaw
-`CVE-2026-133501 · CVSS 9.0 · exploited`
-
-Gladys Assistant up to 4.71.0 contains a path traversal flaw in the backup download handler. Public exploits exist, and upgrading to version 4.72.0 mitigates the issue.
-
-**Do:** Upgrade Gladys Assistant to version 4.72.0 or later.
-
-[NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-133501)
-
-### 🟠 Linux KVM Flaw Lets Guest VMs Access Host Memory on AMD
-`CVE-2026-99312 · EPSS 0.00`
-
-A flaw tracked as CVE-2026-99312 in Linux KVM allows guest VMs to read host memory on systems with AMD processors and nested virtualization enabled. Fixed kernels have been released.
-
-**Do:** Update Linux kernel to a patched version with the KVM fix.
-
-[The Hacker News](https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html)
 
 ### 🟠 Bell Canada Breach Exposes Enterprise Customer Data
 `exploited`
@@ -929,14 +954,6 @@ Bell Canada confirmed a threat actor breached its systems and stole enterprise c
 J.P. Morgan Chase suffered a data breach following a cyberattack at a third-party service provider that exposed customer personal information and marketing data.
 
 [BleepingComputer](https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/)
-
-### 🟠 SonicWall Warns Generation 6 Firewalls Unpatched for Critical Flaws
-
-SonicWall urged customers running Generation 6 firewalls to retire and replace them immediately, noting they will not receive security patches for critical flaws amid rising AI-assisted attacks.
-
-**Do:** Retire and replace SonicWall Gen 6 firewalls and remove them from the internet edge.
-
-[The Hacker News](https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html)
 
 ### 🟠 D-Link DCS-935L Local Recording CGI OS Command Injection
 `CVE-2026-133680 · CVSS 9.9`
@@ -955,15 +972,6 @@ WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4 contain 
 **Do:** Update WhatsApp for Android to version 2.26.17.4 or later.
 
 [SecurityWeek](https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/) · [The Hacker News](https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html)
-
-### 🟠 Ruby Patches Ruby2Shell Heap Buffer Overflow RCE Vulnerability
-`CVE-2026-132825 · EPSS 0.00`
-
-Ruby patched a heap-based buffer overflow vulnerability tracked as CVE-2026-132825, known as Ruby2Shell, which could lead to remote code execution.
-
-**Do:** Update Ruby to the latest patched version.
-
-[SecurityWeek](https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/)
 
 ### 🟠 West Virginia Legislature Hit by Ongoing Cyber Incident
 `exploited`
@@ -985,21 +993,4 @@ The Container Store restored its website and systems following a cybersecurity i
 Researchers disclosed a new Android malware framework called Bazuka featuring fake screen overlays and LLM integration for command and control at scale.
 
 [The Hacker News](https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html)
-
-### 🟠 ROMULUS ClickFix Attacks Deliver New CNCMachineRMS RAT Variant
-`exploited`
-
-Threat actors are using the ROMULUS ClickFix malware delivery platform to distribute an undocumented remote access trojan similar to CNCMachineRMS via signed binary sideloading.
-
-**Do:** Monitor endpoints for suspicious ClickFix lures and binary sideloading activity.
-
-[The Hacker News](https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html)
-
-### 🟠 Unpatched Windows FastUnlock Flaw Allows Program Execution on Locked PCs
-
-An unpatched local zero-day technique called FastUnlock allows a user with physical access to a locked Windows PC to run limited-privilege programs without signing in.
-
-**Do:** Restrict physical access to endpoints.
-
-[The Hacker News](https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html)
 

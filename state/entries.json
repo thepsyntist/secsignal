@@ -1,5 +1,180 @@
 [
  {
+  "key": "rss:https://therecord.media/sap-germany-cyberattack-github",
+  "tier": "act",
+  "score": 84,
+  "headline": "SAP and British DWP Confirm Cyberattacks and Source Code Access",
+  "tldr": "SAP and the UK Department for Work and Pensions experienced security incidents, with SAP detecting unauthorized access and source code modification via compromised employee GitHub tokens.",
+  "action": "Audit employee GitHub tokens and review access controls for development environments.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "github",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/uk-department-work-pensions-cyber-incident"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/"
+   },
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/"
+   },
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/sap-germany-cyberattack-github"
+   }
+  ],
+  "first_seen": "2026-11-27T13:59:01+00:00",
+  "updated": "2026-11-27T13:59:01+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks",
+  "tier": "act",
+  "score": 77,
+  "headline": "Drupal Warns of Second Site Takeover Vulnerability Exploited in Attacks",
+  "tldr": "The Drupal security team reported that attackers are actively exploiting a second critical vulnerability allowing site takeover on unpatched websites.",
+  "action": "Apply available Drupal security updates immediately.",
+  "category": "exploitation",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/"
+   }
+  ],
+  "first_seen": "2026-11-27T13:59:01+00:00",
+  "updated": "2026-11-27T13:59:01+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "SoftwareOK Official Site Trojanized to Deliver Malware via Q-Dir and DesktopOK",
+  "tldr": "Attackers tampered with Q-Dir and DesktopOK installation files and update processes distributed via the official SoftwareOK website to distribute remote access malware.",
+  "action": "Verify integrity of downloaded SoftwareOK utilities and monitor endpoints for unauthorized remote access tools.",
+  "category": "supply_chain",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html"
+   }
+  ],
+  "first_seen": "2026-11-27T13:59:01+00:00",
+  "updated": "2026-11-27T13:59:01+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+  "tier": "watch",
+  "score": 69,
+  "headline": "Switzerland Confirms AI-Assisted Cyberattacks Breach Critical Infrastructure",
+  "tldr": "Switzerland's cybersecurity agency reported that AI agents were used in cyberattacks that successfully breached computer systems at two critical infrastructure operators.",
+  "action": "Review defensive postures against automated and AI-assisted credential access and lateral movement.",
+  "category": "breach",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html"
+   }
+  ],
+  "first_seen": "2026-11-27T13:59:01+00:00",
+  "updated": "2026-11-27T13:59:01+00:00"
+ },
+ {
+  "key": "rss:https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+  "tier": "watch",
+  "score": 64,
+  "headline": "Cacti Unauthenticated RCE Zero-Day Vulnerability Disclosed",
+  "tldr": "An unpatched zero-day vulnerability in the open-source network monitoring tool Cacti enables remote code execution via guest access in four HTTP requests.",
+  "action": "Restrict public access to Cacti installations and monitor for unauthorized command execution.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html"
+   }
+  ],
+  "first_seen": "2026-11-27T13:59:01+00:00",
+  "updated": "2026-11-27T13:59:01+00:00"
+ },
+ {
+  "key": "rss:https://therecord.media/france-afp-hit-by-cyberattack",
+  "tier": "watch",
+  "score": 61,
+  "headline": "French News Agency AFP Takes Platform Offline Following Cyberattack",
+  "tldr": "Agence France-Presse was hit by a cyberattack forcing the offline transition of one of its primary news distribution platforms.",
+  "action": "",
+  "category": "outage",
+  "exploited": true,
+  "kev": false,
+  "cves": [],
+  "cvss": null,
+  "epss": null,
+  "watch": "",
+  "links": [
+   {
+    "source": "The Record",
+    "url": "https://therecord.media/france-afp-hit-by-cyberattack"
+   }
+  ],
+  "first_seen": "2026-11-27T13:59:01+00:00",
+  "updated": "2026-11-27T13:59:01+00:00"
+ },
+ {
+  "key": "rss:https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges",
+  "tier": "watch",
+  "score": 56,
+  "headline": "Linux Kernel NFS Server CVE-2026-99362 Remote Root Privilege Escalation",
+  "tldr": "A critical vulnerability, CVE-2026-99362, in the Linux kernel's Network File System (NFS) server allows remote attackers to gain root privileges.",
+  "action": "Apply the latest Linux kernel patches addressing CVE-2026-99362.",
+  "category": "vulnerability",
+  "exploited": false,
+  "kev": false,
+  "cves": [
+   "CVE-2026-99362"
+  ],
+  "cvss": null,
+  "epss": 0.00755,
+  "watch": "",
+  "links": [
+   {
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/"
+   }
+  ],
+  "first_seen": "2026-11-27T13:59:01+00:00",
+  "updated": "2026-11-27T13:59:01+00:00"
+ },
+ {
   "key": "nvd:CVE-2026-137706",
   "tier": "act",
   "score": 80,
@@ -963,10 +1138,14 @@
    {
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html"
+   },
+   {
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/"
    }
   ],
   "first_seen": "2026-11-25T14:32:47+00:00",
-  "updated": "2026-11-25T14:32:47+00:00"
+  "updated": "2026-11-27T13:59:01+00:00"
  },
  {
   "key": "rss:https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
@@ -1997,7 +2176,7 @@
    }
   ],
   "first_seen": "2026-11-23T20:19:04+00:00",
-  "updated": "2026-11-26T11:01:52+00:00"
+  "updated": "2026-11-27T13:59:01+00:00"
  },
  {
   "key": "rss:https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks",
